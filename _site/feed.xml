@@ -1,40 +1,460 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Andres Galantes Blog</title>
+    <description>This is Andres Galante personal blog 
+Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Feb 2015 23:06:29 -0300</pubDate>
-    <lastBuildDate>Mon, 09 Feb 2015 23:06:29 -0300</lastBuildDate>
+    <link>http://andresgalante.github,io/</link>
+    <atom:link href="http://andresgalante.github,io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 11 Feb 2015 09:33:00 -0300</pubDate>
+    <lastBuildDate>Wed, 11 Feb 2015 09:33:00 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Gulp guide for designers</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://gulpjs.com&quot;&gt;Gulp&lt;/a&gt; is a Task / Build runner. It’s easy to use, has a simple api, and is efficient. Gulp.js makes use of pipes for streaming data that needs to be processed.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;But as designer you don’t actually need to know any of that. What you do need to know is that Gulp will make your life much easier.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;This tutorial will setup Gulp to do 3 things:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Compress js&lt;/li&gt;
+  &lt;li&gt;Compile &lt;a href=&quot;http://lesscss.org&quot;&gt;Less&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Browser livereload&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;installing-gulp-and-gulp-plugins&quot;&gt;Installing Gulp and Gulp plugins&lt;/h2&gt;
 
+&lt;h4 id=&quot;install-gulp-globally&quot;&gt;1. Install gulp globally:&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --global gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You’ll probably need to &lt;code&gt;sudo&lt;/code&gt; this one. &lt;/p&gt;
+
+&lt;p&gt;Now &lt;code&gt;cd&lt;/code&gt; to your project directory and install the dependencies and plugins&lt;/p&gt;
+
+&lt;h4 id=&quot;install-gulp-in-your-project-devdependencies&quot;&gt;2. Install gulp in your project devDependencies:&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;install-gulp-less-plugin&quot;&gt;3. Install gulp less plugin&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-less&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;install-gulp-uglify-plugin-for-js&quot;&gt;4. Install gulp uglify plugin for js&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-uglify&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;install-gulp-plumber-to-output-errors&quot;&gt;5. Install gulp plumber to output errors&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-plumber&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;install-gulp-browsersync-for-live-reload&quot;&gt;6. Install gulp browsersync for live reload&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install browser-sync gulp --save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;create-gulpfilejs&quot;&gt;Create gulpfile.js&lt;/h2&gt;
+
+&lt;p&gt;On the root of your project create a .js file name &lt;code&gt;gulpfile.js&lt;/code&gt;, and paste this snippet&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uglify&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-uglify&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;less&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;plumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-plumber&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;browser-sync&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Uglyfies js on to /minjs&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;scripts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;  
+  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;js/*.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;plumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uglify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;minjs&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt; 
+
+&lt;span class=&quot;c1&quot;&gt;// Compiles less on to /css&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less/**/*.less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;plumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;less&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;css&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// reload server&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;browser-sync&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;baseDir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;./&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Reload all Browsers&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;bs-reload&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// watch for changes on files&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;watch&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; 
+  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;js/*.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;scripts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less/*.less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;*.html&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;bs-reload&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt; 
+
+&lt;span class=&quot;c1&quot;&gt;// deploys&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;scripts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;browser-sync&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;watch&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;magic&quot;&gt;Magic!&lt;/h2&gt;
+
+&lt;p&gt;Open terminal and run &lt;code&gt;gulp&lt;/code&gt;!&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And now the magic starts. This will do:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Compress .js files on /js folder and store them on /minjs&lt;/li&gt;
+  &lt;li&gt;Compile .less files on /less folder and create a .css file on /css&lt;/li&gt;
+  &lt;li&gt;Open a browser with your index.html&lt;/li&gt;
+  &lt;li&gt;Watch for changes on your js file and compress it every time you save it&lt;/li&gt;
+  &lt;li&gt;Watch for changes on your less file and compile it every time you save it&lt;/li&gt;
+  &lt;li&gt;Auto reload the browser every time the less file is updated.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;enjoy&quot;&gt;Enjoy!&lt;/h2&gt;
+
+&lt;p&gt;There are also &lt;a href=&quot;http://gulpjs.com/plugins/&quot;&gt;Gulp plugins&lt;/a&gt; for Sass or Stylus and with little changes on this code you can implement them.&lt;/p&gt;
+
+&lt;p&gt;Once you save your less file, it will overwrite any change you do directly on the css. So remember to do style changes on less and never edit the css file and you’ll be fine.&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Feb 2015 20:05:36 -0300</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/02/09/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/02/09/welcome-to-jekyll.html</guid>
+        <link>http://andresgalante.github,io/gulp/design/2015/02/09/gulp-guide-for-designers.html</link>
+        <guid isPermaLink="true">http://andresgalante.github,io/gulp/design/2015/02/09/gulp-guide-for-designers.html</guid>
         
         
-        <category>jekyll</category>
+        <category>gulp</category>
         
-        <category>update</category>
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>Patternfly: Set up instructions</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; is an open interface project that promotes design commonality and improved user experience across enterprise IT products and applications.&lt;/p&gt;
+
+&lt;p&gt;A successful set up of the framework will help maintain, organise and help you grow a project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HEADS UP:&lt;/strong&gt; This document will use the command line. If you feel uncomfortable with it you can install  &lt;a href=&quot;https://incident57.com/codekit/&quot;&gt;CodeKit&lt;/a&gt;. It does Bower, live reload and less compilation without having to type any command.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-project&quot;&gt;Create a project&lt;/h2&gt;
+
+&lt;p&gt;With the Finder, create an empty folder where the the project will live.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add Image: Finder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Or do it the hardcore way, use the command line. Open the terminal and navigate to the folder where the project will be nested:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;path_to/projects&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then create a directory with the project name:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mkdir myProject&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;use-bower-to-install-patternfly&quot;&gt;Use Bower to install Patternfly&lt;/h2&gt;
+
+&lt;p&gt;Bower is a package manager. We are going to use bower to install patternfly framework. The first thing to do is to install bower globally. On the terminal type:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install -g bower&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sometimes it is require to run this command as root/Administrator. To do so add &lt;code&gt;sudo&lt;/code&gt; before &lt;code&gt;npm&lt;/code&gt; and run it again.&lt;/p&gt;
+
+&lt;p&gt;Make sure you are in the project folder &lt;code&gt;path_to/projects/myProject&lt;/code&gt; and install patternfly:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;bower install patternfly&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;TIP:&lt;/strong&gt; There are lots of command line basics tutorials.  &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLnpHn493BHGmEYzbjWPJsnRMhvs-PSYG&quot;&gt;This excellent video series&lt;/a&gt; will teach you the basics. &lt;/p&gt;
+
+&lt;h2 id=&quot;file-structure&quot;&gt;File structure&lt;/h2&gt;
+
+&lt;p&gt;The folder now looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add Image: Finder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;myProject
+    &lt;ul&gt;
+      &lt;li&gt;bower_components
+        &lt;ul&gt;
+          &lt;li&gt;patternfly&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;**TIP:&lt;/strong&gt;** Remember never to change /bower_components so patternfly can be easily updated.&lt;/p&gt;
+
+&lt;h2 id=&quot;add-styles&quot;&gt;Add styles&lt;/h2&gt;
+
+&lt;p&gt;Patternfly is based on bootstrap. We recommend the use of a CSS pre-processor. This case uses Less, but there is also Sass version.&lt;/p&gt;
+
+&lt;p&gt;Now create 2 folders, one for /less and another for /css&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add Image: Finder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;myProject
+    &lt;ul&gt;
+      &lt;li&gt;bower_components
+        &lt;ul&gt;
+          &lt;li&gt;patternfly&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;less&lt;/li&gt;
+      &lt;li&gt;css&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Leave the /css files empty, it is to place the compile css file there. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;**TIP:&lt;/strong&gt;** Do not edit the css file, changes should always be made on the less file.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-stylesless&quot;&gt;Create styles.less&lt;/h2&gt;
+
+&lt;p&gt;Open your favourite text editor and create a new file, call it styles.less.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add Image: Finder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;myProject
+    &lt;ul&gt;
+      &lt;li&gt;bower_components
+        &lt;ul&gt;
+          &lt;li&gt;patternfly&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;less
+        &lt;ul&gt;
+          &lt;li&gt;styles.less &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;css&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On styles.less, first import patternfly:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/patternfly.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then change path of the fonts:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@fa-font-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;      &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/font-awesome/fonts/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@font-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/dist/fonts&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@icon-font-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/bootstrap/fonts/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now the less file is set up, you can write your styles here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;**TIP:&lt;/strong&gt;** By importing patternfly.less you can use all the mixins built in bootstrap and patternfly, like clearfix or grandients. Plus you can take advantage of patternfly and bootstrap variables under /variables.less for colors, sizes and more.&lt;/p&gt;
+
+&lt;h2 id=&quot;compile&quot;&gt;Compile&lt;/h2&gt;
+
+&lt;p&gt;To create a css file from the less file, you’ll need to compile your less file. &lt;a href=&quot;http://lesscss.org/#using-less&quot;&gt;There are several ways to compile less&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is very usefull to set up &lt;a href=&quot;http://gruntjs.com&quot;&gt;Grunt&lt;/a&gt; or &lt;a href=&quot;http://gulpjs.com&quot;&gt;Gulp&lt;/a&gt; for live results. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/andresgalante/e4170f60f05630bbd402&quot;&gt;Here are very easy instructions on how to set up Gulp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Or just use &lt;a href=&quot;https://incident57.com/codekit/&quot;&gt;CodeKit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This will generate a styes.css file under /css:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add Image: Finder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;myProject
+    &lt;ul&gt;
+      &lt;li&gt;bower_components
+        &lt;ul&gt;
+          &lt;li&gt;patternfly&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;less
+        &lt;ul&gt;
+          &lt;li&gt;styles.less &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;css
+        &lt;ul&gt;
+          &lt;li&gt;styles.css &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;set-up-html&quot;&gt;Set up HTML&lt;/h2&gt;
+
+&lt;p&gt;Call styles.css on the HTML head:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;css/styles.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;screen, print&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;TIP:&lt;/strong&gt; By calling just one CSS you avoid making unnecessary requests.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add Image: Finder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;My_Project
+    &lt;ul&gt;
+      &lt;li&gt;bower_components
+        &lt;ul&gt;
+          &lt;li&gt;patternfly&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;less
+        &lt;ul&gt;
+          &lt;li&gt;styles.less  &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;css
+        &lt;ul&gt;
+          &lt;li&gt;styles.css&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;index.html &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;enjoy&quot;&gt;Enjoy!&lt;/h2&gt;
+
+&lt;p&gt;Everything is where it should be, next is for you to check out &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; recomendations and specifications and start coding.&lt;/p&gt;
+
+&lt;p&gt;If you have questions please contact &lt;a href=&quot;https://www.redhat.com/mailman/listinfo/patternfly&quot;&gt;Patternfly Mailing List&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Feb 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github,io/patternfly/howto/design/2015/02/06/patternfly.html</link>
+        <guid isPermaLink="true">http://andresgalante.github,io/patternfly/howto/design/2015/02/06/patternfly.html</guid>
+        
+        
+        <category>patternfly</category>
+        
+        <category>howto</category>
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>On-boarding new users is like parenting</title>
+        <description>&lt;p&gt;This is my son, his name is Leon and he is an artist.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/4371641/leon.jpg&quot; alt=&quot;Leon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;He is two years old, which means that I haven’t been sleeping well (or at all) for the last two years. He is the most time consuming, attention sponge, energetic creature I have ever met. Don’t get me wrong, I love him more than anything and he is the joy of my life. Love comes built in babies, it’s the way mother nature found to make us survive childhood.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.jboss.org/en/gatein/blog/2012/05/28/user-experience-what-is-this-about-anyway&quot;&gt;UX Designers&lt;/a&gt; are much like parents. We are always thinking about our users. We observe them and try to get into their minds to help them achieve their goals.&lt;/p&gt;
+
+&lt;p&gt;Children and users need care, patience, attention, love and guidance. It is our job to provide that. Nobody really teaches us how to be parents and we don’t have second chances. We just do our best and, of course, we fail. Luckily for our users, UX designers are very well prepared. We get many second chances, we can test, learn and iterate.&lt;/p&gt;
+
+&lt;p&gt;At Red Hat our users are usually developers. They are hackers who are always looking for ways to alter their surroundings to find methods to increases productivity and efficiency. They are just fantastic, in my opinion the best kind of users to work with. &lt;em&gt;This might sound exaggerated adulation, truth is I really do enjoy working with developers.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;aerogear-unified-push-console&quot;&gt;Aerogear Unified Push Console&lt;/h2&gt;
+
+&lt;p&gt;I’ve been given the challenge to &lt;a href=&quot;http://www.nngroup.com/articles/radical-incremental-redesign/&quot;&gt;redesign Aerogear Unified Push Console (UPS)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This server allows sending native push messages to different mobile operating systems, such as Android, iOS, Windows or Firefox OS/SimplePush.&lt;/p&gt;
+
+&lt;p&gt;Push notifications can be a pain, and Aerogear team has done an amazing job. It is a powerful tool that has all kinds of sorcery and Jedi tricks that i cannot begin to grasp. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/4371641/post-image-old-page.png&quot; alt=&quot;Old UPS console&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Currently users count on extensive documentation to set up Unified Push Console. On this redesign we seek to improve the UI to direct the set up without the need to go through the documentation.&lt;/p&gt;
+
+&lt;h3 id=&quot;lead-the-users-to-success&quot;&gt;Lead the users to success&lt;/h3&gt;
+
+&lt;p&gt;One key aspect of this redesign is how to guide new users to get on-board.&lt;/p&gt;
+
+&lt;p&gt;In order to make the server work, the user will have to successfully complete 5 steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create an application&lt;/li&gt;
+  &lt;li&gt;Add at least one Variant&lt;/li&gt;
+  &lt;li&gt;Install client code&lt;/li&gt;
+  &lt;li&gt;Send a test push notification&lt;/li&gt;
+  &lt;li&gt;Set up the sender API&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Expectations are high. It isn’t an easy job, and we need to help them succeed.&lt;/p&gt;
+
+&lt;h3 id=&quot;focus&quot;&gt;Focus&lt;/h3&gt;
+
+&lt;p&gt;We set the expectations early, we promise that there is gold at the end of the rainbow. If they follow the (not so simple) steps, they will be able to easily send push notifications and we will make sure they are delivered. &lt;/p&gt;
+
+&lt;p&gt;But the &lt;a href=&quot;http://tinyurl.com/l6t5sts&quot;&gt;average user attention span is 8 seconds&lt;/a&gt;, that’s one second shorter than a goldfish[2]. &lt;/p&gt;
+
+&lt;p&gt;We only have a fraction of a second to make a good first impression and just a couple of seconds to grab their attention.&lt;/p&gt;
+
+&lt;p&gt;Now the countdown begins! we have only a few minutes to show them how they can achieve their goals. If we fail, they will assume the console doesn’t work, and second chances are rare.&lt;/p&gt;
+
+&lt;p&gt;We need to &lt;a href=&quot;http://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/&quot;&gt;grasp our users attention instantly and show them how to use the console fast&lt;/a&gt;, but how?&lt;/p&gt;
+
+&lt;h3 id=&quot;can-i-buy-you-a-drink&quot;&gt;Can I buy you a drink?&lt;/h3&gt;
+
+&lt;p&gt;There are several methods to have a &lt;a href=&quot;http://www.dtelepathy.com/blog/design/ux-flows-onboarding&quot;&gt;first date with our users&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Better than show how it works is to make them actually do it&lt;/strong&gt;. Tumblr does an amazing job on first interacting, the new user is prompted to input important information to ensure a customised user experience.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://assets-www-dtelepathy-com.s3.amazonaws.com/wp-content/uploads/2014/02/UXflows_GifGraphic_Tumblr.gif&quot; alt=&quot;Tumblr on boarding&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For the UPS console, we also built an interactive wizard that guides the user to complete the 5 steps to get push notifications up and running. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/4371641/post-image-welcom-page.png&quot; alt=&quot;UPS On boarding Set Expectations Early&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/4371641/post-image-step1.png&quot; alt=&quot;UPS On boarding&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Without been intrusive, we never leave them alone. Even if they decide to skip the wizard, they still get a blank slate waiting to guide them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/4371641/post-image-blank-page.png&quot; alt=&quot;UPS blank slate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Setup is done but our job is not over, we have to make sure that the rest of their experience is up to their expectations. Users spend most of their time on other websites and we always follow patterns and keep consistency.&lt;/p&gt;
+
+&lt;h3 id=&quot;one-ring-to-rule-them-all&quot;&gt;One ring to rule them all&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.nngroup.com/articles/top-10-mistakes-web-design/&quot;&gt;Jakob Nielsen says&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Consistency is one of the most powerful usability principles: when things always behave the same, users don’t have to worry about what will happen. Instead, they know what will happen based on earlier experience.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To keep consistency we build the UI based on &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;Patternfly&lt;/a&gt; recommendations. &lt;/p&gt;
+
+&lt;p&gt;Patternfly is an Open Source community that promotes design commonality and improved user experience across enterprise IT products and applications.&lt;/p&gt;
+
+&lt;p&gt;It is based on Bootstrap, so implementation is easy and straight forward.&lt;/p&gt;
+
+&lt;p&gt;And to keep the karma flowing we are contributing a blank slate pattern and syntax highlighting back to Patternfly.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-results&quot;&gt;The results&lt;/h2&gt;
+
+&lt;p&gt;This UI hasn’t been implemented yet. Basic user testings with the prototype show that this user-centric interaction is very successful.&lt;/p&gt;
+
+&lt;p&gt;A successful on boarding strategy is like teaching something new to your children. As parents we need to encourage them to  teach themselves and learn their own way. They have to drive. But you’re there as bumpers to make sure they don’t fall off the edge.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/1118766571/ref=dp_ob_image_bk&quot;&gt;Alan Cooper&lt;/a&gt; teaches us that the main goal of a UX design is to never make the user feel stupid. &lt;strong&gt;It’s in our hands for that to happen&lt;/strong&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Feb 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github,io/design/ux/2015/02/02/onboarding-is-like-parent.html</link>
+        <guid isPermaLink="true">http://andresgalante.github,io/design/ux/2015/02/02/onboarding-is-like-parent.html</guid>
+        
+        
+        <category>design</category>
+        
+        <category>ux</category>
         
       </item>
     

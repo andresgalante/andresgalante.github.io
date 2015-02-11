@@ -9,7 +9,6 @@ dl, dd, ol, ul, figure {
 }
 
 
-
 /**
  * Basic styling
  */
@@ -41,8 +40,19 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
+    max-width:  $content-width + 40px;
     vertical-align: middle;
+    margin: 10px -20px;
+    border: 1px solid $grey-color-border;
+    border-radius: 4px;
+    @include media-query($on-laptop) {
+     margin: 10px 0px;
+     max-width: 100%;
+    }
+    @include media-query($on-palm) {
+     margin: 10px 0px;
+     max-width: 100%;
+    }
 }
 
 
@@ -80,7 +90,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 
@@ -90,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $brand-color;
-    text-decoration: none;
+//    text-decoration: none;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -98,7 +108,9 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
+        background: $brand-color;
+        color: rgba(0,0,0,0);
     }
 }
 
@@ -112,8 +124,8 @@ blockquote {
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+//    letter-spacing: -1px;
+//    font-style: italic;
 
     > :last-child {
         margin-bottom: 0;

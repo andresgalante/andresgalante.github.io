@@ -2,7 +2,15 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/">
+{% if page.path contains '_posts' or page.title contains "elevator"  %}
+<i class="fa fa-arrow-left"></i>
+{% else %}
+<i class="fa fa-comment-o"></i>
+{% endif %}        
+
+      <!-- {{ site.title }} -->
+    </a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">

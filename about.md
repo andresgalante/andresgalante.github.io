@@ -1,11 +1,13 @@
 ---
 layout: page
-title: About
+title: The elevator pitch
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My name is **Andrés Galante**. I am a Designer who works and lives in Buenos Aires, Argentina.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+**I design websites and apps**. I am an expert HTML/CSS coder and have experience working with **[Less](http://lesscss.org/)**, **[Sass](http://sass-lang.com/)**, **[Bootstrap](http://getbootstrap.com/)** and **[Zurb Fundation](http://foundation.zurb.com/)**.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I am currently working as **User Experience Designer at [Red Hat](http://www.redhat.com/)** UXD team, plus I am **Co-Founder and Designer at [Outclass](http://outclassapp.com/)**. I am always looking for new adventures, if you have one lets talk:
+
+Send me a line [a@andresgalante.com](mailto:a@andresgalante.com) or call me [+54 911 3593 9333](tel:+54 911 3593 9333).
