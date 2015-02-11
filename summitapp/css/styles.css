@@ -6679,10 +6679,10 @@ header a {
 }
 .activity-log:before {
   content: ".";
-  background: rgba(0, 0, 0, 0.12);
+  background: url(../imgs/path.png) repeat-y 0 0;
   position: absolute;
-  left: 19px;
-  width: 2px;
+  left: 0px;
+  width: 40px;
   top: 25px;
   bottom: 65px;
   z-index: -1;
