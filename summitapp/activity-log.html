@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<!-- Bootstrap -->
+  <link href="css/ripples.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet" media="screen">
 
 	<!-- Font awesome Icons -->
@@ -25,7 +26,7 @@
   <body>
     
     <header class="app-bar">
-      <a href="#">
+      <a href="index,html">
         <i class="fa fa-bars fa-lg"></i>
       </a>
       <h1 class="title">
@@ -36,7 +37,7 @@
 
     <div class="content">
       
-      <div class="header">
+      <div class="appheader">
         
         <div class="map">
           <!-- here goes map code -->
@@ -50,15 +51,10 @@
             <h4 class="location">
               from Auditorium
             </h4>
-        
-            <!--
-John Shakshober
-            Opening general session
-            -->
-            
+                    
         </div>
       </div>
-      
+
             
       <section class="activity-log">
 
@@ -208,10 +204,6 @@ John Shakshober
 
 
 
-
-
-
-
       </section><!-- activity-log -->
       
             
@@ -230,6 +222,13 @@ John Shakshober
   <!-- My script -->
   <script src="js/min/script.js"></script>
 
+        <script src="js/min/ripples.min.js"></script>
+        <script src="js/min/material.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $.material.init();
+            });
+        </script>
 
 
 	</body>
