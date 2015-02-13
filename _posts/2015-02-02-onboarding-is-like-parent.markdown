@@ -2,12 +2,11 @@
 layout: post
 title:  "On-boarding new users is like parenting"
 date:   2015-02-02 23:05:36
-categories: design UX
+categories: design
 ---
-
 This is my son, his name is Leon and he is an artist.
 
-![Leon](https://dl.dropboxusercontent.com/u/4371641/leon.jpg)
+![Leon](/img/onboarding/leon.jpg)
 
 He is two years old, which means that I haven't been sleeping well (or at all) for the last two years. He is the most time consuming, attention sponge, energetic creature I have ever met. Don't get me wrong, I love him more than anything and he is the joy of my life. Love comes built in babies, it's the way mother nature found to make us survive childhood.
 
@@ -16,7 +15,7 @@ He is two years old, which means that I haven't been sleeping well (or at all) f
 
 Children and users need care, patience, attention, love and guidance. It is our job to provide that. Nobody really teaches us how to be parents and we don't have second chances. We just do our best and, of course, we fail. Luckily for our users, UX designers are very well prepared. We get many second chances, we can test, learn and iterate.
 
-At Red Hat our users are usually developers. They are hackers who are always looking for ways to alter their surroundings to find methods to increases productivity and efficiency. They are just fantastic, in my opinion the best kind of users to work with. *This might sound exaggerated adulation, truth is I really do enjoy working with developers.*
+At Red Hat our users are usually developers. They are hackers who are always looking for ways to alter their surroundings to find methods to increases productivity and efficiency. They are just fantastic, in my opinion the best kind of users to work with.
 
 ##Aerogear Unified Push Console
 
@@ -26,7 +25,7 @@ This server allows sending native push messages to different mobile operating sy
 
 Push notifications can be a pain, and Aerogear team has done an amazing job. It is a powerful tool that has all kinds of sorcery and Jedi tricks that i cannot begin to grasp. 
 
-![Old UPS console](https://dl.dropboxusercontent.com/u/4371641/post-image-old-page.png)
+![Old UPS console](/img/onboarding/post-image-old-page.png)
 
 Currently users count on extensive documentation to set up Unified Push Console. On this redesign we seek to improve the UI to direct the set up without the need to go through the documentation.
 
@@ -67,13 +66,13 @@ There are several methods to have a [first date with our users](http://www.dtele
 
 For the UPS console, we also built an interactive wizard that guides the user to complete the 5 steps to get push notifications up and running. 
 
-![UPS On boarding Set Expectations Early](https://dl.dropboxusercontent.com/u/4371641/post-image-welcom-page.png)
+![UPS On boarding Set Expectations Early](/img/onboarding/post-image-welcom-page.png)
 
-![UPS On boarding](https://dl.dropboxusercontent.com/u/4371641/post-image-step1.png)
+![UPS On boarding](/img/onboarding/post-image-step1.png)
 
 Without been intrusive, we never leave them alone. Even if they decide to skip the wizard, they still get a blank slate waiting to guide them.
 
-![UPS blank slate](https://dl.dropboxusercontent.com/u/4371641/post-image-blank-page.png)
+![UPS blank slate](/img/onboarding/post-image-blank-page.png)
 
 Setup is done but our job is not over, we have to make sure that the rest of their experience is up to their expectations. Users spend most of their time on other websites and we always follow patterns and keep consistency.
 

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,600,900);
 /**
  * Reset some basic elements
  */
@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
@@ -33,11 +33,12 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-  max-width: 840px;
+  max-width: 800px;
   vertical-align: middle;
-  margin: 10px -20px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px; }
+  margin: 30px -30px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  display: block; }
   @media screen and (max-width: 800px) {
     img {
       margin: 10px 0px;
@@ -69,8 +70,12 @@ li > ol {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500; }
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 600; }
+
+em {
+  font-weight: 800;
+  font-style: normal; }
 
 /**
  * Links
@@ -103,15 +108,14 @@ pre,
 code {
   font-size: 15px;
   border: 1px solid rgba(102, 102, 102, 0.54);
-  border-radius: 3px;
-  background-color: #eef; }
+  border-radius: 3px; }
 
 code {
   padding: 1px 5px; }
 
 pre {
   padding: 8px 12px;
-  overflow-x: scroll; }
+  overflow: auto; }
   pre > code {
     border: 0;
     padding-right: 0;
@@ -166,7 +170,9 @@ pre {
   font-size: 26px;
   line-height: 56px;
   margin-bottom: 0;
-  float: left; }
+  float: left;
+  font-weight: 800;
+  text-decoration: none; }
 
 .site-nav {
   float: right;
@@ -323,7 +329,7 @@ pre {
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff; }
+  background: #f1f1f1; }
   .highlight .c {
     color: #998;
     font-style: italic; }

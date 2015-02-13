@@ -1,21 +1,19 @@
 ---
 layout: post
-title:  "Patternfly: Set up instructions"
+title:  "How to set up Patternfly"
 date:   2015-02-06 23:05:36
-categories: patternfly howto design
+categories: howto
 ---
 
 [PatternFly](https://www.patternfly.org/) is an open interface project that promotes design commonality and improved user experience across enterprise IT products and applications.
 
 A successful set up of the framework will help maintain, organise and help you grow a project.
 
-**HEADS UP:** This document will use the command line. If you feel uncomfortable with it you can install  [CodeKit](https://incident57.com/codekit/). It does Bower, live reload and less compilation without having to type any command.
+*HEADS UP* This document will use the command line. If you feel uncomfortable with it you can install  [CodeKit](https://incident57.com/codekit/). It does Bower, live reload and less compilation without having to type any command.
 
 ## Create a project
 
 With the Finder, create an empty folder where the the project will live.
-
-**Add Image: Finder**
 
 Or do it the hardcore way, use the command line. Open the terminal and navigate to the folder where the project will be nested:
 
@@ -45,19 +43,16 @@ Make sure you are in the project folder `path_to/projects/myProject` and install
 bower install patternfly
 {% endhighlight %}
 
-**TIP:** There are lots of command line basics tutorials.  [This excellent video series](https://www.youtube.com/playlist?list=PLLnpHn493BHGmEYzbjWPJsnRMhvs-PSYG) will teach you the basics. 
+*TIP* There are lots of command line basics tutorials.  [This excellent video series](https://www.youtube.com/playlist?list=PLLnpHn493BHGmEYzbjWPJsnRMhvs-PSYG) will teach you the basics. 
 
 ## File structure
 
 The folder now looks like this:
 
-**Add Image: Finder**
+![Finder Image](/img/patternfly-set-up/patternfly-setup-1.jpg)
+    
 
-- myProject
-  - bower_components
-    - patternfly
-
-****TIP:**** Remember never to change /bower_components so patternfly can be easily updated.
+*TIP* Remember never to change /bower_components so patternfly can be easily updated.
 
 ## Add styles
 
@@ -65,30 +60,16 @@ Patternfly is based on bootstrap. We recommend the use of a CSS pre-processor. T
 
 Now create 2 folders, one for /less and another for /css
 
-**Add Image: Finder**
-
-- myProject
-  - bower_components
-    - patternfly
-  - less
-  - css
+![Finder Image](/img/patternfly-set-up/patternfly-setup-2.jpg)
 
 Leave the /css files empty, it is to place the compile css file there. 
 
-****TIP:**** Do not edit the css file, changes should always be made on the less file.
 
 ## Create styles.less
 
-Open your favourite text editor and create a new file, call it styles.less.
+Open your favourite text editor and create a new file, call it **styles.less**.
 
-**Add Image: Finder**
-
-- myProject
-  - bower_components
-    - patternfly
-  - less
-    - styles.less 
-  - css
+![Finder Image](/img/patternfly-set-up/patternfly-setup-3.jpg)
 
 On styles.less, first import patternfly:
 {% highlight css %}
@@ -106,29 +87,22 @@ Then change path of the fonts:
 
 Now the less file is set up, you can write your styles here.
 
-****TIP:**** By importing patternfly.less you can use all the mixins built in bootstrap and patternfly, like clearfix or grandients. Plus you can take advantage of patternfly and bootstrap variables under /variables.less for colors, sizes and more.
+*TIP* By importing patternfly.less you can use all the mixins built in bootstrap and patternfly, like clearfix or grandients. Plus you can take advantage of patternfly and bootstrap variables under /variables.less for colors, sizes and more.
 
 ## Compile
 
 To create a css file from the less file, you'll need to compile your less file. [There are several ways to compile less](http://lesscss.org/#using-less).
 
-It is very usefull to set up [Grunt](http://gruntjs.com) or [Gulp](http://gulpjs.com) for live results. 
-
-[Here are very easy instructions on how to set up Gulp](https://gist.github.com/andresgalante/e4170f60f05630bbd402)
+It is very usefull to set up [Grunt](http://gruntjs.com) or [Gulp](http://gulpjs.com) for live results. [Here are very easy to follow instructions to set up Gulp](/howto/2015/02/09/gulp-guide-for-designers.html)
 
 Or just use [CodeKit](https://incident57.com/codekit/)
 
 This will generate a styes.css file under /css:
 
-**Add Image: Finder**
+![Finder Image](/img/patternfly-set-up/patternfly-setup-4.jpg)
 
-- myProject
-  - bower_components
-    - patternfly
-  - less
-    - styles.less 
-  - css
-    - styles.css 
+*TIP:* Do not edit the css file, changes should always be made on the less file.
+
 
 ## Set up HTML
 
@@ -138,18 +112,9 @@ Call styles.css on the HTML head:
 {% endhighlight %}
 
 
-**TIP:** By calling just one CSS you avoid making unnecessary requests.
+*TIP:* By calling just one CSS you avoid making unnecessary requests.
 
-**Add Image: Finder**
-
-- My_Project
-  - bower_components
-    - patternfly
-  - less
-    - styles.less  
-  - css
-    - styles.css
-  - index.html 
+![Finder Image](/img/patternfly-set-up/patternfly-setup-5.jpg)
 
 ## Enjoy!
 

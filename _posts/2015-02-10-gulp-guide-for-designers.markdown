@@ -2,12 +2,12 @@
 layout: post
 title:  "Gulp guide for designers"
 date:   2015-02-09 23:05:36
-categories: gulp design
+categories: howto
 ---
 
 [Gulp](http://gulpjs.com) is a Task / Build runner. It's easy to use, has a simple api, and is efficient. Gulp.js makes use of pipes for streaming data that needs to be processed.
 
-But as designer you don't actually need to know any of that. What you do need to know is that Gulp will make your life much easier.
+But as designer you don't actually need to know any of that. What you do need to know is that **Gulp will make your life much easier**.
 
 This tutorial will setup Gulp to do 3 things:
 
@@ -127,8 +127,19 @@ And now the magic starts. This will do:
 - Watch for changes on your less file and compile it every time you save it
 - Auto reload the browser every time the less file is updated.
 
+
+## More magic! Awesome livereload with Browsersync
+
+You've just installed [BrowserSync](http://www.browsersync.io/), its a time-saving synchronised browser testing.
+
+[BrowserSync](http://www.browsersync.io/) makes your tweaking and testing faster by synchronising file changes and interactions across multiple devices. It’s wicked-fast and totally amazing.
+
+You'll be able to view your project at this address `http://localhost:3000/` and you'll find browser sync configurations at `http://localhost:3001/`. On that seetings page you'll find a IP address to sync on your mobile device among other amazing features.
+
+
+
 ## Enjoy!
 
 There are also [Gulp plugins](http://gulpjs.com/plugins/) for Sass or Stylus and with little changes on this code you can implement them.
 
-Once you save your less file, it will overwrite any change you do directly on the css. So remember to do style changes on less and never edit the css file and you'll be fine.
+Once you save your less file, it will overwrite any change you do directly on the css. So remember to **do styling changes on less** and never edit the css file and you'll be fine.
