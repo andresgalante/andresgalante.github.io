@@ -122,12 +122,12 @@
     <span class="nx">browserSync</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;browser-sync&#39;</span><span class="p">),</span>
     <span class="nx">reload</span> <span class="o">=</span> <span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">;</span>
 
-<span class="c1">// Uglyfies js on to /minjs</span>
+<span class="c1">// Uglyfies js on to /js/minjs</span>
 <span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;scripts&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>  
   <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">&#39;js/*.js&#39;</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">plumber</span><span class="p">())</span>
     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">uglify</span><span class="p">())</span>
-    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s2">&quot;minjs&quot;</span><span class="p">));</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s2">&quot;js/minjs&quot;</span><span class="p">));</span>
 <span class="p">});</span> 
 
 <span class="c1">// Compiles less on to /css</span>
@@ -172,8 +172,8 @@
 <p>And now the magic starts. This will do:</p>
 
 <ul>
-  <li>Compress .js files on /js folder and store them on /minjs</li>
-  <li>Compile .less files on /less folder and create a .css file on /css</li>
+  <li>Compress any .js files on /js folder and store them on /js/minjs</li>
+  <li>Compile any .less files on /less folder and create a .css file on /css</li>
   <li>Open a browser with your index.html</li>
   <li>Watch for changes on your js file and compress it every time you save it</li>
   <li>Watch for changes on your less file and compile it every time you save it</li>
@@ -205,7 +205,7 @@
 
   <div class="wrapper">
     
-    <p class="text">This is Andres Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband, tenis player (in alphabetical order).
+    <p class="text">This is Andrés Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband, tenis player (in alphabetical order).
 </p>
 
 <!--
@@ -253,7 +253,7 @@
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">This is Andres Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband, tenis player (in alphabetical order).
+        <p class="text">This is Andrés Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband, tenis player (in alphabetical order).
 </p>
       </div>
     </div>

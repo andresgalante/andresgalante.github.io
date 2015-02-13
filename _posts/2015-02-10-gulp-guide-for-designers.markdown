@@ -7,6 +7,7 @@ categories: howto
 
 [Gulp](http://gulpjs.com) is a Task / Build runner. It's easy to use, has a simple api, and is efficient. Gulp.js makes use of pipes for streaming data that needs to be processed.
 
+
 But as designer you don't actually need to know any of that. What you do need to know is that **Gulp will make your life much easier**.
 
 This tutorial will setup Gulp to do 3 things:
@@ -69,12 +70,12 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
-// Uglyfies js on to /minjs
+// Uglyfies js on to /js/minjs
 gulp.task('scripts', function(){  
   gulp.src('js/*.js')
     .pipe(plumber())
     .pipe(uglify())
-    .pipe(gulp.dest("minjs"));
+    .pipe(gulp.dest("js/minjs"));
 }); 
 
 // Compiles less on to /css
@@ -120,8 +121,8 @@ gulp
 
 And now the magic starts. This will do:
 
-- Compress .js files on /js folder and store them on /minjs
-- Compile .less files on /less folder and create a .css file on /css
+- Compress any .js files on /js folder and store them on /js/minjs
+- Compile any .less files on /less folder and create a .css file on /css
 - Open a browser with your index.html
 - Watch for changes on your js file and compress it every time you save it
 - Watch for changes on your less file and compile it every time you save it
