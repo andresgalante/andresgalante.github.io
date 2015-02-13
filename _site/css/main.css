@@ -332,6 +332,7 @@ pre {
   http://sourcey.com
 */
 .highlight {
+  border-radius: 3px;
   background: #343642;
   color: #C1C2C3; }
 
