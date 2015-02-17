@@ -6,9 +6,146 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Feb 2015 01:12:16 -0300</pubDate>
-    <lastBuildDate>Fri, 13 Feb 2015 01:12:16 -0300</lastBuildDate>
+    <pubDate>Tue, 17 Feb 2015 00:17:17 -0300</pubDate>
+    <lastBuildDate>Tue, 17 Feb 2015 00:17:17 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Syntax highliting for color blind users</title>
+        <description>&lt;p&gt;A few years ago I worked with a client that was &lt;a href=&quot;http://en.wikipedia.org/wiki/Color_blindness&quot;&gt;color blind&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Eight percent of Caucasian men are color blind, this is made of mostly Deuteranope (Green-blind), follow by Protanope (Red-blind) and very rarely Tritanopia (Blue-blind). What is even more rare is Monochromatic, total color blindness.&lt;/p&gt;
+
+&lt;p&gt;My client was the totally color blind. He saw in shades of greys and I can only wonder how the world looks through his eyes.&lt;/p&gt;
+
+&lt;p&gt;That was a huge problem to him. From little things like depending on his wife to dress to go work every morning, to more dangerous one, like not knowing if a traffic signal was Red or Green when he was travelling in a place where the traffic lights where horizontal instead of vertical. &lt;/p&gt;
+
+&lt;p&gt;And of course he sent me to talk to his wife when I arrived at his office with pantone samples.&lt;/p&gt;
+
+&lt;p&gt;Although I did study color theory and light physics was something that always interested me, I must confess that until then I’ve had never really though about color blindness. You could say I was a bad designer.&lt;/p&gt;
+
+&lt;p&gt;Joseph Albers said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Every perception of color is an illusion…we do not see colors as they really are. In our perception they alter one another.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;what-is-color-bliness&quot;&gt;What is color bliness&lt;/h2&gt;
+
+&lt;p&gt;A normal color vision person is capable of perceiving all three primary colors of light: Red, Green, and Blue.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Color blindness is the complete inability to perceive one or more of the three primary colors of light.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;With color-deficient vision, it is more difficult to discriminate all three dimensions of color—hue, value, and chroma. The severity of color-vision deficiencies ranges from a little difficulty in distinguishing similar hues to the inability to perceive any color at all.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-we-can-do&quot;&gt;What we can do&lt;/h2&gt;
+
+&lt;p&gt;All people with color-deficient vision can perceive differences in value and most can see a fairly wide range of hues.&lt;/p&gt;
+
+&lt;p&gt;As I mention before, most color blind people have a deficiency with either Red or Green. &lt;/p&gt;
+
+&lt;p&gt;In general, if the Red value is greater than the Blue, it appears in the yellows group, and if Red is less than Blue it appears in the Blues group. A color generally appears neutral when Green equals Blue, more or less regardless of the value for Red.&lt;/p&gt;
+
+&lt;h2 id=&quot;syntax-highliting&quot;&gt;Syntax highliting&lt;/h2&gt;
+
+&lt;p&gt;Last week I’ve been involved in &lt;a href=&quot;https://github.com/patternfly/patternfly/commit/33bafaab0950847893d3b784dbcd40eec0bd453f&quot;&gt;implementing syntax highlighting&lt;/a&gt; on &lt;a href=&quot;https://www.patternfly.org&quot;&gt;Patternfly&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are lots of &lt;a href=&quot;http://vimcolorschemetest.googlecode.com/&quot;&gt;Syntax highliting themes&lt;/a&gt; and &lt;a href=&quot;http://gotoanswer.stanford.edu/?q=Syntax+Coloring%3A+Is+it+harder+for+color-blind+coders+to+program%3F&quot;&gt;although syntax highlighting is almost never an issue for color blind users&lt;/a&gt;, to proof this concept I decided to create one for this blog.&lt;/p&gt;
+
+&lt;p&gt;With that in mind and using colors picked from Googles &lt;a href=&quot;http://www.google.com/design/spec/style/color.html#color-color-palette&quot;&gt;Material Design color pallete&lt;/a&gt;. I came up with this theme:&lt;/p&gt;
+
+&lt;h4 id=&quot;html&quot;&gt;HTML&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD HTML 4.01 Transitional//EN&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;A Tiny Page&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;css/styles.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;screen, print&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- real comment --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;language=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;changeHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByTagName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;td&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+              &lt;span class=&quot;nx&quot;&gt;tds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Testing page&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;java&quot;&gt;JAVA&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.TreeSet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GetEnv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;cm&quot;&gt;/**&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   * let&amp;#39;s test generics&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   * @param args the command line arguments&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   */&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// get a map of environment variables&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getenv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// build a sorted set out of the keys and iterate&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;k:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TreeSet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;keySet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;%s = %s\n&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Side by side, the first image is the original, second is a Protanopia view, next is a Deuteranopia view and last is Monochromatic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/colorblind/compare.jpg&quot; alt=&quot;color theme comparison&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This blog is based on &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt; and it has built in support for syntax highlighting thanks to &lt;a href=&quot;http://pygments.org/&quot;&gt;Pygments&lt;/a&gt;. In case you want to use this colorblind friendly theme for Pygments, the source is here.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-test-it&quot;&gt;How to test it&lt;/h2&gt;
+
+&lt;p&gt;There are several tools to test color blind images. After testing some I found that these two come in handy:&lt;/p&gt;
+
+&lt;h4 id=&quot;photoshop&quot;&gt;1. Photoshop&lt;/h4&gt;
+
+&lt;p&gt;To test images, Adobe Photoshop under View &amp;gt; Proof Setup &amp;gt; Color Blindness, has an option to view images with Green-blind or Red-blind filters.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/colorblind/ps.jpg&quot; alt=&quot;adobe photoshop view option as color blind&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;chrome&quot;&gt;2. Chrome&lt;/h4&gt;
+
+&lt;p&gt;On the browser, &lt;a href=&quot;https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb?hl=en&quot;&gt;Spectrum&lt;/a&gt; is an excellent plugin for Chrome to test your colors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/colorblind/rh.jpg&quot; alt=&quot;Spectrum to test color blind on the browser&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-translator&quot;&gt;The translator&lt;/h2&gt;
+
+&lt;p&gt;Last year, while doing my first steps with my startup &lt;a href=&quot;http://www.outclassapp.com&quot;&gt;Outclass&lt;/a&gt;, we’ve been invited to a pre acceleration program called &lt;a href=&quot;http://www.startupsc.com.br&quot;&gt;Startup SC&lt;/a&gt;. We share that experience with other startups, one of them was &lt;a href=&quot;http://www.truevision.io&quot;&gt;True Vision&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;They have wichcraft a way to “translate” colors for color blind people. A small device is plug into your TV or computer, the user sets up it up and it adjust hue and saturation of the image. They even developed a mobile app.&lt;/p&gt;
+
+&lt;p&gt;Although that is a huge advantage, it would be better they didn’t need to use it. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;NOTE TO SELF:&lt;/em&gt; Always test the colors!&lt;/p&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.uxmatters.com/mt/archives/2007/02/ensuring-accessibility-for-people-with-color-deficient-vision.php&quot;&gt;uxmatters.com/mt/archives/2007/02/ensuring-accessibility-for-people-with-color-deficient-vision.php&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.nngroup.com/articles/accessible-design-for-users-with-disabilities/&quot;&gt;nngroup.com/articles/accessible-design-for-users-with-disabilities/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bconnelly.net/2013/10/creating-color blind-friendly-figures/&quot;&gt;bconnelly.net/2013/10/creating-color blind-friendly-figures/&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://safecolors.rigdenage.com/colors.pdf&quot;&gt;safecolors.rigdenage.com/colors.pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.zingdesign.com/web-design-guidelines-for-color-blind-users/&quot;&gt;zingdesign.com/web-design-guidelines-for-color-blind-users/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://optional.is/requiRed/2011/06/20/accessible-color-swatches/&quot;&gt;optional.is/requiRed/2011/06/20/accessible-color-swatches/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 06 Mar 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/howto/2015/03/06/color-blind.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/03/06/color-blind.html</guid>
+        
+        
+        <category>howto</category>
+        
+      </item>
     
       <item>
         <title>Gulp guide for designers</title>

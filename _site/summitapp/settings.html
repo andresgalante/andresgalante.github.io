@@ -26,35 +26,20 @@
   <body>
     
     <header class="app-bar">
-      <a href="index.html">
+      <a href="activity-log.html">
         <i class="fa fa-arrow-left"></i>
       </a>
       <h1 class="title">
-        Singup
+        Settings
       </h1>
     
     </header>
 
     <div class="content">
     
-    <p>Create your Summit profile and bind it to your beacon.</p>
+    <p>Change your privacy settings and notifications options.</p>
       
-    <form>
-    
-      <div class="form-group">
-        <label for="beaconid" class="sr-only">Beacon ID</label>
-        <input type="number" class="form-control floating-label" id="beaconid" data-hint="Find the beacon ID number at the back of the beacon" placeholder="Beacon ID">
-      </div>
-    
-    
-      <div class="form-group">
-        <label for="firstname" class="sr-only">First Name</label>
-        <input type="text" class="form-control floating-label" id="firstname" placeholder="First Name">
-      </div>
-      <div class="form-group">
-        <label for="lastname" class="sr-only">Last Name</label>
-        <input type="text" class="form-control floating-label" id="lastname" placeholder="Last Name">
-      </div>
+    <form class="settings-form">
       
       <div class="togglebutton">
         <label>
@@ -62,10 +47,15 @@
           Display my name
         </label>
       </div>  
+
+      <div class="togglebutton">
+        <label>
+          <input type="checkbox"  checked="checked">
+          Receive push notifications
+        </label>
+      </div>  
       
-      <a href="activity-log.html" class="btn btn-block btn-primary">Beguin</a>
     </form>
-      
             
     </div><!-- content -->
 
