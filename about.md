@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The elevator pitch
+title: About me
 permalink: /about/
 ---
 

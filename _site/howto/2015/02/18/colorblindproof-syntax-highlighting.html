@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Syntax highliting for color blind users</title>
+  <title>Colorblindproof syntax highliting</title>
   <meta name="description" content="A few years ago I worked with a client that was color blind. ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://andresgalante.github.io/howto/2015/03/06/color-blind.html">
+  <link rel="canonical" href="http://andresgalante.github.io/howto/2015/02/18/colorblindproof-syntax-highlighting.html">
   <link rel="alternate" type="application/rss+xml" title="Andres Galantes Blog" href="http://andresgalante.github.io/feed.xml" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -26,7 +26,6 @@
 
 <i class="fa fa-arrow-left"></i> BACK
  
-
       <!-- Andres Galantes Blog -->
     </a>
 
@@ -42,7 +41,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">The elevator pitch</a>
+          <a class="page-link" href="/about/">About me</a>
           
         
           
@@ -64,8 +63,8 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Syntax highliting for color blind users</h1>
-    <p class="post-meta">Mar 6, 2015</p>
+    <h1 class="post-title">Colorblindproof syntax highliting</h1>
+    <p class="post-meta">Feb 18, 2015</p>
   </header>
 
   <article class="post-content">
@@ -75,11 +74,11 @@
 
 <p>My client was the totally color blind. He saw in shades of greys and I can only wonder how the world looks through his eyes.</p>
 
-<p>That was a huge problem to him. From little things like depending on his wife to dress to go work every morning, to more dangerous one, like not knowing if a traffic signal was Red or Green when he was travelling in a place where the traffic lights where horizontal instead of vertical. </p>
+<p>That was a huge problem to him. From little things like depending on his wife to dress to go work every morning, to more dangerous one, like not knowing if a traffic signal was red or green when he was travelling in a place where the traffic lights where horizontal instead of vertical. </p>
 
 <p>And of course he sent me to talk to his wife when I arrived at his office with pantone samples.</p>
 
-<p>Although I did study color theory and light physics was something that always interested me, I must confess that until then I’ve had never really though about color blindness. You could say I was a bad designer.</p>
+<p>Although I did study color theory and light physics is something that always interest me, I must confess that until then I’ve had never really though about color blindness. You could say I was a bad designer.</p>
 
 <p>Joseph Albers said:</p>
 
@@ -93,13 +92,7 @@
 
 <p><strong>Color blindness is the complete inability to perceive one or more of the three primary colors of light.</strong></p>
 
-<p>With color-deficient vision, it is more difficult to discriminate all three dimensions of color—hue, value, and chroma. The severity of color-vision deficiencies ranges from a little difficulty in distinguishing similar hues to the inability to perceive any color at all.</p>
-
-<h2 id="what-we-can-do">What we can do</h2>
-
-<p>All people with color-deficient vision can perceive differences in value and most can see a fairly wide range of hues.</p>
-
-<p>As I mention before, most color blind people have a deficiency with either Red or Green. </p>
+<p>With color deficient vision, it is more difficult to discriminate all three dimensions of color: hue, value, and chroma. The severity of color vision deficiencies ranges from a little difficulty in distinguishing similar hues to the inability to perceive any color at all. <strong>But all people with color-deficient vision can perceive differences in value and most can see a fairly wide range of hues.</strong></p>
 
 <p>In general, if the Red value is greater than the Blue, it appears in the yellows group, and if Red is less than Blue it appears in the Blues group. A color generally appears neutral when Green equals Blue, more or less regardless of the value for Red.</p>
 
@@ -107,9 +100,9 @@
 
 <p>Last week I’ve been involved in <a href="https://github.com/patternfly/patternfly/commit/33bafaab0950847893d3b784dbcd40eec0bd453f">implementing syntax highlighting</a> on <a href="https://www.patternfly.org">Patternfly</a>.</p>
 
-<p>There are lots of <a href="http://vimcolorschemetest.googlecode.com/">Syntax highliting themes</a> and <a href="http://gotoanswer.stanford.edu/?q=Syntax+Coloring%3A+Is+it+harder+for+color-blind+coders+to+program%3F">although syntax highlighting is almost never an issue for color blind users</a>, to proof this concept I decided to create one for this blog.</p>
+<p>There are lots of <a href="http://vimcolorschemetest.googlecode.com/">themes</a> and <a href="http://gotoanswer.stanford.edu/?q=Syntax+Coloring%3A+Is+it+harder+for+color-blind+coders+to+program%3F">although it’s almost never an issue for color blind users</a>, to proof this concept I decided to create one for this blog.</p>
 
-<p>With that in mind and using colors picked from Googles <a href="http://www.google.com/design/spec/style/color.html#color-color-palette">Material Design color pallete</a>. I came up with this theme:</p>
+<p>With that in mind and using colors picked from Googles <a href="http://www.google.com/design/spec/style/color.html#color-color-palette">Material Design color pallete</a>, I came up with this theme:</p>
 
 <h4 id="html">HTML</h4>
 
@@ -155,15 +148,15 @@
 
 <p><img src="/img/colorblind/compare.jpg" alt="color theme comparison" /></p>
 
-<p>This blog is based on <a href="http://jekyllrb.com/">jekyll</a> and it has built in support for syntax highlighting thanks to <a href="http://pygments.org/">Pygments</a>. In case you want to use this colorblind friendly theme for Pygments, the source is here.</p>
+<p>This blog is based on <a href="http://jekyllrb.com/">jekyll</a> and it has built in support for syntax highlighting thanks to <a href="http://pygments.org/">Pygments</a>. In case you want to use this colorblind friendly theme for Pygments, <a href="https://github.com/andresgalante/andresgalante.github.io/blob/master/_sass/_syntax-highlighting.scss">the source is here</a>.</p>
 
 <h2 id="how-to-test-it">How to test it</h2>
 
-<p>There are several tools to test color blind images. After testing some I found that these two come in handy:</p>
+<p>There are several tools to test color blind images. After trying a few of them, I found that these two come in handy:</p>
 
 <h4 id="photoshop">1. Photoshop</h4>
 
-<p>To test images, Adobe Photoshop under View &gt; Proof Setup &gt; Color Blindness, has an option to view images with Green-blind or Red-blind filters.</p>
+<p>To test images, Adobe Photoshop under <strong>View &gt; Proof Setup &gt; Color Blindness</strong>, has an option to view images with Green-blind or Red-blind filters.</p>
 
 <p><img src="/img/colorblind/ps.jpg" alt="adobe photoshop view option as color blind" /></p>
 
@@ -175,13 +168,11 @@
 
 <h2 id="the-translator">The translator</h2>
 
-<p>Last year, while doing my first steps with my startup <a href="http://www.outclassapp.com">Outclass</a>, we’ve been invited to a pre acceleration program called <a href="http://www.startupsc.com.br">Startup SC</a>. We share that experience with other startups, one of them was <a href="http://www.truevision.io">True Vision</a>.</p>
+<p>Last year, while doing the first steps with my startup <a href="http://www.outclassapp.com">Outclass</a>, we’ve been invited to a pre acceleration program called <a href="http://www.startupsc.com.br">Startup SC</a>. We share that experience with other startups, one of them was <a href="http://www.truevision.io">True Vision</a>.</p>
 
 <p>They have wichcraft a way to “translate” colors for color blind people. A small device is plug into your TV or computer, the user sets up it up and it adjust hue and saturation of the image. They even developed a mobile app.</p>
 
-<p>Although that is a huge advantage, it would be better they didn’t need to use it. </p>
-
-<p><em>NOTE TO SELF:</em> Always test the colors!</p>
+<p>Until all devices come with this kind of solutions as default there will be a need to always test colors.</p>
 
 <h4 id="references">References:</h4>
 

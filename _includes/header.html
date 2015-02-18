@@ -3,17 +3,12 @@
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">
-{% if page.path contains '_posts' or page.path contains '_drafts' or page.title contains "elevator"  %}
+{% if page.path contains '_posts' or page.path contains '_drafts' or page.title contains "About"  %}
 <i class="fa fa-arrow-left"></i> BACK
 {% else %}
-<!-- 
-<i class="fa fa-comment-o"></i>
-<i class="fa fa-asterisk"></i>
--->
 <i class="fa fa-dot-circle-o"></i>
  WELCOME HOME
 {% endif %} 
-
       <!-- {{ site.title }} -->
     </a>
 
