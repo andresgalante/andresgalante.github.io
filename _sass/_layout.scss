@@ -104,7 +104,27 @@
     padding: $spacing-unit 0;
     color: $grey-color;
     font-size: $small-font-size;
+    margin-top: $spacing-unit;
+    text-align: center;
+    p{
+      margin: 0;
+    }
 }
+
+.avatar{
+//  background: red;
+  margin: (-$spacing-unit - 40px) 0 ($spacing-unit / 2) 0;
+
+  img{
+    width: 80px;
+    height:80px;
+    border-radius: 40px;
+    margin: 0;
+    display: inline;
+    
+  }
+}
+
 
 .footer-heading {
     font-size: 18px;
@@ -244,3 +264,7 @@
         }
     }
 }
+
+
+
+
