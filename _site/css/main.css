@@ -180,7 +180,6 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: rgba(0, 0, 0, 0.87);
     line-height: 1.8; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
