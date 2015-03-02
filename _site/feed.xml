@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Andres Galantes &amp;#39; Blog</title>
-    <description>This is Andrés Galantes&amp;#39; personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband and tenis player (in alphabetical order).
+    <title>Andres Galante</title>
+    <description>This is Andrés Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband and tenis player (in alphabetical order).
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Mar 2015 11:47:42 -0300</pubDate>
-    <lastBuildDate>Mon, 02 Mar 2015 11:47:42 -0300</lastBuildDate>
+    <pubDate>Mon, 02 Mar 2015 11:53:10 -0300</pubDate>
+    <lastBuildDate>Mon, 02 Mar 2015 11:53:10 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -138,9 +138,9 @@
         <link>http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</guid>
         
-        <category>Patternfly,</category>
+        <category>Patternfly</category>
         
-        <category>setup,</category>
+        <category>setup</category>
         
         <category>Bower</category>
         
@@ -277,15 +277,11 @@
         <link>http://andresgalante.github.io/howto/2015/02/18/colorblindproof-syntax-highlighting.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/02/18/colorblindproof-syntax-highlighting.html</guid>
         
-        <category>Patternfly,</category>
+        <category>Patternfly</category>
         
-        <category>color</category>
+        <category>colorblindness</category>
         
-        <category>blindness,</category>
-        
-        <category>Syntax</category>
-        
-        <category>highliting</category>
+        <category>Syntaxhighliting</category>
         
         
         <category>howto</category>
@@ -427,11 +423,11 @@
         <link>http://andresgalante.github.io/howto/2015/02/09/gulp-guide-for-designers.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/02/09/gulp-guide-for-designers.html</guid>
         
-        <category>Patternfly,</category>
+        <category>Patternfly</category>
         
-        <category>setup,</category>
+        <category>setup</category>
         
-        <category>Gulp,</category>
+        <category>Gulp</category>
         
         <category>BrowserSync</category>
         
@@ -550,9 +546,9 @@
         <link>http://andresgalante.github.io/howto/2015/02/06/patternfly.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/02/06/patternfly.html</guid>
         
-        <category>Patternfly,</category>
+        <category>Patternfly</category>
         
-        <category>setup,</category>
+        <category>setup</category>
         
         <category>Bower</category>
         
@@ -667,21 +663,19 @@
         <link>http://andresgalante.github.io/design/2015/02/02/onboarding-is-like-parent.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/design/2015/02/02/onboarding-is-like-parent.html</guid>
         
-        <category>on-boarding,</category>
+        <category>on-boarding</category>
         
-        <category>design,</category>
+        <category>design</category>
         
-        <category>UPS,</category>
+        <category>UPS</category>
         
-        <category>Unified</category>
+        <category>UnifiedPushConsole</category>
         
-        <category>Push</category>
-        
-        <category>Console,</category>
-        
-        <category>Aerogear,</category>
+        <category>Aerogear</category>
         
         <category>Patternfly</category>
+        
+        <category>jboss</category>
         
         
         <category>design</category>

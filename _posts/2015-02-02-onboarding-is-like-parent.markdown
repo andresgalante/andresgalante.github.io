@@ -3,7 +3,7 @@ layout: post
 title:  "On-boarding new users is like parenting"
 date:   2015-02-02 23:05:36
 categories: design
-tags: on-boarding, design, UPS, Unified Push Console, Aerogear, Patternfly
+tags: on-boarding design UPS UnifiedPushConsole Aerogear Patternfly jboss
 ---
 
 This is my son, his name is Leon and he is an artist.

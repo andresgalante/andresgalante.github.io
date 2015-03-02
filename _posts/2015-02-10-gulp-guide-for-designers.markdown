@@ -3,7 +3,7 @@ layout: post
 title:  "Gulp guide for designers"
 date:   2015-02-09 23:05:36
 categories: howto
-tags: Patternfly, setup, Gulp, BrowserSync
+tags: Patternfly setup Gulp BrowserSync
 ---
 
 [Gulp](http://gulpjs.com) is a Task / Build runner. It's easy to use, has a simple api, and is efficient. Gulp.js makes use of pipes for streaming data that needs to be processed.

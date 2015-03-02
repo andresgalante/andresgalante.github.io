@@ -3,7 +3,7 @@ layout: post
 title:  "How to set up Patternfly"
 date:   2015-02-06 23:05:36
 categories: howto
-tags: Patternfly, setup, Bower
+tags: Patternfly setup Bower
 ---
 
 [PatternFly](https://www.patternfly.org/) is an open interface project that promotes design commonality and improved user experience across enterprise IT products and applications.
