@@ -104,7 +104,9 @@
     padding: $spacing-unit 0;
     color: $grey-color;
     font-size: $small-font-size;
-    margin-top: $spacing-unit;
+    margin-top: $spacing-unit * 2;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
     text-align: center;
     p{
       margin: 0;

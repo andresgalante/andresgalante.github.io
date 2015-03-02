@@ -2,13 +2,146 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Andres Galantes Blog</title>
-    <description>This is Andrés Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband, tenis player (in alphabetical order).
+    <description>This is Andrés Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband and tenis player (in alphabetical order).
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Feb 2015 17:23:05 -0300</pubDate>
-    <lastBuildDate>Thu, 19 Feb 2015 17:23:05 -0300</lastBuildDate>
+    <pubDate>Mon, 02 Mar 2015 11:19:42 -0300</pubDate>
+    <lastBuildDate>Mon, 02 Mar 2015 11:19:42 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Advance Patternfly settings</title>
+        <description>&lt;p&gt;A few weeks ago I wrote &lt;a href=&quot;/howto/2015/02/06/patternfly.html&quot;&gt;how to set up Patternfly to start a new project&lt;/a&gt;. This time I am going to dive deeper into Patternfly and Boostrap structures to customise and minimise the impact on the compiled css.&lt;/p&gt;
+
+&lt;p&gt;Patternfly imports Boostrap, and we import Patternfly as a base for our less file.&lt;/p&gt;
+
+&lt;p&gt;When we concatenate the base layer of Boostrap styling plus the second layer of Patternfly styles plus our styles by importing one into the other, we end up with a huge css that defines classes and structures that we might never use.&lt;/p&gt;
+
+&lt;p&gt;For example, if our project doesn’t use the modal component, there is no point in loading it to our css.&lt;/p&gt;
+
+&lt;p&gt;To achieve this customisation of component we are going to look into the nuts and bolts of patternfly and Boostrap.&lt;/p&gt;
+
+&lt;h2 id=&quot;import-what-really-matters&quot;&gt;Import what really matters&lt;/h2&gt;
+
+&lt;p&gt;Until now we created a &lt;code&gt;styles.less&lt;/code&gt; files that imports patternfly like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/patternfly.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As I mention before this will compile into a huge css files. &lt;/p&gt;
+
+&lt;p&gt;In order to import just the parts of patternfly and bootstrap that matters to our project, we are going to look into &lt;code&gt;bootrap.less&lt;/code&gt; and &lt;code&gt;patternfly.less&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;TIP&lt;/em&gt; By keeping &lt;code&gt;/bower_components&lt;/code&gt; untouched, you’ll be able to bower updates.&lt;/p&gt;
+
+&lt;h2 id=&quot;boostrap-layer&quot;&gt;Boostrap layer&lt;/h2&gt;
+
+&lt;p&gt;Lets start from the base: Bootstrap.&lt;/p&gt;
+
+&lt;p&gt;When we use bower to install Patternfly, we also install Bootsrap as a component. Open &lt;code&gt;bootstrap.less&lt;/code&gt; on your text editor, you’ll find it under &lt;code&gt;bower_components/patternfly/components/Boostrap/less/Boostrap.less&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a list of core and component styles. These are the steps to do:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Select all in &lt;code&gt;bootstrap.less &lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Copy&lt;/li&gt;
+  &lt;li&gt;Open &lt;code&gt;styles.less&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Paste it on the beginning of &lt;code&gt;styles.less&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Change the path of the imports so they point to the correct location &lt;code&gt;../bower_components/patternfly/components/Boostrap/less/NAME_OF_THE_FILE&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now, don’t touch the core elements, you’ll need those to do the base styling like typography settings, grids, etc.&lt;/p&gt;
+
+&lt;p&gt;Go through the list of component and comment out with a ‘//’ the ones you’ll not use. Let’s say your project doesn’t use breadcrumbs or pagination, go ahead and comment those out:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Components&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/component-animations.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/glyphicons.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/dropdowns.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/button-groups.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/input-groups.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/navs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/navbar.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/breadcrumbs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/pagination.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/pager.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/labels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/badges.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/jumbotron.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/thumbnails.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/alerts.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/progress-bars.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/media.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/list-group.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/panels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/wells.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/close.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;patternfly-layer&quot;&gt;Patternfly layer&lt;/h2&gt;
+
+&lt;p&gt;Now lets do the same with patternfly styles. Open &lt;code&gt;patternfly.less&lt;/code&gt; on your text editor, you’ll find it under &lt;code&gt;/bower_components/patternfly/less/patternfly.less&lt;/code&gt; and repeat the same steps: select, copy, paste and change the path.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;IMPORTANT&lt;/em&gt; Remember to paste patternfly styles after bootstrap styles.&lt;/p&gt;
+
+&lt;p&gt;Lets go back to our previews example, we are not using breadcrumbs or pagination, so we comment out those lines:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* PatternFly overrides and new stuff */&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/variables.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/mixins.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/alerts.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/badges.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/bootstrap-combobox.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/bootstrap-select.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/bootstrap-treeview.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/breadcrumbs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/buttons.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/close.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/datatables.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/dropdowns.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/fonts.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/forms.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/icons.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/infotip.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/labels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/list-group.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/login.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/modals.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/navbar.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/pager.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/pagination.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/panels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/popovers.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/progress-bars.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/search.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/sidebar.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/spinner.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/tables.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/tabs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/tooltip.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/type.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;your-styles-layer&quot;&gt;Your styles layer&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;IMPORTANT&lt;/em&gt; Remember &lt;strong&gt;not&lt;/strong&gt; to include a call to patternfly.less &lt;code&gt;@import &quot;/bower_components/patternfly/less/variables.less&quot;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Write your styles after Patternfly styles on styles.less.&lt;/p&gt;
+
+&lt;p&gt;Once compiled,  styles.css generated from styles.less will not include any reference to breadcrumbs or pagination, making it lighter and faster to load.&lt;/p&gt;
+
+&lt;h2 id=&quot;better-comment-out-than-delete&quot;&gt;Better comment out than delete&lt;/h2&gt;
+
+&lt;p&gt;Any comment with less &lt;code&gt;//&lt;/code&gt; will not became part of the compiled css. It’s good to keep them commented in case you want to add that component later in the project.&lt;/p&gt;
+
+&lt;p&gt;You’ll want your production code to be as clean as possible. Sending less code is cheaper and faster.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Mar 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</guid>
+        
+        
+        <category>howto</category>
+        
+      </item>
     
       <item>
         <title>Colorblindproof syntax highliting</title>
