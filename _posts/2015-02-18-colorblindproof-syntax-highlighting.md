@@ -3,6 +3,7 @@ layout: post
 title:  "Colorblindproof syntax highliting"
 date:   2015-02-18 23:05:36
 categories: howto
+tags: Patternfly, color blindness, Syntax highliting
 ---
 
 A few years ago I worked with a client that was [color blind](http://en.wikipedia.org/wiki/Color_blindness). 

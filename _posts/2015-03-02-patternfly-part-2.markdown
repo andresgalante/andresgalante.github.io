@@ -3,6 +3,7 @@ layout: post
 title:  "Advance Patternfly settings"
 date:   2015-03-06 23:05:36
 categories: howto
+tags: Patternfly, setup, Bower
 ---
 
 A few weeks ago I wrote [how to set up Patternfly to start a new project](/howto/2015/02/06/patternfly.html). This time I am going to dive deeper into Patternfly and Boostrap structures to customise and minimise the impact on the compiled css.
