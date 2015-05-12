@@ -10,7 +10,7 @@ tags: Aerogear patternfly devnation summit jboss uxd design
 
 If you follow this blog, the fact that I've been involved in the [PatternFly](https://www.patternfly.org) community for the past few months (and that it's an awesome project) shouldn't be new.
 
-The big news is that the PatternFly team and Iwill be at [Red Hat Summit](http://www.redhat.com/summit) and [DevNation](http://www.devnation.org) in Boston this year and you can meet us there.
+The big news is that the PatternFly team and I will be at [Red Hat Summit](http://www.redhat.com/summit) and [DevNation](http://www.devnation.org) in Boston this year and you can meet us there.
 
 
 ## What is PatternFly
