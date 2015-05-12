@@ -6,156 +6,61 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Mar 2015 23:32:01 -0300</pubDate>
-    <lastBuildDate>Sun, 29 Mar 2015 23:32:01 -0300</lastBuildDate>
+    <pubDate>Tue, 12 May 2015 11:02:58 -0300</pubDate>
+    <lastBuildDate>Tue, 12 May 2015 11:02:58 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Patternfly talk</title>
-        <description>&lt;p&gt;Patternfly DevNation&lt;/p&gt;
+        <title>PatternFly on DevNation 2015</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/patternfly-devnation/devnation-patternfly.jpg&quot; alt=&quot;DevNation + PatternFly&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;image-of-my-beach-house&quot;&gt;image of my beach house&lt;/h4&gt;
-&lt;p&gt;Last year my wife and I decided to skip winter. We rent a house by the beach in Dominican Republic and we spent our days on the sand.&lt;/p&gt;
+&lt;p&gt;If you follow this blog, the fact that I’ve been involved in the &lt;a href=&quot;https://www.patternfly.org&quot;&gt;PatternFly&lt;/a&gt; community for the past few month (and that it’s an awesome project) shouldn’t be new. &lt;/p&gt;
 
-&lt;h4 id=&quot;image-of-the-beach&quot;&gt;image of the beach&lt;/h4&gt;
-&lt;p&gt;This is the story of how I went from there to been here talking about patternfly.&lt;/p&gt;
+&lt;p&gt;The big news is that the PatternFly team and myself will be at &lt;a href=&quot;http://www.redhat.com/summit&quot;&gt;Red Hat Summit&lt;/a&gt; and &lt;a href=&quot;http://www.devnation.org&quot;&gt;DevNation&lt;/a&gt; in Boston in June and you can meet us there.&lt;/p&gt;
 
-&lt;h4 id=&quot;pictures-of-alan-my-boss-and-paul-my-other-boss&quot;&gt;Pictures of Alan (my boss) and Paul (my other boss)&lt;/h4&gt;
-&lt;p&gt;On August I had an interview to join Red Hat UX team.
-It was odd: I was wearing swim suite, at the beach, having a job interview over hangout with Alan and Paul, two of my current bosses.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-patternfly&quot;&gt;What is PatternFly&lt;/h2&gt;
 
-&lt;h4 id=&quot;pictur-of-me-with-a-dialog-box-you-had-me-at-hello&quot;&gt;Pictur of me with a dialog box “You had me at hello.”&lt;/h4&gt;
-&lt;p&gt;During the interview Paul mention Patternfly and it was love at first sight. I was already using bootstrap on most of my projects, and Patternfly just click. A library of UI patterns makes sense and I wanted to be part of that.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;patternfly.org&quot;&gt;PatternFly&lt;/a&gt; is a community project that promotes design commonality and improved user experience. Its offerings include visual and behavioral patterns based on research and UX best practices that solve common design problems. &lt;/p&gt;
 
-&lt;h4 id=&quot;pictures-of-paulmy-other-boss-with-a-dialog-box-im-gonna-make-him-an-offer-he-cant-refuse&quot;&gt;Pictures of Paul(my other boss) with a dialog box “I’m gonna make him an offer he can’t refuse.”&lt;/h4&gt;
-&lt;p&gt;4 month later I was a Red Hatter, part of the UX team and dedicated to jboss mobile effort: Aerogear.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-devnation&quot;&gt;What is DevNation&lt;/h2&gt;
 
-&lt;h4 id=&quot;aerogear-logo&quot;&gt;Aerogear logo&lt;/h4&gt;
-&lt;p&gt;That’s where I met a fantastic group of people: The Aerogear team. It amaze me how Open source communities work together: everyone helps each other, if one fails the hole team fails. There is a sense of belonging, a sense a duty that makes you always do your best.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.devnation.org&quot;&gt;DevNation&lt;/a&gt; is an Open Source Conference by and for developers across the globe. It’ll be held on June 21th to 25th, 2015 at the Hynes Convention Center in Boston, MA&lt;/p&gt;
 
-&lt;h4 id=&quot;yay&quot;&gt;yay!&lt;/h4&gt;
-&lt;p&gt;As a UX designer my main goal was to to help the team update and improve Aerogear Unified Push Console.
-And to me that meant the perfect opportunity to put my hands on Patternfly for the first time.&lt;/p&gt;
+&lt;h2 id=&quot;devnation--patternfly&quot;&gt;DevNation + PatternFly&lt;/h2&gt;
 
-&lt;h4 id=&quot;image-of-old-ups&quot;&gt;Image of old UPS&lt;/h4&gt;
+&lt;p&gt;Robb Hamilton and I are giving a one hour talk to present PatternFly. We’ll introduce the community, show what we are doing at Red Hat and how you can be part of this project.&lt;/p&gt;
 
-&lt;p&gt;This (the image) is how the UPS looked like. It was based on very early Patternfly, but its implementation was not following its guidelines correctly.&lt;/p&gt;
+&lt;p&gt;This presentation will be on Tuesday, June 23th at 11:40AM on Room 202.&lt;/p&gt;
 
-&lt;p&gt;Jakob Nielsen says that consistency is one of the most powerful usability principles: when things always behave the same, users don’t have to worry about what will happen. Instead, they know what will happen based on earlier experience.&lt;/p&gt;
+&lt;p&gt;You’ll also find us and others from the PatternFly team at the PatternFly Booth at the Red Hat Developer Community Central, Room 210 during Wednesday 24th and Thursday 25th.&lt;/p&gt;
 
-&lt;p&gt;A UPS user will probably use other Red Hat products and to keep consistency we follow patterns.&lt;/p&gt;
+&lt;p&gt;We will be available to talk about UX, front-end, design or answer any question. Plus we’ll be giving away super cool PatternFly t-shirts, stickers and there’ll be a draw for a &lt;a href=&quot;https://getpebble.com&quot;&gt;Pebble Watch&lt;/a&gt; for the ones that visit our Booth and star the &lt;a href=&quot;https://github.com/patternfly&quot;&gt;PatternFly community on GitHub&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;design-patterns-are-means-of-capturing-useful-design-solutions-and-generalizing-them-to-address-similar-problems----about-faces-cooper-reiman-crionin-noessel&quot;&gt;Design patterns are means of capturing useful design solutions and generalizing them to address similar problems. – About Faces: Cooper, Reiman, Crionin, Noessel.&lt;/h4&gt;
-&lt;p&gt;(read quote)&lt;/p&gt;
+&lt;p&gt;For a closer encounter with the community, we will be giving a demo at the Community Central.&lt;/p&gt;
 
-&lt;p&gt;By taking advantage of existing work, we can focus on solving new problems, rather than reinventing the wheel.&lt;/p&gt;
+&lt;p&gt;Come visit us at DevNation in June. Register with code &lt;strong&gt;RHSRAF&lt;/strong&gt; for 10% off at &lt;a href=&quot;http://www.devnation.org&quot;&gt;devnation.org&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Of course thats not easy. The Patternfly team spends a lot of time to identify which patterns to work on.  You wouldn’t believe the amount of effort, discussion and testing behind each one. &lt;/p&gt;
-
-&lt;p&gt;So when they approve a patterns you can be sure that it’ll work.&lt;/p&gt;
-
-&lt;h4 id=&quot;patternfly-logo&quot;&gt;Patternfly logo&lt;/h4&gt;
-
-&lt;p&gt;As Robb mentioned earlier, they created a reference implementation of all of their Patterns. We’re talking working code – login pages that looked good, widgets, perfect CSS.&lt;/p&gt;
-
-&lt;p&gt;And I think he’ll tell you that, at first, his team really didn’t expect anyone to use the reference implementation directly. They wanted their perfectly working, beautiful, amazing code to simply be an example for how to do it.&lt;/p&gt;
-
-&lt;h4 id=&quot;img-tool-box-with-tools-maybe-add-some-logos&quot;&gt;img: tool box with tools, maybe add some logos&lt;/h4&gt;
-
-&lt;p&gt;There I was, ready to start: I had a library with patterns, amazing code bits and a Red Hat project to work on. &lt;/p&gt;
-
-&lt;h4 id=&quot;img&quot;&gt;img&lt;/h4&gt;
-
-&lt;p&gt;First impressions are crucial and we weren’t doing a great job on UPS. We set expectations high but we didn’t help user achieve their goals.&lt;/p&gt;
-
-&lt;p&gt;That’s why, for the new design, I wanted to take a user centric approach and add a wizard and create blank saltes to guide users.&lt;/p&gt;
-
-&lt;p&gt;But there weren’t Wizard or blank slates patterns on Patternfly.&lt;/p&gt;
-
-&lt;h4 id=&quot;give-back&quot;&gt;Give back&lt;/h4&gt;
-
-&lt;p&gt;That’s the beauty of open source projects: you can build uppon them and contribute back to the community.&lt;/p&gt;
-
-&lt;p&gt;So I created a wizard and implemented blank slates, did some gorilla user testing and send a draft for the Patternfly team to review.&lt;/p&gt;
-
-&lt;p&gt;My pattern was tested even more, and added to the library.&lt;/p&gt;
-
-&lt;h4 id=&quot;angular--boostrap--patternfly&quot;&gt;Angular + Boostrap + Patternfly&lt;/h4&gt;
-
-&lt;p&gt;UPS is based on Angular.js, Angular plays nicely with boostrap and Patternfly is based on boostrap.&lt;/p&gt;
-
-&lt;p&gt;So implementation was straight forward.&lt;/p&gt;
-
-&lt;h4 id=&quot;gregs-patternfly-rcue&quot;&gt;Gregs patternfly RCUE&lt;/h4&gt;
-
-&lt;p&gt;One more thing.&lt;/p&gt;
-
-&lt;p&gt;As Robb mentioned, internally in Red Hat we have the RCUE project, which is a fancied-up copy of PatternFly. aka the downstream project. Red Hat colors, logos, etc.&lt;/p&gt;
-
-&lt;p&gt;And Aerogear UPS downstream project is called Red Hat JBoss Unified Push.&lt;/p&gt;
-
-&lt;p&gt;If you think about it, by using PatternFly and RCUE, we can have almost the same codebase change its brand by very easily swapping out the look-and-feel library. Almost like an application skin.&lt;/p&gt;
-
-&lt;p&gt;It literally took me 10 minutes to go from Patternfly to RCUE on UPS.&lt;/p&gt;
-
-&lt;h4 id=&quot;ups-now-image&quot;&gt;UPS now image&lt;/h4&gt;
-&lt;p&gt;I am really happy with how much better the end result is.
-The new design saw the light on May, and initial user testing were very successful.&lt;/p&gt;
-
-&lt;h4 id=&quot;lets-be-honest-&quot;&gt;Lets be honest :)&lt;/h4&gt;
-&lt;p&gt;Now lets be brutally honest&lt;/p&gt;
-
-&lt;p&gt;Design patterns are not recipes or plug and play solutions. Patterns are always context specific, they are design to be applicable to common design situations that share similar contexts, constraints, tensions and forces.&lt;/p&gt;
-
-&lt;p&gt;Each implementation of a pattern differs a little from the other, thats why to have a successful result you’ll always need a UX expert or a designer.&lt;/p&gt;
-
-&lt;h4 id=&quot;show-dont-tell&quot;&gt;Show, don’t tell&lt;/h4&gt;
-&lt;p&gt;Patternfly is organic, is alive and growing.
-Come to our booth and we will show you how you can benefit and be part of it.&lt;/p&gt;
-
-&lt;h4 id=&quot;patternflyorg&quot;&gt;patternfly.org&lt;/h4&gt;
-&lt;p&gt;questions?&lt;/p&gt;
 </description>
-        <pubDate>Fri, 06 Dec 2019 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2019/12/06/presentation.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2019/12/06/presentation.html</guid>
+        <pubDate>Tue, 12 May 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2015/05/12/patternfly-on-devnation.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/05/12/patternfly-on-devnation.html</guid>
         
-        <category>Patternfly</category>
+        <category>Aerogear</category>
         
-        <category>setup</category>
+        <category>patternfly</category>
         
-        <category>Bower</category>
+        <category>devnation</category>
         
+        <category>summit</category>
         
-        <category>howto</category>
+        <category>jboss</category>
         
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>IDEAS</title>
-        <description>&lt;ul&gt;
-  &lt;li&gt;pattenrfly?&lt;/li&gt;
-  &lt;li&gt;redhat demo&lt;/li&gt;
-  &lt;li&gt;house of cards, all charpters at once == ux behavior ?&lt;/li&gt;
-  &lt;li&gt;homepage aerogear website, first 1 second&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 06 Dec 2019 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2019/12/06/ideas.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2019/12/06/ideas.html</guid>
+        <category>uxd</category>
         
-        <category>Patternfly</category>
-        
-        <category>setup</category>
-        
-        <category>Bower</category>
+        <category>design</category>
         
         
-        <category>howto</category>
+        <category>patternfly</category>
         
         <author>
           <name>Andres Galante</name>
