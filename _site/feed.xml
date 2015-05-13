@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 May 2015 16:58:12 -0300</pubDate>
-    <lastBuildDate>Tue, 12 May 2015 16:58:12 -0300</lastBuildDate>
+    <pubDate>Wed, 13 May 2015 12:05:13 -0300</pubDate>
+    <lastBuildDate>Wed, 13 May 2015 12:05:13 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -20,7 +20,7 @@
 
 &lt;h2 id=&quot;what-is-patternfly&quot;&gt;What is PatternFly&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;patternfly.org&quot;&gt;PatternFly&lt;/a&gt; is a community project that promotes design commonality and improved user experience. Its offerings include visual and behavioral patterns based on research and UX best practices that solve common design problems. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.patternfly.org&quot;&gt;PatternFly&lt;/a&gt; is a community project that promotes design commonality and improved user experience. Its offerings include visual and behavioral patterns based on research and UX best practices that solve common design problems. &lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-devnation&quot;&gt;What is DevNation&lt;/h2&gt;
 
@@ -32,13 +32,13 @@
 
 &lt;p&gt;This presentation will be on Tuesday, June 23th at 11:40AM in Room 202.&lt;/p&gt;
 
-&lt;p&gt;You can find us and other members of the PatternFly team in the PatternFly Booth located in the Red Hat Developer Community Central Room (Room 210) on Wednesday, June 24th and Thursday, June 25th.&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&quot;/img/patternfly-devnation/pebble.jpg&quot; alt=&quot;Pebble watch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find us and other members of the PatternFly team in the PatternFly Booth located in the Red Hat Developer Community Central Room (Room 210) on Wednesday, June 24th and Thursday, June 25th.&lt;/p&gt;
 
 &lt;p&gt;We will be available to talk about UX, front-end development, design or answer any questions. Plus we’ll be giving away super cool PatternFly t-shirts, stickers and if you star the PatternFly community on GitHub, you may win a Pebble Watch. Make sure to visit our booth for more details and to enter the drawing. &lt;/p&gt;
 
-&lt;p&gt;For a closer encounter with the community, we will also be giving a demo at in the Community Central Room. &lt;/p&gt;
+&lt;p&gt;For a closer encounter with the community, we will also be giving a demo at in the Community Central Room.&lt;/p&gt;
 
 &lt;p&gt;Come visit us at DevNation in June. Register with code &lt;strong&gt;RHSRAF&lt;/strong&gt; for 10% off at &lt;a href=&quot;http://www.devnation.org&quot;&gt;devnation.org&lt;/a&gt;.&lt;/p&gt;
 
