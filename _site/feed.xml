@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 May 2015 23:46:12 -0300</pubDate>
-    <lastBuildDate>Wed, 27 May 2015 23:46:12 -0300</lastBuildDate>
+    <pubDate>Thu, 28 May 2015 00:53:21 -0300</pubDate>
+    <lastBuildDate>Thu, 28 May 2015 00:53:21 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -16,7 +16,7 @@
 
 &lt;p&gt;Back in 2008 I had an eureka moment when I read &lt;a href=&quot;https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments&quot;&gt;this article&lt;/a&gt; from &lt;a href=&quot;https://signalvnoise.com&quot;&gt;Noise vs Signals blog&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Jason Fried explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/jasonfried&quot;&gt;Jason Fried&lt;/a&gt; explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.&lt;/p&gt;
 
 &lt;p&gt;This workflow made so much sense to me that I wanted to start doing it right away. Although I could do it on my own projects, I was a freelancer and my clients loved mockups.&lt;/p&gt;
 
@@ -24,7 +24,7 @@
 
 &lt;h2 id=&quot;why-bother&quot;&gt;Why bother&lt;/h2&gt;
 
-&lt;p&gt;Jason goes over the &lt;a href=&quot;https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments&quot;&gt;main reasons&lt;/a&gt;, but this is why I bother:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/jasonfried&quot;&gt;Jason&lt;/a&gt; goes over the &lt;a href=&quot;https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments&quot;&gt;main reasons&lt;/a&gt;, but this is why I bother:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Let’s be honest: I am lazy. It takes lots of patience, effort and time to build an accurate photoshop image.&lt;/li&gt;
@@ -66,8 +66,8 @@
 &lt;p&gt;I have the honor to work with extremely talented designer that don’t code and build beautiful interfaces. I just hope my experience show a different design path that has given me great satisfactions.&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 May 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</guid>
+        <link>http://andresgalante.github.io/design/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</guid>
         
         <category>Aerogear</category>
         
@@ -82,7 +82,7 @@
         <category>code</category>
         
         
-        <category>patternfly</category>
+        <category>design</category>
         
         <author>
           <name>Andres Galante</name>

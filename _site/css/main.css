@@ -141,7 +141,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after {
+.wrapper:after, .footer-col-wrapper:after, .post-navigation:after {
   content: "";
   display: table;
   clear: both; }
@@ -301,7 +301,16 @@ pre {
 
 .post-meta {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.54); }
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 30px; }
+  .post-meta img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 0 5px 0 0;
+    display: inline;
+    border: none;
+    box-shadow: none; }
 
 .post-link {
   display: block;
@@ -338,6 +347,20 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+.post-navigation {
+  font-weight: 600;
+  margin-top: 60px;
+  padding-top: 20px; }
+  .post-navigation a {
+    float: left; }
+    .post-navigation a i {
+      text-decoration: none;
+      margin-right: 5px; }
+  .post-navigation a[rel="next"] {
+    float: right; }
+    .post-navigation a[rel="next"] i {
+      margin-left: 5px; }
 
 /**
  * Syntax highlighting styles

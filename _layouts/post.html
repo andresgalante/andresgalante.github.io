@@ -6,7 +6,21 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">
+            <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
+
+      <a href="/about">Andres Galante</a> 
+      wrote this on 
+      {{ page.date | date: "%B %d, %Y" }}
+
+      {% if page.categories %} under {{ page.categories }} category.{% endif %}
+
+      <!--
+      USE THIS FOR CATEGORIES!
+      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+      -->
+    </p>
   </header>
 
   <article class="post-content">
@@ -34,5 +48,15 @@ layout: default
 
 </div>
 -->
+
+  <div class="post-navigation">
+  {% if page.previous %} 
+  <a rel="prev" href="{{ page.previous.url }}"><i class="fa fa-arrow-left"></i>{{ page.previous.title }}</a>
+  {% endif %}
+
+  {% if page.next %} 
+  <a rel="next" href="{{ page.next.url }}">{{ page.next.title }}<i class="fa fa-arrow-right"></i></a>
+  {% endif %}
+  </div>
 
 </div>

@@ -213,6 +213,16 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    line-height: 30px;
+  img{
+    width: 30px;
+    height:30px;
+    border-radius: 15px;
+    margin: 0 5px 0 0;
+    display: inline; 
+    border: none;
+    box-shadow: none;   
+  }
 }
 
 .post-link {
@@ -241,6 +251,9 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    p{
+//      text-indent: 30px;
+    }
 
     h2 {
         font-size: 32px;
@@ -268,5 +281,24 @@
 }
 
 
-
-
+// post-navigation
+.post-navigation{
+//  border-top: 1px solid $grey-color-border;
+  font-weight: 600;
+  margin-top: 60px;
+  padding-top: 20px;
+  @extend %clearfix;
+  a{
+    float: left;
+    i{
+      text-decoration: none;
+      margin-right: 5px;
+    }
+  }
+  a[rel="next"]{
+    float: right;
+    i{
+      margin-left: 5px;
+    }
+  }
+}

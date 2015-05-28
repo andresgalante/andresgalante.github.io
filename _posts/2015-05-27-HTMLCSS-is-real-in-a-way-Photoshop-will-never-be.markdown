@@ -2,7 +2,7 @@
 layout: post
 title:  "HTML/CSS is real in a way Photoshop will never be"
 date:   2015-05-27 23:05:36
-categories: patternfly
+categories: design
 tags: Aerogear uxd design html css code
 comments: false
 ---
@@ -12,7 +12,7 @@ comments: false
 
 Back in 2008 I had an eureka moment when I read [this article](https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments) from [Noise vs Signals blog](https://signalvnoise.com).
 
-Jason Fried explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.
+[Jason Fried](https://twitter.com/jasonfried) explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.
 
 This workflow made so much sense to me that I wanted to start doing it right away. Although I could do it on my own projects, I was a freelancer and my clients loved mockups.
 
@@ -21,7 +21,7 @@ It wasn't until recently, working at Red Hat within an open source community tha
 
 ## Why bother
 
-Jason goes over the [main reasons](https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments), but this is why I bother:
+[Jason](https://twitter.com/jasonfried) goes over the [main reasons](https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments), but this is why I bother:
 
 - Let's be honest: I am lazy. It takes lots of patience, effort and time to build an accurate photoshop image.
 - Creating UIs on Photoshop is a tedious work that never really represent the end result, for example text in Photoshop is not the text on the web.
