@@ -4,6 +4,7 @@ title:  "PatternFly at DevNation 2015"
 date:   2015-05-12 23:05:36
 categories: patternfly
 tags: Aerogear patternfly devnation summit jboss uxd design
+comments: false
 ---
 
 ![DevNation + PatternFly](/img/patternfly-devnation/devnation-patternfly.jpg)
@@ -35,5 +36,3 @@ We will be available to talk about UX, front-end development, design or answer a
 For a closer encounter with the community, we will also be giving a demo at in the Community Central Room.
 
 Come visit us at DevNation in June. Register with code **RHSRAF** for 10% off at [devnation.org](http://www.devnation.org).
-
-

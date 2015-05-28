@@ -6,9 +6,89 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 May 2015 12:05:13 -0300</pubDate>
-    <lastBuildDate>Wed, 13 May 2015 12:05:13 -0300</lastBuildDate>
+    <pubDate>Wed, 27 May 2015 22:19:52 -0300</pubDate>
+    <lastBuildDate>Wed, 27 May 2015 22:19:52 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>HTML/CSS is real in a way Photoshop will never be</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/no-photoshop/no-photoshop.png&quot; alt=&quot;HTML/CSS is real in a way Photoshop will never be&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Back in 2008 I had an eureka moment when I read &lt;a href=&quot;https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments&quot;&gt;this article&lt;/a&gt; from &lt;a href=&quot;https://signalvnoise.com&quot;&gt;Noise vs Signals blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Jason Fried explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.&lt;/p&gt;
+
+&lt;p&gt;This workflow made so much sense to me that I wanted to start doing it right away. Although I could do it on my own projects, I was a freelancer and my clients loved mockups.&lt;/p&gt;
+
+&lt;p&gt;It wasn’t until recently, working at Red Hat within an open source community that I saw how this workflow can benefit and improve the relationship between designers and developers to generate amazing result.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-bother&quot;&gt;Why bother&lt;/h2&gt;
+
+&lt;p&gt;Jason goes over the &lt;a href=&quot;https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments&quot;&gt;main reasons&lt;/a&gt;, but this is why I bother:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Let’s be honest: I am lazy. It takes lots of patience, effort and time to build an accurate photoshop image.&lt;/li&gt;
+  &lt;li&gt;Creating UIs on Photoshop is a tedious work that never really represent the end result, for example text in Photoshop is not the text on the web.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To me it’s just a big waste of time. At the end of the day, implementation is done in HTML/CSS anyway. &lt;/p&gt;
+
+&lt;p&gt;HTML/CSS is as much a drawing tool as photoshop, just better and real.&lt;/p&gt;
+
+&lt;h2 id=&quot;shows-results-instead-of-expectations&quot;&gt;Shows results instead of expectations&lt;/h2&gt;
+
+&lt;p&gt;I am a designer and I work with developers. Developers have developer eyes, which are very different from designer eye. &lt;/p&gt;
+
+&lt;p&gt;Designer are strange. We care about typography to the point that we get annoyed if the elevator numbers doesn’t have the correct kerning. We generate pheromones when we see good alignment and spacing. We just care about things that no other human been does.&lt;/p&gt;
+
+&lt;p&gt;My boss once told me that if you give an image to 10 different developers you’ll get 10 different implementations, and most likely none will be the one you’ve envisioned. He is spot on.&lt;/p&gt;
+
+&lt;p&gt;When we handle a perfectly crafted UI image to a developer to implement, it’s just silly to expect that he will care about the same things we do.&lt;/p&gt;
+
+&lt;p&gt;When I skip mockups and create HTML prototypes I am not only speaking the same language the developers do, but also making sure the end result looks exactly how I intended.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-paper-to-html-workflow-works&quot;&gt;The paper to HTML workflow works&lt;/h2&gt;
+
+&lt;p&gt;A few years ago I was in Beijing talking to one of the few Chinese persons I knew that spoke english. I asked why was it that almost none Chinese spoke english, and he told me that since there are almost 1.5B Chinese in the world, we should be the ones learning Chinese and not the other way around.&lt;/p&gt;
+
+&lt;p&gt;And he was right.&lt;/p&gt;
+
+&lt;p&gt;On open source projects designers should adapt to the community workflow. Our deliverables must meet the communities expectations and be inside their comfort zone. We shouldn’t expect to change a team mind to fit our ways.&lt;/p&gt;
+
+&lt;p&gt;This has work very well on the &lt;a href=&quot;https://aerogear.org/community/&quot;&gt;Aerogear team&lt;/a&gt;. I’ve learn git to send my designs to the community repositories and I always do my best to help improve the UIs and UX without been dead weight to the team.&lt;/p&gt;
+
+&lt;p&gt;I am sure I often fail, at the end of the day I am a designer. But I know that the team appreciates and support my effort and they help me in any way they can.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-am-biased&quot;&gt;I am biased&lt;/h2&gt;
+
+&lt;p&gt;To me hifi mockups have always been a waste of time, but I may be biased too, because coding for me is as easy as using Photoshop.&lt;/p&gt;
+
+&lt;p&gt;I have the honor to work with extremely talented designer that don’t code and build beautiful interfaces. I just hope my experience show a different design path that has given me great satisfactions.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 May 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</guid>
+        
+        <category>Aerogear</category>
+        
+        <category>uxd</category>
+        
+        <category>design</category>
+        
+        <category>html</category>
+        
+        <category>css</category>
+        
+        <category>code</category>
+        
+        
+        <category>patternfly</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>PatternFly at DevNation 2015</title>
@@ -41,7 +121,6 @@
 &lt;p&gt;For a closer encounter with the community, we will also be giving a demo at in the Community Central Room.&lt;/p&gt;
 
 &lt;p&gt;Come visit us at DevNation in June. Register with code &lt;strong&gt;RHSRAF&lt;/strong&gt; for 10% off at &lt;a href=&quot;http://www.devnation.org&quot;&gt;devnation.org&lt;/a&gt;.&lt;/p&gt;
-
 </description>
         <pubDate>Tue, 12 May 2015 20:05:36 -0300</pubDate>
         <link>http://andresgalante.github.io/patternfly/2015/05/12/patternfly-on-devnation.html</link>
