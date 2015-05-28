@@ -14,7 +14,7 @@ Back in 2008 I had an eureka moment when I read [this article](https://signalvno
 
 [Jason Fried](https://twitter.com/jasonfried) explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.
 
-This workflow made so much sense to me that I wanted to start doing it right away. Although I could do it on my own projects, I was a freelancer and my clients loved mockups.
+It made so much sense to me that I wanted to start doing it right away. Although I could do it on my own projects, I was a freelancer and my clients loved mockups.
 
 It wasn't until recently, working at Red Hat within an open source community that I saw how this workflow can benefit and improve the relationship between designers and developers to generate amazing result.
 
@@ -59,4 +59,4 @@ I am sure I often fail, at the end of the day I am a designer. But I know that t
 
 To me hifi mockups have always been a waste of time, but I may be biased too, because coding for me is as easy as using Photoshop.
 
-I have the honor to work with extremely talented designer that don't code and build beautiful interfaces. I just hope my experience show a different design path that has given me great satisfactions.
+I have the privilege of working with with extremely talented designer that don't code and build beautiful interfaces. I just hope my experience show a different design path that has given me great satisfactions.
