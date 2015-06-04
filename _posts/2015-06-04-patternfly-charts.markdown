@@ -2,7 +2,7 @@
 layout: post
 title:  "PatternFly Charts"
 date:   2015-06-04 23:05:36
-categories: design
+categories: patternfly
 tags: Aerogear uxd design html css code patternfly
 comments: false
 ---
@@ -14,7 +14,7 @@ Data visualizations are fascinating. When well executed, they are an amazing med
 
 But of course that's not easy.  From a simple pie chart to a [complex infographic](https://www.pinterest.com/jeeda85/dashboards-uiux-and-chart/), they each offer complicated design challenges.
 
-As part of the effort to promote common dashboards, the [PatternFly](https://www.patternfly.org/) team will cut a release this week that includes chart patterns, and [Aerogear Unified Push Server](https://aerogear.org/) UI will probably be the first to implement them.
+As part of the effort to promote common dashboards, the [PatternFly](https://www.patternfly.org/) team will cut a release this week that includes PatternFly styles for C3js charts, and [Aerogear Unified Push Server](https://aerogear.org/) UI will probably be the first to implement them.
 
 >If a picture’s worth a thousand words, what’s the value of an image representing a terabyte of data?
 
