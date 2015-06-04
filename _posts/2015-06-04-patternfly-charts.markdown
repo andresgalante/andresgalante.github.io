@@ -23,6 +23,7 @@ Hunter Whitney asked in this excellent [article](http://uxmag.com/articles/beyon
 ##PatternFly charts
 
 For this first release, patternfly charts will include:
+
 - Line Chart
 - Sparkline
 - Spline Chart
