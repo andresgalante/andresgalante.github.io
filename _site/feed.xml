@@ -6,9 +6,76 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 May 2015 10:16:15 -0300</pubDate>
-    <lastBuildDate>Thu, 28 May 2015 10:16:15 -0300</lastBuildDate>
+    <pubDate>Thu, 04 Jun 2015 11:27:45 -0300</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2015 11:27:45 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>PatternFly Charts</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/charts/patternfly-charts.png&quot; alt=&quot;Patternfly Charts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Data visualizations are fascinating. When well executed, they are an amazing medium to visually represent massive volumes of dynamic information.&lt;/p&gt;
+
+&lt;p&gt;But of course that’s not easy.  From a simple pie chart to a &lt;a href=&quot;https://www.pinterest.com/jeeda85/dashboards-uiux-and-chart/&quot;&gt;complex infographic&lt;/a&gt;, they each offer complicated design challenges.&lt;/p&gt;
+
+&lt;p&gt;As part of the effort to promote common dashboards, the &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; team will cut a release this week that includes chart patterns, and &lt;a href=&quot;https://aerogear.org/&quot;&gt;Aerogear Unified Push Server&lt;/a&gt; UI will probably be the first to implement them.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If a picture’s worth a thousand words, what’s the value of an image representing a terabyte of data?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hunter Whitney asked in this excellent &lt;a href=&quot;http://uxmag.com/articles/beyond-the-pie-chart&quot;&gt;article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;patternfly-charts&quot;&gt;PatternFly charts&lt;/h2&gt;
+
+&lt;p&gt;For this first release, patternfly charts will include:
+- Line Chart
+- Sparkline
+- Spline Chart
+- Area Chart
+- Stacked Area Chart
+- Bar Chart
+- Stacked Bar Chart
+- Donut Chart&lt;/p&gt;
+
+&lt;p&gt;But there are plans to expand this list with heat maps and other charts soon.&lt;/p&gt;
+
+&lt;h2 id=&quot;c3js--patternfly-styles&quot;&gt;C3js + PatternFly styles&lt;/h2&gt;
+
+&lt;p&gt;They are based on the robust and tested &lt;a href=&quot;http://c3js.org&quot;&gt;C3.js&lt;/a&gt;, which is a &lt;a href=&quot;http://d3js.org&quot;&gt;D3-based&lt;/a&gt; reusable chart library.&lt;/p&gt;
+
+&lt;p&gt;Patternfly charts are superbly designed to &lt;strong&gt;keep consistency with the rest of the library styles&lt;/strong&gt;. They are optimised for good readability, their colors are color-blind tested and they show animations which supports the interactions and hierarchies.&lt;/p&gt;
+
+&lt;h2 id=&quot;patternfly-at-devnation&quot;&gt;PatternFly at DevNation&lt;/h2&gt;
+
+&lt;p&gt;I’ll be in PatternFly booth at &lt;a href=&quot;http://www.devnation.org&quot;&gt;DevNation&lt;/a&gt;. If you happen to be around, &lt;strong&gt;let’s geek out about charts!&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Jun 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/design/2015/06/04/patternfly-charts.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/06/04/patternfly-charts.html</guid>
+        
+        <category>Aerogear</category>
+        
+        <category>uxd</category>
+        
+        <category>design</category>
+        
+        <category>html</category>
+        
+        <category>css</category>
+        
+        <category>code</category>
+        
+        <category>patternfly</category>
+        
+        
+        <category>design</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>HTML/CSS is real in a way Photoshop will never be</title>
@@ -39,7 +106,7 @@
 
 &lt;p&gt;I am a designer and I work with developers. Developers have developer eyes, which are very different from designer eye. &lt;/p&gt;
 
-&lt;p&gt;Designer are strange. We care about typography to the point that we get annoyed if the elevator numbers doesn’t have the correct kerning. We generate pheromones when we see good alignment and spacing. We just care about things that no other human been does.&lt;/p&gt;
+&lt;p&gt;Designer are strange. We care about typography to the point that we get annoyed if the elevator numbers doesn’t have the correct kerning. We generate pheromones when we see good alignment and spacing. We just care about things that no other human being does.&lt;/p&gt;
 
 &lt;p&gt;My boss once told me that if you give an image to 10 different developers you’ll get 10 different implementations, and most likely none will be the one you’ve envisioned. He is spot on.&lt;/p&gt;
 

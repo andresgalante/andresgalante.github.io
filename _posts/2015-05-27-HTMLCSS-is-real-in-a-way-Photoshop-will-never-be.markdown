@@ -34,7 +34,7 @@ HTML/CSS is as much a drawing tool as photoshop, just better and real.
 
 I am a designer and I work with developers. Developers have developer eyes, which are very different from designer eye. 
 
-Designer are strange. We care about typography to the point that we get annoyed if the elevator numbers doesn't have the correct kerning. We generate pheromones when we see good alignment and spacing. We just care about things that no other human been does.
+Designer are strange. We care about typography to the point that we get annoyed if the elevator numbers doesn't have the correct kerning. We generate pheromones when we see good alignment and spacing. We just care about things that no other human being does.
 
 My boss once told me that if you give an image to 10 different developers you'll get 10 different implementations, and most likely none will be the one you've envisioned. He is spot on.
 
