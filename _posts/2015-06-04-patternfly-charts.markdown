@@ -43,4 +43,4 @@ Patternfly charts are superbly designed to **keep consistency with the rest of t
 
 ##PatternFly at DevNation
 
-I'll be in PatternFly booth at [DevNation](http://www.devnation.org). If you happen to be around, **let's geek out about charts!**
+[As I mention before](/patternfly/2015/05/12/patternfly-on-devnation.html), I'll be at the PatternFly booth at [DevNation](http://www.devnation.org). If you happen to be around, **let's geek out about charts!**

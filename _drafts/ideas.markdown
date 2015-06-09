@@ -18,7 +18,6 @@ next and prev posts
 - redhat demo
 - house of cards, all charpters at once == ux behavior ?
 - homepage aerogear website, first 1 second
-- skip photoshop
 - My new monitor sucks
 - the js learning curve
 - the perfect mouse
@@ -31,27 +30,4 @@ next and prev posts
 - designers open source community, 
 
 
-
-Data visualizations are fascinating. When well executed, they are an amazing medium for communicating large amounts of information. 
-
-But of course thats not easy. From a simple pie chart to a [super cool complex infographic](https://www.pinterest.com/jeeda85/dashboards-uiux-and-chart/), they all present complicated design challenges.
-
-As part of the effort for a [common dashboard design](https://www.patternfly.org/wikis/patterns/dashboards/), the [Patternfly](https://www.patternfly.org/) team will cut a release this week that includes charts patterns.
-
-
-Good chart
-
-
-
-
-motion which supports the interactions and hierarchys
-optimize readability
-consistency with the Ui styles
-colors tested colors for color blind people
-
-
-whats is d3
-whats is c3
-
-
-
+Today, and after 8 month of waiting, I finally got an extra monitor.
