@@ -6,9 +6,105 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 09 Jun 2015 09:26:54 -0300</pubDate>
-    <lastBuildDate>Tue, 09 Jun 2015 09:26:54 -0300</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2015 17:16:58 -0300</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2015 17:16:58 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Migrating PatternFly from 1.x to 2.0</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/migrate/migrate-patternfly.png&quot; alt=&quot;Migrate to Patternfly 2.0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This week we’ve release &lt;a href=&quot;https://github.com/patternfly/patternfly/releases&quot;&gt;PatternFly 2.0&lt;/a&gt;. This guide will go step by step on how to upgrade from PatternFly 1.x to our latest version.&lt;/p&gt;
+
+&lt;h2 id=&quot;patternfly-2-is-almost-backwards-compatible-with-v1x&quot;&gt;PatternFly 2 is (almost) backwards compatible with v1.x&lt;/h2&gt;
+
+&lt;p&gt;There are three major changes that you should know about:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We don’t support Internet Explorer 8 anymore.&lt;/li&gt;
+  &lt;li&gt;We’ve split the CSS into two files (&lt;code&gt;patternfly.*css&lt;/code&gt; and &lt;code&gt;patternfly-additions.*css&lt;/code&gt;) to avoid a limitation of Internet Explorer 9 where &lt;a href=&quot;https://support.microsoft.com/en-us/kb/262161&quot;&gt;only 4095 selectors are recognized in a single stylesheet&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;and we’ve moved &lt;code&gt;components/boostrap-select/bootstrap-select.min.js&lt;/code&gt; to &lt;code&gt;components/boostrap-select/dist/js/bootstrap-select.min.js&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;first-get-patternfly-20&quot;&gt;First: Get PatternFly 2.0&lt;/h2&gt;
+
+&lt;p&gt;The first step is to upgrade the PatternFly codebase. This process will be different depending on how your project manages its depencies.&lt;/p&gt;
+
+&lt;h5 id=&quot;upgrade-using-bower&quot;&gt;Upgrade using Bower:&lt;/h5&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bower upgrade patternfly —save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;upgrade-using-npm&quot;&gt;Upgrade using Npm:&lt;/h5&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;npm upgrade patternfly —save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;upgrade-using-git&quot;&gt;Upgrade using Git:&lt;/h5&gt;
+&lt;p&gt;Add PatternFly as a remote repo, fetch it and rebase&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add upstream git@github.com:patternfly/patternfly.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git fetch upstream&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;get-the-zip&quot;&gt;Get the ZIP:&lt;/h5&gt;
+&lt;p&gt;Or just &lt;a href=&quot;https://github.com/patternfly/patternfly/archive/master.zip&quot;&gt;Downloading the zip file&lt;/a&gt; from github&lt;/p&gt;
+
+&lt;h2 id=&quot;changes-on-the-html&quot;&gt;Changes on the HTML&lt;/h2&gt;
+
+&lt;h4 id=&quot;ie8-support&quot;&gt;IE8 support&lt;/h4&gt;
+&lt;p&gt;Since we no longer support IE8, you can remove IE8 utilities (html5shiv and respond) from all your pages.&lt;/p&gt;
+
+&lt;h4 id=&quot;link-two-css-instead-of-one&quot;&gt;Link two CSS instead of one&lt;/h4&gt;
+&lt;p&gt;We’ve split PatternFly styles into two style sheets. The links to the styles will look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;PATH_TO_PATTERNFLY/dist/css/patternfly.*.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;screen, print&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;PATH_TO_PATTERNFLY/dist/css/patternfly-additions.*.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;screen, print&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;boostrap-select&quot;&gt;Boostrap select&lt;/h4&gt;
+&lt;p&gt;If you are using &lt;a href=&quot;https://www.patternfly.org/widgets/#bootstrap-select&quot;&gt;Boostrap Select&lt;/a&gt; you should change the path to the javascript. It’ll look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;PATH_TO_PATTERNFLY/components/patternfly/components/bootstrap-select/dist/js/bootstrap-select.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;dependency-upgrades&quot;&gt;Dependency Upgrades&lt;/h2&gt;
+&lt;p&gt;We’ve upgraded most of our dependencies, you can see the &lt;a href=&quot;https://github.com/patternfly/patternfly/releases/tag/v2.0.0&quot;&gt;complete list on the release&lt;/a&gt;. If you need a version other than what is checked into patternfly/components, you’ll have to pull it yourself.&lt;/p&gt;
+
+&lt;h2 id=&quot;changes-on-less&quot;&gt;Changes on LESS&lt;/h2&gt;
+
+&lt;p&gt;If you are &lt;a href=&quot;http://blog.andresgalante.com/howto/2015/02/06/patternfly.html&quot;&gt;extending PatternFly styles using less&lt;/a&gt;, import patternfly-additions.less as a base to your styles, and compile again. Remember to load both &lt;code&gt;patternfly*.css&lt;/code&gt; and your styles on the HTML.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;PATH_TO_PATTERNFLY/patternfly/less/patternfly-additions.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;For more information on upgrading to v2.0, send us an email to the &lt;a href=&quot;patternfly@redhat.com&quot;&gt;Mailing List&lt;/a&gt; or join the IRC channel #patternfly on Freenode.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 12 Aug 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2015/08/12/migrate-patternfly.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/08/12/migrate-patternfly.html</guid>
+        
+        <category>uxd</category>
+        
+        <category>design</category>
+        
+        <category>html</category>
+        
+        <category>css</category>
+        
+        <category>code</category>
+        
+        <category>patternfly</category>
+        
+        <category>upgrade</category>
+        
+        <category>migrate</category>
+        
+        <category>2.0</category>
+        
+        
+        <category>patternfly</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>PatternFly Charts</title>
