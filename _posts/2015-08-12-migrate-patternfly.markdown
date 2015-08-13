@@ -28,12 +28,12 @@ The first step is to upgrade the PatternFly codebase. This process will be diffe
 
 ##### Upgrade using Bower:
 {% highlight bash %}
-$ bower upgrade patternfly —save-dev
+$ bower install patternfly —save-dev
 {% endhighlight %}
 
 ##### Upgrade using Npm:
 {% highlight bash %}
-$ npm upgrade patternfly —save-dev
+$ npm install patternfly —save-dev
 {% endhighlight %}
 
 ##### Upgrade using Git:
