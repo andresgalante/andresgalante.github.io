@@ -9,7 +9,10 @@ comments: false
 
 ![Migrate to Patternfly 2.0](/img/migrate/migrate-patternfly.png)
 
-This week we've release [PatternFly 2.0](https://github.com/patternfly/patternfly/releases). This guide will go step by step on how to upgrade from PatternFly 1.x to our latest version.
+
+
+
+This week we've [release PatternFly 2.0](https://github.com/patternfly/patternfly/releases). This guide will go step by step on how to upgrade from PatternFly 1.x to our latest version.
 
 ## PatternFly 2 is (almost) backwards compatible with v1.x
 
@@ -64,7 +67,7 @@ If you are using [Boostrap Select](https://www.patternfly.org/widgets/#bootstrap
 {% endhighlight %}
 
 ## Dependency Upgrades
-We've upgraded most of our dependencies, you can see the [complete list on the release](https://github.com/patternfly/patternfly/releases/tag/v2.0.0). If you need a version other than what is checked into patternfly/components, you'll have to pull it yourself.
+We've upgraded most of our dependencies. You can see the [complete list on the release](https://github.com/patternfly/patternfly/releases/tag/v2.0.0). If you need a version other than what is checked into patternfly/components, you'll have to pull it yourself.
 
 
 ## Changes on LESS
@@ -75,5 +78,6 @@ If you are [extending PatternFly styles using less](http://blog.andresgalante.co
 @import "PATH_TO_PATTERNFLY/patternfly/less/patternfly-additions.less";
 {% endhighlight %}
 
-For more information on upgrading to v2.0, send us an email to the [Mailing List](patternfly@redhat.com) or join the IRC channel #patternfly on Freenode.
+For more information on upgrading to v2.0, send an email to the [Patternfly Mailing List](patternfly@redhat.com) or join the IRC channel #patternfly on Freenode.
+
 

@@ -6,15 +6,15 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Aug 2015 17:16:58 -0300</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2015 17:16:58 -0300</lastBuildDate>
+    <pubDate>Thu, 13 Aug 2015 09:06:03 -0300</pubDate>
+    <lastBuildDate>Thu, 13 Aug 2015 09:06:03 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Migrating PatternFly from 1.x to 2.0</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/migrate/migrate-patternfly.png&quot; alt=&quot;Migrate to Patternfly 2.0&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This week we’ve release &lt;a href=&quot;https://github.com/patternfly/patternfly/releases&quot;&gt;PatternFly 2.0&lt;/a&gt;. This guide will go step by step on how to upgrade from PatternFly 1.x to our latest version.&lt;/p&gt;
+&lt;p&gt;This week we’ve &lt;a href=&quot;https://github.com/patternfly/patternfly/releases&quot;&gt;release PatternFly 2.0&lt;/a&gt;. This guide will go step by step on how to upgrade from PatternFly 1.x to our latest version.&lt;/p&gt;
 
 &lt;h2 id=&quot;patternfly-2-is-almost-backwards-compatible-with-v1x&quot;&gt;PatternFly 2 is (almost) backwards compatible with v1.x&lt;/h2&gt;
 
@@ -64,7 +64,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;PATH_TO_PATTERNFLY/components/patternfly/components/bootstrap-select/dist/js/bootstrap-select.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;dependency-upgrades&quot;&gt;Dependency Upgrades&lt;/h2&gt;
-&lt;p&gt;We’ve upgraded most of our dependencies, you can see the &lt;a href=&quot;https://github.com/patternfly/patternfly/releases/tag/v2.0.0&quot;&gt;complete list on the release&lt;/a&gt;. If you need a version other than what is checked into patternfly/components, you’ll have to pull it yourself.&lt;/p&gt;
+&lt;p&gt;We’ve upgraded most of our dependencies. You can see the &lt;a href=&quot;https://github.com/patternfly/patternfly/releases/tag/v2.0.0&quot;&gt;complete list on the release&lt;/a&gt;. If you need a version other than what is checked into patternfly/components, you’ll have to pull it yourself.&lt;/p&gt;
 
 &lt;h2 id=&quot;changes-on-less&quot;&gt;Changes on LESS&lt;/h2&gt;
 
@@ -72,7 +72,7 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;PATH_TO_PATTERNFLY/patternfly/less/patternfly-additions.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;For more information on upgrading to v2.0, send us an email to the &lt;a href=&quot;patternfly@redhat.com&quot;&gt;Mailing List&lt;/a&gt; or join the IRC channel #patternfly on Freenode.&lt;/p&gt;
+&lt;p&gt;For more information on upgrading to v2.0, send an email to the &lt;a href=&quot;patternfly@redhat.com&quot;&gt;Patternfly Mailing List&lt;/a&gt; or join the IRC channel #patternfly on Freenode.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 12 Aug 2015 20:05:36 -0300</pubDate>
