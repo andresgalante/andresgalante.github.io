@@ -28,6 +28,24 @@ next and prev posts
 - start with design
 - spend money on good shit
 - designers open source community
+- Pre procesadores de CSS
+
+
+Last week I was in Rio de Janeiro talking about Bootstrap and PatternFly at QConRio.
+
+QConRio is an international software development conference. "A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams."
+
+In other words I spent a week among developers. And every time I am among developers I am amaze at how open and collaborative they are as a community.
+
+
+
+bring designers and developers together.
+Una is evangelising on open source design ad I think that is excatly what we need. Learn from the developer community
+Take criticism better. This doesnt mean we should be less polite.
+
+
+The language barrier
+Aaron told me drug dealer. 
 
 
 Today, and after 8 month of waiting, I finally got an extra monitor.

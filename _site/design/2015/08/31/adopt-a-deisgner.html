@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Migrating PatternFly from 1.x to 2.0</title>
+  <title>Developers: Adopt a designer</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://andresgalante.github.io/patternfly/2015/08/12/migrate-patternfly.html">
+  <link rel="canonical" href="http://andresgalante.github.io/design/2015/08/31/adopt-a-deisgner.html">
   <link rel="alternate" type="application/rss+xml" title="Andres Galante" href="http://andresgalante.github.io/feed.xml" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -63,15 +63,15 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Migrating PatternFly from 1.x to 2.0</h1>
+    <h1 class="post-title">Developers: Adopt a designer</h1>
     <p class="post-meta">
             <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
 
       <a href="/about">Andres Galante</a> 
       wrote this on 
-      August 12, 2015
+      August 31, 2015
 
-       under patternfly category.
+       under design category.
 
       <!--
       USE THIS FOR CATEGORIES!
@@ -82,67 +82,51 @@
   </header>
 
   <article class="post-content">
-    <p><img src="/img/migrate/migrate-patternfly.png" alt="Migrate to Patternfly 2.0" /></p>
+    <p><img src="/img/adopt/adopt.jpg" alt="Adopt a deisgner" /></p>
 
-<p>This week we’ve <a href="https://github.com/patternfly/patternfly/releases">release PatternFly 2.0</a>. This guide will go step by step on how to upgrade from PatternFly 1.x to our latest version.</p>
+<p>Last week I was in Rio de Janeiro talking about <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://www.patternfly.org">PatternFly</a> at <a href="http://qconrio.com">QConRio</a>.</p>
 
-<h2 id="patternfly-2-is-almost-backwards-compatible-with-v1x">PatternFly 2 is (almost) backwards compatible with v1.x</h2>
+<p>QConRio is an international software development conference: “A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams.”</p>
 
-<p>There are three major changes that you should know about:</p>
+<p>In other words I’ve spent a week among developers, and every time I am with developers I am amaze at how open and collaborative they are as a community.</p>
 
-<ul>
-  <li>We don’t support Internet Explorer 8 anymore.</li>
-  <li>We’ve split the CSS into two files (<code>patternfly.*css</code> and <code>patternfly-additions.*css</code>) to avoid a limitation of Internet Explorer 9 where <a href="https://support.microsoft.com/en-us/kb/262161">only 4095 selectors are recognized in a single stylesheet</a>.</li>
-  <li>and we’ve moved <code>components/boostrap-select/bootstrap-select.min.js</code> to <code>components/boostrap-select/dist/js/bootstrap-select.min.js</code>.</li>
-</ul>
+<p>That’s mostly because they are used to working on open source projects. They are a living proof that the most efective way to move forward is to be open and learn form each other.</p>
 
-<h2 id="first-get-patternfly-20">First: Get PatternFly 2.0</h2>
+<p>But there is a mindset missing on open source communities: the designers. During my talk I’ve asked if any one knew any designer working on an open source community and not one of the 110 developers in the room raise their hands.</p>
 
-<p>The first step is to upgrade the PatternFly codebase. This process will be different depending on how your project manages its depencies.</p>
+<p><a href="https://youtu.be/8qfU1TIoeF4">Una Kravets</a> is right when she blames the “fuck you, pay me” way of thinking of designers. It’s a shame, because when developers and designers work together the results are amazing, and <strong>that’s exactly what can take the open source from what it is, to what it could be</strong>.</p>
 
-<h5 id="upgrade-using-bower">Upgrade using Bower:</h5>
+<h2 id="the-language-barrier">The language barrier</h2>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bower install patternfly —save-dev</code></pre></div>
+<p>I was walking at Copacabana with <a href="https://twitter.com/Aaronontheweb">Aaron Stannard</a> last Friday. He told me that earlier that day he needed directions and the only english speaker person he could find was someone trying to sell him drugs.</p>
 
-<h5 id="upgrade-using-npm">Upgrade using Npm:</h5>
+<p>Of course, <strong>English is the language of business</strong>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm install patternfly —save-dev</code></pre></div>
+<p>It all comes down to communication: If someone wants to became a member of any group, they need to speak their language. And <strong>the language of the open source realm is Git</strong>.</p>
 
-<h5 id="upgrade-using-git">Upgrade using Git:</h5>
-<p>Add PatternFly as a remote repo, fetch it and rebase</p>
+<h2 id="we-talk-git">We talk Git</h2>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add upstream git@github.com:patternfly/patternfly.git
-<span class="nv">$ </span>git fetch upstream</code></pre></div>
+<p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
 
-<h5 id="get-the-zip">Get the ZIP:</h5>
-<p>Or just <a href="https://github.com/patternfly/patternfly/archive/master.zip">Downloading the zip file</a> from github</p>
+<p>And GitHub is the the place to find most of the open source projects, it hosts millions of them.</p>
 
-<h2 id="changes-on-the-html">Changes on the HTML</h2>
+<p>For a developer git is obvious, it’s just the way they collaborate with each other.</p>
 
-<h4 id="ie8-support">IE8 support</h4>
-<p>Since we no longer support IE8, you can remove IE8 utilities (html5shiv and respond) from all your pages.</p>
+<p>On the other hand, for a designer, specially the ones that don’t code, git can be pretty tricky. We are visual animals, and we understand visual tools, thats why the github app helps a lot. But even though, the concepts of pulling, pushing and branching repositories are hard to get around.</p>
 
-<h4 id="link-two-css-instead-of-one">Link two CSS instead of one</h4>
-<p>We’ve split PatternFly styles into two style sheets. The links to the styles will look something like this:</p>
+<h2 id="find-the-middle-gorund">Find the middle gorund</h2>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;PATH_TO_PATTERNFLY/dist/css/patternfly.*.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;PATH_TO_PATTERNFLY/dist/css/patternfly-additions.*.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<p>We should push collaboration and innovation. There are places we will never get if we don’t include designers and developers on our projects.</p>
 
-<h4 id="boostrap-select">Boostrap select</h4>
-<p>If you are using <a href="https://www.patternfly.org/widgets/#bootstrap-select">Boostrap Select</a> you should change the path to the javascript. It’ll look something like this:</p>
+<p>If you are a designer a great way to get involved in open source is to contribute to the existing projects you’re using. There are projects for every skill and <a href="https://24ways.org/2014/why-you-should-design-for-open-source/">great guides</a> to <a href="http://blog.teamtreehouse.com/getting-involved-open-source-projects">get started</a> (also <a href="http://opendesign.foundation/articles/how-designers-can-contribute-to-open-source-projects/">this one</a>).</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;PATH_TO_PATTERNFLY/components/patternfly/components/bootstrap-select/dist/js/bootstrap-select.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+<p>Once you’ve decide which project you want to work on, <strong>ask for help</strong>. Open source communities are full of very patient and helpful people willing to hold your hand and teach you how to do it. Trust that practice makes the master and always remember that it doesn’t matter how bad you mess things up, it will never brake. that’s the beauty of git. Plus they will learn a few things from you on the way.</p>
 
-<h2 id="dependency-upgrades">Dependency Upgrades</h2>
-<p>We’ve upgraded most of our dependencies. You can see the <a href="https://github.com/patternfly/patternfly/releases/tag/v2.0.0">complete list on the release</a>. If you need a version other than what is checked into patternfly/components, you’ll have to pull it yourself.</p>
+<p>If you are a developer: <strong>Adopt a designer</strong>. </p>
 
-<h2 id="changes-on-less">Changes on LESS</h2>
+<p>Teach them how they can help. Hopefully they will take your project to paths you would never walk by yourself, plus they will make it look good.</p>
 
-<p>If you are <a href="http://blog.andresgalante.com/howto/2015/02/06/patternfly.html">extending PatternFly styles using less</a>, import patternfly-additions.less as a base to your styles, and compile again. Remember to load both <code>patternfly*.css</code> and your styles on the HTML.</p>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@import</span> <span class="s2">&quot;PATH_TO_PATTERNFLY/patternfly/less/patternfly-additions.less&quot;</span><span class="p">;</span></code></pre></div>
-
-<p>For more information on upgrading to v2.0, send an email to the <a href="patternfly@redhat.com">Patternfly Mailing List</a> or join the IRC channel #patternfly on Freenode.</p>
+<p>I’ve been adopted by the Aerogear community. <a href="https://twitter.com/abstractj">Bruno</a>, <a href="https://twitter.com/passos">Daniel</a>, <a href="https://twitter.com/lfryc">Lukas</a> and the other members of the community should give themselves a pat on the back. You’ve been patient enough to teach one designer git and show him how became part of your world.</p>
 
 
   </article>
@@ -157,11 +141,9 @@
 
   <div class="post-navigation">
    
-  <a rel="prev" href="/patternfly/2015/06/04/patternfly-charts.html"><i class="fa fa-arrow-left"></i>PatternFly Charts</a>
+  <a rel="prev" href="/patternfly/2015/08/12/migrate-patternfly.html"><i class="fa fa-arrow-left"></i>Migrating PatternFly from 1.x to 2.0</a>
   
 
-   
-  <a rel="next" href="/design/2015/08/31/adopt-a-deisgner.html">Developers: Adopt a designer<i class="fa fa-arrow-right"></i></a>
   
   </div>
 

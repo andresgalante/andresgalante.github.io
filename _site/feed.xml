@@ -6,9 +6,77 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Aug 2015 09:06:03 -0300</pubDate>
-    <lastBuildDate>Thu, 13 Aug 2015 09:06:03 -0300</lastBuildDate>
+    <pubDate>Mon, 31 Aug 2015 19:18:08 -0300</pubDate>
+    <lastBuildDate>Mon, 31 Aug 2015 19:18:08 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Developers: Adopt a designer</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/adopt/adopt.jpg&quot; alt=&quot;Adopt a deisgner&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Last week I was in Rio de Janeiro talking about &lt;a href=&quot;http://getbootstrap.com&quot;&gt;Bootstrap&lt;/a&gt; and &lt;a href=&quot;https://www.patternfly.org&quot;&gt;PatternFly&lt;/a&gt; at &lt;a href=&quot;http://qconrio.com&quot;&gt;QConRio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;QConRio is an international software development conference: “A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams.”&lt;/p&gt;
+
+&lt;p&gt;In other words I’ve spent a week among developers, and every time I am with developers I am amaze at how open and collaborative they are as a community.&lt;/p&gt;
+
+&lt;p&gt;That’s mostly because they are used to working on open source projects. They are a living proof that the most efective way to move forward is to be open and learn form each other.&lt;/p&gt;
+
+&lt;p&gt;But there is a mindset missing on open source communities: the designers. During my talk I’ve asked if any one knew any designer working on an open source community and not one of the 110 developers in the room raise their hands.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/8qfU1TIoeF4&quot;&gt;Una Kravets&lt;/a&gt; is right when she blames the “fuck you, pay me” way of thinking of designers. It’s a shame, because when developers and designers work together the results are amazing, and &lt;strong&gt;that’s exactly what can take the open source from what it is, to what it could be&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-language-barrier&quot;&gt;The language barrier&lt;/h2&gt;
+
+&lt;p&gt;I was walking at Copacabana with &lt;a href=&quot;https://twitter.com/Aaronontheweb&quot;&gt;Aaron Stannard&lt;/a&gt; last Friday. He told me that earlier that day he needed directions and the only english speaker person he could find was someone trying to sell him drugs.&lt;/p&gt;
+
+&lt;p&gt;Of course, &lt;strong&gt;English is the language of business&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It all comes down to communication: If someone wants to became a member of any group, they need to speak their language. And &lt;strong&gt;the language of the open source realm is Git&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;we-talk-git&quot;&gt;We talk Git&lt;/h2&gt;
+
+&lt;p&gt;Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.&lt;/p&gt;
+
+&lt;p&gt;And GitHub is the the place to find most of the open source projects, it hosts millions of them.&lt;/p&gt;
+
+&lt;p&gt;For a developer git is obvious, it’s just the way they collaborate with each other.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, for a designer, specially the ones that don’t code, git can be pretty tricky. We are visual animals, and we understand visual tools, thats why the github app helps a lot. But even though, the concepts of pulling, pushing and branching repositories are hard to get around.&lt;/p&gt;
+
+&lt;h2 id=&quot;find-the-middle-gorund&quot;&gt;Find the middle gorund&lt;/h2&gt;
+
+&lt;p&gt;We should push collaboration and innovation. There are places we will never get if we don’t include designers and developers on our projects.&lt;/p&gt;
+
+&lt;p&gt;If you are a designer a great way to get involved in open source is to contribute to the existing projects you’re using. There are projects for every skill and &lt;a href=&quot;https://24ways.org/2014/why-you-should-design-for-open-source/&quot;&gt;great guides&lt;/a&gt; to &lt;a href=&quot;http://blog.teamtreehouse.com/getting-involved-open-source-projects&quot;&gt;get started&lt;/a&gt; (also &lt;a href=&quot;http://opendesign.foundation/articles/how-designers-can-contribute-to-open-source-projects/&quot;&gt;this one&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Once you’ve decide which project you want to work on, &lt;strong&gt;ask for help&lt;/strong&gt;. Open source communities are full of very patient and helpful people willing to hold your hand and teach you how to do it. Trust that practice makes the master and always remember that it doesn’t matter how bad you mess things up, it will never brake. that’s the beauty of git. Plus they will learn a few things from you on the way.&lt;/p&gt;
+
+&lt;p&gt;If you are a developer: &lt;strong&gt;Adopt a designer&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;Teach them how they can help. Hopefully they will take your project to paths you would never walk by yourself, plus they will make it look good.&lt;/p&gt;
+
+&lt;p&gt;I’ve been adopted by the Aerogear community. &lt;a href=&quot;https://twitter.com/abstractj&quot;&gt;Bruno&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/passos&quot;&gt;Daniel&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/lfryc&quot;&gt;Lukas&lt;/a&gt; and the other members of the community should give themselves a pat on the back. You’ve been patient enough to teach one designer git and show him how became part of your world.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 31 Aug 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/design/2015/08/31/adopt-a-deisgner.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/08/31/adopt-a-deisgner.html</guid>
+        
+        <category>Patternfly</category>
+        
+        <category>qconrio</category>
+        
+        <category>developers</category>
+        
+        
+        <category>design</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Migrating PatternFly from 1.x to 2.0</title>
@@ -32,11 +100,11 @@
 
 &lt;h5 id=&quot;upgrade-using-bower&quot;&gt;Upgrade using Bower:&lt;/h5&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bower upgrade patternfly —save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bower install patternfly —save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h5 id=&quot;upgrade-using-npm&quot;&gt;Upgrade using Npm:&lt;/h5&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;npm upgrade patternfly —save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;npm install patternfly —save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h5 id=&quot;upgrade-using-git&quot;&gt;Upgrade using Git:&lt;/h5&gt;
 &lt;p&gt;Add PatternFly as a remote repo, fetch it and rebase&lt;/p&gt;
@@ -890,131 +958,6 @@
         
         
         <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>On-boarding new users is like parenting</title>
-        <description>&lt;p&gt;This is my son, his name is Leon and he is an artist.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/onboarding/leon.jpg&quot; alt=&quot;Leon&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;He is two years old, which means that I haven’t been sleeping well (or at all) for the last two years. He is the most time consuming, attention sponge, energetic creature I have ever met. Don’t get me wrong, I love him more than anything and he is the joy of my life. Love comes built in babies, it’s the way mother nature found to make us survive childhood.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.jboss.org/en/gatein/blog/2012/05/28/user-experience-what-is-this-about-anyway&quot;&gt;UX Designers&lt;/a&gt; are much like parents. We are always thinking about our users. We observe them and try to get into their minds to help them achieve their goals.&lt;/p&gt;
-
-&lt;p&gt;Children and users need care, patience, attention, love and guidance. It is our job to provide that. Nobody really teaches us how to be parents and we don’t have second chances. We just do our best and, of course, we fail. Luckily for our users, UX designers are very well prepared. We get many second chances, we can test, learn and iterate.&lt;/p&gt;
-
-&lt;p&gt;At Red Hat our users are usually developers. They are hackers who are always looking for ways to alter their surroundings to find methods to increases productivity and efficiency. They are just fantastic, in my opinion the best kind of users to work with.&lt;/p&gt;
-
-&lt;h2 id=&quot;aerogear-unified-push-console&quot;&gt;Aerogear Unified Push Console&lt;/h2&gt;
-
-&lt;p&gt;I’ve been given the challenge to &lt;a href=&quot;http://www.nngroup.com/articles/radical-incremental-redesign/&quot;&gt;redesign Aerogear Unified Push Console (UPS)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This server allows sending native push messages to different mobile operating systems, such as Android, iOS, Windows or Firefox OS/SimplePush.&lt;/p&gt;
-
-&lt;p&gt;Push notifications can be a pain, and Aerogear team has done an amazing job. It is a powerful tool that has all kinds of sorcery and Jedi tricks that i cannot begin to grasp. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/onboarding/post-image-old-page.png&quot; alt=&quot;Old UPS console&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Currently users count on extensive documentation to set up Unified Push Console. On this redesign we seek to improve the UI to direct the set up without the need to go through the documentation.&lt;/p&gt;
-
-&lt;h3 id=&quot;lead-the-users-to-success&quot;&gt;Lead the users to success&lt;/h3&gt;
-
-&lt;p&gt;One key aspect of this redesign is how to guide new users to get on-board.&lt;/p&gt;
-
-&lt;p&gt;In order to make the server work, the user will have to successfully complete 5 steps:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Create an application&lt;/li&gt;
-  &lt;li&gt;Add at least one Variant&lt;/li&gt;
-  &lt;li&gt;Install client code&lt;/li&gt;
-  &lt;li&gt;Send a test push notification&lt;/li&gt;
-  &lt;li&gt;Set up the sender API&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Expectations are high. It isn’t an easy job, and we need to help them succeed.&lt;/p&gt;
-
-&lt;h3 id=&quot;focus&quot;&gt;Focus&lt;/h3&gt;
-
-&lt;p&gt;We set the expectations early, we promise that there is gold at the end of the rainbow. If they follow the (not so simple) steps, they will be able to easily send push notifications and we will make sure they are delivered. &lt;/p&gt;
-
-&lt;p&gt;But the &lt;a href=&quot;http://tinyurl.com/l6t5sts&quot;&gt;average user attention span is 8 seconds&lt;/a&gt;, that’s one second shorter than a goldfish[2]. &lt;/p&gt;
-
-&lt;p&gt;We only have a fraction of a second to make a good first impression and just a couple of seconds to grab their attention.&lt;/p&gt;
-
-&lt;p&gt;Now the countdown begins! we have only a few minutes to show them how they can achieve their goals. If we fail, they will assume the console doesn’t work, and second chances are rare.&lt;/p&gt;
-
-&lt;p&gt;We need to &lt;a href=&quot;http://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/&quot;&gt;grasp our users attention instantly and show them how to use the console fast&lt;/a&gt;, but how?&lt;/p&gt;
-
-&lt;h3 id=&quot;can-i-buy-you-a-drink&quot;&gt;Can I buy you a drink?&lt;/h3&gt;
-
-&lt;p&gt;There are several methods to have a &lt;a href=&quot;http://www.dtelepathy.com/blog/design/ux-flows-onboarding&quot;&gt;first date with our users&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Better than show how it works is to make them actually do it&lt;/strong&gt;. Tumblr does an amazing job on first interacting, the new user is prompted to input important information to ensure a customised user experience.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://assets-www-dtelepathy-com.s3.amazonaws.com/wp-content/uploads/2014/02/UXflows_GifGraphic_Tumblr.gif&quot; alt=&quot;Tumblr on boarding&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For the UPS console, we also built an interactive wizard that guides the user to complete the 5 steps to get push notifications up and running. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/onboarding/post-image-welcom-page.png&quot; alt=&quot;UPS On boarding Set Expectations Early&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/onboarding/post-image-step1.png&quot; alt=&quot;UPS On boarding&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Without been intrusive, we never leave them alone. Even if they decide to skip the wizard, they still get a blank slate waiting to guide them.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/onboarding/post-image-blank-page.png&quot; alt=&quot;UPS blank slate&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Setup is done but our job is not over, we have to make sure that the rest of their experience is up to their expectations. Users spend most of their time on other websites and we always follow patterns and keep consistency.&lt;/p&gt;
-
-&lt;h3 id=&quot;one-ring-to-rule-them-all&quot;&gt;One ring to rule them all&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.nngroup.com/articles/top-10-mistakes-web-design/&quot;&gt;Jakob Nielsen says&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Consistency is one of the most powerful usability principles: when things always behave the same, users don’t have to worry about what will happen. Instead, they know what will happen based on earlier experience.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;To keep consistency we build the UI based on &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;Patternfly&lt;/a&gt; recommendations. &lt;/p&gt;
-
-&lt;p&gt;Patternfly is an Open Source community that promotes design commonality and improved user experience across enterprise IT products and applications.&lt;/p&gt;
-
-&lt;p&gt;It is based on Bootstrap, so implementation is easy and straight forward.&lt;/p&gt;
-
-&lt;p&gt;And to keep the karma flowing we are contributing a blank slate pattern and syntax highlighting back to Patternfly.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-results&quot;&gt;The results&lt;/h2&gt;
-
-&lt;p&gt;This UI hasn’t been implemented yet. Basic user testings with the prototype show that this user-centric interaction is very successful.&lt;/p&gt;
-
-&lt;p&gt;A successful on boarding strategy is like teaching something new to your children. As parents we need to encourage them to  teach themselves and learn their own way. They have to drive. But you’re there as bumpers to make sure they don’t fall off the edge.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/1118766571/ref=dp_ob_image_bk&quot;&gt;Alan Cooper&lt;/a&gt; teaches us that the main goal of a UX design is to never make the user feel stupid. &lt;strong&gt;It’s in our hands for that to happen&lt;/strong&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 02 Feb 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2015/02/02/onboarding-is-like-parent.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/02/02/onboarding-is-like-parent.html</guid>
-        
-        <category>on-boarding</category>
-        
-        <category>design</category>
-        
-        <category>UPS</category>
-        
-        <category>UnifiedPushConsole</category>
-        
-        <category>Aerogear</category>
-        
-        <category>Patternfly</category>
-        
-        <category>jboss</category>
-        
-        
-        <category>design</category>
         
         <author>
           <name>Andres Galante</name>
