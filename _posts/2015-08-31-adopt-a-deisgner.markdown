@@ -52,7 +52,7 @@ Once you've decide which project you want to work on, **ask for help**. Open sou
 
 If you are a developer: **Adopt a designer**. 
 
-Show them the way and let them walk it. Hopefully they will take your project to places you would never imagine, plus they will make it look good.
+Show us the way and let us walk it. Hopefully we will take your project to places you would never imagine, plus we will probably make it look good.
 
 I've been adopted by the [Aerogear community](https://aerogear.org/). [Bruno](https://twitter.com/abstractj), [Daniel](https://twitter.com/passos), [Lukas](https://twitter.com/lfryc) and the other members of the team should give themselves a pat on the back. You've been patient enough to teach one designer git and show him how to became part of your world.
 
