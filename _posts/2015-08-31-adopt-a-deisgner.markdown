@@ -35,11 +35,9 @@ It all comes down to communication: If someone wants to became a member of any g
 
 [Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
-And [GitHub](https://github.com/) is the the place to find most of the open source projects, it hosts millions of them.
+And [GitHub](https://github.com/) is the place to find most of the open source projects, it hosts millions of them.
 
 For a developer git is obvious, it’s just the way they collaborate with each other.
-
-On the other hand, for a designer, specially the ones that don't code, git can be pretty tricky. We are visual creatures and we understand visual tools, that's why the  helps a lot. But even then, the concepts of pulling, pushing and branching repositories are hard to get around.
 
 On the other hand, for a designer, specially the ones that don’t code, git can be pretty tricky. We are visual creatures and we understand visual tools, that’s why the [GitHub desktop app](https://desktop.github.com/) helps a lot. But even then, the concepts of pulling, pushing and branching repositories are hard to get around.
 
