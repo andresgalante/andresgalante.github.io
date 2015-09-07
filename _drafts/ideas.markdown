@@ -31,25 +31,109 @@ next and prev posts
 - Pre procesadores de CSS
 
 
-Last week I was in Rio de Janeiro talking about Bootstrap and PatternFly at QConRio.
-
-QConRio is an international software development conference. "A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams."
-
-In other words I spent a week among developers. And every time I am among developers I am amaze at how open and collaborative they are as a community.
 
 
 
-bring designers and developers together.
-Una is evangelising on open source design ad I think that is excatly what we need. Learn from the developer community
-Take criticism better. This doesnt mean we should be less polite.
+If there is one thing I regret from my trip to QConRio is not having spent enough time talking with [Felippe Nardi](https://twitter.com/FelippeNardi). He has been developing on remote server for more than a year and he enter to the list of "Heroes". 
+
+To be honest it's a quite large list that includes Michael J Fox for Back to the Future and Raphael turtle ninjas because he can kick ass.
+
+That doesn't take away the fact that he has done something I always wanted to do and, ofcourse, always failed. I work on a very nice macbook pro (which I love) attached to a stupid and very bad samsung monitor that never gets colors right (which I hate). And although I like working on a mac, I don't want to be attached to it. If I travel, or if I want to work somewhere else I always need to take my large 15' computer. It's the only place where I have all my tools and envioments and files to work.
+
+Felippe replaced his laptop for an ipad for a year and he proves that your development machine can be on the cloud, but what happen with designers. Can we replace my computer for a tablet or even a smart phone?
+
+The answer is no completely.
+
+What have I done?
+
+I've look into a normal workweek and learn about my workflow. I've list the tools I use and cure to know which ones are really necessary.
+
+My main concern is photoshop. Although I would prefer to work on Sketch, the team I work on uses photoshop and we share psd files. Even though a look a lot for it, I couldn't find a app replacement for desktop photoshop.
+
+That been said there is no reason why I couldn't start coding on virtual machines. Well, actually there is, I don't know ssh or vin good enough.
+
+And there are 2 solutions to that issue:
+
+The first is to learn Vin, which is probably what I am going to do because I am big nerd and I am sure I'll brake things up in the process... and we all know there is no better way to learn something than to fix what we've broken. Plus I get to use the command line, and nothing feels better than successfully using the command line.
+
+The second one is to use [Cloud9](https://c9.io/). Which is awesome and easy to use, and although I should use it I won't... because well, I've just said it, I am a big nerd.
+
+Practice makes the master. If I blog again about this in a few month then you'll know I succeed 
 
 
-The language barrier
-Aaron told me drug dealer. 
+Felippe
 
 
+
+What if I know ssh or vin
+
+
+the ipad only designer setup
+
+This is a something I've always wanted to achieve: get rid of my computer. I've tried to do it with a smart phone
+
+
+
+
+
+https://medium.com/@felippenardi/start-coding-from-an-ipad-d942ebe44c63
+
+
+Three tips to build a design guide
+
+Keep consistency
+
+Create components and not webpages
+
+Write good documentation. It would probably very very hard for a new person to do anything inseide the system, you have to teach them whever everything is. removes friction. improve comonnucation,s share knowlage and documented in a style guide.
+Build the documentation within the product, use the style guide to build the tool.
+
+dont buid one of. build a library of components.
+
+well documented and arpochable.
+
+reuse and refactor.
+
+coding startdanrds. it should feel like ne person write it. Rules.
+
+live examples, copy paste, no change anyone can screw things up.
+
+dont write more css.
+
+brake things into ocmponents and docs should rule everything. Docs driven development.
+
+
+Make it easy to jump in and help each other. no matter what knowlage level
+
+
+
+distributed teams work 
+
+Patternfly is a Design systems.
+
+everything that makes out your product open source framework
+
+the aproach to open source treat it as open durce even though it isnt
+
+cmponents and assets
+
+What did we learn from patternfly HTML,CSS and JS components to build stuff on the web.
+
+remove friction and help peoeple get things done.
+
+we use our products to buils patternfly and we use patterfly to build our products
+
+
+
+
+A few monthes ago I've got a Sam
+
+
+
+
+If there is one thing I regret from my trip to QConRio is not having spent enough time talking with Felippe Nardi. He has been doing for a year something I always wanted to do.
+ 
 Today, and after 8 month of waiting, I finally got an extra monitor.
-
 
 the ipad only designer setup
 
