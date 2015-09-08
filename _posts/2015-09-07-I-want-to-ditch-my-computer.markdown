@@ -30,7 +30,7 @@ Then I look into online or ipad app replacements for them. And I found out that 
 
 Although I would prefer to work on Sketch, the team I work on uses photoshop as a standard and we share psd files. I just couldn't find an app replacement for desktop photoshop.
 
-That been said there is no reason why I can't start coding on virtual machines today. Well, actually there is, I don't know ssh or vin good enough, or how to set a VM.
+That been said there is no reason why I can't start coding on virtual machines today. Well, actually there is, I don't know ssh or [vim](http://www.vim.org/) good enough, or how to set a VM.
 
 I see 2 solutions:
 
