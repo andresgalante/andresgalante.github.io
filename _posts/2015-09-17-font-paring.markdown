@@ -8,7 +8,7 @@ tags: font pairing design
 
 ![Set of type](/img/fontparing/fontparing.png)
 
-Today [Bruno](https://twitter.com/abstractj) asked me about font pairing. He wanted to change his blog styles and have a different typefaces for the titles and the text.
+Today [Bruno](https://twitter.com/abstractj) asked me about font pairing. He wanted to change [his blog](http://blog.abstractj.org/) styles and have a different typefaces for the titles and the text.
 
 Here is what I have to say about font pairing: **Don't do it** unless you really know what you are doing.
 
