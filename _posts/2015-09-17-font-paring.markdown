@@ -8,7 +8,7 @@ tags: font pairing design
 
 ![Set of type](/img/fontparing/fontparing.png)
 
-Today [Bruno](https://twitter.com/abstractj) asked me about font pairing. He wanted to change [his blog](http://blog.abstractj.org/) styles and have a different typefaces for the titles and the text.
+Today [Bruno](https://twitter.com/abstractj) asked me about font pairing. He wanted to change [his blog](http://blog.abstractj.org/) styles and have a different typefaces for the titles and the body text.
 
 Here is what I have to say about font pairing: **Don't do it** unless you really know what you are doing.
 
@@ -22,7 +22,7 @@ For example this blog uses [Titillium Web](https://www.google.com/fonts/specimen
 
 Bruno asked. 
 
-So, if you really want to get into font paring and you don't wan't study typography for years, copy from someone else.
+So, if you really want to get into font paring and you don't wan't study typography for years: copy from someone else.
 
 Typekit has an excellent [gallery](https://typekit.com/gallery) to get "inspired".
 
