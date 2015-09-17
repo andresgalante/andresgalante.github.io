@@ -12,9 +12,9 @@ Today [Bruno](https://twitter.com/abstractj) asked me about font pairing. He wan
 
 Here is what I have to say about font pairing: **Don't do it** unless you really know what you are doing.
 
-Typography is really hard. Choose just one font family you and can't go wrong, even if that font family is [comic sans](https://en.wikipedia.org/wiki/Comic_Sans).
+Typography is really hard. Choose just one font family and you can't go wrong, even if that typeface is [comic sans](https://en.wikipedia.org/wiki/Comic_Sans).
 
-Remember to pick a font family that has several styles. Then create contrast by changing the weight.
+Remember to pick one that has several styles. Then create contrast by changing the weight.
 
 For example this blog uses [Titillium Web](https://www.google.com/fonts/specimen/Titillium+Web) from [Google fonts](https://www.google.com/fonts). Titles are semi-bold and the body text is light.
 
