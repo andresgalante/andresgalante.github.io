@@ -6,9 +6,64 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Sep 2015 16:56:11 -0300</pubDate>
-    <lastBuildDate>Mon, 07 Sep 2015 16:56:11 -0300</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2015 11:05:59 +0100</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 11:05:59 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Font pairing is a bitch</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/fontparing/fontparing.png&quot; alt=&quot;Set of type&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Today &lt;a href=&quot;https://twitter.com/abstractj&quot;&gt;Bruno&lt;/a&gt; asked me about font pairing. He wanted to change his blog styles and have a different typefaces for the titles and the text.&lt;/p&gt;
+
+&lt;p&gt;Here is what I have to say about font pairing: &lt;strong&gt;Don’t do it&lt;/strong&gt; unless you really know what you are doing.&lt;/p&gt;
+
+&lt;p&gt;Typography is really hard. Choose just one font family you and can’t go wrong, even if that font family is &lt;a href=&quot;https://en.wikipedia.org/wiki/Comic_Sans&quot;&gt;comic sans&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Remember to pick a font family that has several styles. Then create contrast by changing the weight.&lt;/p&gt;
+
+&lt;p&gt;For example this blog uses &lt;a href=&quot;https://www.google.com/fonts/specimen/Titillium+Web&quot;&gt;Titillium Web&lt;/a&gt; from &lt;a href=&quot;https://www.google.com/fonts&quot;&gt;Google fonts&lt;/a&gt;. Titles are semi-bold and the body text is light.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-if-i-want-to-it-anyway&quot;&gt;What if I want to it anyway?&lt;/h2&gt;
+
+&lt;p&gt;Bruno asked. &lt;/p&gt;
+
+&lt;p&gt;So, if you really want to get into font paring and you don’t wan’t study typography for years, copy from someone else.&lt;/p&gt;
+
+&lt;p&gt;Typekit has an excellent &lt;a href=&quot;https://typekit.com/gallery&quot;&gt;gallery&lt;/a&gt; to get “inspired”.&lt;/p&gt;
+
+&lt;p&gt;If you want to go Google fonts way (and you should) check &lt;a href=&quot;http://femmebot.github.io/google-type/&quot;&gt;Google type project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://hellohappy.org/beautiful-web-type/&quot;&gt;Beautiful web type&lt;/a&gt; has some very nice examples on how to use font on the web.&lt;/p&gt;
+
+&lt;p&gt;For print samples check &lt;a href=&quot;http://ifontyou.com/&quot;&gt;Font you&lt;/a&gt; and &lt;a href=&quot;http://fontsinuse.com/&quot;&gt;Fonts in use&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And always remember Picassos words:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Good artist copy great artist steal&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There you go Bruno, I’ve already told you all this a few minutes ago, now it’s written.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Sep 2015 00:05:36 +0100</pubDate>
+        <link>http://andresgalante.github.io/howto/2015/09/18/font-paring.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/09/18/font-paring.html</guid>
+        
+        <category>font</category>
+        
+        <category>pairing</category>
+        
+        <category>design</category>
+        
+        
+        <category>howto</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>I want to ditch my computer</title>
@@ -36,7 +91,7 @@
 
 &lt;p&gt;Although I would prefer to work on Sketch, the team I work on uses photoshop as a standard and we share psd files. I just couldn’t find an app replacement for desktop photoshop.&lt;/p&gt;
 
-&lt;p&gt;That been said there is no reason why I can’t start coding on virtual machines today. Well, actually there is, I don’t know ssh or vin good enough, or how to set a VM.&lt;/p&gt;
+&lt;p&gt;That been said there is no reason why I can’t start coding on virtual machines today. Well, actually there is, I don’t know ssh or &lt;a href=&quot;http://www.vim.org/&quot;&gt;vim&lt;/a&gt; good enough, or how to set a VM.&lt;/p&gt;
 
 &lt;p&gt;I see 2 solutions:&lt;/p&gt;
 
@@ -50,9 +105,9 @@
 
 &lt;p&gt;Thanks Felippe, you are a hero.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 07 Sep 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/09/07/I-want-to-ditch-my-computer.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/09/07/I-want-to-ditch-my-computer.html</guid>
+        <pubDate>Tue, 08 Sep 2015 00:05:36 +0100</pubDate>
+        <link>http://andresgalante.github.io/howto/2015/09/08/I-want-to-ditch-my-computer.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/09/08/I-want-to-ditch-my-computer.html</guid>
         
         <category>Felippe</category>
         
@@ -120,9 +175,9 @@
 &lt;p&gt;I’ve been adopted by the &lt;a href=&quot;https://aerogear.org/&quot;&gt;AeroGear community&lt;/a&gt;. &lt;a href=&quot;https://twitter.com/abstractj&quot;&gt;Bruno&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/passos&quot;&gt;Daniel&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/lfryc&quot;&gt;Lukas&lt;/a&gt; and the other members of the team should give themselves a pat on the back. You’ve been patient enough to teach one designer git and show him how to become part of your world.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 31 Aug 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2015/08/31/adopt-a-deisgner.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/08/31/adopt-a-deisgner.html</guid>
+        <pubDate>Tue, 01 Sep 2015 00:05:36 +0100</pubDate>
+        <link>http://andresgalante.github.io/design/2015/09/01/adopt-a-deisgner.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/09/01/adopt-a-deisgner.html</guid>
         
         <category>Patternfly</category>
         
@@ -204,9 +259,9 @@
 &lt;p&gt;For more information on upgrading to v2.0, send an email to the &lt;a href=&quot;patternfly@redhat.com&quot;&gt;Patternfly Mailing List&lt;/a&gt; or join the IRC channel #patternfly on Freenode.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 12 Aug 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2015/08/12/migrate-patternfly.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/08/12/migrate-patternfly.html</guid>
+        <pubDate>Thu, 13 Aug 2015 00:05:36 +0100</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2015/08/13/migrate-patternfly.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/08/13/migrate-patternfly.html</guid>
         
         <category>uxd</category>
         
@@ -278,9 +333,9 @@
 
 &lt;p&gt;&lt;a href=&quot;/patternfly/2015/05/12/patternfly-on-devnation.html&quot;&gt;As I mention before&lt;/a&gt;, I’ll be at the PatternFly booth at &lt;a href=&quot;http://www.devnation.org&quot;&gt;DevNation&lt;/a&gt;. If you happen to be around, &lt;strong&gt;let’s geek out about charts!&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 04 Jun 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2015/06/04/patternfly-charts.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/06/04/patternfly-charts.html</guid>
+        <pubDate>Fri, 05 Jun 2015 00:05:36 +0100</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2015/06/05/patternfly-charts.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/06/05/patternfly-charts.html</guid>
         
         <category>Aerogear</category>
         
@@ -360,9 +415,9 @@
 
 &lt;p&gt;I have the privilege of working with with extremely talented designer that don’t code and build beautiful interfaces. I just hope my experience show a different design path that has given me great satisfactions.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 27 May 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</guid>
+        <pubDate>Thu, 28 May 2015 00:05:36 +0100</pubDate>
+        <link>http://andresgalante.github.io/design/2015/05/28/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/05/28/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</guid>
         
         <category>Aerogear</category>
         
@@ -417,9 +472,9 @@
 
 &lt;p&gt;Come visit us at DevNation in June. Register with code &lt;strong&gt;RHSRAF&lt;/strong&gt; for 10% off at &lt;a href=&quot;http://www.devnation.org&quot;&gt;devnation.org&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 12 May 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2015/05/12/patternfly-on-devnation.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/05/12/patternfly-on-devnation.html</guid>
+        <pubDate>Wed, 13 May 2015 00:05:36 +0100</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2015/05/13/patternfly-on-devnation.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/05/13/patternfly-on-devnation.html</guid>
         
         <category>Aerogear</category>
         
@@ -456,7 +511,7 @@
 
 &lt;p&gt;I guess that this post is nothing more than a bunch of non-se to tell that Aerogear website is out and I am happy.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 16 Mar 2015 20:05:36 -0300</pubDate>
+        <pubDate>Mon, 16 Mar 2015 23:05:36 +0000</pubDate>
         <link>http://andresgalante.github.io/aerogear/2015/03/16/aerogear-new-website.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/aerogear/2015/03/16/aerogear-new-website.html</guid>
         
@@ -599,7 +654,7 @@
 
 &lt;p&gt;You’ll want your production code to be as clean as possible. Sending less code is cheaper and faster.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 06 Mar 2015 20:05:36 -0300</pubDate>
+        <pubDate>Fri, 06 Mar 2015 23:05:36 +0000</pubDate>
         <link>http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</guid>
         
@@ -738,7 +793,7 @@
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Wed, 18 Feb 2015 20:05:36 -0300</pubDate>
+        <pubDate>Wed, 18 Feb 2015 23:05:36 +0000</pubDate>
         <link>http://andresgalante.github.io/howto/2015/02/18/colorblindproof-syntax-highlighting.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/02/18/colorblindproof-syntax-highlighting.html</guid>
         
@@ -747,154 +802,6 @@
         <category>colorblindness</category>
         
         <category>Syntaxhighliting</category>
-        
-        
-        <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Gulp guide for designers</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://gulpjs.com&quot;&gt;Gulp&lt;/a&gt; is a Task / Build runner. It’s easy to use, has a simple api, and is efficient. Gulp.js makes use of pipes for streaming data that needs to be processed.&lt;/p&gt;
-
-&lt;p&gt;But as designer you don’t actually need to know any of that. What you do need to know is that &lt;strong&gt;Gulp will make your life much easier&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;This tutorial will setup Gulp to do 3 things:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Compress js&lt;/li&gt;
-  &lt;li&gt;Compile &lt;a href=&quot;http://lesscss.org&quot;&gt;Less&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Browser livereload&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;installing-gulp-and-gulp-plugins&quot;&gt;Installing Gulp and Gulp plugins&lt;/h2&gt;
-
-&lt;h4 id=&quot;install-gulp-globally&quot;&gt;1. Install gulp globally:&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --global gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;You’ll probably need to &lt;code&gt;sudo&lt;/code&gt; this one. &lt;/p&gt;
-
-&lt;p&gt;Now &lt;code&gt;cd&lt;/code&gt; to your project directory and install the dependencies and plugins&lt;/p&gt;
-
-&lt;h4 id=&quot;install-gulp-in-your-project-devdependencies&quot;&gt;2. Install gulp in your project devDependencies:&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;install-gulp-less-plugin&quot;&gt;3. Install gulp less plugin&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-less&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;install-gulp-uglify-plugin-for-js&quot;&gt;4. Install gulp uglify plugin for js&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-uglify&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;install-gulp-plumber-to-output-errors&quot;&gt;5. Install gulp plumber to output errors&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-plumber&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;install-gulp-browsersync-for-live-reload&quot;&gt;6. Install gulp browsersync for live reload&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install browser-sync gulp --save-dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;create-gulpfilejs&quot;&gt;Create gulpfile.js&lt;/h2&gt;
-
-&lt;p&gt;On the root of your project create a .js file name &lt;code&gt;gulpfile.js&lt;/code&gt;, and paste this snippet&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;uglify&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-uglify&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;less&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;plumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-plumber&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;browser-sync&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Uglyfies js on to /js/minjs&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;scripts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;  
-  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;js/*.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;plumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;uglify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;js/minjs&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt; 
-
-&lt;span class=&quot;c1&quot;&gt;// Compiles less on to /css&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less/**/*.less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;plumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;less&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;css&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}));&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// reload server&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;browser-sync&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;baseDir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;./&amp;quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Reload all Browsers&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;bs-reload&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// watch for changes on files&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;watch&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; 
-  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;js/*.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;scripts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less/*.less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;*.html&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;bs-reload&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt; 
-
-&lt;span class=&quot;c1&quot;&gt;// deploys&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;scripts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;less&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;browser-sync&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;watch&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;magic&quot;&gt;Magic!&lt;/h2&gt;
-
-&lt;p&gt;Open terminal and run &lt;code&gt;gulp&lt;/code&gt;!&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;And now the magic starts. This will do:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Compress any .js files on /js folder and store them on /js/minjs&lt;/li&gt;
-  &lt;li&gt;Compile any .less files on /less folder and create a .css file on /css&lt;/li&gt;
-  &lt;li&gt;Open a browser with your index.html&lt;/li&gt;
-  &lt;li&gt;Watch for changes on your js file and compress it every time you save it&lt;/li&gt;
-  &lt;li&gt;Watch for changes on your less file and compile it every time you save it&lt;/li&gt;
-  &lt;li&gt;Auto reload the browser every time the less file is updated.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;more-magic-awesome-livereload-with-browsersync&quot;&gt;More magic! Awesome livereload with Browsersync&lt;/h2&gt;
-
-&lt;p&gt;You’ve just installed &lt;a href=&quot;http://www.browsersync.io/&quot;&gt;BrowserSync&lt;/a&gt;, its a time-saving synchronised browser testing.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.browsersync.io/&quot;&gt;BrowserSync&lt;/a&gt; makes your tweaking and testing faster by synchronising file changes and interactions across multiple devices. It’s wicked-fast and totally amazing.&lt;/p&gt;
-
-&lt;p&gt;You’ll be able to view your project at this address &lt;code&gt;http://localhost:3000/&lt;/code&gt; and you’ll find browser sync configurations at &lt;code&gt;http://localhost:3001/&lt;/code&gt;. On that seetings page you’ll find a IP address to sync on your mobile device among other amazing features.&lt;/p&gt;
-
-&lt;h2 id=&quot;enjoy&quot;&gt;Enjoy!&lt;/h2&gt;
-
-&lt;p&gt;There are also &lt;a href=&quot;http://gulpjs.com/plugins/&quot;&gt;Gulp plugins&lt;/a&gt; for Sass or Stylus and with little changes on this code you can implement them.&lt;/p&gt;
-
-&lt;p&gt;Once you save your less file, it will overwrite any change you do directly on the css. So remember to &lt;strong&gt;do styling changes on less&lt;/strong&gt; and never edit the css file and you’ll be fine.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 09 Feb 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/02/09/gulp-guide-for-designers.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/02/09/gulp-guide-for-designers.html</guid>
-        
-        <category>Patternfly</category>
-        
-        <category>setup</category>
-        
-        <category>Gulp</category>
-        
-        <category>BrowserSync</category>
         
         
         <category>howto</category>

@@ -6,6 +6,20 @@ categories: howto
 tags: Patternfly setup Bower
 ---
 
+
+Today Bruno asked me about font pairing. He wanted to change his blog styles and have a different font for his titles.
+
+And here is what I have to say about font pairing: **Don't do it, unless you really know what you are doing**.
+
+Typography is really hard, and it is very easy to fail doing it.
+
+If you are a developer like Bruno, and you want to building a UI, pick a font family that has several styles. Then create contrast by changing the weight.
+
+For example this blog uses [Titillium Web](https://www.google.com/fonts/specimen/Titillium+Web) from [Google fonts](https://www.google.com/fonts). Titles are semi-bold and the body text is light.
+
+
+
+
 Andres Galante wrote this on date
 // poner comentarios
 get a logo?
@@ -29,6 +43,18 @@ next and prev posts
 - spend money on good shit
 - designers open source community
 - Pre procesadores de CSS
+- language http://ilanguages.org/bilingual.php
+- Font paring
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -260,6 +286,266 @@ Design vs UX
 como não sabemos o caminho do usuario, we test everything
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hello my Andres, I am a designer and code html and css
+
+I live in Buenos Aires in Argentina.
+
+And I am part of the User Experience Team.
+
+Apart from working with you on Aerogear and RHMAP I also contribute to PatternFly. 
+
+Patternfly is the solution we've created to have a consistent user experience across all Red Hat products. And since we work at Red Hat, PatternFly is Open Source.
+
+What do I actually do?
+
+"You make our shit look less shitty! In fact it actually looks good!"
+
+Summers once said me that I make things look good.
+
+And although those are super kind words, the truth is that making things look good is really easy.
+
+I am here to help users achieve their goals. And if you think about it, thats everyones jobs. 
+
+We are all here to help our users achieve their goals, right?
+
+UX designers are lawyer defending the user.
+
+My job is to make sure we all understands our users. And keep them front of mind as we do all of our design decisions , and product decisions and productisation decisions all away though the process.
+
+And here is a first tip: our users are human beens. And dealing with human beens it's very hard.
+
+According to the National institute of Biotecnolgy the attention spam of a human been has drop from 12 seconds in 2000 to 8 seconds in 2013. 
+
+That's one second less than the attention span of a gold fish.
+
+Thats why we always need to keep consistency. 
+
+Jacok Nielsen says that Consistency is the most powerful usualbility principal, when things always behave the same, users don't have to worry about what will happen. Instead, they know what will happen based on earlier experiences.
+
+And at Red Hat we keep constancy by following PatternFly styles and patterns.
+
+PatternFly is our ring to rule them all.
+
+If we change our current studio to PatternFly styles we will have a look and feel consistent with the rest of Red Hat. But as I told you, making things look good is easy and that is not our goal.
+
+Remember: we want to help the users achieve their goals, and makeup doesn't do it.
+
+The RHMAP studio has been growing organically and feature driven. I want to change that to a user centric approach.
+
+First we need to really understand who our users is and their goals.
+
+Once we understand it, we build personas and scenarios and use cases to design solutions.
+
+For example:
+
+One of our main personas is a Front Developer, lets call him Peter.
+ 
+One of the main reasons Peter comes back again and again to the studio is to Build his app.
+
+Hows does he do it?
+
+He logs in.
+
+Goes to Projects
+
+Search and finds his project
+
+Selects the project
+
+Then selects the app he wants to build
+
+And finds the build link on the side bar, which is the 7th link on the list. 
+
+I don't think that app Details, Docs, Editor, Analytics, Configurations or Push are more usefull to him than building the app. 
+
+Chances are that Peter will edit the code on his local IDE, and that he'll never change the info, configurations or push settings after his initial set up.
+
+We have this, and I need to find a way to get him from here to here as effective as possible.
+
+Now, the studio also has some very good design choices, like the 3 column view for projects.
+
+But we have some structural problems that can only be address if we review the information architecture.
+
+And that's where I fail.
+
+I fail to the users, I fail to my goals, and to the team. I am currently not helping the users achieve their goals or helping the team understand our users.
+
+The design of this product is something that involves all of us. 
+
+We all know that design is important, but I know there are more urgent things to. And the urgent always beats the important.
+
+Thats why I'll need the help of all you to create a clear vision of where the end to end User experience of the mobile platform should go.
+
+To make na impact on the market we really need to think about Design and UX is what can take our product from where it is, to where it can be. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The only way to mkae this big change happend is to Design thinking.
+
+
+But changing the current studio to patternfly styles
+
+
+
+
+
+
+
+
+
+
+User centric products are usually way more successful than feature drive ones.
+
+But our 
+
+
+
+
+PatternFly is the 
+A few years ago Red hat created the UXD team as part of an initiative to make all our products work better together and have a consistent look and feel.
+
+It wasn't easy, but keeping consistency is key to a good user experience.
+
+
+And that's critical because we are deailing with human been, and 
+
+Thats right, the attetion span of a gold fish is 9 seconds, one second more than any of us.
+
+
+Thats why at Red Hat we follow the patterns and styles of patternfly.
+
+Patternfly is our ring to rule them all.
+
+It was created to promote design commonality and improved user experience across enterprise IT products and applications.
+
+And since we work at Red Hat, Patternfly is of corse Open Source.
+
+
+
+
+
+
+
+
+An effective UX solution is the perfect intersection between Research, Design and Teconlogy.
+
+Thing about with a good reserach we will understand what is the problem we need to solve
+
+Understanding the problem we can design solutions for it.
+
+And those solutions would be lost without a perfect implementation.
+
+One of best examples of this process is Thonets chair number 141
+
+It was designed in 1859 a way that you can fit 36 chairs in a square meter for shipment.
+
+This allowed to produce them at eastern europe and send to places as far a NY keeping the price low.
+
+More than 50M 141 were sold since 1859, a feat that wouldnt be possible if the design wasn't involced in every step of the process.
+
+Thats what we called Deisgn thinking: Beguin with design and not end with it.
+
+My goal is to help our users achieve their goals.
+
+And after doing a design reserach to get to know our users I 
+
+I fail. I need your help. Its not only my goal to help the users acheve their gaols.
+
+That the job of every one of us.
+
+We always talk about features when we should be talking about users. User centric products are usually way more successful than feature drive ones.
+
+And just a a glimps of where we are standing let me show you something.
+
+One of our main personas is a developer. 
+And one of the main reasons that developers will visit our studio is to Build his app.
+
+Hows does he do it?
+
+
+He logs in.
+
+selects projects
+
+search and finds his project
+
+Selects the project
+
+Selects the app he wants to build
+
+Finds the build link on the side bar, which by the way is the 5th link. 
+
+Then be gets to building his app.
+
+I don't think that app Details, Docs, Editor, Analytics, Configurations or Push are more important to him than building the app. 
+
+Changes are that he'll edit on his IDE, and that he I'll never change the info and confiurations after they are set up for the first time.
+
+We have this, and I need to find a way to get him from here to here in the lest amount of time.
+
+I do get why things are the way they are. FH was a startup and it grown organically.
+
+Whats next? Re think the information architecture. Building a huge map of the console, identify the main use cases and reacomodate things tohelp te users acheve their goals. 
+
+UX designers are lawyers defending the user.
+
+
+My goal is to help our users achieve their goals.
+
+And after doing a design reserach to get to know our users I 
+
+I fail. I need your help. Its not only my goal to help the users achieve their gaols.
+
+
+That the job of every one of us.
+
+
+
+
+
+I wasn't a Red Hat employee at the time, but I know that it wasn't easy to catheard a bunch of independent Open Source communities to follow the same design styles.
+ 
+
+
+
+
+
+20 seconds
+
+History of the UXD team
+Duck
+Fish
+that's why we follow patternfly
+Patternfy = RING
+What is patternfly
 
 
 

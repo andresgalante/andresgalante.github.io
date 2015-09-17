@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Migrating PatternFly from 1.x to 2.0</title>
+  <title>HTML/CSS is real in a way Photoshop will never be</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://andresgalante.github.io/patternfly/2015/08/12/migrate-patternfly.html">
+  <link rel="canonical" href="http://andresgalante.github.io/design/2015/05/28/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html">
   <link rel="alternate" type="application/rss+xml" title="Andres Galante" href="http://andresgalante.github.io/feed.xml" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -63,15 +63,15 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Migrating PatternFly from 1.x to 2.0</h1>
+    <h1 class="post-title">HTML/CSS is real in a way Photoshop will never be</h1>
     <p class="post-meta">
             <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
 
       <a href="/about">Andres Galante</a> 
       wrote this on 
-      August 12, 2015
+      May 28, 2015
 
-       under patternfly category.
+       under design category.
 
       <!--
       USE THIS FOR CATEGORIES!
@@ -82,68 +82,58 @@
   </header>
 
   <article class="post-content">
-    <p><img src="/img/migrate/migrate-patternfly.png" alt="Migrate to Patternfly 2.0" /></p>
+    <p><img src="/img/no-photoshop/no-photoshop.png" alt="HTML/CSS is real in a way Photoshop will never be" /></p>
 
-<p>This week we’ve <a href="https://github.com/patternfly/patternfly/releases">release PatternFly 2.0</a>. This guide will go step by step on how to upgrade from PatternFly 1.x to our latest version.</p>
+<p>Back in 2008 I had an eureka moment when I read <a href="https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments">this article</a> from <a href="https://signalvnoise.com">Noise vs Signals blog</a>.</p>
 
-<h2 id="patternfly-2-is-almost-backwards-compatible-with-v1x">PatternFly 2 is (almost) backwards compatible with v1.x</h2>
+<p><a href="https://twitter.com/jasonfried">Jason Fried</a> explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.</p>
 
-<p>There are three major changes that you should know about:</p>
+<p>It made so much sense to me that I wanted to start doing it right away. Although I could do it on my own projects, I was a freelancer and my clients loved mockups.</p>
+
+<p>It wasn’t until recently, working at Red Hat within an open source community that I saw how this workflow can benefit and improve the relationship between designers and developers to generate amazing result.</p>
+
+<h2 id="why-bother">Why bother</h2>
+
+<p><a href="https://twitter.com/jasonfried">Jason</a> goes over the <a href="https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments">main reasons</a>, but this is why I bother:</p>
 
 <ul>
-  <li>We don’t support Internet Explorer 8 anymore.</li>
-  <li>We’ve split the CSS into two files (<code>patternfly.*css</code> and <code>patternfly-additions.*css</code>) to avoid a limitation of Internet Explorer 9 where <a href="https://support.microsoft.com/en-us/kb/262161">only 4095 selectors are recognized in a single stylesheet</a>.</li>
-  <li>and we’ve moved <code>components/boostrap-select/bootstrap-select.min.js</code> to <code>components/boostrap-select/dist/js/bootstrap-select.min.js</code>.</li>
+  <li>Let’s be honest: I am lazy. It takes lots of patience, effort and time to build an accurate photoshop image.</li>
+  <li>Creating UIs on Photoshop is a tedious work that never really represent the end result, for example text in Photoshop is not the text on the web.</li>
 </ul>
 
-<h2 id="first-get-patternfly-20">First: Get PatternFly 2.0</h2>
+<p>To me it’s just a big waste of time. At the end of the day, implementation is done in HTML/CSS anyway. </p>
 
-<p>The first step is to upgrade the PatternFly codebase. This process will be different depending on how your project manages its depencies.</p>
+<p>HTML/CSS is as much a drawing tool as photoshop, just better and real.</p>
 
-<h5 id="upgrade-using-bower">Upgrade using Bower:</h5>
+<h2 id="shows-results-instead-of-expectations">Shows results instead of expectations</h2>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bower install patternfly —save-dev</code></pre></div>
+<p>I am a designer and I work with developers. Developers have developer eyes, which are very different from designer eye. </p>
 
-<h5 id="upgrade-using-npm">Upgrade using Npm:</h5>
+<p>Designer are strange. We care about typography to the point that we get annoyed if the elevator numbers doesn’t have the correct kerning. We generate pheromones when we see good alignment and spacing. We just care about things that no other human being does.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm install patternfly —save-dev</code></pre></div>
+<p>My boss once told me that if you give an image to 10 different developers you’ll get 10 different implementations, and most likely none will be the one you’ve envisioned. He is spot on.</p>
 
-<h5 id="upgrade-using-git">Upgrade using Git:</h5>
-<p>Add PatternFly as a remote repo, fetch it and rebase</p>
+<p>When we handle a perfectly crafted UI image to a developer to implement, it’s just silly to expect that he will care about the same things we do.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add upstream git@github.com:patternfly/patternfly.git
-<span class="nv">$ </span>git fetch upstream</code></pre></div>
+<p>When I skip mockups and create HTML prototypes I am not only speaking the same language the developers do, but also making sure the end result looks exactly how I intended.</p>
 
-<h5 id="get-the-zip">Get the ZIP:</h5>
-<p>Or just <a href="https://github.com/patternfly/patternfly/archive/master.zip">Downloading the zip file</a> from github</p>
+<h2 id="the-paper-to-html-workflow-works">The paper to HTML workflow works</h2>
 
-<h2 id="changes-on-the-html">Changes on the HTML</h2>
+<p>A few years ago I was in Beijing talking to one of the few Chinese persons I knew that spoke english. I asked why was it that almost none Chinese spoke english, and he told me that since there are almost 1.5B Chinese in the world, we should be the ones learning Chinese and not the other way around.</p>
 
-<h4 id="ie8-support">IE8 support</h4>
-<p>Since we no longer support IE8, you can remove IE8 utilities (html5shiv and respond) from all your pages.</p>
+<p>And he was right.</p>
 
-<h4 id="link-two-css-instead-of-one">Link two CSS instead of one</h4>
-<p>We’ve split PatternFly styles into two style sheets. The links to the styles will look something like this:</p>
+<p>On open source projects designers should adapt to the community workflow. Our deliverables must meet the communities expectations and be inside their comfort zone. We shouldn’t expect to change a team mind to fit our ways.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;PATH_TO_PATTERNFLY/dist/css/patternfly.*.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;PATH_TO_PATTERNFLY/dist/css/patternfly-additions.*.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<p>This has work very well on the <a href="https://aerogear.org/community/">Aerogear team</a>. I’ve learn git to send my designs to the community repositories and I always do my best to help improve the UIs and UX without been dead weight to the team.</p>
 
-<h4 id="boostrap-select">Boostrap select</h4>
-<p>If you are using <a href="https://www.patternfly.org/widgets/#bootstrap-select">Boostrap Select</a> you should change the path to the javascript. It’ll look something like this:</p>
+<p>I am sure I often fail, at the end of the day I am a designer. But I know that the team appreciates and support my effort and they help me in any way they can.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;PATH_TO_PATTERNFLY/components/patternfly/components/bootstrap-select/dist/js/bootstrap-select.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+<h2 id="i-am-biased">I am biased</h2>
 
-<h2 id="dependency-upgrades">Dependency Upgrades</h2>
-<p>We’ve upgraded most of our dependencies. You can see the <a href="https://github.com/patternfly/patternfly/releases/tag/v2.0.0">complete list on the release</a>. If you need a version other than what is checked into patternfly/components, you’ll have to pull it yourself.</p>
+<p>To me hifi mockups have always been a waste of time, but I may be biased too, because coding for me is as easy as using Photoshop.</p>
 
-<h2 id="changes-on-less">Changes on LESS</h2>
-
-<p>If you are <a href="http://blog.andresgalante.com/howto/2015/02/06/patternfly.html">extending PatternFly styles using less</a>, import patternfly-additions.less as a base to your styles, and compile again. Remember to load both <code>patternfly*.css</code> and your styles on the HTML.</p>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@import</span> <span class="s2">&quot;PATH_TO_PATTERNFLY/patternfly/less/patternfly-additions.less&quot;</span><span class="p">;</span></code></pre></div>
-
-<p>For more information on upgrading to v2.0, send an email to the <a href="patternfly@redhat.com">Patternfly Mailing List</a> or join the IRC channel #patternfly on Freenode.</p>
-
+<p>I have the privilege of working with with extremely talented designer that don’t code and build beautiful interfaces. I just hope my experience show a different design path that has given me great satisfactions.</p>
 
   </article>
 
@@ -157,11 +147,11 @@
 
   <div class="post-navigation">
    
-  <a rel="prev" href="/patternfly/2015/06/04/patternfly-charts.html"><i class="fa fa-arrow-left"></i>PatternFly Charts</a>
+  <a rel="prev" href="/patternfly/2015/05/13/patternfly-on-devnation.html"><i class="fa fa-arrow-left"></i>PatternFly at DevNation 2015</a>
   
 
    
-  <a rel="next" href="/design/2015/08/31/adopt-a-deisgner.html">Developers: Adopt a designer<i class="fa fa-arrow-right"></i></a>
+  <a rel="next" href="/patternfly/2015/06/05/patternfly-charts.html">PatternFly Charts<i class="fa fa-arrow-right"></i></a>
   
   </div>
 
