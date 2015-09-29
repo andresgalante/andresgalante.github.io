@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Font pairing is a bitch</title>
+  <title>PatternFly Charts</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://andresgalante.github.io/howto/2015/09/18/font-paring.html">
+  <link rel="canonical" href="http://andresgalante.github.io/patternfly/2015/06/04/patternfly-charts.html">
   <link rel="alternate" type="application/rss+xml" title="Andres Galante" href="http://andresgalante.github.io/feed.xml" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -63,15 +63,15 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Font pairing is a bitch</h1>
+    <h1 class="post-title">PatternFly Charts</h1>
     <p class="post-meta">
             <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
 
       <a href="/about">Andres Galante</a> 
       wrote this on 
-      September 18, 2015
+      June 04, 2015
 
-       under howto category.
+       under patternfly category.
 
       <!--
       USE THIS FOR CATEGORIES!
@@ -82,39 +82,46 @@
   </header>
 
   <article class="post-content">
-    <p><img src="/img/fontparing/fontparing.png" alt="Set of type" /></p>
+    <p><img src="/img/charts/patternfly-charts.png" alt="Patternfly Charts" /></p>
 
-<p>Today <a href="https://twitter.com/abstractj">Bruno</a> asked me about font pairing. He wanted to change his blog styles and have a different typefaces for the titles and the text.</p>
+<p>Data visualizations are fascinating. When well executed, they are an amazing medium to visually represent massive volumes of dynamic information.</p>
 
-<p>Here is what I have to say about font pairing: <strong>Don’t do it</strong> unless you really know what you are doing.</p>
+<p>But of course that’s not easy.  From a simple pie chart to a <a href="https://www.pinterest.com/jeeda85/dashboards-uiux-and-chart/">complex infographic</a>, they each offer complicated design challenges.</p>
 
-<p>Typography is really hard. Choose just one font family you and can’t go wrong, even if that font family is <a href="https://en.wikipedia.org/wiki/Comic_Sans">comic sans</a>.</p>
-
-<p>Remember to pick a font family that has several styles. Then create contrast by changing the weight.</p>
-
-<p>For example this blog uses <a href="https://www.google.com/fonts/specimen/Titillium+Web">Titillium Web</a> from <a href="https://www.google.com/fonts">Google fonts</a>. Titles are semi-bold and the body text is light.</p>
-
-<h2 id="what-if-i-want-to-it-anyway">What if I want to it anyway?</h2>
-
-<p>Bruno asked. </p>
-
-<p>So, if you really want to get into font paring and you don’t wan’t study typography for years, copy from someone else.</p>
-
-<p>Typekit has an excellent <a href="https://typekit.com/gallery">gallery</a> to get “inspired”.</p>
-
-<p>If you want to go Google fonts way (and you should) check <a href="http://femmebot.github.io/google-type/">Google type project</a>.</p>
-
-<p><a href="http://hellohappy.org/beautiful-web-type/">Beautiful web type</a> has some very nice examples on how to use font on the web.</p>
-
-<p>For print samples check <a href="http://ifontyou.com/">Font you</a> and <a href="http://fontsinuse.com/">Fonts in use</a>.</p>
-
-<p>And always remember Picassos words:</p>
+<p>As part of the effort to promote common dashboards, the <a href="https://www.patternfly.org/">PatternFly</a> team will cut a release this week that includes PatternFly styles for C3js charts, and <a href="https://aerogear.org/">Aerogear Unified Push Server</a> UI will probably be the first to implement them.</p>
 
 <blockquote>
-  <p>Good artist copy great artist steal</p>
+  <p>If a picture’s worth a thousand words, what’s the value of an image representing a terabyte of data?</p>
 </blockquote>
 
-<p>There you go Bruno, I’ve already told you all this a few minutes ago, now it’s written.</p>
+<p>Hunter Whitney asked in this excellent <a href="http://uxmag.com/articles/beyond-the-pie-chart">article</a>.</p>
+
+<h2 id="patternfly-charts">PatternFly charts</h2>
+
+<p>For this first release, patternfly charts will include:</p>
+
+<ul>
+  <li>Line Chart</li>
+  <li>Sparkline</li>
+  <li>Spline Chart</li>
+  <li>Area Chart</li>
+  <li>Stacked Area Chart</li>
+  <li>Bar Chart</li>
+  <li>Stacked Bar Chart</li>
+  <li>Donut Chart</li>
+</ul>
+
+<p>But there are plans to expand this list with heat maps and other charts soon.</p>
+
+<h2 id="c3js--patternfly-styles">C3js + PatternFly styles</h2>
+
+<p>They are based on the robust and tested <a href="http://c3js.org">C3.js</a>, which is a <a href="http://d3js.org">D3-based</a> reusable chart library.</p>
+
+<p>Patternfly charts are superbly designed to <strong>keep consistency with the rest of the library styles</strong>. They are optimised for good readability, their colors are color-blind tested and they show animations which supports the interactions and hierarchies.</p>
+
+<h2 id="patternfly-at-devnation">PatternFly at DevNation</h2>
+
+<p><a href="/patternfly/2015/05/12/patternfly-on-devnation.html">As I mention before</a>, I’ll be at the PatternFly booth at <a href="http://www.devnation.org">DevNation</a>. If you happen to be around, <strong>let’s geek out about charts!</strong></p>
 
   </article>
 
@@ -128,9 +135,11 @@
 
   <div class="post-navigation">
    
-  <a rel="prev" href="/howto/2015/09/08/I-want-to-ditch-my-computer.html"><i class="fa fa-arrow-left"></i>I want to ditch my computer</a>
+  <a rel="prev" href="/design/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html"><i class="fa fa-arrow-left"></i>HTML/CSS is real in a way Photoshop will never be</a>
   
 
+   
+  <a rel="next" href="/patternfly/2015/08/12/migrate-patternfly.html">Migrating PatternFly from 1.x to 2.0<i class="fa fa-arrow-right"></i></a>
   
   </div>
 

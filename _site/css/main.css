@@ -47,6 +47,11 @@ img {
     img {
       margin: 10px 0px;
       max-width: 100%; } }
+  img.emoji {
+    display: inline;
+    margin: auto;
+    box-shadow: none;
+    border-radius: 0; }
 
 /**
  * Figures

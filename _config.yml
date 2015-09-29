@@ -10,3 +10,7 @@ github_username:  andresgalante
 
 # Build settings
 markdown: kramdown
+
+# adds emoji
+gems:
+  - jemoji
