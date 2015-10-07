@@ -117,7 +117,7 @@ li{
 {% endhighlight %}
 
 
-You can check the complete code here.
+You can check the [complete code here](https://github.com/andresgalante/andresgalante.github.io/blob/master/_sass/_hack.scss).
 
 Now go and check the homepage to see the result!
 

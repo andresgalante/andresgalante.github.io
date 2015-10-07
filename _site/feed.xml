@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Oct 2015 00:12:32 -0300</pubDate>
-    <lastBuildDate>Wed, 07 Oct 2015 00:12:32 -0300</lastBuildDate>
+    <pubDate>Wed, 07 Oct 2015 00:14:15 -0300</pubDate>
+    <lastBuildDate>Wed, 07 Oct 2015 00:14:15 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -103,7 +103,7 @@
   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;You can check the complete code here.&lt;/p&gt;
+&lt;p&gt;You can check the &lt;a href=&quot;https://github.com/andresgalante/andresgalante.github.io/blob/master/_sass/_hack.scss&quot;&gt;complete code here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now go and check the homepage to see the result!&lt;/p&gt;
 
