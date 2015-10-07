@@ -14,3 +14,5 @@ markdown: kramdown
 # adds emoji
 gems:
   - jemoji
+  
+excerpt_separator: "<!--more-->"

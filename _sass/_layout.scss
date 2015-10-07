@@ -189,7 +189,6 @@
 }
 
 
-
 /**
  * Page content
  */
@@ -214,6 +213,7 @@
     font-size: $small-font-size;
     color: $grey-color;
     line-height: 30px;
+    margin: 0;
   img{
     width: 30px;
     height:30px;
@@ -225,9 +225,25 @@
   }
 }
 
-.post-link {
-    display: block;
+.post-link{
+  display: block;
+  text-decoration: none;
+  h2 {
     font-size: 24px;
+    text-decoration: underline;
+    position: relative;
+    }
+  &:hover{
+    background: none;
+    text-decoration: none;
+    background: $brand-color;
+    .post-meta{
+      color: $white-color-secondary;
+    }
+    h2{
+      text-decoration: none;
+    }
+  }
 }
 
 
@@ -301,4 +317,10 @@
       margin-left: 5px;
     }
   }
+}
+
+// discuss
+
+#disqus_thread{
+  margin-top: 60px;
 }

@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <div class="post">
@@ -7,13 +8,13 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
-            <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
+      <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
 
       <a href="/about">Andres Galante</a> 
       wrote this on 
       {{ page.date | date: "%B %d, %Y" }}
 
-      {% if page.categories %} under {{ page.categories }} category.{% endif %}
+      {% if page.categories %} under <strong>{{ page.categories }}</strong> category.{% endif %}
 
       <!--
       USE THIS FOR CATEGORIES!
@@ -27,8 +28,21 @@ layout: default
     {{ content }}
   </article>
 
-<!--
 <div class="comments">
+
+
+</div>
+
+  <div class="post-navigation">
+  {% if page.previous %} 
+  <a rel="prev" href="{{ page.previous.url }}"><i class="fa fa-arrow-left"></i>{{ page.previous.title }}</a>
+  {% endif %}
+
+  {% if page.next %} 
+  <a rel="next" href="{{ page.next.url }}">{{ page.next.title }}<i class="fa fa-arrow-right"></i></a>
+  {% endif %}
+  </div>
+
 
   {% if page.comments %}
     <div id="disqus_thread"></div>
@@ -45,18 +59,5 @@ layout: default
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   {% endif %}
-
-</div>
--->
-
-  <div class="post-navigation">
-  {% if page.previous %} 
-  <a rel="prev" href="{{ page.previous.url }}"><i class="fa fa-arrow-left"></i>{{ page.previous.title }}</a>
-  {% endif %}
-
-  {% if page.next %} 
-  <a rel="next" href="{{ page.next.url }}">{{ page.next.title }}<i class="fa fa-arrow-right"></i></a>
-  {% endif %}
-  </div>
 
 </div>

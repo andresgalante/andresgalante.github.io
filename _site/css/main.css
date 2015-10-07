@@ -86,13 +86,13 @@ em {
  * Links
  */
 a {
-  color: rgba(0, 0, 0, 0.87); }
+  color: black; }
   a:visited {
-    color: rgba(0, 0, 0, 0.87); }
+    color: black; }
   a:hover {
     color: rgba(0, 0, 0, 0.87);
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.87);
+    background: black;
     color: #fff; }
 
 /**
@@ -307,7 +307,8 @@ pre {
 .post-meta {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.54);
-  line-height: 30px; }
+  line-height: 30px;
+  margin: 0; }
   .post-meta img {
     width: 30px;
     height: 30px;
@@ -319,7 +320,19 @@ pre {
 
 .post-link {
   display: block;
-  font-size: 24px; }
+  text-decoration: none; }
+  .post-link h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    position: relative; }
+  .post-link:hover {
+    background: none;
+    text-decoration: none;
+    background: black; }
+    .post-link:hover .post-meta {
+      color: rgba(255, 255, 255, 0.5); }
+    .post-link:hover h2 {
+      text-decoration: none; }
 
 /**
  * Posts
@@ -367,6 +380,9 @@ pre {
     .post-navigation a[rel="next"] i {
       margin-left: 5px; }
 
+#disqus_thread {
+  margin-top: 60px; }
+
 /**
  * Syntax highlighting styles
  */
@@ -379,8 +395,8 @@ pre {
     color: #78909C;
     font-style: italic; }
   .highlight .err {
-    color: #a61717;
-    background-color: #e3d2d2; }
+    color: #78909C;
+    background-color: transparent; }
   .highlight .k {
     font-weight: bold; }
   .highlight .o {
@@ -508,3 +524,31 @@ pre {
     color: #FFA726; }
   .highlight .il {
     color: #FFCC80; }
+
+.post-list a:link h2:after {
+  content: 'unread';
+  color: #fff;
+  background: rgba(0, 0, 0, 0.54);
+  position: absolute;
+  top: 1.2em;
+  display: inline-block;
+  padding: 0 .4em;
+  margin-left: .8em;
+  vertical-align: middle;
+  font-size: .5em;
+  font-weight: 300;
+  line-height: 1.7em;
+  text-decoration: none;
+  border-radius: .2em; }
+.post-list a:hover h2:after {
+  content: 'unread, read it!'; }
+.post-list a:active h2:after {
+  content: 'click!'; }
+.post-list a:visited h2:after {
+  color: #fff;
+  background: #fff; }
+.post-list li:hover a:visited h2:after {
+  color: black;
+  background: black; }
+.post-list li:first-child h2:after {
+  content: "new!"; }

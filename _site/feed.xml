@@ -6,19 +6,145 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Sep 2015 21:57:47 -0300</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2015 21:57:47 -0300</lastBuildDate>
+    <pubDate>Wed, 07 Oct 2015 00:12:32 -0300</pubDate>
+    <lastBuildDate>Wed, 07 Oct 2015 00:12:32 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>CSS pseudo class playground</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/visited/visited.jpg&quot; alt=&quot;Visited&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Saturday nights are usually busy. But on rare occasions when there are no plans and my wife and son go to sleep early, there is a strange window of quietness in my life.&lt;/p&gt;
+
+&lt;p&gt;Last weekend I had one of those special moments, and of course, since I am a big nerd I spent it coding.&lt;/p&gt;
+
+&lt;p&gt;A few weeks ago I bumped into an article written by &lt;a href=&quot;http://unakravets.com&quot;&gt;Una Kravets&lt;/a&gt; about &lt;a href=&quot;http://una.im/hacking-visited/&quot;&gt;hacking :visited&lt;/a&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes&quot;&gt;pseudo class&lt;/a&gt;, and I had to try it myself.&lt;/p&gt;
+
+&lt;p&gt;The idea is to display an &lt;code&gt;&quot;unread&quot;&lt;/code&gt; label to represent links that haven’t been read yet, plus I wanted to add a &lt;code&gt;&quot;new&quot;&lt;/code&gt; tag to the newest post and for extra css fun change the text for &lt;code&gt;:hover&lt;/code&gt; and &lt;code&gt;:active&lt;/code&gt; states.&lt;/p&gt;
+
+&lt;p&gt;If you really want to learn this technique, stop reading now, &lt;a href=&quot;http://una.im/hacking-visited/&quot;&gt;go to Unas posts&lt;/a&gt;, enjoy her article and come back. If you are like Bruno and you are here just for the joy of reading my words, then continue reading.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-html&quot;&gt;The HTML&lt;/h2&gt;
+
+&lt;p&gt;It all starts with Unas code. Since for security reasons &lt;code&gt;:visited&lt;/code&gt; is limited to just changing the color, she wisely changes the color of the font to match the background, making it disappear. Pretty nifty.&lt;/p&gt;
+
+&lt;p&gt;On my Jekyll &lt;code&gt;HTML&lt;/code&gt; I make sure the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; is around the &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;post-list&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  {% for post in site.posts %}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;post-link&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ post.url | prepend: site.baseurl }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;post-meta&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: &amp;quot;%B %d, %Y&amp;quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;
+          {{ post.title }}
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  {% endfor %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;visited-is-where-the-magic-happens&quot;&gt;:visited is where the magic happens&lt;/h2&gt;
+
+&lt;p&gt;Then on the &lt;code&gt;sass&lt;/code&gt; I apply a content for the label after the &lt;code&gt;h2&lt;/code&gt; title, and to make it disappear I set the same colors as the background color on &lt;code&gt;:visited&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.post-list&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Creates the content of the label&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;unread&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Defines color and backgorund color&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$grey-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:visited&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Here is where the magic happens, changes the background and color to make it disappear&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
+  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;css-fun-with-hover-and-active&quot;&gt;CSS fun with :hover and :active&lt;/h2&gt;
+
+&lt;p&gt;I’ve also added different messages for &lt;code&gt;:hover&lt;/code&gt; and &lt;code&gt;:active&lt;/code&gt; states&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.post-list&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Creates the content of the label&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;unread&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Defines color and backgorund color&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$grey-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;unread, read it!&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:active&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;click!&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:visited&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Here is where the magic happens, changes the backgound and color to make it dessapear&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
+  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-new-kind-on-the-block&quot;&gt;The new kind on the block&lt;/h2&gt;
+
+&lt;p&gt;And since the first &lt;code&gt;h2&lt;/code&gt; on the list is the newest post, I tagged it as “new”.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:first-child&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;new!&amp;quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can check the complete code here.&lt;/p&gt;
+
+&lt;p&gt;Now go and check the homepage to see the result!&lt;/p&gt;
+
+&lt;h2 id=&quot;one-more-thing&quot;&gt;One more thing…&lt;/h2&gt;
+
+&lt;p&gt;On related news, I’ve also added comments to the blog. Not because I expect to get any comment.&lt;/p&gt;
+
+&lt;p&gt;I honestly don’t think anyone reads these words, but &lt;a href=&quot;https://en.wikipedia.org/wiki/Jeff_Atwood&quot;&gt;Jeff Atwood&lt;/a&gt; says on his excellent &lt;a href=&quot;http://blog.codinghorror.com&quot;&gt;blog&lt;/a&gt; that a blog without comments is not a blog.&lt;/p&gt;
+
+&lt;p&gt;Now I have a blog. &lt;img class=&quot;emoji&quot; title=&quot;:smile:&quot; alt=&quot;:smile:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f604.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Oct 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/howto/2015/10/06/pseudoclases.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/06/pseudoclases.html</guid>
+        
+        <category>design</category>
+        
+        <category>howto</category>
+        
+        <category>css</category>
+        
+        
+        <category>howto</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
+    
+      <item>
         <title>99% of Design is crap</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/peppa/peppa.jpg&quot; alt=&quot;Set of type&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/peppa/peppa.jpg&quot; alt=&quot;Peppa Pig&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;My son Leon is two and a half years old, and he shares the same passion every single kid in the world has: Peppa Pig.&lt;/p&gt;
 
 &lt;p&gt;Kids comes in all sizes and shapes and they have different personalities. Some talk a lot, others are more physical, some sleep others (like my son Leon) don’t, but they all agree in one thing, Peppa Pig is the best.&lt;/p&gt;
 
 &lt;p&gt;What visual magic is behind a rudimentary drawn phallic shape pink pig goes way beyond my comprehension.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;I am sure that the bright colors, the high pitch of the voices, the simple music and animations and a bit of luck have a lot to do with its success. To me it all comes down to George.&lt;/p&gt;
 
@@ -592,149 +718,6 @@
         
         
         <category>aerogear</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Advance Patternfly settings</title>
-        <description>&lt;p&gt;A few weeks ago I wrote &lt;a href=&quot;/howto/2015/02/06/patternfly.html&quot;&gt;how to set up Patternfly to start a new project&lt;/a&gt;. This time I am going to dive deeper into Patternfly and Boostrap structures to customise and minimise the impact on the compiled css.&lt;/p&gt;
-
-&lt;p&gt;Patternfly imports Boostrap, and we import Patternfly as a base for our less file.&lt;/p&gt;
-
-&lt;p&gt;When we concatenate the base layer of Boostrap styling plus the second layer of Patternfly styles plus our styles by importing one into the other, we end up with a huge css that defines classes and structures that we might never use.&lt;/p&gt;
-
-&lt;p&gt;For example, if our project doesn’t use the modal component, there is no point in loading it to our css.&lt;/p&gt;
-
-&lt;p&gt;To achieve this customisation of component we are going to look into the nuts and bolts of patternfly and Boostrap.&lt;/p&gt;
-
-&lt;h2 id=&quot;import-what-really-matters&quot;&gt;Import what really matters&lt;/h2&gt;
-
-&lt;p&gt;Until now we created a &lt;code&gt;styles.less&lt;/code&gt; files that imports patternfly like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/patternfly.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;As I mention before this will compile into a huge css files. &lt;/p&gt;
-
-&lt;p&gt;In order to import just the parts of patternfly and bootstrap that matters to our project, we are going to look into &lt;code&gt;bootrap.less&lt;/code&gt; and &lt;code&gt;patternfly.less&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;TIP&lt;/em&gt; By keeping &lt;code&gt;/bower_components&lt;/code&gt; untouched, you’ll be able to bower updates.&lt;/p&gt;
-
-&lt;h2 id=&quot;boostrap-layer&quot;&gt;Boostrap layer&lt;/h2&gt;
-
-&lt;p&gt;Lets start from the base: Bootstrap.&lt;/p&gt;
-
-&lt;p&gt;When we use bower to install Patternfly, we also install Bootsrap as a component. Open &lt;code&gt;bootstrap.less&lt;/code&gt; on your text editor, you’ll find it under &lt;code&gt;bower_components/patternfly/components/Boostrap/less/Boostrap.less&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;There is a list of core and component styles. These are the steps to do:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Select all in &lt;code&gt;bootstrap.less &lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Copy&lt;/li&gt;
-  &lt;li&gt;Open &lt;code&gt;styles.less&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Paste it on the beginning of &lt;code&gt;styles.less&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Change the path of the imports so they point to the correct location &lt;code&gt;../bower_components/patternfly/components/Boostrap/less/NAME_OF_THE_FILE&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now, don’t touch the core elements, you’ll need those to do the base styling like typography settings, grids, etc.&lt;/p&gt;
-
-&lt;p&gt;Go through the list of component and comment out with a ‘//’ the ones you’ll not use. Let’s say your project doesn’t use breadcrumbs or pagination, go ahead and comment those out:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Components&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/component-animations.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/glyphicons.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/dropdowns.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/button-groups.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/input-groups.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/navs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/navbar.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/breadcrumbs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/pagination.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/pager.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/labels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/badges.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/jumbotron.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/thumbnails.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/alerts.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/progress-bars.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/media.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/list-group.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/panels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/wells.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/components/Boostrap/less/close.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;patternfly-layer&quot;&gt;Patternfly layer&lt;/h2&gt;
-
-&lt;p&gt;Now lets do the same with patternfly styles. Open &lt;code&gt;patternfly.less&lt;/code&gt; on your text editor, you’ll find it under &lt;code&gt;/bower_components/patternfly/less/patternfly.less&lt;/code&gt; and repeat the same steps: select, copy, paste and change the path.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;IMPORTANT&lt;/em&gt; Remember to paste patternfly styles after bootstrap styles.&lt;/p&gt;
-
-&lt;p&gt;Lets go back to our previews example, we are not using breadcrumbs or pagination, so we comment out those lines:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* PatternFly overrides and new stuff */&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/variables.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/mixins.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/alerts.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/badges.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/bootstrap-combobox.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/bootstrap-select.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/bootstrap-treeview.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/breadcrumbs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/buttons.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/close.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/datatables.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/dropdowns.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/fonts.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/forms.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/icons.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/infotip.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/labels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/list-group.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/login.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/modals.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/navbar.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/pager.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/pagination.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/panels.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/popovers.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/progress-bars.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/search.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/sidebar.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/spinner.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/tables.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/tabs.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/tooltip.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;../bower_components/patternfly/less/type.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;your-styles-layer&quot;&gt;Your styles layer&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;IMPORTANT&lt;/em&gt; Remember &lt;strong&gt;not&lt;/strong&gt; to include a call to patternfly.less &lt;code&gt;@import &quot;/bower_components/patternfly/less/variables.less&quot;;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Write your styles after Patternfly styles on styles.less.&lt;/p&gt;
-
-&lt;p&gt;Once compiled,  styles.css generated from styles.less will not include any reference to breadcrumbs or pagination, making it lighter and faster to load.&lt;/p&gt;
-
-&lt;h2 id=&quot;better-comment-out-than-delete&quot;&gt;Better comment out than delete&lt;/h2&gt;
-
-&lt;p&gt;Any comment with less &lt;code&gt;//&lt;/code&gt; will not became part of the compiled css. It’s good to keep them commented in case you want to add that component later in the project.&lt;/p&gt;
-
-&lt;p&gt;You’ll want your production code to be as clean as possible. Sending less code is cheaper and faster.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 06 Mar 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/03/06/patternfly-part-2.html</guid>
-        
-        <category>Patternfly</category>
-        
-        <category>setup</category>
-        
-        <category>Bower</category>
-        
-        
-        <category>howto</category>
         
         <author>
           <name>Andres Galante</name>

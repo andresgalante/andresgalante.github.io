@@ -1,0 +1,50 @@
+.post-list{
+  a {
+    &:link h2:after {
+      //Creates the content of the label
+      content: 'unread';
+      //Defines color and backgorund color
+      color: #fff;
+      background: $grey-color;
+
+      //Adds styles to make it look like a label and positioning 
+      position: absolute;
+      top: 1.2em;
+      display: inline-block;
+      padding: 0 .4em;
+      margin-left: .8em;
+      vertical-align: middle;
+      font-size: .5em;
+      font-weight: 300;
+      line-height: 1.7em;
+      text-decoration: none;
+      border-radius: .2em;
+    }
+    &:hover h2:after {
+      content: 'unread, read it!';
+    }
+  
+    &:active h2:after {
+      content: 'click!';
+    }
+    &:visited h2:after {
+      //Here is where the magic happens, changes the backgound and color to make it dessapear
+      color: $background-color;
+      background: $background-color; 
+    }  
+  }
+  li{
+    &:hover{
+      a:visited h2:after {
+        //And now it makes it dessapear on hover
+        color: $brand-color;
+        background: $brand-color; 
+      }
+    }
+    &:first-child h2 {
+      &:after {
+        content: "new!";
+      }
+    }
+  }  
+}

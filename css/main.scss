@@ -15,12 +15,14 @@ $spacing-unit:     30px;
 
 $text-color:       rgba(0,0,0,.87);
 $background-color: #fff;
-$brand-color:      rgba(0,0,0,.87);
+$brand-color:      rgba(0,0,0,1);
 
 $grey-color:       rgba(0,0,0,.54);
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 $grey-color-border: rgba(0,0,0,.12);
+
+$white-color-secondary: rgba(255,255,255,.5);
 
 // Width of the content area
 $content-width:    800px;
@@ -48,5 +50,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "hack"
 ;

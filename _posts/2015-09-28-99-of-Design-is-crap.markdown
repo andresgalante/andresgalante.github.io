@@ -6,13 +6,15 @@ categories: design
 tags: design peppa
 ---
 
-![Set of type](/img/peppa/peppa.jpg)
+![Peppa Pig](/img/peppa/peppa.jpg)
 
 My son Leon is two and a half years old, and he shares the same passion every single kid in the world has: Peppa Pig.
 
 Kids comes in all sizes and shapes and they have different personalities. Some talk a lot, others are more physical, some sleep others (like my son Leon) don't, but they all agree in one thing, Peppa Pig is the best.
 
 What visual magic is behind a rudimentary drawn phallic shape pink pig goes way beyond my comprehension.
+
+<!--more-->
 
 I am sure that the bright colors, the high pitch of the voices, the simple music and animations and a bit of luck have a lot to do with its success. To me it all comes down to George.
 
