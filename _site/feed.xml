@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Oct 2015 12:28:03 -0300</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 12:28:03 -0300</lastBuildDate>
+    <pubDate>Wed, 14 Oct 2015 12:40:27 -0300</pubDate>
+    <lastBuildDate>Wed, 14 Oct 2015 12:40:27 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -42,7 +42,7 @@ gems:
 
 &lt;p&gt;For example here is a cute panda face &lt;img class=&quot;emoji&quot; title=&quot;:panda_face:&quot; alt=&quot;:panda_face:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f43c.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;emijis-on-css&quot;&gt;Emijis on CSS&lt;/h1&gt;
+&lt;h1 id=&quot;emojis-on-css&quot;&gt;Emojis on CSS&lt;/h1&gt;
 
 &lt;p&gt;I’ve heard that you could use emoji as class names, but it blew my mind to actually try it. Of course this is completely useless, but it’s as cool as CSS can get.&lt;/p&gt;
 

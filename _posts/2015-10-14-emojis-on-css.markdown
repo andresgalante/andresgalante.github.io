@@ -35,7 +35,7 @@ Then you can go to [any emoji cheatsheet](http://www.emoji-cheat-sheet.com) to g
 
 For example here is a cute panda face :panda_face:
 
-# Emijis on CSS
+# Emojis on CSS
 
 I've heard that you could use emoji as class names, but it blew my mind to actually try it. Of course this is completely useless, but it's as cool as CSS can get.
 
