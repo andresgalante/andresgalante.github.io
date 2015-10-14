@@ -6,7 +6,7 @@ categories: howto
 tags: emoji jekyll css html setup
 ---
 
-Jeff Atwood, creator of Stack Overflow and one of the best blogers there is, says that a blog without comments is not a blog. I'd like to add that a blog without [emoji](https://en.wikipedia.org/wiki/Emoji) is not a blog. But that's not the hole truth, emojis go way further. **A life without emoji is like the weekly PM meeting: boring**.
+[Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood), creator of [Stack Overflow](http://stackoverflow.com) and one of [the best blogers there is](http://blog.codinghorror.com), says that a blog without comments is not a blog. I'd like to add that a blog without [emoji](https://en.wikipedia.org/wiki/Emoji) is not a blog. But that's not the hole truth, emojis go way further. **A life without emoji is like the weekly PM meeting: boring**.
 
 Andy Warhol said:
 
@@ -14,7 +14,7 @@ Andy Warhol said:
 
 And Leo Tolstoy wrote: 
 
-> Everything intelligent is so boring.” 
+> Everything intelligent is so boring.
 
 Which makes the weekly PM meeting an intelligent art masterpiece.
 
@@ -34,7 +34,7 @@ For example here is a cute panda face :panda_face:
 
 # Emijis on CSS
 
-I've heard that you could use emoji as class names, but it blew my mind to actually test it. Ofcourse this is completely useless, but it's as cool as CSS can get.
+I've heard that you could use emoji as class names, but it blew my mind to actually try it. Of course this is completely useless, but it's as cool as CSS can get.
 
 
 For example, if I want to build a section for Funny Hot News, I can name it like this: :smiley: :fire: :newspaper:

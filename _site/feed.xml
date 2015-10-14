@@ -6,13 +6,13 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Oct 2015 12:04:31 -0300</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 12:04:31 -0300</lastBuildDate>
+    <pubDate>Wed, 14 Oct 2015 12:08:53 -0300</pubDate>
+    <lastBuildDate>Wed, 14 Oct 2015 12:08:53 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Spice up your CSS with Emojis</title>
-        <description>&lt;p&gt;Jeff Atwood, creator of Stack Overflow and one of the best blogers there is, says that a blog without comments is not a blog. I’d like to add that a blog without &lt;a href=&quot;https://en.wikipedia.org/wiki/Emoji&quot;&gt;emoji&lt;/a&gt; is not a blog. But that’s not the hole truth, emojis go way further. &lt;strong&gt;A life without emoji is like the weekly PM meeting: boring&lt;/strong&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Jeff_Atwood&quot;&gt;Jeff Atwood&lt;/a&gt;, creator of &lt;a href=&quot;http://stackoverflow.com&quot;&gt;Stack Overflow&lt;/a&gt; and one of &lt;a href=&quot;http://blog.codinghorror.com&quot;&gt;the best blogers there is&lt;/a&gt;, says that a blog without comments is not a blog. I’d like to add that a blog without &lt;a href=&quot;https://en.wikipedia.org/wiki/Emoji&quot;&gt;emoji&lt;/a&gt; is not a blog. But that’s not the hole truth, emojis go way further. &lt;strong&gt;A life without emoji is like the weekly PM meeting: boring&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Andy Warhol said:&lt;/p&gt;
 
@@ -23,7 +23,7 @@
 &lt;p&gt;And Leo Tolstoy wrote: &lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Everything intelligent is so boring.” &lt;/p&gt;
+  &lt;p&gt;Everything intelligent is so boring.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Which makes the weekly PM meeting an intelligent art masterpiece.&lt;/p&gt;
@@ -42,7 +42,7 @@ gems:
 
 &lt;h1 id=&quot;emijis-on-css&quot;&gt;Emijis on CSS&lt;/h1&gt;
 
-&lt;p&gt;I’ve heard that you could use emoji as class names, but it blew my mind to actually test it. Ofcourse this is completely useless, but it’s as cool as CSS can get.&lt;/p&gt;
+&lt;p&gt;I’ve heard that you could use emoji as class names, but it blew my mind to actually try it. Of course this is completely useless, but it’s as cool as CSS can get.&lt;/p&gt;
 
 &lt;p&gt;For example, if I want to build a section for Funny Hot News, I can name it like this: &lt;img class=&quot;emoji&quot; title=&quot;:smiley:&quot; alt=&quot;:smiley:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f603.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; &lt;img class=&quot;emoji&quot; title=&quot;:fire:&quot; alt=&quot;:fire:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f525.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; &lt;img class=&quot;emoji&quot; title=&quot;:newspaper:&quot; alt=&quot;:newspaper:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f4f0.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/p&gt;
 
