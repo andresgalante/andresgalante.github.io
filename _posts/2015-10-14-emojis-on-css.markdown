@@ -6,6 +6,9 @@ categories: howto
 tags: emoji jekyll css html setup
 ---
 
+![Emoji](/img/emoji/emoji.jpg)
+
+
 [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood), creator of [Stack Overflow](http://stackoverflow.com) and one of [the best blogers there is](http://blog.codinghorror.com), says that a blog without comments is not a blog. I'd like to add that a blog without [emoji](https://en.wikipedia.org/wiki/Emoji) is not a blog. But that's not the hole truth, emojis go way further. **A life without emoji is like the weekly PM meeting: boring**.
 
 Andy Warhol said:

@@ -6,13 +6,15 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Oct 2015 12:08:53 -0300</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 12:08:53 -0300</lastBuildDate>
+    <pubDate>Wed, 14 Oct 2015 12:15:10 -0300</pubDate>
+    <lastBuildDate>Wed, 14 Oct 2015 12:15:10 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Spice up your CSS with Emojis</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Jeff_Atwood&quot;&gt;Jeff Atwood&lt;/a&gt;, creator of &lt;a href=&quot;http://stackoverflow.com&quot;&gt;Stack Overflow&lt;/a&gt; and one of &lt;a href=&quot;http://blog.codinghorror.com&quot;&gt;the best blogers there is&lt;/a&gt;, says that a blog without comments is not a blog. I’d like to add that a blog without &lt;a href=&quot;https://en.wikipedia.org/wiki/Emoji&quot;&gt;emoji&lt;/a&gt; is not a blog. But that’s not the hole truth, emojis go way further. &lt;strong&gt;A life without emoji is like the weekly PM meeting: boring&lt;/strong&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/emoji/emoji.jpg&quot; alt=&quot;Emoji&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Jeff_Atwood&quot;&gt;Jeff Atwood&lt;/a&gt;, creator of &lt;a href=&quot;http://stackoverflow.com&quot;&gt;Stack Overflow&lt;/a&gt; and one of &lt;a href=&quot;http://blog.codinghorror.com&quot;&gt;the best blogers there is&lt;/a&gt;, says that a blog without comments is not a blog. I’d like to add that a blog without &lt;a href=&quot;https://en.wikipedia.org/wiki/Emoji&quot;&gt;emoji&lt;/a&gt; is not a blog. But that’s not the hole truth, emojis go way further. &lt;strong&gt;A life without emoji is like the weekly PM meeting: boring&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Andy Warhol said:&lt;/p&gt;
 
