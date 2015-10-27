@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Oct 2015 23:32:02 -0300</pubDate>
-    <lastBuildDate>Mon, 26 Oct 2015 23:32:02 -0300</lastBuildDate>
+    <pubDate>Tue, 27 Oct 2015 09:09:58 -0300</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 09:09:58 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -50,7 +50,7 @@
 
 &lt;p&gt;It’s either impossible or I don’t know how to do it. &lt;/p&gt;
 
-&lt;p&gt;If it is impossible, then I am dumb for not having realize it before I stared. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.&lt;/p&gt;
+&lt;p&gt;If it is impossible, then I am dumb for not having realize it before I started. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.&lt;/p&gt;
 
 &lt;p&gt;So I chose to use an svg pattern and clip it with a CSS polygon shape.&lt;/p&gt;
 
