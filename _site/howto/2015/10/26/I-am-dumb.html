@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Spice up your CSS with Emojis</title>
-  <meta name="description" content="Jeff Atwood, creator of Stack Overflow and one of the best bloggers there is, says that a blog without comments is not a blog. I’d like to add that a blog wi...">
+  <title>Impossible pattern makes me dumb</title>
+  <meta name="description" content="This is the story of how I tried to make a pattern using css background and I failed.If you are looking for a nice CSS story with a happy ending stop reading...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://andresgalante.github.io/howto/2015/10/14/emojis-on-css.html">
+  <link rel="canonical" href="http://andresgalante.github.io/howto/2015/10/26/I-am-dumb.html">
   <link rel="alternate" type="application/rss+xml" title="Andres Galante" href="http://andresgalante.github.io/feed.xml" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -63,13 +63,13 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Spice up your CSS with Emojis</h1>
+    <h1 class="post-title">Impossible pattern makes me dumb</h1>
     <p class="post-meta">
       <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
 
       <a href="/about">Andres Galante</a> 
       wrote this on 
-      October 14, 2015
+      October 26, 2015
 
        under <strong>howto</strong> category.
 
@@ -82,51 +82,71 @@
   </header>
 
   <article class="post-content">
-    <p><img src="/img/emoji/emoji.jpg" alt="Emoji" /></p>
+    <p><img src="/img/dumb/dumb.png" alt="pattern" /></p>
 
-<p><a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a>, creator of <a href="http://stackoverflow.com">Stack Overflow</a> and one of <a href="http://blog.codinghorror.com">the best bloggers there is</a>, says that a blog without comments is not a blog. I’d like to add that a blog without <a href="https://en.wikipedia.org/wiki/Emoji">emoji</a> is not a blog. But that’s not the hole truth, emojis go way further. <strong>A life without emoji is like the weekly PM meeting: boring</strong>.</p>
+<p>This is the story of how I tried to make a pattern using css background and I failed.</p>
 
-<p>Andy Warhol said:</p>
+<p>If you are looking for a nice CSS story with a happy ending stop reading now. </p>
 
-<blockquote>
-  <p>I like boring things.</p>
-</blockquote>
+<p>On the other hand, if you are like Douglas, and you also think that writing about my sad wasted of hours during the weekend is a perfect blog post, then stay and read on. </p>
 
-<p>And Leo Tolstoy wrote: </p>
+<p>First things first: Lets face it, you have a problem. I understand that Douglas wants to read about unsuccessful CSS experiment, after all he is crazy enough to get married in a Castle in São Paulo. But you, my dear reader, should consider stop reading now or a psychology session.</p>
 
-<blockquote>
-  <p>Everything intelligent is so boring.</p>
-</blockquote>
+<p>Now that we’ve got the important out of the way, I’ll start with a story.</p>
 
-<p>Which makes the weekly PM meeting an intelligent art masterpiece.</p>
+<h2 id="the-story">The Story</h2>
 
-<h1 id="emojis-on-jekyll">Emojis on Jekyll</h1>
+<p>I am part of the Red Hat UXD team. Internally the team has a site where we publish our weekly status reports, blog about work in progress, ask questions, and look for shared UXD assets, and we call it <strong>UXDepot</strong>.</p>
 
-<p>Adding emojis to a <a href="https://jekyllrb.com">jekyll</a> blog is easy. Just add the <a href="https://github.com/jekyll/jemoji">jemoji gem</a> to your site’s <code>_config.yml</code></p>
+<p>The guys that build the UXDepot did an amazing job. It has some nifty features that make me smile every week, you wouldn’t believe the pleasure I feel every time I click the “Insert Last Status Report” button.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># adds emoji</span>
-gems:
-  - jemoji</code></pre></div>
+<p>The UXDepot has an image on the header following the <a href="http://brand.redhat.com/elements/pattern/">Red Hat brand guidelines</a>.</p>
 
-<p>Then you can go to <a href="http://www.emoji-cheat-sheet.com">any emoji cheatsheet</a> to get the reference for the emoji.</p>
+<p>So I set myself to rebuild that image as proper HTML/CSS header.</p>
 
-<p>For example here is a cute panda face <img class="emoji" title=":panda_face:" alt=":panda_face:" src="https://assets.github.com/images/icons/emoji/unicode/1f43c.png" height="20" width="20" align="absmiddle" /></p>
+<p><img src="/img/dumb/UXDepot_Banner_Template.jpg" alt="UXDepot banner" /></p>
 
-<h1 id="emojis-on-css">Emojis on CSS</h1>
+<h2 id="the-process">The Process</h2>
 
-<p>I’ve heard that you could use emoji as class names, but it blew my mind to actually try it. Of course this is completely useless, but it’s as cool as CSS can get.</p>
+<p>At first it seems simple. I’ve created a <code>header</code> with multiple background for the image, the red stipe and the shadow on the right. I’ve multiplied the red stripe and the shadow with CSS background blend modes, added the logo as an svg image and more of less set the font sizes.</p>
 
-<p>For example, if I want to build a section for Funny Hot News, I can name it like this: <img class="emoji" title=":smiley:" alt=":smiley:" src="https://assets.github.com/images/icons/emoji/unicode/1f603.png" height="20" width="20" align="absmiddle" /> <img class="emoji" title=":fire:" alt=":fire:" src="https://assets.github.com/images/icons/emoji/unicode/1f525.png" height="20" width="20" align="absmiddle" /> <img class="emoji" title=":newspaper:" alt=":newspaper:" src="https://assets.github.com/images/icons/emoji/unicode/1f4f0.png" height="20" width="20" align="absmiddle" /></p>
+<p>That was easy enough, but then I found two roadblocks: the typeface and the pattern.</p>
 
-<div data-height="220" data-theme-id="20015" data-slug-hash="jbGqXj" data-default-tab="html" data-user="andresgalante" class="codepen"><pre><code>&lt;div class=&quot;😃🔥📰&quot;&gt;
-  This is the Funny Hot News section!
-&lt;/div&gt;</code></pre>
-<p>See the Pen <a href="http://codepen.io/andresgalante/pen/jbGqXj/">Emoji CSS class names</a> by Andres Galante (<a href="http://codepen.io/andresgalante">@andresgalante</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<h2 id="the-problem">The Problem</h2>
+
+<p>The font Interstate is not open source, I could have replaced it with an image but it is better to use a webfont. So I decided to change it with <a href="http://overpassfont.org/">Overpass</a>.</p>
+
+<p>The second issue is the pattern. After trying for a few hours I found out that I couldn’t reproduce the pattern with CSS backgrounds.</p>
+
+<p>It’s either impossible or I don’t know how to do it. </p>
+
+<p>If it is impossible, then I am dumb for not having realize it before I stared. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.</p>
+
+<p>So I chose to use an svg pattern and clip it with a CSS polygon shape.</p>
+
+<p>But I couldn’t match the exact location of the pattern because the positioning of the red background is relative to the center of the box and not the top.</p>
+
+<h2 id="the-result">The Result</h2>
+
+<p>This is it.</p>
+
+<div data-height="266" data-theme-id="20015" data-slug-hash="pjLvvz" data-default-tab="html" data-user="andresgalante" class="codepen"><pre><code>&lt;header&gt;
+  &lt;h1&gt;UXDepot&lt;/h1&gt;
+  &lt;h2&gt;User Experience Design Team&lt;/h2&gt;
+  &lt;p&gt;&lt;a href=&quot;https://twitter.com/RedHatUXD&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt; @RedHatUXD&lt;/a&gt;&lt;p&gt;
+  &lt;h6&gt;&lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;&lt;h6&gt;
+&lt;/header&gt;</code></pre>
+<p>See the Pen <a href="http://codepen.io/andresgalante/pen/pjLvvz/">UX depot header</a> by Andres Galante (<a href="http://codepen.io/andresgalante">@andresgalante</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 </div>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>These are just a few ways to use them, now go and <a href="https://youtu.be/9wfpXI5PKlw">Spice Up Your Life</a> with emojis.</p>
+<h2 id="the-conclusion">The Conclusion</h2>
 
+<p>If anyone can solve this, Robb can. I asked him and he told me that since I am already using an image, he’d be inclined to make both background part of the same image.</p>
+
+<p>But he is a fun killer, there is no awesomeness on using background images.</p>
+
+<p>During this weekend I learn that I am dumb.</p>
 
   </article>
 
@@ -137,11 +157,9 @@ gems:
 
   <div class="post-navigation">
    
-  <a rel="prev" href="/howto/2015/10/06/pseudoclases.html"><i class="fa fa-arrow-left"></i>CSS pseudo class playground</a>
+  <a rel="prev" href="/howto/2015/10/19/css-rounded-corner-hexagon%20copy.html"><i class="fa fa-arrow-left"></i>CSS rounded corner hexagon</a>
   
 
-   
-  <a rel="next" href="/howto/2015/10/19/css-rounded-corner-hexagon%20copy.html">CSS rounded corner hexagon<i class="fa fa-arrow-right"></i></a>
   
   </div>
 

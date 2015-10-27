@@ -7,6 +7,114 @@ tags: Patternfly setup Bower
 ---
 
 
+This is the story of how I tried to make a pattern using css background and I failed.
+
+If you are looking for a nice CSS story with a happy ending stop reading now. 
+
+On the other hand, if you are like Douglas, and you also think that writing about my sad wasted of hours during the weekend is a perfect blog post, then stay and read on. 
+
+First things first: Lets face it, you have a problem. I understand that Douglas wants to read about unsuccessful CSS experiment, after all he is crazy enough to get married in a Castle in São Paulo. But you, my dear reader, should consider stop reading now or a psychology session.
+
+Now that we've got the important out of the way, I'll start with a story.
+
+## The Story
+
+I am part of the Red Hat UXD team. Internally the team has a site where we publish our weekly status reports, blog about work in progress, ask questions, and look for shared UXD assets, and we call it **UXDepot**.
+
+The guys that build the UXDepot did an amazing job. It has some nifty features that make me smile every week, you wouldn't believe the pleasure I feel every time I click the "Insert Last Status Report" button.
+
+The UXDepot has an image on the header following the [Red Hat brand guidelines](http://brand.redhat.com/elements/pattern/).
+
+So I set myself to rebuild that image as proper HTML/CSS header.
+
+<img src="../img/dumb/UXDepot_Banner_Template.jpg" alt="UXDepot_Banner_Template" width="2910" height="270" />
+
+## The Process
+
+At first it seems simple. I've created a `header` with multiple background for the image, the red stipe and the shadow on the right. I've multiplied the red stripe and the shadow with CSS background blend modes, added the logo as an svg image and more of less set the font sizes.
+
+That was easy enough, but then I found two roadblocks: the typeface and the pattern.
+
+## The Problem
+
+The font Interstate is not open source, I could have replaced it with an image but it is better to use a webfont. So I decided to change it with [Overpass](http://overpassfont.org/).
+
+The second issue is the pattern. After trying for a few hours I found out that I couldn't reproduce the pattern with CSS backgrounds.
+
+It's either impossible or I don't know how to do it. 
+
+If it is impossible, then I am dumb for not having realize it before I stared. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.
+
+So I chose to use an svg pattern and clip it with a CSS polygon shape.
+
+But I couldn't match the exact location of the pattern because the positioning of the red background is relative to the center of the box and not the top.
+
+## The Conclusion
+
+If anyone can solve this, Robb can. I asked him and he told me that since I am already using an image, he’d be inclined to make both background part of the same image.
+
+But he is a fun killer, there is no awesomeness on using background images.
+
+During this weekend I learn that I am dumb.
+
+
+- 
+
+## The Failure
+
+ 
+http://brand.redhat.com/elements/pattern/
+
+You enjoy 
+
+You enjoy Hello reader, you like I hate you. Im a way, it seems that 
+
+
+
+I am aware that 
+
+ the timing is bad for UX changes to studio.  On-prem and OSS are all-consuming business priorities.
+
+
+
+Mobile team. 
+- I though it was going to change but same same.
+- Still working on WFM
+- Really bad, lots of issues everywhere.
+- Mark Little ask them to stop doing new features and make the product stable.
+- To me its a time bomb.
+- Fh was bought by RH, but they are not RH.
+- Not open sourcing.
+- Developer team working constantly on client issues.
+- developer team became support for clients
+- Good developers thinking of leaving the team.
+
+
+
+Company culture is something abstract that I only got to know when I experience it. I've worked by myself or in very small team for most of my professional life, and it wasn't until recently that I've got the chance to see how crucial it is.
+
+According to [forbes](http://www.forbes.com/sites/williamcraig/2014/10/24/what-is-company-culture-and-how-do-you-change-it/) the "culture" is the Company vision, values, norms, systems, symbols, language, assumptions, beliefs, and habits.
+
+It's basically about people. A talented smart team with good leadership can embrace, follow and create good culture. And I've been lucky enough to have find all of that when I join Red Hat.
+
+I also learn that it takes much more time and effort to build a culture than to destroy it.
+
+I don't think that for large companies there is such thing as a company culture. Each team has its own dynamics that creates ecosystems, and that of courses depends on the people working and leading each team.
+
+Clash of titans
+
+What happens when 
+
+Lead on maestro
+
+There is a need for developers on the market and few good ones. Good developers can choose where to work.
+
+
+Adapt or die
+
+
+
+
 
 On Friday I received the opening and closing slides to include on my presentation for the upcoming talk at Interaction South America 2015 in Cordoba, Argentina.
 

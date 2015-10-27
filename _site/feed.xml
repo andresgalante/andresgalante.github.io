@@ -6,9 +6,104 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Oct 2015 17:20:22 -0300</pubDate>
-    <lastBuildDate>Mon, 19 Oct 2015 17:20:22 -0300</lastBuildDate>
+    <pubDate>Mon, 26 Oct 2015 23:32:02 -0300</pubDate>
+    <lastBuildDate>Mon, 26 Oct 2015 23:32:02 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Impossible pattern makes me dumb</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/dumb/dumb.png&quot; alt=&quot;pattern&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the story of how I tried to make a pattern using css background and I failed.&lt;/p&gt;
+
+&lt;p&gt;If you are looking for a nice CSS story with a happy ending stop reading now. &lt;/p&gt;
+
+&lt;p&gt;On the other hand, if you are like Douglas, and you also think that writing about my sad wasted of hours during the weekend is a perfect blog post, then stay and read on. &lt;/p&gt;
+
+&lt;p&gt;First things first: Lets face it, you have a problem. I understand that Douglas wants to read about unsuccessful CSS experiment, after all he is crazy enough to get married in a Castle in São Paulo. But you, my dear reader, should consider stop reading now or a psychology session.&lt;/p&gt;
+
+&lt;p&gt;Now that we’ve got the important out of the way, I’ll start with a story.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-story&quot;&gt;The Story&lt;/h2&gt;
+
+&lt;p&gt;I am part of the Red Hat UXD team. Internally the team has a site where we publish our weekly status reports, blog about work in progress, ask questions, and look for shared UXD assets, and we call it &lt;strong&gt;UXDepot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The guys that build the UXDepot did an amazing job. It has some nifty features that make me smile every week, you wouldn’t believe the pleasure I feel every time I click the “Insert Last Status Report” button.&lt;/p&gt;
+
+&lt;p&gt;The UXDepot has an image on the header following the &lt;a href=&quot;http://brand.redhat.com/elements/pattern/&quot;&gt;Red Hat brand guidelines&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So I set myself to rebuild that image as proper HTML/CSS header.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/dumb/UXDepot_Banner_Template.jpg&quot; alt=&quot;UXDepot banner&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-process&quot;&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;At first it seems simple. I’ve created a &lt;code&gt;header&lt;/code&gt; with multiple background for the image, the red stipe and the shadow on the right. I’ve multiplied the red stripe and the shadow with CSS background blend modes, added the logo as an svg image and more of less set the font sizes.&lt;/p&gt;
+
+&lt;p&gt;That was easy enough, but then I found two roadblocks: the typeface and the pattern.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;The font Interstate is not open source, I could have replaced it with an image but it is better to use a webfont. So I decided to change it with &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second issue is the pattern. After trying for a few hours I found out that I couldn’t reproduce the pattern with CSS backgrounds.&lt;/p&gt;
+
+&lt;p&gt;It’s either impossible or I don’t know how to do it. &lt;/p&gt;
+
+&lt;p&gt;If it is impossible, then I am dumb for not having realize it before I stared. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.&lt;/p&gt;
+
+&lt;p&gt;So I chose to use an svg pattern and clip it with a CSS polygon shape.&lt;/p&gt;
+
+&lt;p&gt;But I couldn’t match the exact location of the pattern because the positioning of the red background is relative to the center of the box and not the top.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-result&quot;&gt;The Result&lt;/h2&gt;
+
+&lt;p&gt;This is it.&lt;/p&gt;
+
+&lt;div data-height=&quot;266&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;pjLvvz&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;header&amp;gt;
+  &amp;lt;h1&amp;gt;UXDepot&amp;lt;/h1&amp;gt;
+  &amp;lt;h2&amp;gt;User Experience Design Team&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://twitter.com/RedHatUXD&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-twitter&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; @RedHatUXD&amp;lt;/a&amp;gt;&amp;lt;p&amp;gt;
+  &amp;lt;h6&amp;gt;&amp;lt;a href=&amp;quot;http://www.redhat.com/&amp;quot;&amp;gt;Red Hat&amp;lt;/a&amp;gt;&amp;lt;h6&amp;gt;
+&amp;lt;/header&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/pjLvvz/&quot;&gt;UX depot header&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;the-conclusion&quot;&gt;The Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If anyone can solve this, Robb can. I asked him and he told me that since I am already using an image, he’d be inclined to make both background part of the same image.&lt;/p&gt;
+
+&lt;p&gt;But he is a fun killer, there is no awesomeness on using background images.&lt;/p&gt;
+
+&lt;p&gt;During this weekend I learn that I am dumb.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Oct 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/howto/2015/10/26/I-am-dumb.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/26/I-am-dumb.html</guid>
+        
+        <category>sass</category>
+        
+        <category>css</category>
+        
+        <category>html</category>
+        
+        <category>setup</category>
+        
+        <category>background</category>
+        
+        <category>blend</category>
+        
+        <category>mode</category>
+        
+        
+        <category>howto</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>CSS rounded corner hexagon</title>
@@ -128,8 +223,8 @@
 &lt;p&gt;I am sure there are way better ways to do hexagonal rounded corner shapes, this one doesn’t feel elegant enough. But it was good fun to build it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Oct 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon.html</guid>
+        <link>http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon%20copy.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon%20copy.html</guid>
         
         <category>sass</category>
         
@@ -763,86 +858,6 @@ gems:
         
         
         <category>patternfly</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>HTML/CSS is real in a way Photoshop will never be</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/no-photoshop/no-photoshop.png&quot; alt=&quot;HTML/CSS is real in a way Photoshop will never be&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Back in 2008 I had an eureka moment when I read &lt;a href=&quot;https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments&quot;&gt;this article&lt;/a&gt; from &lt;a href=&quot;https://signalvnoise.com&quot;&gt;Noise vs Signals blog&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/jasonfried&quot;&gt;Jason Fried&lt;/a&gt; explains in 7 excellent reasons why the 37signals team skips photoshop, going directly from paper sketches to HTML/CSS.&lt;/p&gt;
-
-&lt;p&gt;It made so much sense to me that I wanted to start doing it right away. Although I could do it on my own projects, I was a freelancer and my clients loved mockups.&lt;/p&gt;
-
-&lt;p&gt;It wasn’t until recently, working at Red Hat within an open source community that I saw how this workflow can benefit and improve the relationship between designers and developers to generate amazing result.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-bother&quot;&gt;Why bother&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/jasonfried&quot;&gt;Jason&lt;/a&gt; goes over the &lt;a href=&quot;https://signalvnoise.com/posts/1061-why-we-skip-photoshop#comments&quot;&gt;main reasons&lt;/a&gt;, but this is why I bother:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Let’s be honest: I am lazy. It takes lots of patience, effort and time to build an accurate photoshop image.&lt;/li&gt;
-  &lt;li&gt;Creating UIs on Photoshop is a tedious work that never really represent the end result, for example text in Photoshop is not the text on the web.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To me it’s just a big waste of time. At the end of the day, implementation is done in HTML/CSS anyway. &lt;/p&gt;
-
-&lt;p&gt;HTML/CSS is as much a drawing tool as photoshop, just better and real.&lt;/p&gt;
-
-&lt;h2 id=&quot;shows-results-instead-of-expectations&quot;&gt;Shows results instead of expectations&lt;/h2&gt;
-
-&lt;p&gt;I am a designer and I work with developers. Developers have developer eyes, which are very different from designer eye. &lt;/p&gt;
-
-&lt;p&gt;Designer are strange. We care about typography to the point that we get annoyed if the elevator numbers doesn’t have the correct kerning. We generate pheromones when we see good alignment and spacing. We just care about things that no other human being does.&lt;/p&gt;
-
-&lt;p&gt;My boss once told me that if you give an image to 10 different developers you’ll get 10 different implementations, and most likely none will be the one you’ve envisioned. He is spot on.&lt;/p&gt;
-
-&lt;p&gt;When we handle a perfectly crafted UI image to a developer to implement, it’s just silly to expect that he will care about the same things we do.&lt;/p&gt;
-
-&lt;p&gt;When I skip mockups and create HTML prototypes I am not only speaking the same language the developers do, but also making sure the end result looks exactly how I intended.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-paper-to-html-workflow-works&quot;&gt;The paper to HTML workflow works&lt;/h2&gt;
-
-&lt;p&gt;A few years ago I was in Beijing talking to one of the few Chinese persons I knew that spoke english. I asked why was it that almost none Chinese spoke english, and he told me that since there are almost 1.5B Chinese in the world, we should be the ones learning Chinese and not the other way around.&lt;/p&gt;
-
-&lt;p&gt;And he was right.&lt;/p&gt;
-
-&lt;p&gt;On open source projects designers should adapt to the community workflow. Our deliverables must meet the communities expectations and be inside their comfort zone. We shouldn’t expect to change a team mind to fit our ways.&lt;/p&gt;
-
-&lt;p&gt;This has work very well on the &lt;a href=&quot;https://aerogear.org/community/&quot;&gt;Aerogear team&lt;/a&gt;. I’ve learn git to send my designs to the community repositories and I always do my best to help improve the UIs and UX without been dead weight to the team.&lt;/p&gt;
-
-&lt;p&gt;I am sure I often fail, at the end of the day I am a designer. But I know that the team appreciates and support my effort and they help me in any way they can.&lt;/p&gt;
-
-&lt;h2 id=&quot;i-am-biased&quot;&gt;I am biased&lt;/h2&gt;
-
-&lt;p&gt;To me hifi mockups have always been a waste of time, but I may be biased too, because coding for me is as easy as using Photoshop.&lt;/p&gt;
-
-&lt;p&gt;I have the privilege of working with with extremely talented designer that don’t code and build beautiful interfaces. I just hope my experience show a different design path that has given me great satisfactions.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 May 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/05/27/HTMLCSS-is-real-in-a-way-Photoshop-will-never-be.html</guid>
-        
-        <category>Aerogear</category>
-        
-        <category>uxd</category>
-        
-        <category>design</category>
-        
-        <category>html</category>
-        
-        <category>css</category>
-        
-        <category>code</category>
-        
-        
-        <category>design</category>
         
         <author>
           <name>Andres Galante</name>
