@@ -32,9 +32,9 @@ What makes them successful?
 [Mdo](http://markdotto.com/) mention three pillars to create an open and collaborative design system:
 
 #### 1. Open source
-Open source mentality yields surprising results. 
-I've already ramble about [design at open source communities](http://blog.andresgalante.com/design/2015/08/31/adopt-a-deisgner.html). Open source leads to innovation. 
-Not every company can open their projects, but in order to have a successful design system , it must work as an open source community would. Every member of the team should be envolved in building, maintaining and making it grow.
+Open source mentality leads to innovation and yields surprising results. 
+I've already ramble about [design at open source communities](http://blog.andresgalante.com/design/2015/08/31/adopt-a-deisgner.html). 
+I am aware that not every company can open their projects, but in order to have a successful design system , it must work as an open source community would. Every member of the team should be envolved in building, maintaining and making it grow.
 
 
 #### 2. Documentation
