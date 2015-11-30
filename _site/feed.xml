@@ -6,9 +6,989 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Nov 2015 19:38:01 -0300</pubDate>
-    <lastBuildDate>Thu, 19 Nov 2015 19:38:01 -0300</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2015 16:14:00 -0300</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2015 16:14:00 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>IDEAS</title>
+        <description>&lt;p&gt;I’ve been working at Red Hat for one year now, and it has been an superb year. I’ve met and work alongside smart capable people and learn something new each week.&lt;/p&gt;
+
+&lt;p&gt;This week wasn’t different.&lt;/p&gt;
+
+&lt;p&gt;I started it frustrated because a product manager couldn’t understand the importance of a design change I wanted to implement. Annoyed with it I though to myself that they don’t know better and decided to forget about it, even though I was sure the change was necessary.&lt;/p&gt;
+
+&lt;p&gt;Probably anyone working on an enterprise environment confronts situations like this every day, that’s why I asked Catherine for advice. And she send this lines:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I think this is the type of thing that brings you from a good designer to a great designer in an enterprise environment. You have to learn how to communicate your design wants with each of the the different stakeholders in the company in their terms.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a way it took me back to my freelancer days, when I was a one man show. But the Catherine is right, the enterprise environment is unique, and communication is key to achieve anything.&lt;/p&gt;
+
+&lt;h2 id=&quot;communicate-clearly&quot;&gt;Communicate clearly&lt;/h2&gt;
+
+&lt;p&gt;Last week Josephine twitted an excellent presentation about enterprise UX project by Erik von Stackelberg where he describe what enterprise applications are, why they are bad and how we can improve it. And of course he mentions the importance of having empathy and excellent communication skills. &lt;/p&gt;
+
+&lt;p&gt;You could argue that those are qualities any person working on an enterprise environment should have, but design is different is one very important point: It is almost impossible to mesure design.&lt;/p&gt;
+
+&lt;p&gt;A sales person can show sales numbers, a coder can show better performance, but a better user experience is something very hard to prove and the results are only shown in the long run.&lt;/p&gt;
+
+&lt;h2 id=&quot;communicate-in-their-terms&quot;&gt;Communicate in their terms&lt;/h2&gt;
+
+&lt;p&gt;We all want the product to succeed and it is my fault that product manager didn’t understand the importance of the design change. I was unable to communicate the idea in his terms.&lt;/p&gt;
+
+&lt;p&gt;A great enterprise designer knows how to talk conversion rates to a marketing person, sells to a sale person, business goals to a product manager and performance to a developer, all in the name of giving the users a good experience.&lt;/p&gt;
+
+&lt;p&gt;UX is not (only) about interfaces&lt;/p&gt;
+
+&lt;p&gt;The people you work with is usually what makes a project fun or interesting.&lt;/p&gt;
+
+&lt;p&gt;For the past few weeks I’ve been working on a fun and interesting project mostly because Brian is great to work with. &lt;/p&gt;
+
+&lt;p&gt;Since we didn’t have much time to spend on UX research we came up with some silly pseudo personas to define our interaction. The star been Trever (yes, Trever with an “e”) the trucker, who in my mind looks like a slightly fatter and middle age Kurt Cobain.&lt;/p&gt;
+
+&lt;p&gt;Since we work at Red Hat, this project will be open source. That’s why we need to think the API in a way that’s easy to consume to engage better with the community. So we came up with developer personas: Oswald the Open source contributor and Steve the enterprise coder that will consume the project.&lt;/p&gt;
+
+&lt;p&gt;Although UX in this project was kinda silly, it made me think about something Eder asked me during QCon Rio: What would a good “UX for developers” talk be.&lt;/p&gt;
+
+&lt;h2 id=&quot;as-always-it-comes-down-to-user-goals&quot;&gt;As always, it comes down to user goals.&lt;/h2&gt;
+
+&lt;p&gt;If you deal with users, thinking about their experience is critical.&lt;/p&gt;
+
+&lt;p&gt;User experience goes way beyond the interface, neither Oswald or Peter will see a UI, but we will design the API with their goals in mind. &lt;/p&gt;
+
+&lt;p&gt;We are all here to help our users achieve their goals, it doesn’t matter if you are a designer or a developer (or support, or marketing or PM). &lt;/p&gt;
+
+&lt;p&gt;Don’t get me wrong, a user is not a client. Marketing takes care of clients, UX designers (and everyone else) should take care of users. Specially on enterprise applications, where the one that buys the platform is never the one that uses it.&lt;/p&gt;
+
+&lt;p&gt;UX designers are the lawyers defending the users. Our job is to make sure we all understands our users. And keep them front of mind as we do all of our design decisions, product decisions and productisation decisions all away though the process.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-know-i-havent-answer-eder-question&quot;&gt;I know, I haven’t answer Eder question.&lt;/h2&gt;
+
+&lt;p&gt;To answer Eders question, I still don’t know what a good UX for developers talk would be. Teaching a developer UX in a 40 min talk its like teaching me java in 40mins (or in 40 years), a waste complete time. &lt;/p&gt;
+
+&lt;p&gt;But it might be useful for a developer to understand what design thinking is. How to take a user centric approach where everyone should think about think about the user, and how to take advantage of the designer and involve them in every step of the process.&lt;/p&gt;
+
+&lt;p&gt;UX FOR DEVELOPERS
+you are already awesome!
+personas in coding
+API designers should use personas
+API is the UX of developer users
+APIs would be better
+For the API I have “Paul the PS engineer”
+and “Oswald the OSS community developer”
+and Paul won’t adopt any API unless it’s similar to what he is already using&lt;/p&gt;
+
+&lt;p&gt;Open collaborative design system&lt;/p&gt;
+
+&lt;p&gt;I’ve started this week with a mission: stop procrastination. What would happen if I do the things that I have to do first instead of the more pleasurable ones? &lt;/p&gt;
+
+&lt;p&gt;To be honest I don’t know. Monday is blog day and Monday went by without a post. Short story short: I am good at procrastinating.&lt;/p&gt;
+
+&lt;p&gt;But Monday didn’t went idle, I’ve finish preparing the presentation for ISA2015. It’s Red Hats design system: PatternFly.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;PatternFly is a community of designers and developers collaborating to build a UI framework for enterprise web applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;patternfly-shines-at-enterprise-web-applications&quot;&gt;PatternFly shines at enterprise web applications&lt;/h2&gt;
+
+&lt;p&gt;Luke Wroblewski &lt;a href=&quot;http://www.lukew.com/ff/entry.asp?15&quot;&gt;wrote&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;All content-heavy interfaces need to strike an appropriate balance between visual simplicity and information density (content, as usual, is defined as the information and activities that constitute an interactive system). Visual simplicity keeps things clear and focused. Information density provides lots of choices to match lots of different user needs and behavioral patterns.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And PatternFly is crafted to achieve that balance. If you are looking to build an enterprise web applications look no further.&lt;/p&gt;
+
+&lt;p&gt;There are other great open source design systems like &lt;a href=&quot;http://primercss.io/&quot;&gt;GitHub Primer&lt;/a&gt;, &lt;a href=&quot;https://www.mozilla.org/en-US/styleguide/websites/sandstone/&quot;&gt;FireFox Sandstone&lt;/a&gt;, &lt;a href=&quot;http://foundation.zurb.com/&quot;&gt;Zurb Foundation&lt;/a&gt; and &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;But what makes them successful?&lt;/p&gt;
+
+&lt;h2 id=&quot;three-principles-to-build-an-open-design-system&quot;&gt;Three principles to build an open design system.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://markdotto.com/&quot;&gt;Mdo&lt;/a&gt; mention three pillars to create an open and collaborative design system:&lt;/p&gt;
+
+&lt;h4 id=&quot;open-source&quot;&gt;1. Open source&lt;/h4&gt;
+&lt;p&gt;Open source mentality yields surprising results. 
+I’ve already ramble about &lt;a href=&quot;http://blog.andresgalante.com/design/2015/08/31/adopt-a-deisgner.html&quot;&gt;design at open source communities&lt;/a&gt;. Open source leads to innovation. 
+Not every company can open their projects, but in order to have a successful design system , it must work as an open source community would. Every member of the team should be envolved in building, maintaining and making it grow.&lt;/p&gt;
+
+&lt;h4 id=&quot;documentation&quot;&gt;2. Documentation&lt;/h4&gt;
+&lt;p&gt;Documentation is key. A good design system should be document driven. The knowledge should be in the project and not in the members heads.&lt;/p&gt;
+
+&lt;h4 id=&quot;think-about-components&quot;&gt;3. Think about Components&lt;/h4&gt;
+&lt;p&gt;Design a system of reusable components, not just pages. Every page should the sum of its parts.&lt;/p&gt;
+
+&lt;h2 id=&quot;taste-it&quot;&gt;Taste it&lt;/h2&gt;
+
+&lt;p&gt;Open collaborative design systems and open &lt;img class=&quot;emoji&quot; title=&quot;:smile:&quot; alt=&quot;:smile:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f604.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;. Working on this environment is as easy as becoming part of the open source community. &lt;/p&gt;
+
+&lt;p&gt;Here is a tip: the smaller the community is, the more open they’ll be to new comers, but it doesn’t matter the size, they are all full of very nice people that will help you walk your first steps.&lt;/p&gt;
+
+&lt;p&gt;Go and have a try.&lt;/p&gt;
+
+&lt;p&gt;This is the story of how I tried to make a pattern using css background and I failed.&lt;/p&gt;
+
+&lt;p&gt;If you are looking for a nice CSS story with a happy ending stop reading now. &lt;/p&gt;
+
+&lt;p&gt;On the other hand, if you are like Douglas, and you also think that writing about my sad wasted of hours during the weekend is a perfect blog post, then stay and read on. &lt;/p&gt;
+
+&lt;p&gt;First things first: Lets face it, you have a problem. I understand that Douglas wants to read about unsuccessful CSS experiment, after all he is crazy enough to get married in a Castle in São Paulo. But you, my dear reader, should consider stop reading now or a psychology session.&lt;/p&gt;
+
+&lt;p&gt;Now that we’ve got the important out of the way, I’ll start with a story.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-story&quot;&gt;The Story&lt;/h2&gt;
+
+&lt;p&gt;I am part of the Red Hat UXD team. Internally the team has a site where we publish our weekly status reports, blog about work in progress, ask questions, and look for shared UXD assets, and we call it &lt;strong&gt;UXDepot&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The guys that build the UXDepot did an amazing job. It has some nifty features that make me smile every week, you wouldn’t believe the pleasure I feel every time I click the “Insert Last Status Report” button.&lt;/p&gt;
+
+&lt;p&gt;The UXDepot has an image on the header following the &lt;a href=&quot;http://brand.redhat.com/elements/pattern/&quot;&gt;Red Hat brand guidelines&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So I set myself to rebuild that image as proper HTML/CSS header.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../img/dumb/UXDepot_Banner_Template.jpg&quot; alt=&quot;UXDepot_Banner_Template&quot; width=&quot;2910&quot; height=&quot;270&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-process&quot;&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;At first it seems simple. I’ve created a &lt;code&gt;header&lt;/code&gt; with multiple background for the image, the red stipe and the shadow on the right. I’ve multiplied the red stripe and the shadow with CSS background blend modes, added the logo as an svg image and more of less set the font sizes.&lt;/p&gt;
+
+&lt;p&gt;That was easy enough, but then I found two roadblocks: the typeface and the pattern.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;The font Interstate is not open source, I could have replaced it with an image but it is better to use a webfont. So I decided to change it with &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second issue is the pattern. After trying for a few hours I found out that I couldn’t reproduce the pattern with CSS backgrounds.&lt;/p&gt;
+
+&lt;p&gt;It’s either impossible or I don’t know how to do it. &lt;/p&gt;
+
+&lt;p&gt;If it is impossible, then I am dumb for not having realize it before I stared. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.&lt;/p&gt;
+
+&lt;p&gt;So I chose to use an svg pattern and clip it with a CSS polygon shape.&lt;/p&gt;
+
+&lt;p&gt;But I couldn’t match the exact location of the pattern because the positioning of the red background is relative to the center of the box and not the top.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-conclusion&quot;&gt;The Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If anyone can solve this, Robb can. I asked him and he told me that since I am already using an image, he’d be inclined to make both background part of the same image.&lt;/p&gt;
+
+&lt;p&gt;But he is a fun killer, there is no awesomeness on using background images.&lt;/p&gt;
+
+&lt;p&gt;During this weekend I learn that I am dumb.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-failure&quot;&gt;The Failure&lt;/h2&gt;
+
+&lt;p&gt;http://brand.redhat.com/elements/pattern/&lt;/p&gt;
+
+&lt;p&gt;You enjoy &lt;/p&gt;
+
+&lt;p&gt;You enjoy Hello reader, you like I hate you. Im a way, it seems that &lt;/p&gt;
+
+&lt;p&gt;I am aware that &lt;/p&gt;
+
+&lt;p&gt;the timing is bad for UX changes to studio.  On-prem and OSS are all-consuming business priorities.&lt;/p&gt;
+
+&lt;p&gt;Mobile team. 
+- I though it was going to change but same same.
+- Still working on WFM
+- Really bad, lots of issues everywhere.
+- Mark Little ask them to stop doing new features and make the product stable.
+- To me its a time bomb.
+- Fh was bought by RH, but they are not RH.
+- Not open sourcing.
+- Developer team working constantly on client issues.
+- developer team became support for clients
+- Good developers thinking of leaving the team.&lt;/p&gt;
+
+&lt;p&gt;Company culture is something abstract that I only got to know when I experience it. I’ve worked by myself or in very small team for most of my professional life, and it wasn’t until recently that I’ve got the chance to see how crucial it is.&lt;/p&gt;
+
+&lt;p&gt;According to &lt;a href=&quot;http://www.forbes.com/sites/williamcraig/2014/10/24/what-is-company-culture-and-how-do-you-change-it/&quot;&gt;forbes&lt;/a&gt; the “culture” is the Company vision, values, norms, systems, symbols, language, assumptions, beliefs, and habits.&lt;/p&gt;
+
+&lt;p&gt;It’s basically about people. A talented smart team with good leadership can embrace, follow and create good culture. And I’ve been lucky enough to have find all of that when I join Red Hat.&lt;/p&gt;
+
+&lt;p&gt;I also learn that it takes much more time and effort to build a culture than to destroy it.&lt;/p&gt;
+
+&lt;p&gt;I don’t think that for large companies there is such thing as a company culture. Each team has its own dynamics that creates ecosystems, and that of courses depends on the people working and leading each team.&lt;/p&gt;
+
+&lt;p&gt;Clash of titans&lt;/p&gt;
+
+&lt;p&gt;What happens when &lt;/p&gt;
+
+&lt;p&gt;Lead on maestro&lt;/p&gt;
+
+&lt;p&gt;There is a need for developers on the market and few good ones. Good developers can choose where to work.&lt;/p&gt;
+
+&lt;p&gt;Adapt or die&lt;/p&gt;
+
+&lt;p&gt;On Friday I received the opening and closing slides to include on my presentation for the upcoming talk at Interaction South America 2015 in Cordoba, Argentina.&lt;/p&gt;
+
+&lt;p&gt;The opening slide has the title of the talk, the authors name inside an hexagonal shape with rounded corners in the middle of the screen and some information at the footer. Everything is laid over a two color background spilt horizontally in the middle. There is also a transparent pattern and a stripe at the top.&lt;/p&gt;
+
+&lt;p&gt;They sent keynote and powerpoint options, and I though: “what if anyone want to use &lt;a href=&quot;http://lab.hakim.se/reveal-js/#/&quot;&gt;reveal&lt;/a&gt;, there should be an HTML version of this… How hard can it be to build it?”&lt;/p&gt;
+
+&lt;p&gt;There is only one way to answer that question, by doing it.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-html&quot;&gt;The HTML&lt;/h2&gt;
+
+&lt;p&gt;The HTML is simple, with a title on an &lt;code&gt;h1&lt;/code&gt; tag, the name of the author on a &lt;code&gt;p&lt;/code&gt; tag and a &lt;code&gt;footer&lt;/code&gt;, but framing the authors name on a rounded corner hexagonal box that is horizontally and vertically centred end up been a mathematical challenge.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Keynote title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Authors Name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;This is an HTML version of the opening slide for ISA 2015 presentations.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-scss&quot;&gt;The SCSS&lt;/h2&gt;
+
+&lt;p&gt;There are two challenges I face here. The background and the rounded corner hexagonal box.&lt;/p&gt;
+
+&lt;h3 id=&quot;background&quot;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;For the background I am applying CSS mutiple background on the &lt;code&gt;body&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I start with a linear gradient to generate the stripes at the top.&lt;/li&gt;
+  &lt;li&gt;Then there are 2 svgs to generate the pattern. It has a blend more of multiply.&lt;/li&gt;
+  &lt;li&gt;I am adding a little shadow at the top&lt;/li&gt;
+  &lt;li&gt;and finally I paint half of the screen with a gradient stripe.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;na&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; 
+    &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
+                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-01&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
+                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-02&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-02&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
+                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-03&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-03&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
+                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-04&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-04&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
+                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-05&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-05&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;960&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;sx&quot;&gt;url(../img/pattern.svg)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;sx&quot;&gt;url(../img/pattern-bottom.svg)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-top&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;960&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;700&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;700&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background-repeat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background-blend-mode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background-position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;-330&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;rounded-corner-hexagon&quot;&gt;Rounded corner hexagon&lt;/h3&gt;
+
+&lt;p&gt;To explain how I created this hexagon I have to take you back to school.&lt;/p&gt;
+
+&lt;p&gt;The hexagon is a rectangle with two 45º rotated squares on each side. This means that if the height of the squares is &lt;strong&gt;x&lt;/strong&gt;, the rectangle should be &lt;strong&gt;x times the square root of 2&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;But its not that easy, I also need to consider the rounded corner of the squares. Trigonometry to the rescue. First we discover the size of the hypotenuse and we subtract the diference of the border radius.&lt;/p&gt;
+
+&lt;p&gt;I did all this math, so you don’t have to. This sass mixing will generate a rounded corner hexagon and absolute position it at the center of the screen. You are welcome.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@mixin&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt; rounded-hexagon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.6&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;#515F67&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;-9&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;transform-origin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;na&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:absolute&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;hexagon-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cdn.rawgit.com/andresgalante/isa2015cover/master/index.html&quot;&gt;Here is the result&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And here is the code altogether:&lt;/p&gt;
+
+&lt;div data-height=&quot;500&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;wKPPPZ&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Keynote title&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Author&amp;#39;s Name&amp;lt;/p&amp;gt;
+&amp;lt;footer&amp;gt;This is an HTML version of the opening slide for ISA 2015 presentations.&amp;lt;/footer&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/wKPPPZ/&quot;&gt;CSS Hexagon Rounded Corner&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;will-i-use-it&quot;&gt;Will I use it?&lt;/h2&gt;
+
+&lt;p&gt;Of corse not. Keynote is awesome to build presentations, plus it has the way underused flame effect that I alway try to sneak in all my talks.&lt;/p&gt;
+
+&lt;p&gt;I am sure there are way better ways to do hexagonal rounded corner shapes, this one doesn’t feel elegant enough. But it was good fun to build it.&lt;/p&gt;
+
+&lt;p&gt;I work at Red Hat, that means that I get paid to  contribute to open source communities, but to be honest, until lats week I’ve never done a selfish commit to any project.&lt;/p&gt;
+
+&lt;p&gt;Saturday nights are usually busy. But on rare occasions when there are no plans and my wife and son go to sleep early, there is a strange window of quietness in my life.&lt;/p&gt;
+
+&lt;p&gt;Last weekend I had one of those special moments, and of course, since I am a big nerd, I spent it coding.&lt;/p&gt;
+
+&lt;p&gt;A few weeks ago I bumped into an article written by &lt;a href=&quot;http://unakravets.com&quot;&gt;Una Kravets&lt;/a&gt; about &lt;a href=&quot;http://una.im/hacking-visited/&quot;&gt;hacking :visited&lt;/a&gt; psudo-class, and I had to try it myself.&lt;/p&gt;
+
+&lt;p&gt;The idea is to display an &lt;code&gt;&quot;unread&quot;&lt;/code&gt; label to represent links that haven’t been read yet, plus I wanted to add a &lt;code&gt;&quot;new&quot;&lt;/code&gt; tag to the newest post and for extra css fun I changed the text for &lt;code&gt;:hover&lt;/code&gt; and &lt;code&gt;:active&lt;/code&gt; states.&lt;/p&gt;
+
+&lt;p&gt;If you really want to learn this technique, stop reading now, go to Unas posts, enjoy her article and come back. If you are like Bruno and you are here just for the joy of reading my words, then continue reading.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-html-1&quot;&gt;The HTML&lt;/h2&gt;
+
+&lt;p&gt;It all starts with Unas code. Since for security reasons &lt;code&gt;:visited&lt;/code&gt; is limited to just changing the color, she wisely changes the color of the font to match the background, making it disappear. Pretty nifty.&lt;/p&gt;
+
+&lt;p&gt;On my Jekyll &lt;code&gt;HTML&lt;/code&gt; I make sure the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; is around the &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;post-list&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  {% for post in site.posts %}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;post-link&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ post.url | prepend: site.baseurl }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;post-meta&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: &amp;quot;%B %d, %Y&amp;quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;
+          {{ post.title }}
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  {% endfor %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;visited-is-where-the-magic-happens&quot;&gt;:visited is where the magic happens&lt;/h2&gt;
+
+&lt;p&gt;Then on the &lt;code&gt;sass&lt;/code&gt; I add the content of the label after the &lt;code&gt;h2&lt;/code&gt; title, and to make it disappear I set the same colors as the background color on &lt;code&gt;:visited&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.post-list&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Creates the content of the label&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;unread&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Defines color and backgorund color&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$grey-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:visited&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Here is where the magic happens, changes the background and color to make it disappear&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
+  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;css-fun-with-hover-and-active&quot;&gt;CSS fun with :hover and :active&lt;/h2&gt;
+
+&lt;p&gt;I’ve also added different messages for &lt;code&gt;:hover&lt;/code&gt; and &lt;code&gt;:active&lt;/code&gt; states&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.post-list&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Creates the content of the label&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;unread&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Defines color and backgorund color&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$grey-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;unread, read it!&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:active&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;click!&amp;#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:visited&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//Here is where the magic happens, changes the backgound and color to make it dessapear&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
+  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-new-kind-on-the-block&quot;&gt;The new kind on the block&lt;/h2&gt;
+
+&lt;p&gt;And since the first &lt;code&gt;h2&lt;/code&gt; on the list is the newest post, I tagged it as “new”.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:first-child&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;new!&amp;quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can check the complete code here.&lt;/p&gt;
+
+&lt;h2 id=&quot;one-more-thing&quot;&gt;One more thing…&lt;/h2&gt;
+
+&lt;p&gt;On related news, I’ve also added comments to the blog. Not because I expect to get any comment, I honestly don’t think anyone reads these words, or that they deserve a discussion, but &lt;a href=&quot;https://en.wikipedia.org/wiki/Jeff_Atwood&quot;&gt;Jeff Atwood&lt;/a&gt; says on his excellent &lt;a href=&quot;http://blog.codinghorror.com&quot;&gt;blog&lt;/a&gt; that a blog without comments is not a blog.&lt;/p&gt;
+
+&lt;p&gt;Now I have a blog. &lt;img class=&quot;emoji&quot; title=&quot;:smile:&quot; alt=&quot;:smile:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f604.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; &lt;/p&gt;
+
+&lt;p&gt;My son Leon is two and a half years old, and he shares the same passion every single kid in the world has: Peppa Pig.&lt;/p&gt;
+
+&lt;p&gt;Kids comes in all sizes and shapes and they have different personalities. Some talk a lot, others are more physical, some sleep others (like my son Leon) don’t, but they all agree in one thing, Peppa Pig is the best.&lt;/p&gt;
+
+&lt;p&gt;What visual magic is behind a rudimentary drawn phallic shape pink pig goes way beyond my comprehension.&lt;/p&gt;
+
+&lt;p&gt;I am sure that the bright colors, the high pitch of the voices, the simple music and animations and a bit of luck have a lot to do with its success. To me it all comes down to George.&lt;/p&gt;
+
+&lt;p&gt;George is Peppas little brother, he love dinosaurs and he is a cool guy. I’d hang out with George any day.&lt;/p&gt;
+
+&lt;h2 id=&quot;of-cartoons-are-crap-img-classemoji-titlepoop-altpoop-srchttpsassetsgithubcomimagesiconsemojiunicode1f4a9png-height20-width20-alignabsmiddle-&quot;&gt;99% of Cartoons are crap &lt;img class=&quot;emoji&quot; title=&quot;:poop:&quot; alt=&quot;:poop:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f4a9.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Sturgeon%27s_law&quot;&gt;Sturgeon’s Law&lt;/a&gt; says that 99% of everything is crap.&lt;/p&gt;
+
+&lt;p&gt;There are about 1.5 billon children in this world, that many little people can’t be wrong.&lt;/p&gt;
+
+&lt;p&gt;Creating something as successful as Peppa doesn’t happen by accident, it takes a lot of time, research, resources, talent and skill.&lt;/p&gt;
+
+&lt;p&gt;The same happens in design.&lt;/p&gt;
+
+&lt;h2 id=&quot;of-design-is-crap-img-classemoji-titlepoop-altpoop-srchttpsassetsgithubcomimagesiconsemojiunicode1f4a9png-height20-width20-alignabsmiddle-&quot;&gt;99% of Design is crap &lt;img class=&quot;emoji&quot; title=&quot;:poop:&quot; alt=&quot;:poop:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f4a9.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/h2&gt;
+
+&lt;p&gt;A &lt;a href=&quot;https://www.quora.com/If-we-all-agree-design-is-important-why-does-so-much-design-suck&quot;&gt;guy on the internet&lt;/a&gt; said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It’s easier and cheaper to create bad designs. Because of that, bad designs will be more plentiful in any free market than good design.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think that it goes beyond good vs bad. We work in an industry where good is not enough. Only the exceptional succeed. Bing is a very good search engine, Google is excellent. Google Plus is a good social network, Facebook is excellent. There is no room for just good.&lt;/p&gt;
+
+&lt;p&gt;On his &lt;a href=&quot;http://www.manifestoproject.it/bruce-mau/&quot;&gt;Incomplete Manifiesto for Growth&lt;/a&gt;, &lt;a href=&quot;http://www.brucemaudesign.com/&quot;&gt;Bruce Mau&lt;/a&gt; motivate us to push the limits:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Go deep. The deeper you go the more likely you will discover something of value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Excellency doesn’t come easy. To get the finest quality we should go outside our comfort zone and &lt;strong&gt;studying as much as we practice&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;cue-peppa-song-img-classemoji-titlemusicalkeyboard-altmusicalkeyboard-srchttpsassetsgithubcomimagesiconsemojiunicode1f3b9png-height20-width20-alignabsmiddle--tu-turu-tu-tum-tu-turu-tu-tu-tum&quot;&gt;Cue Peppa song: &lt;img class=&quot;emoji&quot; title=&quot;:musical_keyboard:&quot; alt=&quot;:musical_keyboard:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f3b9.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; Tu turu tu tum tu turu tu tu tum&lt;/h2&gt;
+
+&lt;p&gt;Excellent design is honest. There is no cheating, no shortcuts. It requires an attention to detail that is really hard to achieve. &lt;/p&gt;
+
+&lt;p&gt;That craftsmanship goes to build any excellent thing. There is elegant coding, excellent music and even great accounting.&lt;/p&gt;
+
+&lt;p&gt;Sometimes we, the adults, can also agree that some things are superlative.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile I’ll join Leon and all the children in the world and surrender to the excellent Peppa Pig.&lt;/p&gt;
+
+&lt;p&gt;Andres Galante wrote this on date
+// poner comentarios
+get a logo?
+agregar tweeter
+next and prev posts
+// categories&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pattenrfly?&lt;/li&gt;
+  &lt;li&gt;redhat demo&lt;/li&gt;
+  &lt;li&gt;house of cards, all charpters at once == ux behavior ?&lt;/li&gt;
+  &lt;li&gt;homepage aerogear website, first 1 second&lt;/li&gt;
+  &lt;li&gt;My new monitor sucks&lt;/li&gt;
+  &lt;li&gt;the js learning curve&lt;/li&gt;
+  &lt;li&gt;the perfect mouse&lt;/li&gt;
+  &lt;li&gt;iphone, go back to my first love&lt;/li&gt;
+  &lt;li&gt;why i love working at red hat&lt;/li&gt;
+  &lt;li&gt;choosing a bumper for my phone&lt;/li&gt;
+  &lt;li&gt;Rehersal until bla bla, like clowns&lt;/li&gt;
+  &lt;li&gt;start with design&lt;/li&gt;
+  &lt;li&gt;spend money on good shit&lt;/li&gt;
+  &lt;li&gt;designers open source community&lt;/li&gt;
+  &lt;li&gt;Pre procesadores de CSS&lt;/li&gt;
+  &lt;li&gt;language http://ilanguages.org/bilingual.php&lt;/li&gt;
+  &lt;li&gt;Font paring&lt;/li&gt;
+  &lt;li&gt;PatternFly Jekyll&lt;/li&gt;
+  &lt;li&gt;basic jekyll static page for project pages&lt;/li&gt;
+  &lt;li&gt;jekyll blog template&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If there is one thing I regret from my trip to QConRio is not having spent enough time talking with &lt;a href=&quot;https://twitter.com/FelippeNardi&quot;&gt;Felippe Nardi&lt;/a&gt;. He has been developing on remote server for more than a year and he enter to the list of “Heroes”. &lt;/p&gt;
+
+&lt;p&gt;To be honest it’s a quite large list that includes Michael J Fox for Back to the Future and Raphael turtle ninjas because he can kick ass.&lt;/p&gt;
+
+&lt;p&gt;That doesn’t take away the fact that he has done something I always wanted to do and, ofcourse, always failed. I work on a very nice macbook pro (which I love) attached to a stupid and very bad samsung monitor that never gets colors right (which I hate). And although I like working on a mac, I don’t want to be attached to it. If I travel, or if I want to work somewhere else I always need to take my large 15’ computer. It’s the only place where I have all my tools and envioments and files to work.&lt;/p&gt;
+
+&lt;p&gt;Felippe replaced his laptop for an ipad for a year and he proves that your development machine can be on the cloud, but what happen with designers. Can we replace my computer for a tablet or even a smart phone?&lt;/p&gt;
+
+&lt;p&gt;The answer is no completely.&lt;/p&gt;
+
+&lt;p&gt;What have I done?&lt;/p&gt;
+
+&lt;p&gt;I’ve look into a normal workweek and learn about my workflow. I’ve list the tools I use and cure to know which ones are really necessary.&lt;/p&gt;
+
+&lt;p&gt;My main concern is photoshop. Although I would prefer to work on Sketch, the team I work on uses photoshop and we share psd files. Even though a look a lot for it, I couldn’t find a app replacement for desktop photoshop.&lt;/p&gt;
+
+&lt;p&gt;That been said there is no reason why I couldn’t start coding on virtual machines. Well, actually there is, I don’t know ssh or vin good enough.&lt;/p&gt;
+
+&lt;p&gt;And there are 2 solutions to that issue:&lt;/p&gt;
+
+&lt;p&gt;The first is to learn Vin, which is probably what I am going to do because I am big nerd and I am sure I’ll brake things up in the process… and we all know there is no better way to learn something than to fix what we’ve broken. Plus I get to use the command line, and nothing feels better than successfully using the command line.&lt;/p&gt;
+
+&lt;p&gt;The second one is to use &lt;a href=&quot;https://c9.io/&quot;&gt;Cloud9&lt;/a&gt;. Which is awesome and easy to use, and although I should use it I won’t… because well, I’ve just said it, I am a big nerd.&lt;/p&gt;
+
+&lt;p&gt;Practice makes the master. If I blog again about this in a few month then you’ll know I succeed &lt;/p&gt;
+
+&lt;p&gt;Felippe&lt;/p&gt;
+
+&lt;p&gt;What if I know ssh or vin&lt;/p&gt;
+
+&lt;p&gt;the ipad only designer setup&lt;/p&gt;
+
+&lt;p&gt;This is a something I’ve always wanted to achieve: get rid of my computer. I’ve tried to do it with a smart phone&lt;/p&gt;
+
+&lt;p&gt;https://medium.com/@felippenardi/start-coding-from-an-ipad-d942ebe44c63&lt;/p&gt;
+
+&lt;p&gt;Three tips to build a design guide&lt;/p&gt;
+
+&lt;p&gt;Keep consistency&lt;/p&gt;
+
+&lt;p&gt;Create components and not webpages&lt;/p&gt;
+
+&lt;p&gt;Write good documentation. It would probably very very hard for a new person to do anything inseide the system, you have to teach them whever everything is. removes friction. improve comonnucation,s share knowlage and documented in a style guide.
+Build the documentation within the product, use the style guide to build the tool.&lt;/p&gt;
+
+&lt;p&gt;dont buid one of. build a library of components.&lt;/p&gt;
+
+&lt;p&gt;well documented and arpochable.&lt;/p&gt;
+
+&lt;p&gt;reuse and refactor.&lt;/p&gt;
+
+&lt;p&gt;coding startdanrds. it should feel like ne person write it. Rules.&lt;/p&gt;
+
+&lt;p&gt;live examples, copy paste, no change anyone can screw things up.&lt;/p&gt;
+
+&lt;p&gt;dont write more css.&lt;/p&gt;
+
+&lt;p&gt;brake things into ocmponents and docs should rule everything. Docs driven development.&lt;/p&gt;
+
+&lt;p&gt;Make it easy to jump in and help each other. no matter what knowlage level&lt;/p&gt;
+
+&lt;p&gt;distributed teams work &lt;/p&gt;
+
+&lt;p&gt;Patternfly is a Design systems.&lt;/p&gt;
+
+&lt;p&gt;everything that makes out your product open source framework&lt;/p&gt;
+
+&lt;p&gt;the aproach to open source treat it as open durce even though it isnt&lt;/p&gt;
+
+&lt;p&gt;cmponents and assets&lt;/p&gt;
+
+&lt;p&gt;What did we learn from patternfly HTML,CSS and JS components to build stuff on the web.&lt;/p&gt;
+
+&lt;p&gt;remove friction and help peoeple get things done.&lt;/p&gt;
+
+&lt;p&gt;we use our products to buils patternfly and we use patterfly to build our products&lt;/p&gt;
+
+&lt;p&gt;A few monthes ago I’ve got a Sam&lt;/p&gt;
+
+&lt;p&gt;If there is one thing I regret from my trip to QConRio is not having spent enough time talking with Felippe Nardi. He has been doing for a year something I always wanted to do.&lt;/p&gt;
+
+&lt;p&gt;Today, and after 8 month of waiting, I finally got an extra monitor.&lt;/p&gt;
+
+&lt;p&gt;the ipad only designer setup&lt;/p&gt;
+
+&lt;p&gt;This is a something I’ve always wanted to achieve: get rid of my computer. I’ve tried to do it with a smart phone&lt;/p&gt;
+
+&lt;p&gt;I’ve been listening about Red hat Summit since I’ve started working at Red hat last November, and now is around the corner.&lt;/p&gt;
+
+&lt;p&gt;Apart from the PatternFly talk I am co presenting with Robb this Tuesday, and the Patternfly booth I’ll be hosting during wendesday and thusrday, I’ve also been helping build the Red Hat Middleware Keynote.&lt;/p&gt;
+
+&lt;p&gt;It’s been a long jurney from when we started till now and I have the pleasue to work with an amazing group of super talented people lead by Burr Sutter.  Today we had rehsresal and after seen the demo on a small screen both monthes, watching it in real life was a shock. The sheer size of the screens we are presenting it blew my mind.&lt;/p&gt;
+
+&lt;p&gt;you feel dirty. your kid will hug you and you have to wash first
+if youwork at home you have a eew secnds to close the computer is not he will never want to be a designer&lt;/p&gt;
+
+&lt;p&gt;o desneho tem que estar envilvido em cada passo do desenvolvimento , design thinking&lt;/p&gt;
+
+&lt;p&gt;vou fazer o que os argentinos sabemos fazer de melhor&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Presentação&lt;/li&gt;
+  &lt;li&gt;andresgalante&lt;/li&gt;
+  &lt;li&gt;@andresgalante&lt;/li&gt;
+  &lt;li&gt;blog.andresgalante.com&lt;/li&gt;
+  &lt;li&gt;redhat&lt;/li&gt;
+  &lt;li&gt;redhat mobile: aerogear and feedhenry&lt;/li&gt;
+  &lt;li&gt;patternfly&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;outclass&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;O problema &lt;/li&gt;
+  &lt;li&gt;A quantidade de interfaces da redhat&lt;/li&gt;
+  &lt;li&gt;Novas adquirições&lt;/li&gt;
+  &lt;li&gt;Developer drive thinking&lt;/li&gt;
+  &lt;li&gt;Developers communities&lt;/li&gt;
+  &lt;li&gt;Design stardards?&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;grande grupo de ux distribuido&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;porque investir em UX http://www.fastcodesign.com/1669283/dollars-and-sense-the-business-case-for-investing-in-ui-design&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;dar o proximo passo, dev hardcore to devops&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Research&lt;/li&gt;
+  &lt;li&gt;Boostrap&lt;/li&gt;
+  &lt;li&gt;transformar bootstrap (mostrar código)&lt;/li&gt;
+  &lt;li&gt;mudanças e porque fizemos cada uma delas. (mostrar componentes e razao por eles)&lt;/li&gt;
+  &lt;li&gt;user testing (mostrar lab)&lt;/li&gt;
+  &lt;li&gt;Criar algo que os developers possam consumir&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reducir a distancia entre desenvolvedores e designers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Consistency&lt;/li&gt;
+  &lt;li&gt;Design Patterns&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Design thinking (example: thonet)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Aerogear e UPS&lt;/li&gt;
+  &lt;li&gt;O problema (mostrar old UPS)&lt;/li&gt;
+  &lt;li&gt;A solução (Mostrar novo)&lt;/li&gt;
+  &lt;li&gt;wizard&lt;/li&gt;
+  &lt;li&gt;peixe&lt;/li&gt;
+  &lt;li&gt;primeiras impressoes (http://www.fastcodesign.com/1663500/with-apps-first-impressions-are-king-heres-3-keys-to-getting-them-right)&lt;/li&gt;
+  &lt;li&gt;numeros mais numeros&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;concistency&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Porque falhiu?&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;meu processo e porque é um sucesso. 37 signals&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Demo&lt;/li&gt;
+  &lt;li&gt;install with bower (but also rpm etc)&lt;/li&gt;
+  &lt;li&gt;templates out of the box&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;acesse-este-endereo&quot;&gt;Acesse este endereço:&lt;/h2&gt;
+
+&lt;h2 id=&quot;olha-s&quot;&gt;Olha só!&lt;/h2&gt;
+
+&lt;h2 id=&quot;nooooossa&quot;&gt;Nooooossa&lt;/h2&gt;
+
+&lt;h2 id=&quot;wow&quot;&gt;WOW!&lt;/h2&gt;
+
+&lt;h2 id=&quot;andres-galante&quot;&gt;andres galante&lt;/h2&gt;
+
+&lt;p&gt;Ola, meu nome é Andrés Galante, eu sou Argentino, moro em Buenos Aires e trabalho na Red Hat.&lt;/p&gt;
+
+&lt;p&gt;Estou muito feliz de estar aqui, adoro o Rio, é sem duvida uma das cidades mais bonitas do mundo.&lt;/p&gt;
+
+&lt;p&gt;Perguntei para um amigo meu carioca se eu deveria dar esta palestra em ingles, e ele me falou que os Brasileiros valoram muito quando um estrangeiro tenta falar português, assim que pelos próximos 40 minutos é exatamente isso que vai acontecer: Eu vou tentar falar português.&lt;/p&gt;
+
+&lt;p&gt;Eu morei no Brasil durante um tempo e minha experiencia foi excelente, até achei legal aquelas coisas que ninguém gosta de falar, tipo o Programa do Ratinho o a Banda Calypso.&lt;/p&gt;
+
+&lt;p&gt;E é disso que vou falar: da Banda Calypso. &lt;/p&gt;
+
+&lt;p&gt;Não, mentira, vou falar da experiencia dos usuarios e como na Red Hat construimos um framework para ter coherencia entre todos nosso produtos.&lt;/p&gt;
+
+&lt;p&gt;A great UI framework is the perfect intersection between aesthetic, behavior and implementation.
+Patternfly make sure to look great, we user test every thing and have a beautiful implementation guid. We do the design so developers can focus on what they do best.&lt;/p&gt;
+
+&lt;p&gt;Só estou mostrando um mapa da Argentina porque da ultima vez que estive nos Estados Unidos, um colega meu achava que Buenos Aires fica na California.&lt;/p&gt;
+
+&lt;h2 id=&quot;red-hat&quot;&gt;Red Hat&lt;/h2&gt;
+
+&lt;p&gt;Apresentação
+Mapa
+CSS geek funny transformers (.autobots{transform: transform3d})
+O problema, design standards?
+artigo silicon valley hire more designers
+Não é sua culpa mente do developer vs mente do designer
+exemplo (mostrar algo foda de design)
+cosnsietncia - jacob nielsen
+Memoria cache
+chache = Consistencia
+Bootstrap
+Mudanças sobre o bootstrap
+Patternfly
+Design vs UX
+como não sabemos o caminho do usuario, we test everything&lt;/p&gt;
+
+&lt;p&gt;Hello my Andres, I am a designer and code html and css&lt;/p&gt;
+
+&lt;p&gt;I live in Buenos Aires in Argentina.&lt;/p&gt;
+
+&lt;p&gt;And I am part of the User Experience Team.&lt;/p&gt;
+
+&lt;p&gt;Apart from working with you on Aerogear and RHMAP I also contribute to PatternFly. &lt;/p&gt;
+
+&lt;p&gt;Patternfly is the solution we’ve created to have a consistent user experience across all Red Hat products. And since we work at Red Hat, PatternFly is Open Source.&lt;/p&gt;
+
+&lt;p&gt;What do I actually do?&lt;/p&gt;
+
+&lt;p&gt;“You make our shit look less shitty! In fact it actually looks good!”&lt;/p&gt;
+
+&lt;p&gt;Summers once said me that I make things look good.&lt;/p&gt;
+
+&lt;p&gt;And although those are super kind words, the truth is that making things look good is really easy.&lt;/p&gt;
+
+&lt;p&gt;I am here to help users achieve their goals. And if you think about it, thats everyones jobs. &lt;/p&gt;
+
+&lt;p&gt;We are all here to help our users achieve their goals, right?&lt;/p&gt;
+
+&lt;p&gt;UX designers are lawyer defending the user.&lt;/p&gt;
+
+&lt;p&gt;My job is to make sure we all understands our users. And keep them front of mind as we do all of our design decisions , and product decisions and productisation decisions all away though the process.&lt;/p&gt;
+
+&lt;p&gt;And here is a first tip: our users are human beens. And dealing with human beens it’s very hard.&lt;/p&gt;
+
+&lt;p&gt;According to the National institute of Biotecnolgy the attention spam of a human been has drop from 12 seconds in 2000 to 8 seconds in 2013. &lt;/p&gt;
+
+&lt;p&gt;That’s one second less than the attention span of a gold fish.&lt;/p&gt;
+
+&lt;p&gt;Thats why we always need to keep consistency. &lt;/p&gt;
+
+&lt;p&gt;Jacok Nielsen says that Consistency is the most powerful usualbility principal, when things always behave the same, users don’t have to worry about what will happen. Instead, they know what will happen based on earlier experiences.&lt;/p&gt;
+
+&lt;p&gt;And at Red Hat we keep constancy by following PatternFly styles and patterns.&lt;/p&gt;
+
+&lt;p&gt;PatternFly is our ring to rule them all.&lt;/p&gt;
+
+&lt;p&gt;If we change our current studio to PatternFly styles we will have a look and feel consistent with the rest of Red Hat. But as I told you, making things look good is easy and that is not our goal.&lt;/p&gt;
+
+&lt;p&gt;Remember: we want to help the users achieve their goals, and makeup doesn’t do it.&lt;/p&gt;
+
+&lt;p&gt;The RHMAP studio has been growing organically and feature driven. I want to change that to a user centric approach.&lt;/p&gt;
+
+&lt;p&gt;First we need to really understand who our users is and their goals.&lt;/p&gt;
+
+&lt;p&gt;Once we understand it, we build personas and scenarios and use cases to design solutions.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;p&gt;One of our main personas is a Front Developer, lets call him Peter.&lt;/p&gt;
+
+&lt;p&gt;One of the main reasons Peter comes back again and again to the studio is to Build his app.&lt;/p&gt;
+
+&lt;p&gt;Hows does he do it?&lt;/p&gt;
+
+&lt;p&gt;He logs in.&lt;/p&gt;
+
+&lt;p&gt;Goes to Projects&lt;/p&gt;
+
+&lt;p&gt;Search and finds his project&lt;/p&gt;
+
+&lt;p&gt;Selects the project&lt;/p&gt;
+
+&lt;p&gt;Then selects the app he wants to build&lt;/p&gt;
+
+&lt;p&gt;And finds the build link on the side bar, which is the 7th link on the list. &lt;/p&gt;
+
+&lt;p&gt;I don’t think that app Details, Docs, Editor, Analytics, Configurations or Push are more usefull to him than building the app. &lt;/p&gt;
+
+&lt;p&gt;Chances are that Peter will edit the code on his local IDE, and that he’ll never change the info, configurations or push settings after his initial set up.&lt;/p&gt;
+
+&lt;p&gt;We have this, and I need to find a way to get him from here to here as effective as possible.&lt;/p&gt;
+
+&lt;p&gt;Now, the studio also has some very good design choices, like the 3 column view for projects.&lt;/p&gt;
+
+&lt;p&gt;But we have some structural problems that can only be address if we review the information architecture.&lt;/p&gt;
+
+&lt;p&gt;And that’s where I fail.&lt;/p&gt;
+
+&lt;p&gt;I fail to the users, I fail to my goals, and to the team. I am currently not helping the users achieve their goals or helping the team understand our users.&lt;/p&gt;
+
+&lt;p&gt;The design of this product is something that involves all of us. &lt;/p&gt;
+
+&lt;p&gt;We all know that design is important, but I know there are more urgent things to. And the urgent always beats the important.&lt;/p&gt;
+
+&lt;p&gt;Thats why I’ll need the help of all you to create a clear vision of where the end to end User experience of the mobile platform should go.&lt;/p&gt;
+
+&lt;p&gt;To make na impact on the market we really need to think about Design and UX is what can take our product from where it is, to where it can be. &lt;/p&gt;
+
+&lt;p&gt;The only way to mkae this big change happend is to Design thinking.&lt;/p&gt;
+
+&lt;p&gt;But changing the current studio to patternfly styles&lt;/p&gt;
+
+&lt;p&gt;User centric products are usually way more successful than feature drive ones.&lt;/p&gt;
+
+&lt;p&gt;But our &lt;/p&gt;
+
+&lt;p&gt;PatternFly is the 
+A few years ago Red hat created the UXD team as part of an initiative to make all our products work better together and have a consistent look and feel.&lt;/p&gt;
+
+&lt;p&gt;It wasn’t easy, but keeping consistency is key to a good user experience.&lt;/p&gt;
+
+&lt;p&gt;And that’s critical because we are deailing with human been, and &lt;/p&gt;
+
+&lt;p&gt;Thats right, the attetion span of a gold fish is 9 seconds, one second more than any of us.&lt;/p&gt;
+
+&lt;p&gt;Thats why at Red Hat we follow the patterns and styles of patternfly.&lt;/p&gt;
+
+&lt;p&gt;Patternfly is our ring to rule them all.&lt;/p&gt;
+
+&lt;p&gt;It was created to promote design commonality and improved user experience across enterprise IT products and applications.&lt;/p&gt;
+
+&lt;p&gt;And since we work at Red Hat, Patternfly is of corse Open Source.&lt;/p&gt;
+
+&lt;p&gt;An effective UX solution is the perfect intersection between Research, Design and Teconlogy.&lt;/p&gt;
+
+&lt;p&gt;Thing about with a good reserach we will understand what is the problem we need to solve&lt;/p&gt;
+
+&lt;p&gt;Understanding the problem we can design solutions for it.&lt;/p&gt;
+
+&lt;p&gt;And those solutions would be lost without a perfect implementation.&lt;/p&gt;
+
+&lt;p&gt;One of best examples of this process is Thonets chair number 141&lt;/p&gt;
+
+&lt;p&gt;It was designed in 1859 a way that you can fit 36 chairs in a square meter for shipment.&lt;/p&gt;
+
+&lt;p&gt;This allowed to produce them at eastern europe and send to places as far a NY keeping the price low.&lt;/p&gt;
+
+&lt;p&gt;More than 50M 141 were sold since 1859, a feat that wouldnt be possible if the design wasn’t involced in every step of the process.&lt;/p&gt;
+
+&lt;p&gt;Thats what we called Deisgn thinking: Beguin with design and not end with it.&lt;/p&gt;
+
+&lt;p&gt;My goal is to help our users achieve their goals.&lt;/p&gt;
+
+&lt;p&gt;And after doing a design reserach to get to know our users I &lt;/p&gt;
+
+&lt;p&gt;I fail. I need your help. Its not only my goal to help the users acheve their gaols.&lt;/p&gt;
+
+&lt;p&gt;That the job of every one of us.&lt;/p&gt;
+
+&lt;p&gt;We always talk about features when we should be talking about users. User centric products are usually way more successful than feature drive ones.&lt;/p&gt;
+
+&lt;p&gt;And just a a glimps of where we are standing let me show you something.&lt;/p&gt;
+
+&lt;p&gt;One of our main personas is a developer. 
+And one of the main reasons that developers will visit our studio is to Build his app.&lt;/p&gt;
+
+&lt;p&gt;Hows does he do it?&lt;/p&gt;
+
+&lt;p&gt;He logs in.&lt;/p&gt;
+
+&lt;p&gt;selects projects&lt;/p&gt;
+
+&lt;p&gt;search and finds his project&lt;/p&gt;
+
+&lt;p&gt;Selects the project&lt;/p&gt;
+
+&lt;p&gt;Selects the app he wants to build&lt;/p&gt;
+
+&lt;p&gt;Finds the build link on the side bar, which by the way is the 5th link. &lt;/p&gt;
+
+&lt;p&gt;Then be gets to building his app.&lt;/p&gt;
+
+&lt;p&gt;I don’t think that app Details, Docs, Editor, Analytics, Configurations or Push are more important to him than building the app. &lt;/p&gt;
+
+&lt;p&gt;Changes are that he’ll edit on his IDE, and that he I’ll never change the info and confiurations after they are set up for the first time.&lt;/p&gt;
+
+&lt;p&gt;We have this, and I need to find a way to get him from here to here in the lest amount of time.&lt;/p&gt;
+
+&lt;p&gt;I do get why things are the way they are. FH was a startup and it grown organically.&lt;/p&gt;
+
+&lt;p&gt;Whats next? Re think the information architecture. Building a huge map of the console, identify the main use cases and reacomodate things tohelp te users acheve their goals. &lt;/p&gt;
+
+&lt;p&gt;UX designers are lawyers defending the user.&lt;/p&gt;
+
+&lt;p&gt;My goal is to help our users achieve their goals.&lt;/p&gt;
+
+&lt;p&gt;And after doing a design reserach to get to know our users I &lt;/p&gt;
+
+&lt;p&gt;I fail. I need your help. Its not only my goal to help the users achieve their gaols.&lt;/p&gt;
+
+&lt;p&gt;That the job of every one of us.&lt;/p&gt;
+
+&lt;p&gt;I wasn’t a Red Hat employee at the time, but I know that it wasn’t easy to catheard a bunch of independent Open Source communities to follow the same design styles.&lt;/p&gt;
+
+&lt;p&gt;20 seconds&lt;/p&gt;
+
+&lt;p&gt;History of the UXD team
+Duck
+Fish
+that’s why we follow patternfly
+Patternfy = RING
+What is patternfly&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 06 Dec 2019 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/howto/2019/12/06/ideas.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2019/12/06/ideas.html</guid>
+        
+        <category>Patternfly</category>
+        
+        <category>setup</category>
+        
+        <category>Bower</category>
+        
+        
+        <category>howto</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
+    
+      <item>
+        <title>Enterprise UX: Talk the talk</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/enteprise/enteprise.jpg&quot; alt=&quot;Enterprise UX: Talk the talk&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve been working at Red Hat for one year now, and it has been an superb year. I’ve met and work alongside smart capable people and learn something new each week.&lt;/p&gt;
+
+&lt;p&gt;This week wasn’t different.&lt;/p&gt;
+
+&lt;p&gt;I started it frustrated because a product manager couldn’t understand the importance of a design change I wanted to implement. Annoyed with it I though to myself that they don’t know better and decided to forget about it, even though I was sure the change was necessary.&lt;/p&gt;
+
+&lt;p&gt;Probably anyone working on an enterprise environment confronts situations like this every day, that’s why I asked Catherine for advice. And she send this lines:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I think this is the type of thing that brings you from a good designer to a great designer in an enterprise environment. You have to learn how to communicate your design wants with each of the the different stakeholders in the company in their terms.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a way it took me back to my freelancer days, when I was a one man show. But the Catherine is right, the enterprise environment is unique, and communication is key to achieve anything.&lt;/p&gt;
+
+&lt;h2 id=&quot;communicate-clearly&quot;&gt;Communicate clearly&lt;/h2&gt;
+
+&lt;p&gt;Last week Josephine twitted an excellent presentation about enterprise UX project by Erik von Stackelberg where he describe what enterprise applications are, why they are bad and how we can improve it. And of course he mentions the importance of having empathy and excellent communication skills. &lt;/p&gt;
+
+&lt;p&gt;You could argue that those are qualities any person working on an enterprise environment should have, but design is different is one very important point: It is almost impossible to mesure design.&lt;/p&gt;
+
+&lt;p&gt;A sales person can show sales numbers, a coder can show better performance, but a better user experience is something very hard to prove and the results are only shown in the long run.&lt;/p&gt;
+
+&lt;h2 id=&quot;communicate-in-their-terms&quot;&gt;Communicate in their terms&lt;/h2&gt;
+
+&lt;p&gt;We all want the product to succeed and it is my fault that product manager didn’t understand the importance of the design change. I was unable to communicate the idea in his terms.&lt;/p&gt;
+
+&lt;p&gt;A great enterprise designer knows how to talk conversion rates to a marketing person, sells to a sale person, business goals to a product manager and performance to a developer, all in the name of giving the users a good experience.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 30 Nov 2015 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/design/2015/11/30/enteprise-designer.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/11/30/enteprise-designer.html</guid>
+        
+        <category>design</category>
+        
+        <category>ux</category>
+        
+        <category>users</category>
+        
+        <category>developer</category>
+        
+        <category>designer</category>
+        
+        
+        <category>design</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>You should be thinking about the user too</title>
@@ -693,135 +1673,6 @@ gems:
         
         
         <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>I want to ditch my computer</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/ditch/ditch.jpg&quot; alt=&quot;Run to your goals: Sunset&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If there is one thing I regret from my trip to QConRio is not having spent enough time talking with &lt;a href=&quot;https://twitter.com/FelippeNardi&quot;&gt;Felippe Nardi&lt;/a&gt;. He has been developing on a remote server for more than a year and he has enter to my list of “Heroes”. &lt;/p&gt;
-
-&lt;p&gt;To be honest it’s quite a large list that includes Michael J Fox for Back to the Future and Donatello Ninjas Turtle for kicking ass with a stick.&lt;/p&gt;
-
-&lt;p&gt;Felippe has done something I always wanted to do and, of course, I failed. &lt;/p&gt;
-
-&lt;p&gt;I work on a very nice macbook pro (which I love) attached to a stupid and very bad samsung monitor that never gets colors right (which I hate). And although I like working on a mac, been restricted to it doesn’t feel right. &lt;/p&gt;
-
-&lt;p&gt;When I travel, or if I want to work somewhere else I always need to cary my large 15’ computer. It’s the only place where I have all my tools, environments and files.&lt;/p&gt;
-
-&lt;p&gt;Felippe proves that your development machine can be on the cloud by &lt;a href=&quot;https://medium.com/@felippenardi/start-coding-from-an-ipad-d942ebe44c63&quot;&gt;replacing his laptop for an ipad for one year&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;But what happen with designers. Can I replace my computer for a tablet or even a smart phone? The answer is &lt;strong&gt;not completely&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done?&lt;/h2&gt;
-
-&lt;p&gt;I’ve look into a normal workweek and learn about my workflow. I’ve listed the tools I use and filter them to know which ones are really necessary.&lt;/p&gt;
-
-&lt;p&gt;Then I look into online or ipad app replacements for them. And I found out that there is only one missing: Photoshop.&lt;/p&gt;
-
-&lt;p&gt;Although I would prefer to work on Sketch, the team I work on uses photoshop as a standard and we share psd files. I just couldn’t find an app replacement for desktop photoshop.&lt;/p&gt;
-
-&lt;p&gt;That been said there is no reason why I can’t start coding on virtual machines today. Well, actually there is, I don’t know ssh or &lt;a href=&quot;http://www.vim.org/&quot;&gt;vim&lt;/a&gt; good enough, or how to set a VM.&lt;/p&gt;
-
-&lt;p&gt;I see 2 solutions:&lt;/p&gt;
-
-&lt;p&gt;The first one is to learn how to do it. Which is probably what I am going to do because I am big nerd. I am sure I’ll brake things up in the process but we all know there is no better way to learn something than fixing what we’ve broken. Plus I get to use the command line, &lt;strong&gt;nothing feels better than successfully use the command line&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The second one is to use &lt;a href=&quot;https://c9.io/&quot;&gt;Cloud9&lt;/a&gt;. Which is awesome and easy to use, and although I should go for it I won’t… because well, I’ve just said it, I am a big nerd.&lt;/p&gt;
-
-&lt;h2 id=&quot;practice-makes-the-master&quot;&gt;Practice makes the master&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;The best way to do something is by just doing it&lt;/strong&gt;, that’s why I will stop writing now.&lt;/p&gt;
-
-&lt;p&gt;Thanks Felippe, you are a hero.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Sep 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/09/07/I-want-to-ditch-my-computer.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/09/07/I-want-to-ditch-my-computer.html</guid>
-        
-        <category>Felippe</category>
-        
-        <category>Nardi</category>
-        
-        <category>setup</category>
-        
-        <category>workflow</category>
-        
-        
-        <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Developers: Adopt a designer</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/adopt/adopt.jpg&quot; alt=&quot;Adopt a deisgner&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Last week I was in Rio de Janeiro talking about &lt;a href=&quot;http://getbootstrap.com&quot;&gt;Bootstrap&lt;/a&gt; and &lt;a href=&quot;https://www.patternfly.org&quot;&gt;PatternFly&lt;/a&gt; at &lt;a href=&quot;http://qconrio.com&quot;&gt;QConRio&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;QConRio is an international software development conference: “A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams.”&lt;/p&gt;
-
-&lt;p&gt;In other words I’ve spent a week among developers, and every time I am with developers I am amazed at how open and collaborative they are as a community.&lt;/p&gt;
-
-&lt;p&gt;That’s mostly because they are used to working on open source projects. They are a living proof that the most effective way to move forward is to be open and learn form each other.&lt;/p&gt;
-
-&lt;p&gt;But there is a mindset missing on open source communities: the designers. During my talk I’ve asked if anyone knew any designer working on an open source community and not one of the 110 developers in the room raised their hands.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/8qfU1TIoeF4&quot;&gt;Una Kravets&lt;/a&gt;  is right when she blames the “fuck you, pay me” way of thinking of designers. It’s a shame, because when developers and designers work together the results are amazing, and &lt;strong&gt;that’s exactly what can take open source from what it is, to what it could be&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-language-barrier&quot;&gt;The language barrier&lt;/h2&gt;
-
-&lt;p&gt;I was walking at Copacabana with &lt;a href=&quot;https://twitter.com/Aaronontheweb&quot;&gt;Aaron Stannard&lt;/a&gt; last Friday. He told me that earlier that day he needed directions and the only english speaker person he could find was someone trying to sell him drugs.&lt;/p&gt;
-
-&lt;p&gt;Of course, English is the language of business.&lt;/p&gt;
-
-&lt;p&gt;It all comes down to communication: If someone wants to became a member of any group, they need to speak their language. And the &lt;strong&gt;language of the open source realm is Git&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;we-speak-git&quot;&gt;We speak Git&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt; is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.&lt;/p&gt;
-
-&lt;p&gt;And &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; is the place to find most of the open source projects, it hosts millions of them.&lt;/p&gt;
-
-&lt;p&gt;For a developer git is obvious, it’s just the way they collaborate with each other.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, for a designer, specially the ones that don’t code, git can be pretty tricky. We are visual creatures and we understand visual tools, that’s why the &lt;a href=&quot;https://desktop.github.com/&quot;&gt;GitHub desktop app&lt;/a&gt; helps a lot. But even then, the concepts of pulling, pushing and branching repositories are hard to get around.&lt;/p&gt;
-
-&lt;h2 id=&quot;find-the-middle-gorund&quot;&gt;Find the middle gorund&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;We should always push collaboration and innovation&lt;/strong&gt;. There are places we will never get if we don’t include designers to our projects.&lt;/p&gt;
-
-&lt;p&gt;If you are a designer a great way to get involved in open source is to contribute to the existing projects you’re using. There are projects for every skill and &lt;a href=&quot;https://24ways.org/2014/why-you-should-design-for-open-source/&quot;&gt;great guides&lt;/a&gt; to &lt;a href=&quot;http://blog.teamtreehouse.com/getting-involved-open-source-projects&quot;&gt;get started&lt;/a&gt; (also &lt;a href=&quot;http://opendesign.foundation/articles/how-designers-can-contribute-to-open-source-projects/&quot;&gt;this one&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Once you’ve decide which project you want to work on, ask for help. Open source communities are full of very patient and helpful people willing to hold your hand and teach you how to do it. Trust that practice makes the master and always remember that it doesn’t matter how bad you mess things up, it will never break: that’s the beauty of git. Plus they will learn a few things from you on the way.&lt;/p&gt;
-
-&lt;p&gt;If you are a developer: &lt;strong&gt;Adopt a designer&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Show us the way and let us walk it. Hopefully we will take your project to places you would never imagine, plus we will probably make it look good.&lt;/p&gt;
-
-&lt;p&gt;I’ve been adopted by the &lt;a href=&quot;https://aerogear.org/&quot;&gt;AeroGear community&lt;/a&gt;. &lt;a href=&quot;https://twitter.com/abstractj&quot;&gt;Bruno&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/passos&quot;&gt;Daniel&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/lfryc&quot;&gt;Lukas&lt;/a&gt; and the other members of the team should give themselves a pat on the back. You’ve been patient enough to teach one designer git and show him how to become part of your world.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 31 Aug 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2015/08/31/adopt-a-deisgner.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/08/31/adopt-a-deisgner.html</guid>
-        
-        <category>Patternfly</category>
-        
-        <category>qconrio</category>
-        
-        <category>developers</category>
-        
-        
-        <category>design</category>
         
         <author>
           <name>Andres Galante</name>
