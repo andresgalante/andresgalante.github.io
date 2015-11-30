@@ -22,7 +22,7 @@ In a way it took me back to my freelancer days, when I was a one man show. But t
 
 ## Communicate clearly
 
-Last week Josephine twitted an excellent presentation about enterprise UX project by Erik von Stackelberg where he describe what enterprise applications are, why they are bad and how we can improve them. And of course he mentions the importance of having empathy and excellent communication skills. 
+Last week [Josephine twitted](https://twitter.com/qhjj1990/status/669342859905122304) an excellent presentation about enterprise UX project by Erik von Stackelberg where he describe what enterprise applications are, why they are bad and how we can improve them. And of course he mentions the importance of having empathy and excellent communication skills. 
 
 You could argue that those are qualities any person working on an enterprise environment should have, but design is different is one very important way: It is almost impossible to mesure design.
 
