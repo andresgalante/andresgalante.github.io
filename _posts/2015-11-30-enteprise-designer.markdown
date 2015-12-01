@@ -18,7 +18,7 @@ Probably anyone working on an enterprise environment confronts situations like t
 
 > "I think this is the type of thing that brings you from a good designer to a great designer in an enterprise environment. You have to learn how to communicate your design wants with each of the the different stakeholders in the company in their terms."
 
-In a way it took me back to my freelancer days, when I was a one man show. But the Catherine is right, the enterprise environment is unique, and communication is key to achieve anything.
+In a way it took me back to my freelancer days, when I was a one man show. Catherine is right, the enterprise environment is unique, and communication is key to achieve anything.
 
 ## Communicate clearly
 
