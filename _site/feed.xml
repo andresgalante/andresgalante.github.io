@@ -6,9 +6,51 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Nov 2015 21:25:29 -0300</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2015 21:25:29 -0300</lastBuildDate>
+    <pubDate>Mon, 04 Jan 2016 09:35:01 -0300</pubDate>
+    <lastBuildDate>Mon, 04 Jan 2016 09:35:01 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Bye bye 2015, welcome 2016</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/new-year/new-year.jpg&quot; alt=&quot;Bye bye 2015, welcome 2016&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2015 has been a superb year. Looking back, I can’t believe how much has happened.&lt;/p&gt;
+
+&lt;p&gt;It was my first year at Red Hat, which allowed me to work alongside and learn from a bunch of talented people that made me grown a lot as a person. And I couldn’t be happier that I can count some of them as my friends by now.&lt;/p&gt;
+
+&lt;p&gt;I felt in love with open source and had the chance to participate in fun projects. &lt;/p&gt;
+
+&lt;p&gt;I also spoke for the first time in english at DevNation in Boston and in portuguese at Qcon Rio, which opened the doors for my next presentations in english and portuguese at DevNexus and QConSP.&lt;/p&gt;
+
+&lt;p&gt;But thats not all, I started running, started writing this blog, continued working on my personal projects and watched my baby grow into a little boy.&lt;/p&gt;
+
+&lt;p&gt;There is no doubt that I end this year as a better designer. What waits for me in 2016? I don’t know but I can’t wait for it.&lt;/p&gt;
+
+&lt;p&gt;This is a short post and I just wanted to write it to wish all the readers of this blog (yes, both of you) a happy new year!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 04 Jan 2016 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/design/2016/01/04/happy-new-year.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/design/2016/01/04/happy-new-year.html</guid>
+        
+        <category>design</category>
+        
+        <category>ux</category>
+        
+        <category>users</category>
+        
+        <category>developer</category>
+        
+        <category>designer</category>
+        
+        
+        <category>design</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Enterprise UX: Talk the talk</title>
@@ -748,67 +790,6 @@ gems:
         <category>pairing</category>
         
         <category>design</category>
-        
-        
-        <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>I want to ditch my computer</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/ditch/ditch.jpg&quot; alt=&quot;Run to your goals: Sunset&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If there is one thing I regret from my trip to QConRio is not having spent enough time talking with &lt;a href=&quot;https://twitter.com/FelippeNardi&quot;&gt;Felippe Nardi&lt;/a&gt;. He has been developing on a remote server for more than a year and he has enter to my list of “Heroes”. &lt;/p&gt;
-
-&lt;p&gt;To be honest it’s quite a large list that includes Michael J Fox for Back to the Future and Donatello Ninjas Turtle for kicking ass with a stick.&lt;/p&gt;
-
-&lt;p&gt;Felippe has done something I always wanted to do and, of course, I failed. &lt;/p&gt;
-
-&lt;p&gt;I work on a very nice macbook pro (which I love) attached to a stupid and very bad samsung monitor that never gets colors right (which I hate). And although I like working on a mac, been restricted to it doesn’t feel right. &lt;/p&gt;
-
-&lt;p&gt;When I travel, or if I want to work somewhere else I always need to cary my large 15’ computer. It’s the only place where I have all my tools, environments and files.&lt;/p&gt;
-
-&lt;p&gt;Felippe proves that your development machine can be on the cloud by &lt;a href=&quot;https://medium.com/@felippenardi/start-coding-from-an-ipad-d942ebe44c63&quot;&gt;replacing his laptop for an ipad for one year&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;But what happen with designers. Can I replace my computer for a tablet or even a smart phone? The answer is &lt;strong&gt;not completely&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-have-i-done&quot;&gt;What have I done?&lt;/h2&gt;
-
-&lt;p&gt;I’ve look into a normal workweek and learn about my workflow. I’ve listed the tools I use and filter them to know which ones are really necessary.&lt;/p&gt;
-
-&lt;p&gt;Then I look into online or ipad app replacements for them. And I found out that there is only one missing: Photoshop.&lt;/p&gt;
-
-&lt;p&gt;Although I would prefer to work on Sketch, the team I work on uses photoshop as a standard and we share psd files. I just couldn’t find an app replacement for desktop photoshop.&lt;/p&gt;
-
-&lt;p&gt;That been said there is no reason why I can’t start coding on virtual machines today. Well, actually there is, I don’t know ssh or &lt;a href=&quot;http://www.vim.org/&quot;&gt;vim&lt;/a&gt; good enough, or how to set a VM.&lt;/p&gt;
-
-&lt;p&gt;I see 2 solutions:&lt;/p&gt;
-
-&lt;p&gt;The first one is to learn how to do it. Which is probably what I am going to do because I am big nerd. I am sure I’ll brake things up in the process but we all know there is no better way to learn something than fixing what we’ve broken. Plus I get to use the command line, &lt;strong&gt;nothing feels better than successfully use the command line&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The second one is to use &lt;a href=&quot;https://c9.io/&quot;&gt;Cloud9&lt;/a&gt;. Which is awesome and easy to use, and although I should go for it I won’t… because well, I’ve just said it, I am a big nerd.&lt;/p&gt;
-
-&lt;h2 id=&quot;practice-makes-the-master&quot;&gt;Practice makes the master&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;The best way to do something is by just doing it&lt;/strong&gt;, that’s why I will stop writing now.&lt;/p&gt;
-
-&lt;p&gt;Thanks Felippe, you are a hero.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Sep 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/09/07/I-want-to-ditch-my-computer.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/09/07/I-want-to-ditch-my-computer.html</guid>
-        
-        <category>Felippe</category>
-        
-        <category>Nardi</category>
-        
-        <category>setup</category>
-        
-        <category>workflow</category>
         
         
         <category>howto</category>
