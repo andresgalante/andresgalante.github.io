@@ -90,88 +90,88 @@
 
 <p>A few weeks ago I bumped into an article written by <a href="http://unakravets.com">Una Kravets</a> about <a href="http://una.im/hacking-visited/">hacking :visited</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">pseudo class</a>, and I had to try it myself.</p>
 
-<p>The idea is to display an <code>"unread"</code> label to represent links that haven’t been read yet, plus I wanted to add a <code>"new"</code> tag to the newest post and for extra css fun change the text for <code>:hover</code> and <code>:active</code> states.</p>
+<p>The idea is to display an <code class="highlighter-rouge">"unread"</code> label to represent links that haven’t been read yet, plus I wanted to add a <code class="highlighter-rouge">"new"</code> tag to the newest post and for extra css fun change the text for <code class="highlighter-rouge">:hover</code> and <code class="highlighter-rouge">:active</code> states.</p>
 
 <p>If you really want to learn this technique, stop reading now, <a href="http://una.im/hacking-visited/">go to Unas posts</a>, enjoy her article and come back. If you are like Bruno and you are here just for the joy of reading my words, then continue reading.</p>
 
 <h2 id="the-html">The HTML</h2>
 
-<p>It all starts with Unas code. Since for security reasons <code>:visited</code> is limited to just changing the color, she wisely changes the color of the font to match the background, making it disappear. Pretty nifty.</p>
+<p>It all starts with Unas code. Since for security reasons <code class="highlighter-rouge">:visited</code> is limited to just changing the color, she wisely changes the color of the font to match the background, making it disappear. Pretty nifty.</p>
 
-<p>On my Jekyll <code>HTML</code> I make sure the <code>&lt;a&gt;</code> is around the <code>&lt;h2&gt;</code>.</p>
+<p>On my Jekyll <code class="highlighter-rouge">HTML</code> I make sure the <code class="highlighter-rouge">&lt;a&gt;</code> is around the <code class="highlighter-rouge">&lt;h2&gt;</code>.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;post-list&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"post-list"</span><span class="nt">&gt;</span>
   {% for post in site.posts %}
     <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;post-link&quot;</span> <span class="na">href=</span><span class="s">&quot;{{ post.url | prepend: site.baseurl }}&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;post-meta&quot;</span><span class="nt">&gt;</span>{{ post.date | date: &quot;%B %d, %Y&quot; }}<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"post-link"</span> <span class="na">href=</span><span class="s">"{{ post.url | prepend: site.baseurl }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"post-meta"</span><span class="nt">&gt;</span>{{ post.date | date: "%B %d, %Y" }}<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;h2&gt;</span>
           {{ post.title }}
         <span class="nt">&lt;/h2&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   {% endfor %}
-<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
 <h2 id="visited-is-where-the-magic-happens">:visited is where the magic happens</h2>
 
-<p>Then on the <code>sass</code> I apply a content for the label after the <code>h2</code> title, and to make it disappear I set the same colors as the background color on <code>:visited</code>.</p>
+<p>Then on the <code class="highlighter-rouge">sass</code> I apply a content for the label after the <code class="highlighter-rouge">h2</code> title, and to make it disappear I set the same colors as the background color on <code class="highlighter-rouge">:visited</code>.</p>
 
-<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nc">.post-list</span><span class="err">{</span>
+<figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nc">.post-list</span><span class="err">{</span>
   <span class="nt">a</span> <span class="err">{</span>
     <span class="k">&amp;</span><span class="nd">:link</span> <span class="nt">h2</span><span class="nd">:after</span> <span class="err">{</span>
-      <span class="c1">//Creates the content of the label</span>
-      <span class="na">content</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">unread&#39;</span><span class="err">;</span>
-      <span class="c1">//Defines color and backgorund color</span>
-      <span class="na">color</span><span class="o">:</span> <span class="mh">#fff</span><span class="err">;</span>
-      <span class="na">background</span><span class="o">:</span> <span class="nv">$grey-color</span><span class="err">;</span>
+      <span class="c1">//Creates the content of the label
+</span>      <span class="nl">content</span><span class="p">:</span> <span class="s1">'unread'</span><span class="err">;</span>
+      <span class="c1">//Defines color and backgorund color
+</span>      <span class="nl">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="err">;</span>
+      <span class="nl">background</span><span class="p">:</span> <span class="nv">$grey-color</span><span class="err">;</span>
    <span class="err">}</span>
     <span class="k">&amp;</span><span class="nd">:visited</span> <span class="nt">h2</span><span class="nd">:after</span> <span class="err">{</span>
-      <span class="c1">//Here is where the magic happens, changes the background and color to make it disappear</span>
-      <span class="na">color</span><span class="o">:</span> <span class="nv">$background-color</span><span class="err">;</span>
-      <span class="na">background</span><span class="o">:</span> <span class="nv">$background-color</span><span class="err">;</span> 
+      <span class="c1">//Here is where the magic happens, changes the background and color to make it disappear
+</span>      <span class="nl">color</span><span class="p">:</span> <span class="nv">$background-color</span><span class="err">;</span>
+      <span class="nl">background</span><span class="p">:</span> <span class="nv">$background-color</span><span class="err">;</span> 
     <span class="err">}</span>  
   <span class="err">}</span>
-<span class="err">}</span></code></pre></div>
+<span class="err">}</span></code></pre></figure>
 
 <h2 id="css-fun-with-hover-and-active">CSS fun with :hover and :active</h2>
 
-<p>I’ve also added different messages for <code>:hover</code> and <code>:active</code> states</p>
+<p>I’ve also added different messages for <code class="highlighter-rouge">:hover</code> and <code class="highlighter-rouge">:active</code> states</p>
 
-<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nc">.post-list</span><span class="err">{</span>
+<figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nc">.post-list</span><span class="err">{</span>
   <span class="nt">a</span> <span class="err">{</span>
     <span class="k">&amp;</span><span class="nd">:link</span> <span class="nt">h2</span><span class="nd">:after</span> <span class="err">{</span>
-      <span class="c1">//Creates the content of the label</span>
-      <span class="na">content</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">unread&#39;</span><span class="err">;</span>
-      <span class="c1">//Defines color and backgorund color</span>
-      <span class="na">color</span><span class="o">:</span> <span class="mh">#fff</span><span class="err">;</span>
-      <span class="na">background</span><span class="o">:</span> <span class="nv">$grey-color</span><span class="err">;</span>
+      <span class="c1">//Creates the content of the label
+</span>      <span class="nl">content</span><span class="p">:</span> <span class="s1">'unread'</span><span class="err">;</span>
+      <span class="c1">//Defines color and backgorund color
+</span>      <span class="nl">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="err">;</span>
+      <span class="nl">background</span><span class="p">:</span> <span class="nv">$grey-color</span><span class="err">;</span>
     <span class="err">}</span>
     <span class="k">&amp;</span><span class="nd">:hover</span> <span class="nt">h2</span><span class="nd">:after</span> <span class="err">{</span>
-      <span class="na">content</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">unread, read it!&#39;</span><span class="err">;</span>
+      <span class="nl">content</span><span class="p">:</span> <span class="s1">'unread, read it!'</span><span class="err">;</span>
     <span class="err">}</span>
     <span class="k">&amp;</span><span class="nd">:active</span> <span class="nt">h2</span><span class="nd">:after</span> <span class="err">{</span>
-      <span class="na">content</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">click!&#39;</span><span class="err">;</span>
+      <span class="nl">content</span><span class="p">:</span> <span class="s1">'click!'</span><span class="err">;</span>
     <span class="err">}</span>
     <span class="k">&amp;</span><span class="nd">:visited</span> <span class="nt">h2</span><span class="nd">:after</span> <span class="err">{</span>
-      <span class="c1">//Here is where the magic happens, changes the backgound and color to make it dessapear</span>
-      <span class="na">color</span><span class="o">:</span> <span class="nv">$background-color</span><span class="err">;</span>
-      <span class="na">background</span><span class="o">:</span> <span class="nv">$background-color</span><span class="err">;</span> 
+      <span class="c1">//Here is where the magic happens, changes the backgound and color to make it dessapear
+</span>      <span class="nl">color</span><span class="p">:</span> <span class="nv">$background-color</span><span class="err">;</span>
+      <span class="nl">background</span><span class="p">:</span> <span class="nv">$background-color</span><span class="err">;</span> 
     <span class="err">}</span>  
   <span class="err">}</span>  
-<span class="err">}</span></code></pre></div>
+<span class="err">}</span></code></pre></figure>
 
 <h2 id="the-new-kind-on-the-block">The new kind on the block</h2>
 
-<p>And since the first <code>h2</code> on the list is the newest post, I tagged it as “new”.</p>
+<p>And since the first <code class="highlighter-rouge">h2</code> on the list is the newest post, I tagged it as “new”.</p>
 
-<div class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nt">li</span><span class="err">{</span>
+<figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nt">li</span><span class="err">{</span>
   <span class="k">&amp;</span><span class="nd">:first-child</span> <span class="nt">h2</span> <span class="err">{</span>
     <span class="k">&amp;</span><span class="nd">:after</span> <span class="err">{</span>
-      <span class="na">content</span><span class="o">:</span> <span class="s2">&quot;new!&quot;</span><span class="err">;</span>
+      <span class="nl">content</span><span class="p">:</span> <span class="s2">"new!"</span><span class="err">;</span>
     <span class="err">}</span>
   <span class="err">}</span>
-<span class="err">}</span></code></pre></div>
+<span class="err">}</span>  </code></pre></figure>
 
 <p>You can check the <a href="https://github.com/andresgalante/andresgalante.github.io/blob/master/_sass/_hack.scss">complete code here</a>.</p>
 
@@ -203,20 +203,6 @@
   </div>
 
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'andresgalanteblog';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
 </div>

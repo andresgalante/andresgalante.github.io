@@ -94,25 +94,25 @@
 
 <p>Or do it the hardcore way, use the command line. Open the terminal and navigate to the folder where the project will be nested:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>path_to/projects</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>path_to/projects</code></pre></figure>
 
 <p>Then create a directory with the project name:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">mkdir myProject</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mkdir myProject</code></pre></figure>
 
 <h2 id="use-bower-to-install-patternfly">Use Bower to install Patternfly</h2>
 
 <p>Bower is a package manager. We are going to use bower to install patternfly framework. The first thing to do is to install bower globally. On the terminal type:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install -g bower</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install -g bower</code></pre></figure>
 
-<p>Sometimes it is require to run this command as root/Administrator. To do so add <code>sudo</code> before <code>npm</code> and run it again.</p>
+<p>Sometimes it is require to run this command as root/Administrator. To do so add <code class="highlighter-rouge">sudo</code> before <code class="highlighter-rouge">npm</code> and run it again.</p>
 
-<p>Make sure you are in the project folder <code>path_to/projects/myProject</code> and install patternfly:</p>
+<p>Make sure you are in the project folder <code class="highlighter-rouge">path_to/projects/myProject</code> and install patternfly:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">bower install patternfly</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bower install patternfly</code></pre></figure>
 
-<p><em>TIP</em> There are lots of command line basics tutorials.  <a href="https://www.youtube.com/playlist?list=PLLnpHn493BHGmEYzbjWPJsnRMhvs-PSYG">This excellent video series</a> will teach you the basics. </p>
+<p><em>TIP</em> There are lots of command line basics tutorials.  <a href="https://www.youtube.com/playlist?list=PLLnpHn493BHGmEYzbjWPJsnRMhvs-PSYG">This excellent video series</a> will teach you the basics.</p>
 
 <h2 id="file-structure">File structure</h2>
 
@@ -130,7 +130,7 @@
 
 <p><img src="/img/patternfly-set-up/patternfly-setup-2.jpg" alt="Finder Image" /></p>
 
-<p>Leave the /css files empty, it is to place the compile css file there. </p>
+<p>Leave the /css files empty, it is to place the compile css file there.</p>
 
 <h2 id="create-stylesless">Create styles.less</h2>
 
@@ -140,13 +140,13 @@
 
 <p>On styles.less, first import patternfly:</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/import&#39;</span> <span class="nt">class</span><span class="o">=</span><span class="s1">&#39;user-mention&#39;</span><span class="o">&gt;</span><span class="k">@import</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span> <span class="s2">&quot;../bower_components/patternfly/less/patternfly.less&quot;</span><span class="p">;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">import</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">import</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;</span><span class="k">@import</span><span class="err">&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;</span> <span class="s1">"../bower_components/patternfly/less/patternfly.less"</span><span class="p">;</span></code></pre></figure>
 
 <p>Then change path of the fonts:</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/fa-font-path&#39;</span> <span class="nt">class</span><span class="o">=</span><span class="s1">&#39;user-mention&#39;</span><span class="o">&gt;</span><span class="k">@fa-font-path</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;:</span>      <span class="s2">&quot;../bower_components/patternfly/components/font-awesome/fonts/&quot;</span><span class="p">;</span>
-<span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/font-path&#39;</span> <span class="nt">class</span><span class="o">=</span><span class="s1">&#39;user-mention&#39;</span><span class="o">&gt;</span><span class="k">@font-path</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;:</span>         <span class="s2">&quot;../bower_components/patternfly/dist/fonts&quot;</span><span class="p">;</span>
-<span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/icon-font-path&#39;</span> <span class="nt">class</span><span class="o">=</span><span class="s1">&#39;user-mention&#39;</span><span class="o">&gt;</span><span class="k">@icon-font-path</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;:</span>    <span class="s2">&quot;../bower_components/patternfly/components/bootstrap/fonts/&quot;</span><span class="p">;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">fa-font-path</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">fa-font-path</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;</span><span class="k">@fa-font-path</span><span class="err">&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;</span><span class="p">:</span>      <span class="s1">"../bower_components/patternfly/components/font-awesome/fonts/"</span><span class="p">;</span>
+<span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">font-path</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">font-path</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;</span><span class="k">@font-path</span><span class="err">&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;</span><span class="p">:</span>         <span class="s1">"../bower_components/patternfly/dist/fonts"</span><span class="p">;</span>
+<span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">icon-font-path</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">icon-font-path</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;</span><span class="k">@icon-font-path</span><span class="err">&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;</span><span class="p">:</span>    <span class="s1">"../bower_components/patternfly/components/bootstrap/fonts/"</span><span class="p">;</span></code></pre></figure>
 
 <p>Now the less file is set up, you can write your styles here.</p>
 
@@ -170,7 +170,7 @@
 
 <p>Call styles.css on the HTML head:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/styles.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/styles.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">media=</span><span class="s">"screen, print"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <p><em>TIP:</em> By calling just one CSS you avoid making unnecessary requests.</p>
 
@@ -200,20 +200,6 @@
   </div>
 
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'andresgalanteblog';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
 </div>

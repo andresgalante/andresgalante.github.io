@@ -92,8 +92,8 @@
 
 <ul>
   <li>We don’t support Internet Explorer 8 anymore.</li>
-  <li>We’ve split the CSS into two files (<code>patternfly.*css</code> and <code>patternfly-additions.*css</code>) to avoid a limitation of Internet Explorer 9 where <a href="https://support.microsoft.com/en-us/kb/262161">only 4095 selectors are recognized in a single stylesheet</a>.</li>
-  <li>and we’ve moved <code>components/boostrap-select/bootstrap-select.min.js</code> to <code>components/boostrap-select/dist/js/bootstrap-select.min.js</code>.</li>
+  <li>We’ve split the CSS into two files (<code class="highlighter-rouge">patternfly.*css</code> and <code class="highlighter-rouge">patternfly-additions.*css</code>) to avoid a limitation of Internet Explorer 9 where <a href="https://support.microsoft.com/en-us/kb/262161">only 4095 selectors are recognized in a single stylesheet</a>.</li>
+  <li>and we’ve moved <code class="highlighter-rouge">components/boostrap-select/bootstrap-select.min.js</code> to <code class="highlighter-rouge">components/boostrap-select/dist/js/bootstrap-select.min.js</code>.</li>
 </ul>
 
 <h2 id="first-get-patternfly-20">First: Get PatternFly 2.0</h2>
@@ -102,17 +102,17 @@
 
 <h5 id="upgrade-using-bower">Upgrade using Bower:</h5>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bower install patternfly —save-dev</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>bower install patternfly —save-dev</code></pre></figure>
 
 <h5 id="upgrade-using-npm">Upgrade using Npm:</h5>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm install patternfly —save-dev</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>npm install patternfly —save-dev</code></pre></figure>
 
 <h5 id="upgrade-using-git">Upgrade using Git:</h5>
 <p>Add PatternFly as a remote repo, fetch it and rebase</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add upstream git@github.com:patternfly/patternfly.git
-<span class="nv">$ </span>git fetch upstream</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>git remote add upstream git@github.com:patternfly/patternfly.git
+<span class="gp">$ </span>git fetch upstream</code></pre></figure>
 
 <h5 id="get-the-zip">Get the ZIP:</h5>
 <p>Or just <a href="https://github.com/patternfly/patternfly/archive/master.zip">Downloading the zip file</a> from github</p>
@@ -125,22 +125,22 @@
 <h4 id="link-two-css-instead-of-one">Link two CSS instead of one</h4>
 <p>We’ve split PatternFly styles into two style sheets. The links to the styles will look something like this:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;PATH_TO_PATTERNFLY/dist/css/patternfly.*.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;PATH_TO_PATTERNFLY/dist/css/patternfly-additions.*.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"PATH_TO_PATTERNFLY/dist/css/patternfly.*.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">media=</span><span class="s">"screen, print"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"PATH_TO_PATTERNFLY/dist/css/patternfly-additions.*.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">media=</span><span class="s">"screen, print"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <h4 id="boostrap-select">Boostrap select</h4>
 <p>If you are using <a href="https://www.patternfly.org/widgets/#bootstrap-select">Boostrap Select</a> you should change the path to the javascript. It’ll look something like this:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;PATH_TO_PATTERNFLY/components/patternfly/components/bootstrap-select/dist/js/bootstrap-select.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"PATH_TO_PATTERNFLY/components/patternfly/components/bootstrap-select/dist/js/bootstrap-select.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
 <h2 id="dependency-upgrades">Dependency Upgrades</h2>
 <p>We’ve upgraded most of our dependencies. You can see the <a href="https://github.com/patternfly/patternfly/releases/tag/v2.0.0">complete list on the release</a>. If you need a version other than what is checked into patternfly/components, you’ll have to pull it yourself.</p>
 
 <h2 id="changes-on-less">Changes on LESS</h2>
 
-<p>If you are <a href="http://blog.andresgalante.com/howto/2015/02/06/patternfly.html">extending PatternFly styles using less</a>, import patternfly-additions.less as a base to your styles, and compile again. Remember to load both <code>patternfly*.css</code> and your styles on the HTML.</p>
+<p>If you are <a href="http://blog.andresgalante.com/howto/2015/02/06/patternfly.html">extending PatternFly styles using less</a>, import patternfly-additions.less as a base to your styles, and compile again. Remember to load both <code class="highlighter-rouge">patternfly*.css</code> and your styles on the HTML.</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/import&#39;</span> <span class="nt">class</span><span class="o">=</span><span class="s1">&#39;user-mention&#39;</span><span class="o">&gt;</span><span class="k">@import</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span> <span class="s2">&quot;PATH_TO_PATTERNFLY/patternfly/less/patternfly-additions.less&quot;</span><span class="p">;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">import</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">'</span><span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="nc">.com</span><span class="o">/</span><span class="nt">import</span><span class="err">'</span> <span class="nt">class</span><span class="o">=</span><span class="err">'</span><span class="nt">user-mention</span><span class="err">'</span><span class="o">&gt;</span><span class="k">@import</span><span class="err">&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;&lt;</span><span class="p">/</span><span class="n">a</span><span class="err">&gt;</span> <span class="s1">"PATH_TO_PATTERNFLY/patternfly/less/patternfly-additions.less"</span><span class="p">;</span></code></pre></figure>
 
 <p>For more information on upgrading to v2.0, send an email to the <a href="patternfly@redhat.com">Patternfly Mailing List</a> or join the IRC channel #patternfly on Freenode.</p>
 
@@ -163,20 +163,6 @@
   </div>
 
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'andresgalanteblog';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
 </div>

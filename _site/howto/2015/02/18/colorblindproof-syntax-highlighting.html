@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Colorblindproof syntax highliting</title>
-  <meta name="description" content="A few years ago I worked with a client that was color blind. Eight percent of Caucasian men are color blind, this is made of mostly Deuteranope (Green-blind)...">
+  <meta name="description" content="A few years ago I worked with a client that was color blind.Eight percent of Caucasian men are color blind, this is made of mostly Deuteranope (Green-blind),...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://andresgalante.github.io/howto/2015/02/18/colorblindproof-syntax-highlighting.html">
@@ -82,13 +82,13 @@
   </header>
 
   <article class="post-content">
-    <p>A few years ago I worked with a client that was <a href="http://en.wikipedia.org/wiki/Color_blindness">color blind</a>. </p>
+    <p>A few years ago I worked with a client that was <a href="http://en.wikipedia.org/wiki/Color_blindness">color blind</a>.</p>
 
 <p>Eight percent of Caucasian men are color blind, this is made of mostly Deuteranope (Green-blind), follow by Protanope (Red-blind) and very rarely Tritanopia (Blue-blind). What is even more rare is Monochromatic, total color blindness.</p>
 
 <p>My client was the totally color blind. He saw in shades of greys and I can only wonder how the world looks through his eyes.</p>
 
-<p>That was a huge problem to him. From little things like depending on his wife to dress to go work every morning, to more dangerous one, like not knowing if a traffic signal was red or green when he was travelling in a place where the traffic lights where horizontal instead of vertical. </p>
+<p>That was a huge problem to him. From little things like depending on his wife to dress to go work every morning, to more dangerous one, like not knowing if a traffic signal was red or green when he was travelling in a place where the traffic lights where horizontal instead of vertical.</p>
 
 <p>And of course he sent me to talk to his wife when I arrived at his office with pantone samples.</p>
 
@@ -120,43 +120,43 @@
 
 <h4 id="html">HTML</h4>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;</span>
 <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;title&gt;</span>A Tiny Page<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/styles.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">media=</span><span class="s">&quot;screen, print&quot;</span><span class="nt">&gt;</span>  
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/styles.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">media=</span><span class="s">"screen, print"</span><span class="nt">&gt;</span>  
   <span class="nt">&lt;/head&gt;</span><span class="c">&lt;!-- real comment --&gt;</span>
   <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">&quot;javascript&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">language=</span><span class="s">"javascript"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
           <span class="kd">function</span> <span class="nx">changeHeight</span><span class="p">(</span><span class="nx">h</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">var</span> <span class="nx">tds</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+            <span class="kd">var</span> <span class="nx">tds</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"td"</span><span class="p">);</span>
             <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">tds</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> 
-              <span class="nx">tds</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="nx">h</span> <span class="o">+</span> <span class="s2">&quot;px&quot;</span><span class="p">);</span>
+              <span class="nx">tds</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"height"</span><span class="p">,</span> <span class="nx">h</span> <span class="o">+</span> <span class="s2">"px"</span><span class="p">);</span>
           <span class="p">}}</span>
     <span class="nt">&lt;/script&gt;</span>
     <span class="nt">&lt;p&gt;</span>Testing page<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span></code></pre></div>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
 <h4 id="java">JAVA</h4>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.util.Map</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.util.Map</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.TreeSet</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">GetEnv</span> <span class="o">{</span>
-  <span class="cm">/**</span>
-<span class="cm">   * let&#39;s test generics</span>
-<span class="cm">   * &lt;a href=&#39;https://github.com/param&#39; class=&#39;user-mention&#39;&gt;@param&lt;/a&gt; args the command line arguments</span>
-<span class="cm">   */</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+  <span class="cm">/**
+   * let's test generics
+   * &lt;a href='https://github.com/param' class='user-mention'&gt;&lt;a href='https://github.com/param' class='user-mention'&gt;@param&lt;/a&gt;&lt;/a&gt; args the command line arguments
+   */</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="c1">// get a map of environment variables</span>
     <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">env</span> <span class="o">=</span> <span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">();</span>
     <span class="c1">// build a sorted set out of the keys and iterate</span>
     <span class="k">for</span><span class="o">(</span><span class="n">String</span> <span class="nl">k:</span> <span class="k">new</span> <span class="n">TreeSet</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;(</span><span class="n">env</span><span class="o">.</span><span class="na">keySet</span><span class="o">()))</span> <span class="o">{</span>
-      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">&quot;%s = %s\n&quot;</span><span class="o">,</span> <span class="n">k</span><span class="o">,</span> <span class="n">env</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">k</span><span class="o">));</span>
+      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printf</span><span class="o">(</span><span class="s">"%s = %s\n"</span><span class="o">,</span> <span class="n">k</span><span class="o">,</span> <span class="n">env</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">k</span><span class="o">));</span>
     <span class="o">}</span>
   <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<span class="o">}</span></code></pre></figure>
 
 <p>Side by side, the first image is the original, second is a Protanopia view, next is a Deuteranopia view and last is Monochromatic.</p>
 
@@ -193,7 +193,7 @@
 <ul>
   <li><a href="http://www.uxmatters.com/mt/archives/2007/02/ensuring-accessibility-for-people-with-color-deficient-vision.php">uxmatters.com/mt/archives/2007/02/ensuring-accessibility-for-people-with-color-deficient-vision.php</a></li>
   <li><a href="http://www.nngroup.com/articles/accessible-design-for-users-with-disabilities/">nngroup.com/articles/accessible-design-for-users-with-disabilities/</a></li>
-  <li><a href="http://bconnelly.net/2013/10/creating-color blind-friendly-figures/">bconnelly.net/2013/10/creating-color blind-friendly-figures/</a> </li>
+  <li><a href="http://bconnelly.net/2013/10/creating-color blind-friendly-figures/">bconnelly.net/2013/10/creating-color blind-friendly-figures/</a></li>
   <li><a href="http://safecolors.rigdenage.com/colors.pdf">safecolors.rigdenage.com/colors.pdf</a></li>
   <li><a href="http://www.zingdesign.com/web-design-guidelines-for-color-blind-users/">zingdesign.com/web-design-guidelines-for-color-blind-users/</a></li>
   <li><a href="http://optional.is/requiRed/2011/06/20/accessible-color-swatches/">optional.is/requiRed/2011/06/20/accessible-color-swatches/</a></li>
@@ -218,20 +218,6 @@
   </div>
 
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'andresgalanteblog';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
 </div>

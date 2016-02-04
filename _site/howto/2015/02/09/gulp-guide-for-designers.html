@@ -98,89 +98,89 @@
 
 <h4 id="install-gulp-globally">1. Install gulp globally:</h4>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --global gulp</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --global gulp</code></pre></figure>
 
-<p>You’ll probably need to <code>sudo</code> this one. </p>
+<p>You’ll probably need to <code class="highlighter-rouge">sudo</code> this one.</p>
 
-<p>Now <code>cd</code> to your project directory and install the dependencies and plugins</p>
+<p>Now <code class="highlighter-rouge">cd</code> to your project directory and install the dependencies and plugins</p>
 
 <h4 id="install-gulp-in-your-project-devdependencies">2. Install gulp in your project devDependencies:</h4>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp</code></pre></figure>
 
 <h4 id="install-gulp-less-plugin">3. Install gulp less plugin</h4>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp-less</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp-less</code></pre></figure>
 
 <h4 id="install-gulp-uglify-plugin-for-js">4. Install gulp uglify plugin for js</h4>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp-uglify</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp-uglify</code></pre></figure>
 
 <h4 id="install-gulp-plumber-to-output-errors">5. Install gulp plumber to output errors</h4>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp-plumber</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install --save-dev gulp-plumber</code></pre></figure>
 
 <h4 id="install-gulp-browsersync-for-live-reload">6. Install gulp browsersync for live reload</h4>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install browser-sync gulp --save-dev</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install browser-sync gulp --save-dev</code></pre></figure>
 
 <h2 id="create-gulpfilejs">Create gulpfile.js</h2>
 
-<p>On the root of your project create a .js file name <code>gulpfile.js</code>, and paste this snippet</p>
+<p>On the root of your project create a .js file name <code class="highlighter-rouge">gulpfile.js</code>, and paste this snippet</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;gulp&#39;</span><span class="p">),</span>
-    <span class="nx">uglify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;gulp-uglify&#39;</span><span class="p">),</span>
-    <span class="nx">less</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;gulp-less&#39;</span><span class="p">),</span>
-    <span class="nx">plumber</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;gulp-plumber&#39;</span><span class="p">),</span>
-    <span class="nx">browserSync</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;browser-sync&#39;</span><span class="p">),</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp'</span><span class="p">),</span>
+    <span class="nx">uglify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-uglify'</span><span class="p">),</span>
+    <span class="nx">less</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-less'</span><span class="p">),</span>
+    <span class="nx">plumber</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-plumber'</span><span class="p">),</span>
+    <span class="nx">browserSync</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'browser-sync'</span><span class="p">),</span>
     <span class="nx">reload</span> <span class="o">=</span> <span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">;</span>
 
 <span class="c1">// Uglyfies js on to /js/minjs</span>
-<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;scripts&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>  
-  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">&#39;js/*.js&#39;</span><span class="p">)</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'scripts'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>  
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'js/*.js'</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">plumber</span><span class="p">())</span>
     <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">uglify</span><span class="p">())</span>
-    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s2">&quot;js/minjs&quot;</span><span class="p">));</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s2">"js/minjs"</span><span class="p">));</span>
 <span class="p">});</span> 
 
 <span class="c1">// Compiles less on to /css</span>
-<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;less&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">&#39;less/**/*.less&#39;</span><span class="p">)</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'less'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'less/**/*.less'</span><span class="p">)</span>
    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">plumber</span><span class="p">())</span>
    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">less</span><span class="p">())</span>
-   <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">&#39;css&#39;</span><span class="p">))</span>
-   <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">reload</span><span class="p">({</span><span class="nx">stream</span><span class="o">:</span><span class="kc">true</span><span class="p">}));</span>
+   <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'css'</span><span class="p">))</span>
+   <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">reload</span><span class="p">({</span><span class="na">stream</span><span class="p">:</span><span class="kc">true</span><span class="p">}));</span>
 <span class="p">});</span>
 
 <span class="c1">// reload server</span>
-<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;browser-sync&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'browser-sync'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">browserSync</span><span class="p">({</span>
-        <span class="nx">server</span><span class="o">:</span> <span class="p">{</span>
-            <span class="nx">baseDir</span><span class="o">:</span> <span class="s2">&quot;./&quot;</span>
+        <span class="na">server</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">baseDir</span><span class="p">:</span> <span class="s2">"./"</span>
         <span class="p">}</span>
     <span class="p">});</span>
 <span class="p">});</span>
 
 <span class="c1">// Reload all Browsers</span>
-<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;bs-reload&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'bs-reload'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">();</span>
 <span class="p">});</span>
 
 <span class="c1">// watch for changes on files</span>
-<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;watch&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span> 
-  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s1">&#39;js/*.js&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;scripts&#39;</span><span class="p">]);</span>
-  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s1">&#39;less/*.less&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;less&#39;</span><span class="p">]);</span>
-  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s2">&quot;*.html&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;bs-reload&#39;</span><span class="p">]);</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'watch'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span> 
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s1">'js/*.js'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'scripts'</span><span class="p">]);</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s1">'less/*.less'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'less'</span><span class="p">]);</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s2">"*.html"</span><span class="p">,</span> <span class="p">[</span><span class="s1">'bs-reload'</span><span class="p">]);</span>
 <span class="p">});</span> 
 
 <span class="c1">// deploys</span>
-<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span>  <span class="p">[</span><span class="s1">&#39;scripts&#39;</span><span class="p">,</span> <span class="s1">&#39;less&#39;</span><span class="p">,</span><span class="s1">&#39;browser-sync&#39;</span><span class="p">,</span><span class="s1">&#39;watch&#39;</span><span class="p">]);</span></code></pre></div>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'default'</span><span class="p">,</span>  <span class="p">[</span><span class="s1">'scripts'</span><span class="p">,</span> <span class="s1">'less'</span><span class="p">,</span><span class="s1">'browser-sync'</span><span class="p">,</span><span class="s1">'watch'</span><span class="p">]);</span> </code></pre></figure>
 
 <h2 id="magic">Magic!</h2>
 
-<p>Open terminal and run <code>gulp</code>!</p>
+<p>Open terminal and run <code class="highlighter-rouge">gulp</code>!</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">gulp</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gulp</code></pre></figure>
 
 <p>And now the magic starts. This will do:</p>
 
@@ -199,7 +199,7 @@
 
 <p><a href="http://www.browsersync.io/">BrowserSync</a> makes your tweaking and testing faster by synchronising file changes and interactions across multiple devices. It’s wicked-fast and totally amazing.</p>
 
-<p>You’ll be able to view your project at this address <code>http://localhost:3000/</code> and you’ll find browser sync configurations at <code>http://localhost:3001/</code>. On that seetings page you’ll find a IP address to sync on your mobile device among other amazing features.</p>
+<p>You’ll be able to view your project at this address <code class="highlighter-rouge">http://localhost:3000/</code> and you’ll find browser sync configurations at <code class="highlighter-rouge">http://localhost:3001/</code>. On that seetings page you’ll find a IP address to sync on your mobile device among other amazing features.</p>
 
 <h2 id="enjoy">Enjoy!</h2>
 
@@ -225,20 +225,6 @@
   </div>
 
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'andresgalanteblog';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
 </div>

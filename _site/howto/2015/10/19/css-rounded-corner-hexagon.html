@@ -86,7 +86,7 @@
 
 <p>On Friday I received the opening and closing slides to include on my presentation for the upcoming talk at <a href="http://isa.ixda.org/2015/">Interaction South America 2015</a> in Cordoba, Argentina.</p>
 
-<p>The opening slide has the title of the talk, the author’s name inside an hexagonal shape with rounded corners in the middle of the screen and some information at the footer. </p>
+<p>The opening slide has the title of the talk, the author’s name inside an hexagonal shape with rounded corners in the middle of the screen and some information at the footer.</p>
 
 <p>Everything is laid over a two color background spilt horizontally in the middle. There is also a transparent pattern and a stripe at the top.</p>
 
@@ -96,13 +96,13 @@
 
 <h2 id="the-html">The HTML</h2>
 
-<p>The HTML is simple, with a title on an <code>h1</code> tag, the name of the author on a <code>p</code> tag and a <code>footer</code>, but framing the authors name on a rounded corner hexagonal box that is horizontally and vertically centred end up been a mathematical challenge.</p>
+<p>The HTML is simple, with a title on an <code class="highlighter-rouge">h1</code> tag, the name of the author on a <code class="highlighter-rouge">p</code> tag and a <code class="highlighter-rouge">footer</code>, but framing the authors name on a rounded corner hexagonal box that is horizontally and vertically centred end up been a mathematical challenge.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
   <span class="nt">&lt;h1&gt;</span>Keynote title<span class="nt">&lt;/h1&gt;</span>
   <span class="nt">&lt;p&gt;</span>Authors Name<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;footer&gt;</span>This is an HTML version of the opening slide for ISA 2015 presentations.<span class="nt">&lt;/footer&gt;</span>
-<span class="nt">&lt;/body&gt;</span></code></pre></div>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
 
 <h2 id="the-scss">The SCSS</h2>
 
@@ -110,7 +110,7 @@
 
 <h3 id="background">Background</h3>
 
-<p>For the background I am applying CSS multiple background on the <code>body</code>:</p>
+<p>For the background I am applying CSS multiple background on the <code class="highlighter-rouge">body</code>:</p>
 
 <ul>
   <li>I start with a linear gradient to generate the stripes at the top;</li>
@@ -119,23 +119,23 @@
   <li>and finally I paint half of the screen with a gradient stripe.</li>
 </ul>
 
-<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="na">background-color</span><span class="o">:</span> <span class="nv">$color-background-bottom</span><span class="p">;</span>
-  <span class="na">background-image</span><span class="o">:</span> 
-    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="no">left</span><span class="o">,</span> 
-                    <span class="nv">$color-background-stripe-01</span><span class="o">,</span> <span class="nv">$color-background-stripe-01</span> <span class="mi">200</span><span class="kt">px</span><span class="o">,</span> 
-                    <span class="nv">$color-background-stripe-02</span> <span class="mi">200</span><span class="kt">px</span><span class="o">,</span> <span class="nv">$color-background-stripe-02</span> <span class="mi">360</span><span class="kt">px</span><span class="o">,</span> 
-                    <span class="nv">$color-background-stripe-03</span> <span class="mi">360</span><span class="kt">px</span><span class="o">,</span> <span class="nv">$color-background-stripe-03</span> <span class="mi">600</span><span class="kt">px</span><span class="o">,</span> 
-                    <span class="nv">$color-background-stripe-04</span> <span class="mi">600</span><span class="kt">px</span><span class="o">,</span> <span class="nv">$color-background-stripe-04</span> <span class="mi">800</span><span class="kt">px</span><span class="o">,</span> 
-                    <span class="nv">$color-background-stripe-05</span> <span class="mi">800</span><span class="kt">px</span><span class="o">,</span> <span class="nv">$color-background-stripe-05</span> <span class="mi">960</span><span class="kt">px</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color-background-bottom</span><span class="p">;</span>
+  <span class="nl">background-image</span><span class="p">:</span> 
+    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">left</span><span class="o">,</span> 
+                    <span class="nv">$color-background-stripe-01</span><span class="o">,</span> <span class="nv">$color-background-stripe-01</span> <span class="m">200px</span><span class="o">,</span> 
+                    <span class="nv">$color-background-stripe-02</span> <span class="m">200px</span><span class="o">,</span> <span class="nv">$color-background-stripe-02</span> <span class="m">360px</span><span class="o">,</span> 
+                    <span class="nv">$color-background-stripe-03</span> <span class="m">360px</span><span class="o">,</span> <span class="nv">$color-background-stripe-03</span> <span class="m">600px</span><span class="o">,</span> 
+                    <span class="nv">$color-background-stripe-04</span> <span class="m">600px</span><span class="o">,</span> <span class="nv">$color-background-stripe-04</span> <span class="m">800px</span><span class="o">,</span> 
+                    <span class="nv">$color-background-stripe-05</span> <span class="m">800px</span><span class="o">,</span> <span class="nv">$color-background-stripe-05</span> <span class="m">960px</span>
                     <span class="p">)</span><span class="o">,</span>
     <span class="sx">url(../img/pattern.svg)</span><span class="o">,</span>
     <span class="sx">url(../img/pattern-bottom.svg)</span><span class="o">,</span>
-    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="no">bottom</span><span class="o">,</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">1</span><span class="p">)</span><span class="o">,</span> <span class="no">transparent</span> <span class="mi">100</span><span class="kt">%</span><span class="p">)</span><span class="o">,</span>
-    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="no">bottom</span><span class="o">,</span> <span class="nv">$color-background-top</span><span class="o">,</span> <span class="nv">$color-background-top</span> <span class="mi">50</span><span class="kt">%</span><span class="o">,</span> <span class="no">transparent</span><span class="o">,</span> <span class="no">transparent</span> <span class="mi">50</span><span class="kt">%</span><span class="p">);</span>
-    <span class="na">background-size</span><span class="o">:</span> <span class="mi">960</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span><span class="o">,</span> <span class="mi">700</span><span class="kt">px</span><span class="o">,</span><span class="mi">700</span><span class="kt">px</span><span class="o">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">20</span><span class="kt">px</span><span class="o">,</span>  <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-    <span class="na">background-repeat</span><span class="o">:</span> <span class="no">repeat-x</span><span class="o">,</span> <span class="no">repeat-x</span><span class="o">,</span> <span class="no">repeat-x</span><span class="o">,</span> <span class="no">repeat-x</span><span class="o">,</span> <span class="no">repeat</span><span class="p">;</span>
-    <span class="na">background-blend-mode</span><span class="o">:</span> <span class="no">normal</span><span class="o">,</span> <span class="n">multiply</span><span class="o">,</span> <span class="n">multiply</span><span class="o">,</span> <span class="no">normal</span><span class="o">,</span> <span class="no">normal</span><span class="p">;</span>
-    <span class="na">background-position</span><span class="o">:</span> <span class="mi">0</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">-330</span><span class="kt">px</span> <span class="no">bottom</span> <span class="o">,</span> <span class="mi">0</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span></code></pre></div>
+    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">bottom</span><span class="o">,</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nb">transparent</span> <span class="m">100%</span><span class="p">)</span><span class="o">,</span>
+    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">bottom</span><span class="o">,</span> <span class="nv">$color-background-top</span><span class="o">,</span> <span class="nv">$color-background-top</span> <span class="m">50%</span><span class="o">,</span> <span class="nb">transparent</span><span class="o">,</span> <span class="nb">transparent</span> <span class="m">50%</span><span class="p">);</span>
+    <span class="nl">background-size</span><span class="p">:</span> <span class="m">960px</span> <span class="m">10px</span><span class="o">,</span> <span class="m">700px</span><span class="o">,</span><span class="m">700px</span><span class="o">,</span> <span class="m">100%</span> <span class="m">20px</span><span class="o">,</span>  <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">repeat-x</span><span class="o">,</span> <span class="nb">repeat-x</span><span class="o">,</span> <span class="nb">repeat-x</span><span class="o">,</span> <span class="nb">repeat-x</span><span class="o">,</span> <span class="nb">repeat</span><span class="p">;</span>
+    <span class="na">background-blend-mode</span><span class="p">:</span> <span class="nb">normal</span><span class="o">,</span> <span class="n">multiply</span><span class="o">,</span> <span class="n">multiply</span><span class="o">,</span> <span class="nb">normal</span><span class="o">,</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="nl">background-position</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span><span class="o">,</span> <span class="m">-330px</span> <span class="nb">bottom</span> <span class="o">,</span> <span class="m">0</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span></code></pre></figure>
 
 <h3 id="the-hard-part-a-rounded-corner-hexagon">The hard part: a rounded corner hexagon</h3>
 
@@ -145,40 +145,40 @@
 
 <p>But it’s not that easy, I also need to consider the rounded corner of the squares. Trigonometry to the rescue, again. First I discover the size of the hypotenuse and I subtract the diference of the border radius.</p>
 
-<p>I did all this math, so you don’t have to. </p>
+<p>I did all this math, so you don’t have to.</p>
 
 <p>This sass mixing will generate a rounded corner hexagon and absolute position it at the center of the screen. <strong>You are welcome</strong>.</p>
 
-<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="na">&lt;a</span><span class="err"> </span><span class="na">href</span><span class="err">=</span><span class="na">&#39;https</span><span class="o">:</span><span class="c1">//github.com/mixin&#39; class=&#39;user-mention&#39;&gt;@mixin&lt;/a&gt; rounded-hexagon($hexagon-height: 5rem, $hexagon-radius: .5rem, $hexagon-bg-color: white, $hexagon-font-size: 1.6em, $hexagon-color:#515F67 ) {</span>
-  <span class="no">margin</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="na">color</span><span class="o">:</span> <span class="nv">$hexagon-color</span><span class="p">;</span>
-  <span class="na">background</span><span class="o">:</span> <span class="nv">$hexagon-bg-color</span><span class="p">;</span>
-  <span class="na">height</span><span class="o">:</span> <span class="nf">calc</span><span class="p">((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span>  <span class="o">*</span> <span class="mi">1</span><span class="mf">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="mf">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)));</span>
-  <span class="na">line-height</span><span class="o">:</span> <span class="nf">calc</span><span class="p">((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span>  <span class="o">*</span> <span class="mi">1</span><span class="mf">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="mf">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)));</span>
-  <span class="na">position</span><span class="o">:</span> <span class="no">absolute</span><span class="p">;</span>
-  <span class="na">top</span><span class="o">:</span> <span class="nf">calc</span><span class="p">(</span> <span class="mi">50</span><span class="kt">%</span> <span class="o">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span>  <span class="o">*</span> <span class="mi">1</span><span class="mf">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="mf">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)))</span> <span class="o">/</span> <span class="mi">2</span><span class="p">));</span>
-  <span class="na">left</span><span class="o">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-  <span class="na">margin-left</span><span class="o">:</span> <span class="mi">-9</span><span class="kt">em</span><span class="p">;</span>
-  <span class="na">min-width</span><span class="o">:</span> <span class="mi">18</span><span class="kt">em</span><span class="p">;</span>
-  <span class="na">text-align</span><span class="o">:</span> <span class="no">center</span><span class="p">;</span>
-  <span class="na">font-size</span><span class="o">:</span> <span class="nv">$hexagon-font-size</span><span class="p">;</span>
-  <span class="k">&amp;</span><span class="nd">:after</span><span class="o">,</span> <span class="k">&amp;</span><span class="nd">:before</span><span class="p">{</span>
-    <span class="na">content</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
-    <span class="na">transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">);</span>
-    <span class="na">transform-origin</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
-    <span class="na">background-color</span><span class="o">:</span><span class="nv">$hexagon-bg-color</span><span class="p">;</span>
-    <span class="na">width</span><span class="o">:</span> <span class="nv">$hexagon-height</span><span class="p">;</span> 
-    <span class="na">height</span><span class="o">:</span><span class="nv">$hexagon-height</span><span class="p">;</span> 
-    <span class="na">top</span><span class="o">:</span> <span class="nf">calc</span><span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="mi">1</span><span class="mf">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="p">)</span> <span class="o">*</span> <span class="mi">-1</span><span class="p">);</span>
-    <span class="na">left</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
-    <span class="nt">position</span><span class="nd">:absolute</span><span class="o">;</span>
-    <span class="nt">border-radius</span><span class="nd">:</span> <span class="nn">#</span><span class="p">{</span><span class="err">$</span><span class="nt">hexagon-radius</span><span class="p">}</span><span class="o">;</span>
-    <span class="nt">z-index</span><span class="nd">:</span> <span class="nt">-1</span><span class="o">;</span>
-  <span class="p">}</span>
-  <span class="k">&amp;</span><span class="nd">:before</span><span class="p">{</span>
-    <span class="na">left</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="err">&lt;</span><span class="na">a</span><span class="err"> </span><span class="na">href</span><span class="err">='</span><span class="na">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">mixin</span><span class="s1">' class='</span><span class="n">user-mention</span><span class="s1">'&gt;&lt;a href='</span><span class="n">https</span><span class="o">://</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">mixin</span><span class="s1">' class='</span><span class="n">user-mention</span><span class="s1">'&gt;@mixin&lt;/a&gt;&lt;/a&gt; rounded-hexagon($hexagon-height: 5rem, $hexagon-radius: .5rem, $hexagon-bg-color: white, $hexagon-font-size: 1.6em, $hexagon-color:#515F67 ) {</span><span class="err">
+</span><span class="s1">  margin: 0;</span><span class="err">
+</span><span class="s1">  color: $hexagon-color;</span><span class="err">
+</span><span class="s1">  background: $hexagon-bg-color;</span><span class="err">
+</span><span class="s1">  height: calc((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span><span class="s1">  * 1.414213562373095) - (((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2) * 1.414213562373095) - (</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2)));</span><span class="err">
+</span><span class="s1">  line-height: calc((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span><span class="s1">  * 1.414213562373095) - (((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2) * 1.414213562373095) - (</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2)));</span><span class="err">
+</span><span class="s1">  position: absolute;</span><span class="err">
+</span><span class="s1">  top: calc( 50% - (((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span><span class="s1">  * 1.414213562373095) - (((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2) * 1.414213562373095) - (</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2))) / 2));</span><span class="err">
+</span><span class="s1">  left: 50%;</span><span class="err">
+</span><span class="s1">  margin-left: -9em;</span><span class="err">
+</span><span class="s1">  min-width: 18em;</span><span class="err">
+</span><span class="s1">  text-align: center;</span><span class="err">
+</span><span class="s1">  font-size: $hexagon-font-size;</span><span class="err">
+</span><span class="s1">  &amp;:after, &amp;:before{</span><span class="err">
+</span><span class="s1">    content: " ";</span><span class="err">
+</span><span class="s1">    transform: rotate(45deg);</span><span class="err">
+</span><span class="s1">    transform-origin: 0px 0px;</span><span class="err">
+</span><span class="s1">    background-color:$hexagon-bg-color;</span><span class="err">
+</span><span class="s1">    width: $hexagon-height; </span><span class="err">
+</span><span class="s1">    height:$hexagon-height; </span><span class="err">
+</span><span class="s1">    top: calc(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 1.414213562373095) - </span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1">) * -1);</span><span class="err">
+</span><span class="s1">    left: 0px;</span><span class="err">
+</span><span class="s1">    position:absolute;</span><span class="err">
+</span><span class="s1">    border-radius: </span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1">;</span><span class="err">
+</span><span class="s1">    z-index: -1;</span><span class="err">
+</span><span class="s1">  }</span><span class="err">
+</span><span class="s1">  &amp;:before{</span><span class="err">
+</span><span class="s1">    left: 100%;</span><span class="err">
+</span><span class="s1">  }</span><span class="err">
+</span><span class="s1">}</span></code></pre></figure>
 
 <p><em><a href="https://cdn.rawgit.com/andresgalante/isa2015cover/master/index.html">Check the result here</a></em></p>
 
@@ -187,7 +187,7 @@
 <div data-height="500" data-theme-id="20015" data-slug-hash="wKPPPZ" data-default-tab="html" data-user="andresgalante" class="codepen"><pre><code>&lt;h1&gt;Keynote title&lt;/h1&gt;
 &lt;p&gt;Author&#39;s Name&lt;/p&gt;
 &lt;footer&gt;This is an HTML version of the opening slide for ISA 2015 presentations.&lt;/footer&gt;</code></pre>
-<p>See the Pen <a href="http://codepen.io/andresgalante/pen/wKPPPZ/">CSS Hexagon Rounded Corner</a> by Andres Galante (<a href="http://codepen.io/andresgalante"><a href="https://github.com/andresgalante" class="user-mention">@andresgalante</a></a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p>See the Pen <a href="http://codepen.io/andresgalante/pen/wKPPPZ/">CSS Hexagon Rounded Corner</a> by Andres Galante (<a href="http://codepen.io/andresgalante"><a href="https://github.com/andresgalante" class="user-mention"><a href="https://github.com/andresgalante" class="user-mention">@andresgalante</a></a></a>) on <a href="http://codepen.io">CodePen</a>.</p>
 </div>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -215,20 +215,6 @@
   </div>
 
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'andresgalanteblog';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
 </div>
