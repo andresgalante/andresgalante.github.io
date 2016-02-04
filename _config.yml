@@ -12,7 +12,16 @@ github_username:  andresgalante
 markdown: kramdown
 
 # adds emoji
-gems:
-  - jemoji
+# gems:
+#  - jemoji
   
 excerpt_separator: "<!--more-->"
+
+
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+
+- jekyll-feed
