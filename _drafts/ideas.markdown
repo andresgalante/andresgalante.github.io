@@ -7,11 +7,140 @@ tags: Patternfly setup Bower
 ---
 
 
+
+
+
+
+## Robust components with FlexBox
+
+I've recently have the chance to help coding PatternFlys List View component.
+
+IMG
+
+On a first glance it seems straight forward. Just a list of inline elements. But at PatternFly we are designers, and we take spaces and alignment very seriously.
+
+That's the tricky part: How to build an (almost) pixel perfect component that's robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can be displayed in any scenarios?
+
+The aswr... bla bla
+
+First you need a very robust HTML structure. You could say it has two more divs than it should, but I just couldn't think of a lighter solution considering that PatternFly uses a fluid grid and we can't predict the amount of information this structure will contain.
+
+And to style it the answer is, of course, `flexbox`!
+
+Do I hear someone shouting "What about IE9 and 10 users?" well, I am glad you've asked.
+
+`flexbox` can be combined with `floats`. A browser that supports `flexbox` will ignore the `float` and `width` statement. IE9 will just be unable to read `flexbox` and use the `float` fallback.
+
+{% highlight css %}
+.container { display: flexbox; }
+
+.container .element {
+  flex: 1 0 40%;
+  float: left; /* fallback for > IE9 */
+  width:40%; /* fallback for > IE9 */
+}
+{% endhighlight %}
+
+
+IE10 uses the old syntax of `flexbox` and it doesn't understand any align propriety: `align-content`, `align-items` or `align-self` making vertical alignment impossible.
+
+{% highlight css %}
+.container {
+  display: -ms-flexbox; /* fallback for > IE10 */
+  display: flexbox;
+  }
+
+.container .element {
+  -ms-flex:  1 0 40%; /* fallback for > IE10 */
+  flex:      1 0 40%;
+  float: left; /* fallback for > IE9 */
+  width:40%; /* fallback for > IE9 */
+}
+{% endhighlight %}
+
+
+## Autoprefixer
+
+An easier option is to use "old school" flexbox without working about it is by using Autoprefixer.
+
+Autoprefixer parses CSS files and adds vendor prefixes to CSS rules using the Can I Use database to determine which prefixes are needed.
+
+All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes. 
+
+
+## We are ready for flexbox
+
+If IE9 and 10 users are critical for your app, you should probably avoid this technique. They'll have a different but acceptable experience with all the elements vertically align on the top instead of on the center.
+
+Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant and be place in the weirdest scenario and it will not brake.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Consistency is key to a good user experience, Jacob Nielsen named it the **most powerful usability principal** and I usually spend a lot of time writing and talking about it to developers.
+
+But it wasn't until recently that [Leslie](https://twitter.com/patternflygirl) told me an excellent analogy to explain why keeping consistency on an enterprise environment is so important. And like any other good analogy it compares consistency to driving a car, or in this case car parts:
+
+> Teams keep trying to reinvent the wheel, making solutions that fit their product needs but it doesn't get applied across the board.
+
+> Often companies and organizations are comprised of multiple teams focused on specific efforts and initiatives. Red Hat is no different. Prior to the PatternFly effort, development teams at Red Hat faced a huge disadvantage as they were expected to reinvent the wheel by defining, creating and implementing the style and behavior for their UI.
+
+> A wheel reinvented by a team may be functional and successful in its own right. However, if you install four wheels on a car, with varying sizes and attributes, it would have a negative impact on how that car drives. Similarly for applications, it's important for a user to be able to migrate seamlessly from one product to another without having to relearn how to drive the UI. Consistency across a portfolio leads to better usability because users are familiar with the interactions. This is especially important for a company like Red Hat that offers application bundles.
+
+To keep UI consistency we've created a robust UI framework.
+
+A robust framework is a composition of modular and reusable components.
+
+Each component should be flexible and robust since we never know where they will be place and they should work in as many as many scenarios as possible.
+
+
+## Consistency everywhere
+
+Going back to consistency I think that it's a concept that doesn't only apply to UI. A company can benefit from consistency from code patterns to report templates to reusing a project.
+
+For example, at Red Hat we have Keycloak to handle our security, which is another awesome open source project that you can use and contribute to.
+
+By integrating Keycloak with our projects teams avoid reinventing the security wheel. (handbrake?)
+
+
+I wonder where else we can use consistency to leverage our projects. which is awesome but it brings a problem.
+
+
+
+
+
+
+
+Teams keep trying to reinvent the wheel, making solutions that fit their product needs but it doesn't get applied across the board.
+
+Often companies and organizations are comprised of multiple teams focused on specific efforts and initiatives. Red Hat is no different. Prior to the PatternFly effort, development teams at Red Hat faced a huge disadvantage as they were expected to reinvent the wheel by defining, creating and implementing the style and behavior for their UI.
+
+A wheel reinvented by a team may be functional and successful in its own right. However, if you install four wheels on a car, with varying sizes and attributes, it would have a negative impact on how that car drives. Similarly for applications, it's important for a user to be able to migrate seamlessly from one product to another without having to relearn how to drive the UI. Consistency across a portfolio leads to better usability because users are familiar with the interactions. This is especially important for a company like Red Hat that offers application bundles.
+
+I mean it, they have an autonomy that i haven't seen anywhere else.
+
+
+
+During the holiday brake I build a web app.
+
+==
+
 2015 has been a superb year. Looking back, I can't believe how much has happened.
 
 It was my first year at Red Hat, which allowed me to work alongside and learn from a bunch of talented people that made me grown a lot as a person. And I couldn't be happier that I can count some of them as my friends by now.
 
-I felt in love with open source and had the chance to participate in fun projects. 
+I felt in love with open source and had the chance to participate in fun projects.
 
 I also spoke for the first time in english at DevNation in Boston and in portuguese at Qcon Rio, which opened the doors for my next presentations in english and portuguese at DevNexus and QConSP.
 
@@ -39,7 +168,7 @@ In a way it took me back to my freelancer days, when I was a one man show. But t
 
 ## Communicate clearly
 
-Last week Josephine twitted an excellent presentation about enterprise UX project by Erik von Stackelberg where he describe what enterprise applications are, why they are bad and how we can improve it. And of course he mentions the importance of having empathy and excellent communication skills. 
+Last week Josephine twitted an excellent presentation about enterprise UX project by Erik von Stackelberg where he describe what enterprise applications are, why they are bad and how we can improve it. And of course he mentions the importance of having empathy and excellent communication skills.
 
 You could argue that those are qualities any person working on an enterprise environment should have, but design is different is one very important point: It is almost impossible to mesure design.
 
@@ -72,7 +201,7 @@ UX is not (only) about interfaces
 
 The people you work with is usually what makes a project fun or interesting.
 
-For the past few weeks I’ve been working on a fun and interesting project mostly because Brian is great to work with. 
+For the past few weeks I’ve been working on a fun and interesting project mostly because Brian is great to work with.
 
 Since we didn’t have much time to spend on UX research we came up with some silly pseudo personas to define our interaction. The star been Trever (yes, Trever with an "e") the trucker, who in my mind looks like a slightly fatter and middle age Kurt Cobain.
 
@@ -84,9 +213,9 @@ Although UX in this project was kinda silly, it made me think about something Ed
 
 If you deal with users, thinking about their experience is critical.
 
-User experience goes way beyond the interface, neither Oswald or Peter will see a UI, but we will design the API with their goals in mind. 
+User experience goes way beyond the interface, neither Oswald or Peter will see a UI, but we will design the API with their goals in mind.
 
-We are all here to help our users achieve their goals, it doesn’t matter if you are a designer or a developer (or support, or marketing or PM). 
+We are all here to help our users achieve their goals, it doesn’t matter if you are a designer or a developer (or support, or marketing or PM).
 
 Don't get me wrong, a user is not a client. Marketing takes care of clients, UX designers (and everyone else) should take care of users. Specially on enterprise applications, where the one that buys the platform is never the one that uses it.
 
@@ -94,7 +223,7 @@ UX designers are the lawyers defending the users. Our job is to make sure we all
 
 ## I know, I haven't answer Eder question.
 
-To answer Eders question, I still don't know what a good UX for developers talk would be. Teaching a developer UX in a 40 min talk its like teaching me java in 40mins (or in 40 years), a waste complete time. 
+To answer Eders question, I still don't know what a good UX for developers talk would be. Teaching a developer UX in a 40 min talk its like teaching me java in 40mins (or in 40 years), a waste complete time.
 
 But it might be useful for a developer to understand what design thinking is. How to take a user centric approach where everyone should think about think about the user, and how to take advantage of the designer and involve them in every step of the process.
 
@@ -117,7 +246,7 @@ and Paul won't adopt any API unless it's similar to what he is already using
 
 Open collaborative design system
 
-I've started this week with a mission: stop procrastination. What would happen if I do the things that I have to do first instead of the more pleasurable ones? 
+I've started this week with a mission: stop procrastination. What would happen if I do the things that I have to do first instead of the more pleasurable ones?
 
 To be honest I don't know. Monday is blog day and Monday went by without a post. Short story short: I am good at procrastinating.
 
@@ -134,7 +263,7 @@ Luke Wroblewski [wrote](http://www.lukew.com/ff/entry.asp?15)
 
 And PatternFly is crafted to achieve that balance. If you are looking to build an enterprise web applications look no further.
 
-There are other great open source design systems like [GitHub Primer](http://primercss.io/), [FireFox Sandstone](https://www.mozilla.org/en-US/styleguide/websites/sandstone/), [Zurb Foundation](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/). 
+There are other great open source design systems like [GitHub Primer](http://primercss.io/), [FireFox Sandstone](https://www.mozilla.org/en-US/styleguide/websites/sandstone/), [Zurb Foundation](http://foundation.zurb.com/) and [Bootstrap](http://getbootstrap.com/).
 
 But what makes them successful?
 
@@ -143,8 +272,8 @@ But what makes them successful?
 [Mdo](http://markdotto.com/) mention three pillars to create an open and collaborative design system:
 
 #### 1. Open source
-Open source mentality yields surprising results. 
-I've already ramble about [design at open source communities](http://blog.andresgalante.com/design/2015/08/31/adopt-a-deisgner.html). Open source leads to innovation. 
+Open source mentality yields surprising results.
+I've already ramble about [design at open source communities](http://blog.andresgalante.com/design/2015/08/31/adopt-a-deisgner.html). Open source leads to innovation.
 Not every company can open their projects, but in order to have a successful design system , it must work as an open source community would. Every member of the team should be envolved in building, maintaining and making it grow.
 
 
@@ -158,7 +287,7 @@ Design a system of reusable components, not just pages. Every page should the su
 
 ## Taste it
 
-Open collaborative design systems and open :smile:. Working on this environment is as easy as becoming part of the open source community. 
+Open collaborative design systems and open :smile:. Working on this environment is as easy as becoming part of the open source community.
 
 Here is a tip: the smaller the community is, the more open they'll be to new comers, but it doesn't matter the size, they are all full of very nice people that will help you walk your first steps.
 
@@ -177,9 +306,9 @@ Go and have a try.
 
 This is the story of how I tried to make a pattern using css background and I failed.
 
-If you are looking for a nice CSS story with a happy ending stop reading now. 
+If you are looking for a nice CSS story with a happy ending stop reading now.
 
-On the other hand, if you are like Douglas, and you also think that writing about my sad wasted of hours during the weekend is a perfect blog post, then stay and read on. 
+On the other hand, if you are like Douglas, and you also think that writing about my sad wasted of hours during the weekend is a perfect blog post, then stay and read on.
 
 First things first: Lets face it, you have a problem. I understand that Douglas wants to read about unsuccessful CSS experiment, after all he is crazy enough to get married in a Castle in São Paulo. But you, my dear reader, should consider stop reading now or a psychology session.
 
@@ -209,7 +338,7 @@ The font Interstate is not open source, I could have replaced it with an image b
 
 The second issue is the pattern. After trying for a few hours I found out that I couldn't reproduce the pattern with CSS backgrounds.
 
-It's either impossible or I don't know how to do it. 
+It's either impossible or I don't know how to do it.
 
 If it is impossible, then I am dumb for not having realize it before I stared. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.
 
@@ -226,26 +355,26 @@ But he is a fun killer, there is no awesomeness on using background images.
 During this weekend I learn that I am dumb.
 
 
-- 
+-
 
 ## The Failure
 
- 
+
 http://brand.redhat.com/elements/pattern/
 
-You enjoy 
+You enjoy
 
-You enjoy Hello reader, you like I hate you. Im a way, it seems that 
+You enjoy Hello reader, you like I hate you. Im a way, it seems that
 
 
 
-I am aware that 
+I am aware that
 
  the timing is bad for UX changes to studio.  On-prem and OSS are all-consuming business priorities.
 
 
 
-Mobile team. 
+Mobile team.
 - I though it was going to change but same same.
 - Still working on WFM
 - Really bad, lots of issues everywhere.
@@ -271,7 +400,7 @@ I don't think that for large companies there is such thing as a company culture.
 
 Clash of titans
 
-What happens when 
+What happens when
 
 Lead on maestro
 
@@ -322,12 +451,12 @@ For the background I am applying CSS mutiple background on the `body`:
 
 {% highlight scss %}
   background-color: $color-background-bottom;
-  background-image: 
-    linear-gradient(to left, 
-                    $color-background-stripe-01, $color-background-stripe-01 200px, 
-                    $color-background-stripe-02 200px, $color-background-stripe-02 360px, 
-                    $color-background-stripe-03 360px, $color-background-stripe-03 600px, 
-                    $color-background-stripe-04 600px, $color-background-stripe-04 800px, 
+  background-image:
+    linear-gradient(to left,
+                    $color-background-stripe-01, $color-background-stripe-01 200px,
+                    $color-background-stripe-02 200px, $color-background-stripe-02 360px,
+                    $color-background-stripe-03 360px, $color-background-stripe-03 600px,
+                    $color-background-stripe-04 600px, $color-background-stripe-04 800px,
                     $color-background-stripe-05 800px, $color-background-stripe-05 960px
                     ),
     url(../img/pattern.svg),
@@ -372,8 +501,8 @@ I did all this math, so you don't have to. This sass mixing will generate a roun
     transform: rotate(45deg);
     transform-origin: 0px 0px;
     background-color:$hexagon-bg-color;
-    width: $hexagon-height; 
-    height:$hexagon-height; 
+    width: $hexagon-height;
+    height:$hexagon-height;
     top: calc(((#{$hexagon-radius} * 1.414213562373095) - #{$hexagon-radius}) * -1);
     left: 0px;
     position:absolute;
@@ -460,7 +589,7 @@ Then on the `sass` I add the content of the label after the `h2` title, and to m
     &:visited h2:after {
       //Here is where the magic happens, changes the background and color to make it disappear
       color: $background-color;
-      background: $background-color; 
+      background: $background-color;
     }  
   }
 }
@@ -492,7 +621,7 @@ I've also added different messages for `:hover` and `:active` states
     &:visited h2:after {
       //Here is where the magic happens, changes the backgound and color to make it dessapear
       color: $background-color;
-      background: $background-color; 
+      background: $background-color;
     }  
   }  
 }
@@ -523,7 +652,7 @@ You can check the complete code here.
 
 On related news, I've also added comments to the blog. Not because I expect to get any comment, I honestly don't think anyone reads these words, or that they deserve a discussion, but [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood) says on his excellent [blog](http://blog.codinghorror.com) that a blog without comments is not a blog.
 
-Now I have a blog. :smile: 
+Now I have a blog. :smile:
 
 
 
@@ -563,7 +692,7 @@ Excellency doesn't come easy. To get the finest quality we should go outside our
 
 ## Cue Peppa song: :musical_keyboard: Tu turu tu tum tu turu tu tu tum
 
-Excellent design is honest. There is no cheating, no shortcuts. It requires an attention to detail that is really hard to achieve. 
+Excellent design is honest. There is no cheating, no shortcuts. It requires an attention to detail that is really hard to achieve.
 
 That craftsmanship goes to build any excellent thing. There is elegant coding, excellent music and even great accounting.
 
@@ -573,7 +702,7 @@ Meanwhile I'll join Leon and all the children in the world and surrender to the 
 
 
 
- 
+
 
 Andres Galante wrote this on date
 // poner comentarios
@@ -617,7 +746,7 @@ next and prev posts
 
 
 
-If there is one thing I regret from my trip to QConRio is not having spent enough time talking with [Felippe Nardi](https://twitter.com/FelippeNardi). He has been developing on remote server for more than a year and he enter to the list of "Heroes". 
+If there is one thing I regret from my trip to QConRio is not having spent enough time talking with [Felippe Nardi](https://twitter.com/FelippeNardi). He has been developing on remote server for more than a year and he enter to the list of "Heroes".
 
 To be honest it's a quite large list that includes Michael J Fox for Back to the Future and Raphael turtle ninjas because he can kick ass.
 
@@ -641,7 +770,7 @@ The first is to learn Vin, which is probably what I am going to do because I am 
 
 The second one is to use [Cloud9](https://c9.io/). Which is awesome and easy to use, and although I should use it I won't... because well, I've just said it, I am a big nerd.
 
-Practice makes the master. If I blog again about this in a few month then you'll know I succeed 
+Practice makes the master. If I blog again about this in a few month then you'll know I succeed
 
 
 Felippe
@@ -690,7 +819,7 @@ Make it easy to jump in and help each other. no matter what knowlage level
 
 
 
-distributed teams work 
+distributed teams work
 
 Patternfly is a Design systems.
 
@@ -715,7 +844,7 @@ A few monthes ago I've got a Sam
 
 
 If there is one thing I regret from my trip to QConRio is not having spent enough time talking with Felippe Nardi. He has been doing for a year something I always wanted to do.
- 
+
 Today, and after 8 month of waiting, I finally got an extra monitor.
 
 the ipad only designer setup
@@ -748,7 +877,7 @@ vou fazer o que os argentinos sabemos fazer de melhor
 - patternfly
 - outclass
 
-- O problema 
+- O problema
 - A quantidade de interfaces da redhat
 - Novas adquirições
 - Developer drive thinking
@@ -786,7 +915,7 @@ vou fazer o que os argentinos sabemos fazer de melhor
 - Demo
 - install with bower (but also rpm etc)
 - templates out of the box
-- 
+-
 
 
 ## Acesse este endereço:
@@ -807,7 +936,7 @@ Perguntei para um amigo meu carioca se eu deveria dar esta palestra em ingles, e
 
 Eu morei no Brasil durante um tempo e minha experiencia foi excelente, até achei legal aquelas coisas que ninguém gosta de falar, tipo o Programa do Ratinho o a Banda Calypso.
 
-E é disso que vou falar: da Banda Calypso. 
+E é disso que vou falar: da Banda Calypso.
 
 Não, mentira, vou falar da experiencia dos usuarios e como na Red Hat construimos um framework para ter coherencia entre todos nosso produtos.
 
@@ -863,7 +992,7 @@ I live in Buenos Aires in Argentina.
 
 And I am part of the User Experience Team.
 
-Apart from working with you on Aerogear and RHMAP I also contribute to PatternFly. 
+Apart from working with you on Aerogear and RHMAP I also contribute to PatternFly.
 
 Patternfly is the solution we've created to have a consistent user experience across all Red Hat products. And since we work at Red Hat, PatternFly is Open Source.
 
@@ -875,7 +1004,7 @@ Summers once said me that I make things look good.
 
 And although those are super kind words, the truth is that making things look good is really easy.
 
-I am here to help users achieve their goals. And if you think about it, thats everyones jobs. 
+I am here to help users achieve their goals. And if you think about it, thats everyones jobs.
 
 We are all here to help our users achieve their goals, right?
 
@@ -885,11 +1014,11 @@ My job is to make sure we all understands our users. And keep them front of mind
 
 And here is a first tip: our users are human beens. And dealing with human beens it's very hard.
 
-According to the National institute of Biotecnolgy the attention spam of a human been has drop from 12 seconds in 2000 to 8 seconds in 2013. 
+According to the National institute of Biotecnolgy the attention spam of a human been has drop from 12 seconds in 2000 to 8 seconds in 2013.
 
 That's one second less than the attention span of a gold fish.
 
-Thats why we always need to keep consistency. 
+Thats why we always need to keep consistency.
 
 Jacok Nielsen says that Consistency is the most powerful usualbility principal, when things always behave the same, users don't have to worry about what will happen. Instead, they know what will happen based on earlier experiences.
 
@@ -910,7 +1039,7 @@ Once we understand it, we build personas and scenarios and use cases to design s
 For example:
 
 One of our main personas is a Front Developer, lets call him Peter.
- 
+
 One of the main reasons Peter comes back again and again to the studio is to Build his app.
 
 Hows does he do it?
@@ -925,9 +1054,9 @@ Selects the project
 
 Then selects the app he wants to build
 
-And finds the build link on the side bar, which is the 7th link on the list. 
+And finds the build link on the side bar, which is the 7th link on the list.
 
-I don't think that app Details, Docs, Editor, Analytics, Configurations or Push are more usefull to him than building the app. 
+I don't think that app Details, Docs, Editor, Analytics, Configurations or Push are more usefull to him than building the app.
 
 Chances are that Peter will edit the code on his local IDE, and that he'll never change the info, configurations or push settings after his initial set up.
 
@@ -941,13 +1070,13 @@ And that's where I fail.
 
 I fail to the users, I fail to my goals, and to the team. I am currently not helping the users achieve their goals or helping the team understand our users.
 
-The design of this product is something that involves all of us. 
+The design of this product is something that involves all of us.
 
 We all know that design is important, but I know there are more urgent things to. And the urgent always beats the important.
 
 Thats why I'll need the help of all you to create a clear vision of where the end to end User experience of the mobile platform should go.
 
-To make na impact on the market we really need to think about Design and UX is what can take our product from where it is, to where it can be. 
+To make na impact on the market we really need to think about Design and UX is what can take our product from where it is, to where it can be.
 
 
 
@@ -981,18 +1110,18 @@ But changing the current studio to patternfly styles
 
 User centric products are usually way more successful than feature drive ones.
 
-But our 
+But our
 
 
 
 
-PatternFly is the 
+PatternFly is the
 A few years ago Red hat created the UXD team as part of an initiative to make all our products work better together and have a consistent look and feel.
 
 It wasn't easy, but keeping consistency is key to a good user experience.
 
 
-And that's critical because we are deailing with human been, and 
+And that's critical because we are deailing with human been, and
 
 Thats right, the attetion span of a gold fish is 9 seconds, one second more than any of us.
 
@@ -1032,7 +1161,7 @@ Thats what we called Deisgn thinking: Beguin with design and not end with it.
 
 My goal is to help our users achieve their goals.
 
-And after doing a design reserach to get to know our users I 
+And after doing a design reserach to get to know our users I
 
 I fail. I need your help. Its not only my goal to help the users acheve their gaols.
 
@@ -1042,7 +1171,7 @@ We always talk about features when we should be talking about users. User centri
 
 And just a a glimps of where we are standing let me show you something.
 
-One of our main personas is a developer. 
+One of our main personas is a developer.
 And one of the main reasons that developers will visit our studio is to Build his app.
 
 Hows does he do it?
@@ -1058,11 +1187,11 @@ Selects the project
 
 Selects the app he wants to build
 
-Finds the build link on the side bar, which by the way is the 5th link. 
+Finds the build link on the side bar, which by the way is the 5th link.
 
 Then be gets to building his app.
 
-I don't think that app Details, Docs, Editor, Analytics, Configurations or Push are more important to him than building the app. 
+I don't think that app Details, Docs, Editor, Analytics, Configurations or Push are more important to him than building the app.
 
 Changes are that he'll edit on his IDE, and that he I'll never change the info and confiurations after they are set up for the first time.
 
@@ -1070,14 +1199,14 @@ We have this, and I need to find a way to get him from here to here in the lest 
 
 I do get why things are the way they are. FH was a startup and it grown organically.
 
-Whats next? Re think the information architecture. Building a huge map of the console, identify the main use cases and reacomodate things tohelp te users acheve their goals. 
+Whats next? Re think the information architecture. Building a huge map of the console, identify the main use cases and reacomodate things tohelp te users acheve their goals.
 
 UX designers are lawyers defending the user.
 
 
 My goal is to help our users achieve their goals.
 
-And after doing a design reserach to get to know our users I 
+And after doing a design reserach to get to know our users I
 
 I fail. I need your help. Its not only my goal to help the users achieve their gaols.
 
@@ -1089,7 +1218,7 @@ That the job of every one of us.
 
 
 I wasn't a Red Hat employee at the time, but I know that it wasn't easy to catheard a bunch of independent Open Source communities to follow the same design styles.
- 
+
 
 
 
@@ -1103,6 +1232,3 @@ Fish
 that's why we follow patternfly
 Patternfy = RING
 What is patternfly
-
-
-

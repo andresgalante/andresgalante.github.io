@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bye bye 2015, welcome 2016</title>
-  <meta name="description" content="2015 has been a superb year. Looking back, I can’t believe how much has happened.It was my first year at Red Hat, which allowed me to work alongside and lear...">
+  <title>Building robust components with flexbox</title>
+  <meta name="description" content="I’ve recently have the chance to help coding PatternFlys List View component.On a first glance it seems straight forward: just a list of inline elements. But...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://andresgalante.github.io/design/2016/01/04/happy-new-year.html">
+  <link rel="canonical" href="http://andresgalante.github.io/howto/2016/02/04/flexbox.html">
   <link rel="alternate" type="application/rss+xml" title="Andres Galante" href="http://andresgalante.github.io/feed.xml" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -63,15 +63,15 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Bye bye 2015, welcome 2016</h1>
+    <h1 class="post-title">Building robust components with flexbox</h1>
     <p class="post-meta">
       <img src="https://avatars2.githubusercontent.com/u/1832037?v=3&amp;s=460" height="30" width="30">
 
       <a href="/about">Andres Galante</a> 
       wrote this on 
-      January 04, 2016
+      February 04, 2016
 
-       under <strong>design</strong> category.
+       under <strong>howto</strong> category.
 
       <!--
       USE THIS FOR CATEGORIES!
@@ -82,21 +82,67 @@
   </header>
 
   <article class="post-content">
-    <p><img src="/img/new-year/new-year.jpg" alt="Bye bye 2015, welcome 2016" /></p>
+    <p><img src="/img/flexbox/flexbox.png" alt="List View Pattern" /></p>
 
-<p>2015 has been a superb year. Looking back, I can’t believe how much has happened.</p>
+<p>I’ve recently have the chance to help coding <a href="https://www.patternfly.org/">PatternFlys</a> <a href="https://rawgit.com/patternfly/patternfly/master/tests/list-view.html">List View component</a>.</p>
 
-<p>It was my first year at Red Hat, which allowed me to work alongside and learn from a bunch of talented people that made me grown a lot as a person. And I couldn’t be happier that I can count some of them as my friends by now.</p>
+<p>On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers, and we take spaces and alignment very seriously.</p>
 
-<p>I felt in love with open source and had the chance to participate in fun projects. </p>
+<p>That’s the tricky part: How to build an (almost) pixel perfect component that’s robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can be fit any scenario?</p>
 
-<p>I also spoke for the first time in english at DevNation in Boston and in portuguese at Qcon Rio, which opened the doors for my next presentations in english and portuguese at DevNexus and QConSP.</p>
+<p>First you need a very robust HTML structure. You could say that <a href="https://github.com/patternfly/patternfly/blob/master/less/list-view.less">List View</a> has two more divs than it should, but I just couldn’t think of a lighter solution considering that PatternFly uses a fluid grid and we can’t predict the amount of information this structure will contain.</p>
 
-<p>But thats not all, I started running, started writing this blog, continued working on my personal projects and watched my baby grow into a little boy.</p>
+<p>And to style it the answer is, of course, <code>flexbox</code>!</p>
 
-<p>There is no doubt that I end this year as a better designer. What waits for me in 2016? I don’t know but I can’t wait for it.</p>
+<h2 id="the-future-is-today">The future is today!</h2>
 
-<p>This is a short post and I just wanted to write it to wish all the readers of this blog (yes, both of you) a happy new year!</p>
+<p>Do I hear someone shouting “What about IE9 and 10 users?” well, I am glad you’ve asked.</p>
+
+<p><code>flexbox</code> can be combined with <code>floats</code>. A browser that supports <code>flexbox</code> will ignore the <code>float</code> and <code>width</code> statement. And IE9 will just be unable to read <code>flex</code> and use the <code>float</code> fallback.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">flexbox</span><span class="p">;</span>
+  <span class="n">align</span><span class="o">-</span><span class="n">items</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.container</span> <span class="nc">.element</span> <span class="p">{</span>
+  <span class="n">flex</span><span class="o">:</span> <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+<span class="p">}</span></code></pre></div>
+
+<p>IE10 uses the old syntax of <code>flexbox</code> and it doesn’t understand any align propriety: <code>align-content</code>, <code>align-items</code> or <code>align-self</code> limiting vertical alignment.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">flexbox</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE10 */</span>
+  <span class="k">display</span><span class="o">:</span> <span class="n">flexbox</span><span class="p">;</span>
+  <span class="n">align</span><span class="o">-</span><span class="n">items</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.container</span> <span class="nc">.element</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span>  <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE10 */</span>
+  <span class="n">flex</span><span class="o">:</span>      <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+  <span class="k">width</span><span class="o">:</span><span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+<span class="p">}</span></code></pre></div>
+
+<h2 id="autoprefixer">Autoprefixer</h2>
+
+<p>An easier option to add “old school” flexbox without worrying about it, is using <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>.</p>
+
+<p><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> parses CSS files and adds vendor prefixes to CSS rules using the Can I Use database to determine which prefixes are needed.</p>
+
+<p>All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes.</p>
+
+<p>It will make you forget about vendor prefixes hell. Thanks Autoprefixer.</p>
+
+<h2 id="gracefully-degrades">Gracefully degrades</h2>
+
+<p>If IE9 and 10 users are critical for your app, you should probably avoid this technique. They’ll have a different but acceptable experience.</p>
+
+<p>In the case of the list view component, they’ll see all the elements vertically align on the top instead of on the center.</p>
+
+<p>Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant and be place in the weirdest scenario and it will not brake.</p>
 
 
   </article>
@@ -108,11 +154,9 @@
 
   <div class="post-navigation">
    
-  <a rel="prev" href="/design/2015/11/30/enteprise-designer.html"><i class="fa fa-arrow-left"></i>Enterprise UX: Talk the talk</a>
+  <a rel="prev" href="/design/2016/01/04/happy-new-year.html"><i class="fa fa-arrow-left"></i>Bye bye 2015, welcome 2016</a>
   
 
-   
-  <a rel="next" href="/howto/2016/02/04/flexbox.html">Building robust components with flexbox<i class="fa fa-arrow-right"></i></a>
   
   </div>
 

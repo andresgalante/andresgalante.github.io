@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "Building robust components with flexbox"
+date:   2016-02-04 23:05:36
+categories: howto
+tags: design html css patternfly flexbox
+---
+
+![List View Pattern](/img/flexbox/flexbox.png)
+
+I've recently have the chance to help coding [PatternFlys](https://www.patternfly.org/) [List View component](https://rawgit.com/patternfly/patternfly/master/tests/list-view.html).
+
+On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers, and we take spaces and alignment very seriously.
+
+That's the tricky part: How to build an (almost) pixel perfect component that's robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can be fit any scenario?
+
+First you need a very robust HTML structure. You could say that [List View](https://github.com/patternfly/patternfly/blob/master/less/list-view.less) has two more divs than it should, but I just couldn't think of a lighter solution considering that PatternFly uses a fluid grid and we can't predict the amount of information this structure will contain.
+
+And to style it the answer is, of course, `flexbox`!
+
+## The future is today!
+
+Do I hear someone shouting "What about IE9 and 10 users?" well, I am glad you've asked.
+
+`flexbox` can be combined with `floats`. A browser that supports `flexbox` will ignore the `float` and `width` statement. And IE9 will just be unable to read `flex` and use the `float` fallback.
+
+{% highlight css %}
+.container {
+  display: flexbox;
+  align-items: center;
+}
+
+.container .element {
+  flex: 1 0 40%;
+  float: left; /* fallback for > IE9 */
+  width:40%; /* fallback for > IE9 */
+}
+{% endhighlight %}
+
+
+IE10 uses the old syntax of `flexbox` and it doesn't understand any align propriety: `align-content`, `align-items` or `align-self` limiting vertical alignment.
+
+{% highlight css %}
+.container {
+  display: -ms-flexbox; /* fallback for > IE10 */
+  display: flexbox;
+  align-items: center;
+}
+
+.container .element {
+  -ms-flex:  1 0 40%; /* fallback for > IE10 */
+  flex:      1 0 40%;
+  float: left; /* fallback for > IE9 */
+  width:40%; /* fallback for > IE9 */
+}
+{% endhighlight %}
+
+
+## Autoprefixer
+
+An easier option to add "old school" flexbox without worrying about it, is using [Autoprefixer](https://github.com/postcss/autoprefixer).
+
+[Autoprefixer](https://github.com/postcss/autoprefixer) parses CSS files and adds vendor prefixes to CSS rules using the Can I Use database to determine which prefixes are needed.
+
+All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes.
+ 
+It will make you forget about vendor prefixes hell. Thanks Autoprefixer.
+
+## Gracefully degrades
+
+If IE9 and 10 users are critical for your app, you should probably avoid this technique. They'll have a different but acceptable experience.
+
+In the case of the list view component, they'll see all the elements vertically align on the top instead of on the center.
+
+Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant and be place in the weirdest scenario and it will not brake.
+

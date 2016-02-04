@@ -6,9 +6,97 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Jan 2016 09:35:01 -0300</pubDate>
-    <lastBuildDate>Mon, 04 Jan 2016 09:35:01 -0300</lastBuildDate>
+    <pubDate>Thu, 04 Feb 2016 17:11:39 -0300</pubDate>
+    <lastBuildDate>Thu, 04 Feb 2016 17:11:39 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Building robust components with flexbox</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/flexbox/flexbox.png&quot; alt=&quot;List View Pattern&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve recently have the chance to help coding &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFlys&lt;/a&gt; &lt;a href=&quot;https://rawgit.com/patternfly/patternfly/master/tests/list-view.html&quot;&gt;List View component&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers, and we take spaces and alignment very seriously.&lt;/p&gt;
+
+&lt;p&gt;That’s the tricky part: How to build an (almost) pixel perfect component that’s robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can be fit any scenario?&lt;/p&gt;
+
+&lt;p&gt;First you need a very robust HTML structure. You could say that &lt;a href=&quot;https://github.com/patternfly/patternfly/blob/master/less/list-view.less&quot;&gt;List View&lt;/a&gt; has two more divs than it should, but I just couldn’t think of a lighter solution considering that PatternFly uses a fluid grid and we can’t predict the amount of information this structure will contain.&lt;/p&gt;
+
+&lt;p&gt;And to style it the answer is, of course, &lt;code&gt;flexbox&lt;/code&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-future-is-today&quot;&gt;The future is today!&lt;/h2&gt;
+
+&lt;p&gt;Do I hear someone shouting “What about IE9 and 10 users?” well, I am glad you’ve asked.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;flexbox&lt;/code&gt; can be combined with &lt;code&gt;floats&lt;/code&gt;. A browser that supports &lt;code&gt;flexbox&lt;/code&gt; will ignore the &lt;code&gt;float&lt;/code&gt; and &lt;code&gt;width&lt;/code&gt; statement. And IE9 will just be unable to read &lt;code&gt;flex&lt;/code&gt; and use the &lt;code&gt;float&lt;/code&gt; fallback.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flexbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;IE10 uses the old syntax of &lt;code&gt;flexbox&lt;/code&gt; and it doesn’t understand any align propriety: &lt;code&gt;align-content&lt;/code&gt;, &lt;code&gt;align-items&lt;/code&gt; or &lt;code&gt;align-self&lt;/code&gt; limiting vertical alignment.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flexbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE10 */&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flexbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE10 */&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;autoprefixer&quot;&gt;Autoprefixer&lt;/h2&gt;
+
+&lt;p&gt;An easier option to add “old school” flexbox without worrying about it, is using &lt;a href=&quot;https://github.com/postcss/autoprefixer&quot;&gt;Autoprefixer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/postcss/autoprefixer&quot;&gt;Autoprefixer&lt;/a&gt; parses CSS files and adds vendor prefixes to CSS rules using the Can I Use database to determine which prefixes are needed.&lt;/p&gt;
+
+&lt;p&gt;All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes.&lt;/p&gt;
+
+&lt;p&gt;It will make you forget about vendor prefixes hell. Thanks Autoprefixer.&lt;/p&gt;
+
+&lt;h2 id=&quot;gracefully-degrades&quot;&gt;Gracefully degrades&lt;/h2&gt;
+
+&lt;p&gt;If IE9 and 10 users are critical for your app, you should probably avoid this technique. They’ll have a different but acceptable experience.&lt;/p&gt;
+
+&lt;p&gt;In the case of the list view component, they’ll see all the elements vertically align on the top instead of on the center.&lt;/p&gt;
+
+&lt;p&gt;Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant and be place in the weirdest scenario and it will not brake.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 04 Feb 2016 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/howto/2016/02/04/flexbox.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2016/02/04/flexbox.html</guid>
+        
+        <category>design</category>
+        
+        <category>html</category>
+        
+        <category>css</category>
+        
+        <category>patternfly</category>
+        
+        <category>flexbox</category>
+        
+        
+        <category>howto</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Bye bye 2015, welcome 2016</title>
@@ -738,61 +826,6 @@ gems:
         
         
         <category>design</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Font pairing is a bitch</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/fontparing/fontparing.png&quot; alt=&quot;Set of type&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Today &lt;a href=&quot;https://twitter.com/abstractj&quot;&gt;Bruno&lt;/a&gt; asked me about font pairing. He wanted to change &lt;a href=&quot;http://blog.abstractj.org/&quot;&gt;his blog&lt;/a&gt; styles and have a different typefaces for the titles and the body text.&lt;/p&gt;
-
-&lt;p&gt;Here is what I have to say about font pairing: &lt;strong&gt;Don’t do it&lt;/strong&gt; unless you really know what you are doing.&lt;/p&gt;
-
-&lt;p&gt;Typography is really hard. Choose just one font family and you can’t go wrong, even if that typeface is &lt;a href=&quot;https://en.wikipedia.org/wiki/Comic_Sans&quot;&gt;comic sans&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Remember to pick one that has several styles. Then create contrast by changing the weight.&lt;/p&gt;
-
-&lt;p&gt;For example this blog uses &lt;a href=&quot;https://www.google.com/fonts/specimen/Titillium+Web&quot;&gt;Titillium Web&lt;/a&gt; from &lt;a href=&quot;https://www.google.com/fonts&quot;&gt;Google fonts&lt;/a&gt;. Titles are semi-bold and the body text is light.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-if-i-want-to-it-anyway&quot;&gt;What if I want to it anyway?&lt;/h2&gt;
-
-&lt;p&gt;Bruno asked. &lt;/p&gt;
-
-&lt;p&gt;So, if you really want to get into font paring and you don’t wan’t study typography for years: copy from someone else.&lt;/p&gt;
-
-&lt;p&gt;Typekit has an excellent &lt;a href=&quot;https://typekit.com/gallery&quot;&gt;gallery&lt;/a&gt; to get “inspired”.&lt;/p&gt;
-
-&lt;p&gt;If you want to go Google fonts way (and you should) check &lt;a href=&quot;http://femmebot.github.io/google-type/&quot;&gt;Google type project&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://hellohappy.org/beautiful-web-type/&quot;&gt;Beautiful web type&lt;/a&gt; has some very nice examples on how to use font on the web.&lt;/p&gt;
-
-&lt;p&gt;For print samples check &lt;a href=&quot;http://ifontyou.com/&quot;&gt;Font you&lt;/a&gt; and &lt;a href=&quot;http://fontsinuse.com/&quot;&gt;Fonts in use&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And always remember Picassos words:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Good artist copy great artist steal&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;There you go Bruno, I’ve already told you all this a few minutes ago, now it’s written.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Sep 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/09/17/font-paring.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/09/17/font-paring.html</guid>
-        
-        <category>font</category>
-        
-        <category>pairing</category>
-        
-        <category>design</category>
-        
-        
-        <category>howto</category>
         
         <author>
           <name>Andres Galante</name>
