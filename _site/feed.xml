@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Feb 2016 17:13:25 -0300</pubDate>
-    <lastBuildDate>Thu, 04 Feb 2016 17:13:25 -0300</lastBuildDate>
+    <pubDate>Thu, 04 Feb 2016 18:21:13 -0300</pubDate>
+    <lastBuildDate>Thu, 04 Feb 2016 18:21:13 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -381,10 +381,10 @@ I am aware that not every company can open their projects, but in order to have 
 &lt;div data-height=&quot;266&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;pjLvvz&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;header&amp;gt;
   &amp;lt;h1&amp;gt;UXDepot&amp;lt;/h1&amp;gt;
   &amp;lt;h2&amp;gt;User Experience Design Team&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://twitter.com/RedHatUXD&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-twitter&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; @RedHatUXD&amp;lt;/a&amp;gt;&amp;lt;p&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://twitter.com/RedHatUXD&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-twitter&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &lt;a href=&quot;https://github.com/RedHatUXD&quot; class=&quot;user-mention&quot;&gt;@RedHatUXD&lt;/a&gt;&amp;lt;/a&amp;gt;&amp;lt;p&amp;gt;
   &amp;lt;h6&amp;gt;&amp;lt;a href=&amp;quot;http://www.redhat.com/&amp;quot;&amp;gt;Red Hat&amp;lt;/a&amp;gt;&amp;lt;h6&amp;gt;
 &amp;lt;/header&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/pjLvvz/&quot;&gt;UX depot header&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/pjLvvz/&quot;&gt;UX depot header&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;@andresgalante&lt;/a&gt;&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
@@ -492,8 +492,8 @@ I am aware that not every company can open their projects, but in order to have 
 
 &lt;p&gt;This sass mixing will generate a rounded corner hexagon and absolute position it at the center of the screen. &lt;strong&gt;You are welcome&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@mixin&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt; rounded-hexagon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.6&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;#515F67&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;na&quot;&gt;&amp;lt;a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;&amp;#39;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//github.com/mixin&amp;#39; class=&amp;#39;user-mention&amp;#39;&amp;gt;@mixin&amp;lt;/a&amp;gt; rounded-hexagon($hexagon-height: 5rem, $hexagon-radius: .5rem, $hexagon-bg-color: white, $hexagon-font-size: 1.6em, $hexagon-color:#515F67 ) {&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
@@ -530,7 +530,7 @@ I am aware that not every company can open their projects, but in order to have 
 &lt;div data-height=&quot;500&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;wKPPPZ&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Keynote title&amp;lt;/h1&amp;gt;
 &amp;lt;p&amp;gt;Author&amp;#39;s Name&amp;lt;/p&amp;gt;
 &amp;lt;footer&amp;gt;This is an HTML version of the opening slide for ISA 2015 presentations.&amp;lt;/footer&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/wKPPPZ/&quot;&gt;CSS Hexagon Rounded Corner&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/wKPPPZ/&quot;&gt;CSS Hexagon Rounded Corner&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;@andresgalante&lt;/a&gt;&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
@@ -541,8 +541,8 @@ I am aware that not every company can open their projects, but in order to have 
 &lt;p&gt;I am sure there are way better ways to do hexagonal rounded corner shapes, this one doesn’t feel elegant enough. But it was good fun to build it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Oct 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon%20copy.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon%20copy.html</guid>
+        <link>http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon.html</guid>
         
         <category>sass</category>
         
@@ -608,7 +608,7 @@ gems:
 &lt;div data-height=&quot;220&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;jbGqXj&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;😃🔥📰&amp;quot;&amp;gt;
   This is the Funny Hot News section!
 &amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/jbGqXj/&quot;&gt;Emoji CSS class names&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/jbGqXj/&quot;&gt;Emoji CSS class names&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;@andresgalante&lt;/a&gt;&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
