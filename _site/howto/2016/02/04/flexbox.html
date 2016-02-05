@@ -86,45 +86,45 @@
 
 <p>I’ve recently have the chance to help coding <a href="https://www.patternfly.org/">PatternFlys</a> <a href="https://rawgit.com/patternfly/patternfly/master/tests/list-view.html">List View component</a>.</p>
 
-<p>On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers, and we take spaces and alignment very seriously.</p>
+<p>On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers and we take spaces and alignment very seriously.</p>
 
-<p>That’s the tricky part: How to build an (almost) pixel perfect component that’s robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can be fit any scenario?</p>
+<p>That’s the tricky part: How to build an (almost) pixel perfect component that’s robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can fit any scenario?</p>
 
 <p>First you need a very robust HTML structure. You could say that <a href="https://github.com/patternfly/patternfly/blob/master/less/list-view.less">List View</a> has two more divs than it should, but I just couldn’t think of a lighter solution considering that PatternFly uses a fluid grid and we can’t predict the amount of information this structure will contain.</p>
 
-<p>And to style it the answer is, of course, <code>flexbox</code>!</p>
+<p>And to style it the answer is, of course, <code class="highlighter-rouge">flexbox</code>!</p>
 
 <h2 id="the-future-is-today">The future is today!</h2>
 
 <p>Do I hear someone shouting “What about IE9 and 10 users?” well, I am glad you’ve asked.</p>
 
-<p><code>flexbox</code> can be combined with <code>floats</code>. A browser that supports <code>flexbox</code> will ignore the <code>float</code> and <code>width</code> statement. And IE9 will just be unable to read <code>flex</code> and use the <code>float</code> fallback.</p>
+<p><code class="highlighter-rouge">flexbox</code> can be combined with <code class="highlighter-rouge">floats</code>. A browser that supports <code class="highlighter-rouge">flexbox</code> will ignore the <code class="highlighter-rouge">float</code> and <code class="highlighter-rouge">width</code> statement. And IE9 will just be unable to read <code class="highlighter-rouge">flex</code> and use the <code class="highlighter-rouge">float</code> fallback.</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">flexbox</span><span class="p">;</span>
-  <span class="n">align</span><span class="o">-</span><span class="n">items</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flexbox</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nc">.container</span> <span class="nc">.element</span> <span class="p">{</span>
-  <span class="n">flex</span><span class="o">:</span> <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span>
-  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
-  <span class="k">width</span><span class="o">:</span><span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
-<span class="p">}</span></code></pre></div>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+<span class="p">}</span></code></pre></figure>
 
-<p>IE10 uses the old syntax of <code>flexbox</code> and it doesn’t understand any align propriety: <code>align-content</code>, <code>align-items</code> or <code>align-self</code> limiting vertical alignment.</p>
+<p>IE10 uses the old syntax of <code class="highlighter-rouge">flexbox</code> and it doesn’t understand any align propriety: <code class="highlighter-rouge">align-content</code>, <code class="highlighter-rouge">align-items</code> or <code class="highlighter-rouge">align-self</code> limiting vertical alignment.</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">flexbox</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE10 */</span>
-  <span class="k">display</span><span class="o">:</span> <span class="n">flexbox</span><span class="p">;</span>
-  <span class="n">align</span><span class="o">-</span><span class="n">items</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">-ms-flexbox</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE10 */</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flexbox</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nc">.container</span> <span class="nc">.element</span> <span class="p">{</span>
-  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">flex</span><span class="o">:</span>  <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE10 */</span>
-  <span class="n">flex</span><span class="o">:</span>      <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span>
-  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
-  <span class="k">width</span><span class="o">:</span><span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
-<span class="p">}</span></code></pre></div>
+  <span class="nl">-ms-flex</span><span class="p">:</span>  <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE10 */</span>
+  <span class="nl">flex</span><span class="p">:</span>      <span class="m">1</span> <span class="m">0</span> <span class="m">40%</span><span class="p">;</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">40%</span><span class="p">;</span> <span class="c">/* fallback for &gt; IE9 */</span>
+<span class="p">}</span></code></pre></figure>
 
 <h2 id="autoprefixer">Autoprefixer</h2>
 
@@ -132,9 +132,9 @@
 
 <p><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> parses CSS files and adds vendor prefixes to CSS rules using the Can I Use database to determine which prefixes are needed.</p>
 
-<p>All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes.</p>
+<p>All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes hell.</p>
 
-<p>It will make you forget about vendor prefixes hell. Thanks Autoprefixer.</p>
+<p>Thanks Autoprefixer.</p>
 
 <h2 id="gracefully-degrades">Gracefully degrades</h2>
 
@@ -142,8 +142,7 @@
 
 <p>In the case of the list view component, they’ll see all the elements vertically align on the top instead of on the center.</p>
 
-<p>Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant and be place in the weirdest scenario and it will not brake.</p>
-
+<p>Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant without braking.</p>
 
   </article>
 
@@ -161,20 +160,6 @@
   </div>
 
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'andresgalanteblog';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   
 
 </div>

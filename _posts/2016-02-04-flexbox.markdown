@@ -10,9 +10,9 @@ tags: design html css patternfly flexbox
 
 I've recently have the chance to help coding [PatternFlys](https://www.patternfly.org/) [List View component](https://rawgit.com/patternfly/patternfly/master/tests/list-view.html).
 
-On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers, and we take spaces and alignment very seriously.
+On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers and we take spaces and alignment very seriously.
 
-That's the tricky part: How to build an (almost) pixel perfect component that's robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can be fit any scenario?
+That's the tricky part: How to build an (almost) pixel perfect component that's robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can fit any scenario?
 
 First you need a very robust HTML structure. You could say that [List View](https://github.com/patternfly/patternfly/blob/master/less/list-view.less) has two more divs than it should, but I just couldn't think of a lighter solution considering that PatternFly uses a fluid grid and we can't predict the amount of information this structure will contain.
 
@@ -62,9 +62,9 @@ An easier option to add "old school" flexbox without worrying about it, is using
 
 [Autoprefixer](https://github.com/postcss/autoprefixer) parses CSS files and adds vendor prefixes to CSS rules using the Can I Use database to determine which prefixes are needed.
 
-All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes.
+All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes hell.
  
-It will make you forget about vendor prefixes hell. Thanks Autoprefixer.
+Thanks Autoprefixer.
 
 ## Gracefully degrades
 
@@ -72,5 +72,4 @@ If IE9 and 10 users are critical for your app, you should probably avoid this te
 
 In the case of the list view component, they'll see all the elements vertically align on the top instead of on the center.
 
-Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant and be place in the weirdest scenario and it will not brake.
-
+Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant without braking.
