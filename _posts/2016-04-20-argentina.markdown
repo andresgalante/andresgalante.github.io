@@ -8,11 +8,11 @@ tags: argentina ignitetalks redhat
 
 ![Patternfly Charts](/img/argentina/argentina.jpg)
 
-This is the script for a 5 minute [ignite talk](http://www.ignitetalks.io/) I gave about Argentina during the UXD team meeting in Raleigh:
+This is the talk for a 5 minute [ignite talk](http://www.ignitetalks.io/) I gave about Argentina during the UXD team meeting in Raleigh:
 
 I am going to speak about the things you should know about Argentina.
 
-My country is famous for the Tango, it's meat, soccer, Evita, the pope, Maradona and Messi. Those things are is Argentina but there is much more to it.
+My country is famous for the Tango, it's meat, soccer, Evita, the pope, Maradona and Messi. Those things are Argentina but there is much more to it.
 
 Argentina is about 6000 miles south from the US. Think it this way, if the America is heading the world, then we are the “butt” of the world.
 
