@@ -14,9 +14,9 @@ I am going to speak about the things you should know about Argentina.
 
 My country is famous for the Tango, it's meat, soccer, Evita, the pope, Maradona and Messi. Those things are Argentina but there is much more to it.
 
-Argentina is about 6000 miles south from the US. Think it this way, if the America is heading the world, then we are the “butt” of the world.
+Argentina is about 6000 miles south from the US. Think about it this way, if the America is heading the world, then we are the “butt” of the world.
 
-It is a beautiful country that has the most amazing landscapes, from lakes and glaciers at Patagonia in the south to colorful mountains in the north. Over the west we have the winery area and if you travel east you’ll find the biggest waterfall in the world.
+It's a beautiful country that has the most amazing landscapes, from lakes and glaciers at Patagonia in the south to colorful mountains in the north. Over the west we have the winery area and if you travel east you’ll find the biggest waterfall in the world.
 
 In the middle there is a huge flat fertile land where we grow mostly soy and wheat.
 
