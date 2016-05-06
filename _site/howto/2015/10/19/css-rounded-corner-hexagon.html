@@ -2,6 +2,7 @@
 <html>
 
   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,7 @@
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon.html">
-  <link rel="alternate" type="application/rss+xml" title="Andres Galante" href="http://andresgalante.github.io/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Andres Galante" href="http://andresgalante.github.io/feed.xml">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
@@ -31,10 +32,10 @@
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        <svg viewbox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
         </svg>
       </a>
 
@@ -82,7 +83,7 @@
   </header>
 
   <article class="post-content">
-    <p><img src="/img/hexagon/hexagon.jpg" alt="ISA 2015 opening presentation slide" /></p>
+    <p><img src="/img/hexagon/hexagon.jpg" alt="ISA 2015 opening presentation slide"></p>
 
 <p>On Friday I received the opening and closing slides to include on my presentation for the upcoming talk at <a href="http://isa.ixda.org/2015/">Interaction South America 2015</a> in Cordoba, Argentina.</p>
 
@@ -149,45 +150,46 @@
 
 <p>This sass mixing will generate a rounded corner hexagon and absolute position it at the center of the screen. <strong>You are welcome</strong>.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="err">&lt;</span><span class="na">a</span><span class="err"> </span><span class="na">href</span><span class="err">='</span><span class="na">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">mixin</span><span class="s1">' class='</span><span class="n">user-mention</span><span class="s1">'&gt;&lt;a href='</span><span class="n">https</span><span class="o">://</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">mixin</span><span class="s1">' class='</span><span class="n">user-mention</span><span class="s1">'&gt;@mixin&lt;/a&gt;&lt;/a&gt; rounded-hexagon($hexagon-height: 5rem, $hexagon-radius: .5rem, $hexagon-bg-color: white, $hexagon-font-size: 1.6em, $hexagon-color:#515F67 ) {</span><span class="err">
-</span><span class="s1">  margin: 0;</span><span class="err">
-</span><span class="s1">  color: $hexagon-color;</span><span class="err">
-</span><span class="s1">  background: $hexagon-bg-color;</span><span class="err">
-</span><span class="s1">  height: calc((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span><span class="s1">  * 1.414213562373095) - (((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2) * 1.414213562373095) - (</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2)));</span><span class="err">
-</span><span class="s1">  line-height: calc((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span><span class="s1">  * 1.414213562373095) - (((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2) * 1.414213562373095) - (</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2)));</span><span class="err">
-</span><span class="s1">  position: absolute;</span><span class="err">
-</span><span class="s1">  top: calc( 50% - (((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span><span class="s1">  * 1.414213562373095) - (((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2) * 1.414213562373095) - (</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 2))) / 2));</span><span class="err">
-</span><span class="s1">  left: 50%;</span><span class="err">
-</span><span class="s1">  margin-left: -9em;</span><span class="err">
-</span><span class="s1">  min-width: 18em;</span><span class="err">
-</span><span class="s1">  text-align: center;</span><span class="err">
-</span><span class="s1">  font-size: $hexagon-font-size;</span><span class="err">
-</span><span class="s1">  &amp;:after, &amp;:before{</span><span class="err">
-</span><span class="s1">    content: " ";</span><span class="err">
-</span><span class="s1">    transform: rotate(45deg);</span><span class="err">
-</span><span class="s1">    transform-origin: 0px 0px;</span><span class="err">
-</span><span class="s1">    background-color:$hexagon-bg-color;</span><span class="err">
-</span><span class="s1">    width: $hexagon-height; </span><span class="err">
-</span><span class="s1">    height:$hexagon-height; </span><span class="err">
-</span><span class="s1">    top: calc(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1"> * 1.414213562373095) - </span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1">) * -1);</span><span class="err">
-</span><span class="s1">    left: 0px;</span><span class="err">
-</span><span class="s1">    position:absolute;</span><span class="err">
-</span><span class="s1">    border-radius: </span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="s1">;</span><span class="err">
-</span><span class="s1">    z-index: -1;</span><span class="err">
-</span><span class="s1">  }</span><span class="err">
-</span><span class="s1">  &amp;:before{</span><span class="err">
-</span><span class="s1">    left: 100%;</span><span class="err">
-</span><span class="s1">  }</span><span class="err">
-</span><span class="s1">}</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span> <span class="nf">rounded-hexagon</span><span class="p">(</span><span class="nv">$hexagon-height</span><span class="o">:</span> <span class="m">5rem</span><span class="o">,</span> <span class="nv">$hexagon-radius</span><span class="o">:</span> <span class="mi">.5rem</span><span class="o">,</span> <span class="nv">$hexagon-bg-color</span><span class="o">:</span> <span class="no">white</span><span class="o">,</span> <span class="nv">$hexagon-font-size</span><span class="o">:</span> <span class="m">1</span><span class="mi">.6em</span><span class="o">,</span> <span class="nv">$hexagon-color</span><span class="o">:</span><span class="mh">#515F67</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$hexagon-color</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$hexagon-bg-color</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nf">calc</span><span class="p">((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span>  <span class="o">*</span> <span class="m">1</span><span class="mi">.414213562373095</span><span class="p">)</span> <span class="nf">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span> <span class="o">*</span> <span class="m">1</span><span class="mi">.414213562373095</span><span class="p">)</span> <span class="nf">-</span> <span class="p">(</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="m">2</span><span class="p">)));</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="nf">calc</span><span class="p">((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span>  <span class="o">*</span> <span class="m">1</span><span class="mi">.414213562373095</span><span class="p">)</span> <span class="nf">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span> <span class="o">*</span> <span class="m">1</span><span class="mi">.414213562373095</span><span class="p">)</span> <span class="nf">-</span> <span class="p">(</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="m">2</span><span class="p">)));</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="nf">calc</span><span class="p">(</span> <span class="m">50%</span> <span class="nf">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-height</span><span class="si">}</span>  <span class="o">*</span> <span class="m">1</span><span class="mi">.414213562373095</span><span class="p">)</span> <span class="nf">-</span> <span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="m">2</span><span class="p">)</span> <span class="o">*</span> <span class="m">1</span><span class="mi">.414213562373095</span><span class="p">)</span> <span class="nf">-</span> <span class="p">(</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="m">2</span><span class="p">)))</span> <span class="o">/</span> <span class="m">2</span><span class="p">));</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">-9em</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">18em</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$hexagon-font-size</span><span class="p">;</span>
+  <span class="k">&amp;</span><span class="nd">:after</span><span class="o">,</span> <span class="k">&amp;</span><span class="nd">:before</span><span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s2">" "</span><span class="p">;</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="m">45deg</span><span class="p">);</span>
+    <span class="nl">transform-origin</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span><span class="nv">$hexagon-bg-color</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nv">$hexagon-height</span><span class="p">;</span> 
+    <span class="nl">height</span><span class="p">:</span><span class="nv">$hexagon-height</span><span class="p">;</span> 
+    <span class="nl">top</span><span class="p">:</span> <span class="nf">calc</span><span class="p">(((</span><span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span> <span class="o">*</span> <span class="m">1</span><span class="mi">.414213562373095</span><span class="p">)</span> <span class="o">-</span> <span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="p">)</span> <span class="o">*</span> <span class="m">-1</span><span class="p">);</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="nt">position</span><span class="nd">:absolute</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$hexagon-radius</span><span class="si">}</span><span class="p">;</span>
+    <span class="nl">z-index</span><span class="p">:</span> <span class="m">-1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">&amp;</span><span class="nd">:before</span><span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
 
 <p><em><a href="https://cdn.rawgit.com/andresgalante/isa2015cover/master/index.html">Check the result here</a></em></p>
 
 <p>And here is the code altogether:</p>
 
-<div data-height="500" data-theme-id="20015" data-slug-hash="wKPPPZ" data-default-tab="html" data-user="andresgalante" class="codepen"><pre><code>&lt;h1&gt;Keynote title&lt;/h1&gt;
-&lt;p&gt;Author&#39;s Name&lt;/p&gt;
+<div data-height="500" data-theme-id="20015" data-slug-hash="wKPPPZ" data-default-tab="html" data-user="andresgalante" class="codepen">
+<pre><code>&lt;h1&gt;Keynote title&lt;/h1&gt;
+&lt;p&gt;Author's Name&lt;/p&gt;
 &lt;footer&gt;This is an HTML version of the opening slide for ISA 2015 presentations.&lt;/footer&gt;</code></pre>
-<p>See the Pen <a href="http://codepen.io/andresgalante/pen/wKPPPZ/">CSS Hexagon Rounded Corner</a> by Andres Galante (<a href="http://codepen.io/andresgalante"><a href="https://github.com/andresgalante" class="user-mention"><a href="https://github.com/andresgalante" class="user-mention">@andresgalante</a></a></a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p>See the Pen <a href="http://codepen.io/andresgalante/pen/wKPPPZ/">CSS Hexagon Rounded Corner</a> by Andres Galante (<a href="http://codepen.io/andresgalante">@andresgalante</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 </div>
 <script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 

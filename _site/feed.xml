@@ -6,15 +6,251 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Apr 2016 16:51:56 -0300</pubDate>
-    <lastBuildDate>Wed, 20 Apr 2016 16:51:56 -0300</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Fri, 06 May 2016 16:41:46 -0300</pubDate>
+    <lastBuildDate>Fri, 06 May 2016 16:41:46 -0300</lastBuildDate>
+    <generator>Jekyll v3.0.5</generator>
+    
+      <item>
+        <title>How to setup a PatternFly 3 project</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/patternfly-set-up/patternfly-new.jpg&quot; alt=&quot;Patternfly Charts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; is an open interface project that promotes design commonality and improved user experience across enterprise IT products and applications.&lt;/p&gt;
+
+&lt;p&gt;A successful set up of the framework will help maintain, organise and grow a project. It will also allow to customize the default patternfly styles.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-project-folder&quot;&gt;Create a project folder&lt;/h2&gt;
+
+&lt;p&gt;Using the command line navigate to the folder where the project will be nested:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;path_to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;projects&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then create a directory with the project name:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;myProject&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; into your project folder:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;myProject&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;use-bower-or-npm-to-install-patternfly&quot;&gt;Use Bower (or npm) to install Patternfly&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt; is a package manager. For this example we are going to use bower to install PatternFly, but you can also use npm and the process would be almost the same.&lt;/p&gt;
+
+&lt;p&gt;You’ll need npm to install bower, make sure you have &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;node installed&lt;/a&gt; on your system.&lt;/p&gt;
+
+&lt;p&gt;The first step is to install bower globally. On the terminal type:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bower&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Sometimes it’s require to run this command as root/Administrator. To do so add &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; before &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt; and run it again.&lt;/p&gt;
+
+&lt;p&gt;Now make sure you are in the project folder &lt;code class=&quot;highlighter-rouge&quot;&gt;path_to/projects/myProject&lt;/code&gt; and install patternfly:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bower&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;patternfly&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;TIP&lt;/em&gt; There are lots of command line basics tutorials.  &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLnpHn493BHGmEYzbjWPJsnRMhvs-PSYG&quot;&gt;This excellent video series&lt;/a&gt; will teach you the basics.&lt;/p&gt;
+
+&lt;h2 id=&quot;file-structure&quot;&gt;File structure&lt;/h2&gt;
+
+&lt;p&gt;Bower will create a folder called &lt;code class=&quot;highlighter-rouge&quot;&gt;bower_components/&lt;/code&gt; where it will install &lt;code class=&quot;highlighter-rouge&quot;&gt;patternfly&lt;/code&gt; and all its dependencies.&lt;/p&gt;
+
+&lt;p&gt;Your project folder should now looks like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;MyProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bower_components&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-combobox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-datepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-select&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-switch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-touchspin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-treeview&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;c3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colreorder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colvis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;eonasdan-bootstrap-datetimepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;google-code-prettify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jquery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;font-awesome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;matchHeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment-timezone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;patternfly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;TIP&lt;/em&gt; Remember never to change /bower_components so patternfly can be easily updated.&lt;/p&gt;
+
+&lt;h2 id=&quot;add-styles&quot;&gt;Add styles&lt;/h2&gt;
+
+&lt;p&gt;Patternfly is based on bootstrap. I recommend to use of a CSS pre-processor to extend patternfly instead of overwritting it. There are Less and a Sass versions of patternfly, in this case I’ll use less.&lt;/p&gt;
+
+&lt;p&gt;Lets create a folders one for /less and add a file called styles.less&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;MyProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bower_components&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-combobox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-datepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-select&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-switch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-touchspin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-treeview&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;c3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colreorder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colvis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;eonasdan-bootstrap-datetimepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;google-code-prettify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jquery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;font-awesome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;matchHeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment-timezone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;patternfly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;less&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;styles&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.less&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;patternfly-css-setup&quot;&gt;PatternFly CSS setup&lt;/h2&gt;
+
+&lt;p&gt;PatternFly has splitted its styles to cope with Internet Explorer 9 rule that only reads 4,095 CSS line of CSS.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;patternfly.css&lt;/code&gt; has bootstrap and all the styles to customize bootstrap, and &lt;code class=&quot;highlighter-rouge&quot;&gt;patternfly-addions.css&lt;/code&gt; has all the styles for the new components patternfly adds to extend bootstrap functionalities.&lt;/p&gt;
+
+&lt;p&gt;We are going to build our styles ontop of &lt;code class=&quot;highlighter-rouge&quot;&gt;patternfly-addions&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up-stylesless&quot;&gt;Set up styles.less&lt;/h2&gt;
+
+&lt;p&gt;Open your favourite text editor and open &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.less&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;On styles.less, first import &lt;code class=&quot;highlighter-rouge&quot;&gt;patternfly-addions&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;../bower_components/patternfly/less/patternfly.less&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then change path of the fonts:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@fa-font-path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;      &lt;span class=&quot;s1&quot;&gt;&quot;../bower_components/patternfly/components/font-awesome/fonts/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@font-path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;s1&quot;&gt;&quot;../bower_components/patternfly/dist/fonts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@icon-font-path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;s1&quot;&gt;&quot;../bower_components/patternfly/components/bootstrap/fonts/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now the less file is set up, you can write your styles here.&lt;/p&gt;
+
+&lt;p&gt;By importing patternfly-addions.less you can use all the mixins built in bootstrap and patternfly, like clearfix or grandients. Plus you can take advantage of patternfly and bootstrap variables under /variables.less for colors, sizes and more.&lt;/p&gt;
+
+&lt;p&gt;For example if you want on your project to change the default blue for red, and change the font size from 12px to 13px, you would write:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@brand-primary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@font-size-base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;13px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;compile&quot;&gt;Compile&lt;/h2&gt;
+
+&lt;p&gt;To create a css file from the less file, you’ll need to compile your less file. &lt;a href=&quot;http://lesscss.org/#using-less&quot;&gt;There are several ways to compile less&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is very usefull to set up &lt;a href=&quot;http://gruntjs.com&quot;&gt;Grunt&lt;/a&gt; or &lt;a href=&quot;http://gulpjs.com&quot;&gt;Gulp&lt;/a&gt; for live results. I’ve wrote instructions on how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile&lt;/code&gt; to compile less and do browser refresh.&lt;/p&gt;
+
+&lt;p&gt;This will generate a styes.css file under /css:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;MyProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bower_components&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-combobox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-datepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-select&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-switch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-touchspin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-treeview&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;c3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colreorder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colvis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;eonasdan-bootstrap-datetimepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;google-code-prettify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jquery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;font-awesome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;matchHeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment-timezone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;patternfly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;styles&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.css&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;less&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;styles&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.less&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;TIP:&lt;/em&gt; Do not edit the css file, changes should always be made on the less file.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up-html&quot;&gt;Set up HTML&lt;/h2&gt;
+
+&lt;p&gt;Call &lt;code class=&quot;highlighter-rouge&quot;&gt;styles.css&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;patternfly.min.css&lt;/code&gt; on the HTML head:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/bower_components/patternfly/dist/css/patternfly.min.css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;screen, print&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;css/styles.css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;screen, print&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;TIP:&lt;/em&gt; For a full guide of how to load the js for all patternfly dependencies, check the &lt;a href=&quot;https://github.com/patternfly/patternfly/blob/master/QUICKSTART.md&quot;&gt;quickstart guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;MyProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bower_components&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-combobox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-datepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-select&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-switch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-touchspin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;bootstrap-treeview&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;c3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colreorder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;datatables-colvis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;eonasdan-bootstrap-datetimepicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;google-code-prettify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jquery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;font-awesome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;matchHeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;moment-timezone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;patternfly&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;styles&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.css&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.html&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;less&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;styles&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.less&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;enjoy&quot;&gt;Enjoy!&lt;/h2&gt;
+
+&lt;p&gt;For a production you’ll probably want to seup a gulp or grunt task to take patternfly.min.css out of bower_components (or node_modules) and as well as all the other dependency js you are using.&lt;/p&gt;
+
+&lt;p&gt;I highly recommend fully reading &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap 3 documentation&lt;/a&gt; to understand how the grid system and components works and how to change them.&lt;/p&gt;
+
+&lt;p&gt;Everything is where it should be, next is for you to check out &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; recomendations and specifications and start coding.&lt;/p&gt;
+
+&lt;p&gt;If you have questions please contact &lt;a href=&quot;https://www.redhat.com/mailman/listinfo/patternfly&quot;&gt;Patternfly Mailing List&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Apr 2016 16:34:20 -0300</pubDate>
+        <link>http://andresgalante.github.io/random/2016/04/20/how-to-use-patternfly.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/random/2016/04/20/how-to-use-patternfly.html</guid>
+        
+        <category>argentina</category>
+        
+        <category>ignitetalks</category>
+        
+        <category>redhat</category>
+        
+        
+        <category>random</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Everything you should know about Argentina</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/argentina/argentina.jpg&quot; alt=&quot;Patternfly Charts&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is the talk for a 5 minute &lt;a href=&quot;http://www.ignitetalks.io/&quot;&gt;ignite talk&lt;/a&gt; I gave about Argentina during the UXD team meeting in Raleigh:&lt;/p&gt;
+&lt;p&gt;This is the script for a 5 minute &lt;a href=&quot;http://www.ignitetalks.io/&quot;&gt;ignite talk&lt;/a&gt; I gave about Argentina during the UXD team meeting in Raleigh:&lt;/p&gt;
 
 &lt;p&gt;I am going to speak about the things you should know about Argentina.&lt;/p&gt;
 
@@ -363,7 +599,7 @@ I am aware that not every company can open their projects, but in order to have 
 
 &lt;h2 id=&quot;taste-it&quot;&gt;Taste it&lt;/h2&gt;
 
-&lt;p&gt;Open collaborative design systems and open &lt;img class=&quot;emoji&quot; title=&quot;:smile:&quot; alt=&quot;:smile:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f604.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;. Working on this environment is as easy as becoming part of the open source community.&lt;/p&gt;
+&lt;p&gt;Open collaborative design systems and open :smile:. Working on this environment is as easy as becoming part of the open source community.&lt;/p&gt;
 
 &lt;p&gt;Here is a tip: the smaller the community is, the more open they’ll be to new comers, but it doesn’t matter the size, they are all full of very nice people that will help you walk your first steps.&lt;/p&gt;
 
@@ -451,7 +687,7 @@ I am aware that not every company can open their projects, but in order to have 
   &amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://twitter.com/RedHatUXD&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-twitter&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; @RedHatUXD&amp;lt;/a&amp;gt;&amp;lt;p&amp;gt;
   &amp;lt;h6&amp;gt;&amp;lt;a href=&amp;quot;http://www.redhat.com/&amp;quot;&amp;gt;Red Hat&amp;lt;/a&amp;gt;&amp;lt;h6&amp;gt;
 &amp;lt;/header&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/pjLvvz/&quot;&gt;UX depot header&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;@andresgalante&lt;/a&gt;&lt;/a&gt;&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/pjLvvz/&quot;&gt;UX depot header&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
@@ -559,36 +795,36 @@ I am aware that not every company can open their projects, but in order to have 
 
 &lt;p&gt;This sass mixing will generate a rounded corner hexagon and absolute position it at the center of the screen. &lt;strong&gt;You are welcome&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&#39;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mixin&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39; class=&#39;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user-mention&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&amp;gt;&amp;lt;a href=&#39;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;://&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mixin&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39; class=&#39;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user-mention&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&amp;gt;@mixin&amp;lt;/a&amp;gt;&amp;lt;/a&amp;gt; rounded-hexagon($hexagon-height: 5rem, $hexagon-radius: .5rem, $hexagon-bg-color: white, $hexagon-font-size: 1.6em, $hexagon-color:#515F67 ) {&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  margin: 0;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  color: $hexagon-color;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  background: $hexagon-bg-color;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  height: calc((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  * 1.414213562373095) - (((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; * 2) * 1.414213562373095) - (&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; * 2)));&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  line-height: calc((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  * 1.414213562373095) - (((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; * 2) * 1.414213562373095) - (&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; * 2)));&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  position: absolute;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  top: calc( 50% - (((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  * 1.414213562373095) - (((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; * 2) * 1.414213562373095) - (&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; * 2))) / 2));&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  left: 50%;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  margin-left: -9em;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  min-width: 18em;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  text-align: center;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  font-size: $hexagon-font-size;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  &amp;amp;:after, &amp;amp;:before{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    content: &quot; &quot;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    transform: rotate(45deg);&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    transform-origin: 0px 0px;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    background-color:$hexagon-bg-color;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    width: $hexagon-height; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    height:$hexagon-height; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    top: calc(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; * 1.414213562373095) - &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;) * -1);&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    left: 0px;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    position:absolute;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    border-radius: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    z-index: -1;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  }&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  &amp;amp;:before{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;    left: 100%;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;  }&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@mixin&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rounded-hexagon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.5rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.6em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;#515F67&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-9em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;transform-origin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://cdn.rawgit.com/andresgalante/isa2015cover/master/index.html&quot;&gt;Check the result here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -597,7 +833,7 @@ I am aware that not every company can open their projects, but in order to have 
 &lt;div data-height=&quot;500&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;wKPPPZ&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Keynote title&amp;lt;/h1&amp;gt;
 &amp;lt;p&amp;gt;Author&amp;#39;s Name&amp;lt;/p&amp;gt;
 &amp;lt;footer&amp;gt;This is an HTML version of the opening slide for ISA 2015 presentations.&amp;lt;/footer&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/wKPPPZ/&quot;&gt;CSS Hexagon Rounded Corner&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;@andresgalante&lt;/a&gt;&lt;/a&gt;&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/wKPPPZ/&quot;&gt;CSS Hexagon Rounded Corner&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
@@ -664,18 +900,18 @@ gems:
 
 &lt;p&gt;Then you can go to &lt;a href=&quot;http://www.emoji-cheat-sheet.com&quot;&gt;any emoji cheatsheet&lt;/a&gt; to get the reference for the emoji.&lt;/p&gt;
 
-&lt;p&gt;For example here is a cute panda face &lt;img class=&quot;emoji&quot; title=&quot;:panda_face:&quot; alt=&quot;:panda_face:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f43c.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;For example here is a cute panda face :panda_face:&lt;/p&gt;
 
 &lt;h1 id=&quot;emojis-on-css&quot;&gt;Emojis on CSS&lt;/h1&gt;
 
 &lt;p&gt;I’ve heard that you could use emoji as class names, but it blew my mind to actually try it. Of course this is completely useless, but it’s as cool as CSS can get.&lt;/p&gt;
 
-&lt;p&gt;For example, if I want to build a section for Funny Hot News, I can name it like this: &lt;img class=&quot;emoji&quot; title=&quot;:smiley:&quot; alt=&quot;:smiley:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f603.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; &lt;img class=&quot;emoji&quot; title=&quot;:fire:&quot; alt=&quot;:fire:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f525.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; &lt;img class=&quot;emoji&quot; title=&quot;:newspaper:&quot; alt=&quot;:newspaper:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f4f0.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;For example, if I want to build a section for Funny Hot News, I can name it like this: :smiley: :fire: :newspaper:&lt;/p&gt;
 
 &lt;div data-height=&quot;220&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;jbGqXj&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;😃🔥📰&amp;quot;&amp;gt;
   This is the Funny Hot News section!
 &amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/jbGqXj/&quot;&gt;Emoji CSS class names&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;&lt;a href=&quot;https://github.com/andresgalante&quot; class=&quot;user-mention&quot;&gt;@andresgalante&lt;/a&gt;&lt;/a&gt;&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/jbGqXj/&quot;&gt;Emoji CSS class names&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
@@ -695,130 +931,6 @@ gems:
         <category>html</category>
         
         <category>setup</category>
-        
-        
-        <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>CSS pseudo class playground</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/visited/visited.jpg&quot; alt=&quot;Visited&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Saturday nights are usually busy. But on rare occasions when there are no plans and my wife and son go to sleep early, there is a strange window of quietness in my life.&lt;/p&gt;
-
-&lt;p&gt;Last weekend I had one of those special moments, and of course, since I am a big nerd I spent it coding.&lt;/p&gt;
-
-&lt;p&gt;A few weeks ago I bumped into an article written by &lt;a href=&quot;http://unakravets.com&quot;&gt;Una Kravets&lt;/a&gt; about &lt;a href=&quot;http://una.im/hacking-visited/&quot;&gt;hacking :visited&lt;/a&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes&quot;&gt;pseudo class&lt;/a&gt;, and I had to try it myself.&lt;/p&gt;
-
-&lt;p&gt;The idea is to display an &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;unread&quot;&lt;/code&gt; label to represent links that haven’t been read yet, plus I wanted to add a &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;new&quot;&lt;/code&gt; tag to the newest post and for extra css fun change the text for &lt;code class=&quot;highlighter-rouge&quot;&gt;:hover&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:active&lt;/code&gt; states.&lt;/p&gt;
-
-&lt;p&gt;If you really want to learn this technique, stop reading now, &lt;a href=&quot;http://una.im/hacking-visited/&quot;&gt;go to Unas posts&lt;/a&gt;, enjoy her article and come back. If you are like Bruno and you are here just for the joy of reading my words, then continue reading.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-html&quot;&gt;The HTML&lt;/h2&gt;
-
-&lt;p&gt;It all starts with Unas code. Since for security reasons &lt;code class=&quot;highlighter-rouge&quot;&gt;:visited&lt;/code&gt; is limited to just changing the color, she wisely changes the color of the font to match the background, making it disappear. Pretty nifty.&lt;/p&gt;
-
-&lt;p&gt;On my Jekyll &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; I make sure the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; is around the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  {% for post in site.posts %}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ post.url | prepend: site.baseurl }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-meta&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: &quot;%B %d, %Y&quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;
-          {{ post.title }}
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  {% endfor %}
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;visited-is-where-the-magic-happens&quot;&gt;:visited is where the magic happens&lt;/h2&gt;
-
-&lt;p&gt;Then on the &lt;code class=&quot;highlighter-rouge&quot;&gt;sass&lt;/code&gt; I apply a content for the label after the &lt;code class=&quot;highlighter-rouge&quot;&gt;h2&lt;/code&gt; title, and to make it disappear I set the same colors as the background color on &lt;code class=&quot;highlighter-rouge&quot;&gt;:visited&lt;/code&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.post-list&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//Creates the content of the label
-&lt;/span&gt;      &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;unread&#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//Defines color and backgorund color
-&lt;/span&gt;      &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$grey-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:visited&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//Here is where the magic happens, changes the background and color to make it disappear
-&lt;/span&gt;      &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; 
-    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
-  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;css-fun-with-hover-and-active&quot;&gt;CSS fun with :hover and :active&lt;/h2&gt;
-
-&lt;p&gt;I’ve also added different messages for &lt;code class=&quot;highlighter-rouge&quot;&gt;:hover&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:active&lt;/code&gt; states&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.post-list&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//Creates the content of the label
-&lt;/span&gt;      &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;unread&#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//Defines color and backgorund color
-&lt;/span&gt;      &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$grey-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;unread, read it!&#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:active&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;click!&#39;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:visited&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;//Here is where the magic happens, changes the backgound and color to make it dessapear
-&lt;/span&gt;      &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$background-color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; 
-    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
-  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;the-new-kind-on-the-block&quot;&gt;The new kind on the block&lt;/h2&gt;
-
-&lt;p&gt;And since the first &lt;code class=&quot;highlighter-rouge&quot;&gt;h2&lt;/code&gt; on the list is the newest post, I tagged it as “new”.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:first-child&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;new!&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;You can check the &lt;a href=&quot;https://github.com/andresgalante/andresgalante.github.io/blob/master/_sass/_hack.scss&quot;&gt;complete code here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now go and check the homepage to see the result!&lt;/p&gt;
-
-&lt;h2 id=&quot;one-more-thing&quot;&gt;One more thing…&lt;/h2&gt;
-
-&lt;p&gt;On related news, I’ve also added comments to the blog. Not because I expect to get any comment.&lt;/p&gt;
-
-&lt;p&gt;I honestly don’t think anyone reads these words, but &lt;a href=&quot;https://en.wikipedia.org/wiki/Jeff_Atwood&quot;&gt;Jeff Atwood&lt;/a&gt; says on his excellent &lt;a href=&quot;http://blog.codinghorror.com&quot;&gt;blog&lt;/a&gt; that a blog without comments is not a blog.&lt;/p&gt;
-
-&lt;p&gt;Now I have a blog. &lt;img class=&quot;emoji&quot; title=&quot;:smile:&quot; alt=&quot;:smile:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f604.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 06 Oct 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/10/06/pseudoclases.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/06/pseudoclases.html</guid>
-        
-        <category>design</category>
-        
-        <category>howto</category>
-        
-        <category>css</category>
         
         
         <category>howto</category>
