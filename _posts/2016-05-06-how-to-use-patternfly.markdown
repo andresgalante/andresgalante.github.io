@@ -162,7 +162,7 @@ For example if you want on your project to change the default blue for red, and 
 
 To create a css file from the less file, you'll need to compile your less file. [There are several ways to compile less](http://lesscss.org/#using-less).
 
-It is very usefull to set up [Grunt](http://gruntjs.com) or [Gulp](http://gulpjs.com) for live results. I've wrote instructions on how to set up a `gulpfile` to compile less and do browser refresh.
+It is very usefull to set up [Grunt](http://gruntjs.com) or [Gulp](http://gulpjs.com) for live results. I've wrote instructions on [how to set up a `gulpfile` to compile less and do browser refresh](http://blog.andresgalante.com/howto/2015/02/09/gulp-guide-for-designers.html).
 
 This will generate a styes.css file under /css:
 

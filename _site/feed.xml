@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 May 2016 16:41:46 -0300</pubDate>
-    <lastBuildDate>Fri, 06 May 2016 16:41:46 -0300</lastBuildDate>
+    <pubDate>Fri, 06 May 2016 16:44:27 -0300</pubDate>
+    <lastBuildDate>Fri, 06 May 2016 16:44:27 -0300</lastBuildDate>
     <generator>Jekyll v3.0.5</generator>
     
       <item>
@@ -147,7 +147,7 @@
 
 &lt;p&gt;To create a css file from the less file, you’ll need to compile your less file. &lt;a href=&quot;http://lesscss.org/#using-less&quot;&gt;There are several ways to compile less&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;It is very usefull to set up &lt;a href=&quot;http://gruntjs.com&quot;&gt;Grunt&lt;/a&gt; or &lt;a href=&quot;http://gulpjs.com&quot;&gt;Gulp&lt;/a&gt; for live results. I’ve wrote instructions on how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile&lt;/code&gt; to compile less and do browser refresh.&lt;/p&gt;
+&lt;p&gt;It is very usefull to set up &lt;a href=&quot;http://gruntjs.com&quot;&gt;Grunt&lt;/a&gt; or &lt;a href=&quot;http://gulpjs.com&quot;&gt;Gulp&lt;/a&gt; for live results. I’ve wrote instructions on &lt;a href=&quot;http://blog.andresgalante.com/howto/2015/02/09/gulp-guide-for-designers.html&quot;&gt;how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile&lt;/code&gt; to compile less and do browser refresh&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This will generate a styes.css file under /css:&lt;/p&gt;
 
