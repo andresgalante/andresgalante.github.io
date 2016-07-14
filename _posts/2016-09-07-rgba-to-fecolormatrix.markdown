@@ -71,13 +71,13 @@ Now that I had the math sort out it was easy to colorise our mosaic.
 
 ## Sharing is caring
 
-In the very odd chance that there is someone else out there trying to transform an an RGA value into a color matrix, I set myself to build an RGBA to feColorMatrix converter.
+In the very odd chance that there is someone else out there trying to transform an an RGA value into a color matrix, I set myself to build an [RGBA to feColorMatrix converter](http://blog.andresgalante.com/RGBAtoFeColorMatrix/).
 
-Of course I couldn't do it by myself, my javascript knowledge is still very basic. So I designed the layout, [Brian Leatheam](https://twitter.com/brianleathem) made the magic happen and [Patrick Riley](https://twitter.com/priley86) took it to the next level.
+Of course I couldn't do it by myself, my javascript knowledge is still very basic (it sucks!). So I designed the layout, [Brian Leatheam](https://twitter.com/brianleathem) made the magic happen and [Patrick Riley](https://twitter.com/priley86) took it to the next level and built a webcomonent.
 
 ## Webcomponent
 
-Once the tool was working, Patrick forked it and built a polymer webcomonent out of it.
+Once the tool was working, [Patrick](https://twitter.com/priley86) forked it and built a [polymer](https://www.polymer-project.org/1.0/) webcomonent out of it.
 
 Thanks to Patrick this converter is now an even cooler project.
 

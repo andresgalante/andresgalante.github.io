@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jul 2016 10:26:05 -0300</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2016 10:26:05 -0300</lastBuildDate>
+    <pubDate>Thu, 14 Jul 2016 10:31:25 -0300</pubDate>
+    <lastBuildDate>Thu, 14 Jul 2016 10:31:25 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -79,13 +79,13 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
 
 &lt;h2 id=&quot;sharing-is-caring&quot;&gt;Sharing is caring&lt;/h2&gt;
 
-&lt;p&gt;In the very odd chance that there is someone else out there trying to transform an an RGA value into a color matrix, I set myself to build an RGBA to feColorMatrix converter.&lt;/p&gt;
+&lt;p&gt;In the very odd chance that there is someone else out there trying to transform an an RGA value into a color matrix, I set myself to build an &lt;a href=&quot;http://blog.andresgalante.com/RGBAtoFeColorMatrix/&quot;&gt;RGBA to feColorMatrix converter&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Of course I couldn’t do it by myself, my javascript knowledge is still very basic. So I designed the layout, &lt;a href=&quot;https://twitter.com/brianleathem&quot;&gt;Brian Leatheam&lt;/a&gt; made the magic happen and &lt;a href=&quot;https://twitter.com/priley86&quot;&gt;Patrick Riley&lt;/a&gt; took it to the next level.&lt;/p&gt;
+&lt;p&gt;Of course I couldn’t do it by myself, my javascript knowledge is still very basic (it sucks!). So I designed the layout, &lt;a href=&quot;https://twitter.com/brianleathem&quot;&gt;Brian Leatheam&lt;/a&gt; made the magic happen and &lt;a href=&quot;https://twitter.com/priley86&quot;&gt;Patrick Riley&lt;/a&gt; took it to the next level and built a webcomonent.&lt;/p&gt;
 
 &lt;h2 id=&quot;webcomponent&quot;&gt;Webcomponent&lt;/h2&gt;
 
-&lt;p&gt;Once the tool was working, Patrick forked it and built a polymer webcomonent out of it.&lt;/p&gt;
+&lt;p&gt;Once the tool was working, &lt;a href=&quot;https://twitter.com/priley86&quot;&gt;Patrick&lt;/a&gt; forked it and built a &lt;a href=&quot;https://www.polymer-project.org/1.0/&quot;&gt;polymer&lt;/a&gt; webcomonent out of it.&lt;/p&gt;
 
 &lt;p&gt;Thanks to Patrick this converter is now an even cooler project.&lt;/p&gt;
 
