@@ -2,11 +2,11 @@
 layout: post
 title:  "The RGBA to feColorMatrix converter"
 date:   2016-07-09 23:05:36
-categories: howto
+categories: random
 tags: howto patternfly setup npm bower
 ---
 
-![Red Hat Summit Keynote Demo](img/rgbtocolor/rgba-to-color-matrix.jpg)
+![Red Hat Summit Keynote Demo](/img/rgbtocolor/rgba-to-color-matrix.jpg)
 This year I've been lucky enough to be part of the team building the Red Hat keynote demo at [Red Hat Summit](https://youtu.be/tPqbM3buK8M).
 
 The presentation ended up dynamically building a picture mosaic of the Red Hat logo out of selfies taken by the audience. It was an impressive visualisation that I helped [Brian Leatheam](https://twitter.com/brianleathem) create.
@@ -36,6 +36,8 @@ It's not a common problem to have, no one was asking about it on [StackOverflow]
 
 Since RGB are based on a 255 scale, I just needed to divide the RGB value by 255 and I get the matrix value for each channel.
 
+![RGBAtoFeColorMatrix preview](/img/rgbtocolor/preview01.jpg)
+
 For example RGB `255, 255, 255` becomes:
 
 ```
@@ -45,6 +47,8 @@ For example RGB `255, 255, 255` becomes:
 0 0 0 1
 ```
 
+![RGBAtoFeColorMatrix preview red](/img/rgbtocolor/preview02.jpg)
+
 Pure red `255, 0, 0` becomes:
 ```
 1 0 0 0
@@ -52,6 +56,8 @@ Pure red `255, 0, 0` becomes:
 0 0 0 0
 0 0 0 1
 ```
+
+![RGBAtoFeColorMatrix preview pink](/img/rgbtocolor/preview03.jpg)
 
 And a pink `255, 30, 150` becomes:
 ```
