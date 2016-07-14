@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jul 2016 10:31:25 -0300</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2016 10:31:25 -0300</lastBuildDate>
+    <pubDate>Thu, 14 Jul 2016 11:07:08 -0300</pubDate>
+    <lastBuildDate>Thu, 14 Jul 2016 11:07:08 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -57,23 +57,25 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
 
 &lt;p&gt;&lt;img src=&quot;/img/rgbtocolor/preview02.jpg&quot; alt=&quot;RGBAtoFeColorMatrix preview red&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Pure red &lt;code class=&quot;highlighter-rouge&quot;&gt;255, 0, 0&lt;/code&gt; becomes:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
-1 0 0 0
+&lt;p&gt;Pure red &lt;code class=&quot;highlighter-rouge&quot;&gt;255, 0, 0&lt;/code&gt; becomes:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 1
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/rgbtocolor/preview03.jpg&quot; alt=&quot;RGBAtoFeColorMatrix preview pink&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;And a pink &lt;code class=&quot;highlighter-rouge&quot;&gt;255, 30, 150&lt;/code&gt; becomes:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
-1     0     0     0
+&lt;p&gt;And a pink &lt;code class=&quot;highlighter-rouge&quot;&gt;255, 30, 150&lt;/code&gt; becomes:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1     0     0     0
 0     1.22  0     0
 0     0     0.59  0
 0     0     0     1
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Now that I had the math sort out it was easy to colorise our mosaic.&lt;/p&gt;
 

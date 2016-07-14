@@ -50,6 +50,7 @@ For example RGB `255, 255, 255` becomes:
 ![RGBAtoFeColorMatrix preview red](/img/rgbtocolor/preview02.jpg)
 
 Pure red `255, 0, 0` becomes:
+
 ```
 1 0 0 0
 0 0 0 0
@@ -60,6 +61,7 @@ Pure red `255, 0, 0` becomes:
 ![RGBAtoFeColorMatrix preview pink](/img/rgbtocolor/preview03.jpg)
 
 And a pink `255, 30, 150` becomes:
+
 ```
 1     0     0     0
 0     1.22  0     0
