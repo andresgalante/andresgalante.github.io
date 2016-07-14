@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "How to setup a PatternFly 3 project"
-date:   2016-04-20 16:34:20 -0300
-categories: random
-tags: argentina ignitetalks redhat
+date:   2016-05-06 16:34:20 -0300
+categories: howto
+tags: howto patternfly setup npm bower
 ---
 
 ![Patternfly Charts](/img/patternfly-set-up/patternfly-new.jpg)
