@@ -6,9 +6,88 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jul 2016 11:07:08 -0300</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2016 11:07:08 -0300</lastBuildDate>
+    <pubDate>Mon, 08 Aug 2016 22:16:47 -0300</pubDate>
+    <lastBuildDate>Mon, 08 Aug 2016 22:16:47 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>CSSconf: Welcome to Argentina</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/cssconf/cssconf.jpg&quot; alt=&quot;Patternfly Charts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On Sunday (August 7th), I was lucky enough to attend to the first &lt;a href=&quot;http://cssconfar.com/&quot;&gt;CSSconf in Argentina&lt;/a&gt; and it was spectacular.&lt;/p&gt;
+
+&lt;p&gt;The organization was spotless. &lt;a href=&quot;https://twitter.com/evaferreira92&quot;&gt;Eva Ferreira&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/louMontano&quot;&gt;Lourdes Montano&lt;/a&gt; and the rest of the team that put together this event should give themselves a big (but painful) pat on their backs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Escuela_Superior_de_Comercio_Carlos_Pellegrini&quot;&gt;The venue&lt;/a&gt; was really well chosen. The conference gifts didn’t suck, instead of low quality t-shirt that always end up as a pajama, they gave to each one of us a super nice handcrafted mug among other things. And last but not least the food was superb.&lt;/p&gt;
+
+&lt;p&gt;It really shows the effort, time and love they put into it.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-speakers&quot;&gt;The speakers&lt;/h2&gt;
+
+&lt;p&gt;The line up was a mixture between international super stars and local developers. To me the highlights where:&lt;/p&gt;
+
+&lt;h3 id=&quot;una-kravets&quot;&gt;Una Kravets&lt;/h3&gt;
+
+&lt;p&gt;The day started with &lt;a href=&quot;https://twitter.com/una&quot;&gt;Una Kravets&lt;/a&gt;, the unacorn herself, explaining how to use blend modes, filters and gradients in real life projects.&lt;/p&gt;
+
+&lt;p&gt;I’ve heard her talk about this subject on other opportunities, and as always she shines on stage. Plus I’ve learn about &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;backdrop-filter&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;rachel-nabors&quot;&gt;Rachel Nabors&lt;/h3&gt;
+&lt;p&gt;The queen of web animations talked about the new &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API&quot;&gt;Web Animation API&lt;/a&gt; with some charming examples based on Alice in wonderland.&lt;/p&gt;
+
+&lt;h3 id=&quot;werther-azevedo&quot;&gt;Werther Azevedo&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/w_midipixel&quot;&gt;Werther Azevedo&lt;/a&gt;, from Brazil, showed us how to build a game using the DOM.&lt;/p&gt;
+
+&lt;p&gt;It was an interesting presentation that inspired us to build web games. On stage he came across as a likable and honest person, a feeling that was confirmed after having a quick chat with him during a brake.&lt;/p&gt;
+
+&lt;h3 id=&quot;ami-reynoso&quot;&gt;Ami Reynoso&lt;/h3&gt;
+&lt;p&gt;Ami  Reynoso was really nervous, she almost couldn’t speak. She spoke giving her back to the audience and looking at the projector.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless the content of her talk was really good. She showed how performance is key to achieve good business metrics and how Mercado Libre applies critical CSS.&lt;/p&gt;
+
+&lt;p&gt;I think Ami will be a great presenter once she gains confidence.&lt;/p&gt;
+
+&lt;h3 id=&quot;horia-dragomir&quot;&gt;Horia Dragomir&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/hdragomir&quot;&gt;Horia Dragomir&lt;/a&gt; showcase how messenger.com was built.&lt;/p&gt;
+
+&lt;p&gt;It was a very interesting and fun short talk about how CSS is written in facebook with useful tips to follow in our projects.&lt;/p&gt;
+
+&lt;h3 id=&quot;aurelia-moser&quot;&gt;Aurelia Moser&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/auremoser&quot;&gt;Aurelia Moser&lt;/a&gt; talked about &lt;a href=&quot;https://carto.com/docs/carto-engine/cartocss/&quot;&gt;CartoCSS&lt;/a&gt;. Styling maps is something completely off my randar, and although I don’t see myself doing it in the near future I am glad I’ve got introduce to it.&lt;/p&gt;
+
+&lt;h3 id=&quot;harry-roberts&quot;&gt;Harry Roberts&lt;/h3&gt;
+&lt;p&gt;To end the day &lt;a href=&quot;https://twitter.com/csswizardry&quot;&gt;Harry Roberts&lt;/a&gt;, Mr. CSSguidelines.&lt;/p&gt;
+
+&lt;p&gt;He talked about refactoring CSS and it was one of the best presentations I’ve ever seen. Maybe it just resonates with me because I am thinking about how to refactor &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; CSS.&lt;/p&gt;
+
+&lt;p&gt;He is a stellar presenter with insightful and accurate content based on his experience with huge clients.&lt;/p&gt;
+
+&lt;h2 id=&quot;happy-ending&quot;&gt;Happy ending&lt;/h2&gt;
+
+&lt;p&gt;Overall it was a great event. I am glad Buenos Aires has a CSSconf and I can’t wait for next year.&lt;/p&gt;
+
+&lt;!-- There is room to improvements on the choice of local speakers. Ami Reynosos presentation had very good content, but to me the rest of them were not up to the standards. Maybe the bar was just too high. --&gt;
+</description>
+        <pubDate>Mon, 08 Aug 2016 16:34:20 -0300</pubDate>
+        <link>http://andresgalante.github.io/random/2016/08/08/CSS-Conf-Argentina.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/random/2016/08/08/CSS-Conf-Argentina.html</guid>
+        
+        <category>css</category>
+        
+        <category>cssconf</category>
+        
+        <category>cssconfar</category>
+        
+        <category>patternfly</category>
+        
+        
+        <category>random</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>The RGBA to feColorMatrix converter</title>
@@ -146,7 +225,7 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
 
 &lt;h2 id=&quot;use-bower-or-npm-to-install-patternfly&quot;&gt;Use Bower (or npm) to install Patternfly&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt; is a package manager. For this example we are going to use bower to install PatternFly, but you can also use npm and the process would be almost the same.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt; is a package manager. For this example I am going to use &lt;code class=&quot;highlighter-rouge&quot;&gt;bower&lt;/code&gt; to install PatternFly, but you can also use &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt; and the process would be almost the same.&lt;/p&gt;
 
 &lt;p&gt;You’ll need npm to install bower, make sure you have &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;node installed&lt;/a&gt; on your system.&lt;/p&gt;
 
@@ -832,150 +911,6 @@ I am aware that not every company can open their projects, but in order to have 
         <category>blend</category>
         
         <category>mode</category>
-        
-        
-        <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>CSS rounded corner hexagon</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/hexagon/hexagon.jpg&quot; alt=&quot;ISA 2015 opening presentation slide&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;On Friday I received the opening and closing slides to include on my presentation for the upcoming talk at &lt;a href=&quot;http://isa.ixda.org/2015/&quot;&gt;Interaction South America 2015&lt;/a&gt; in Cordoba, Argentina.&lt;/p&gt;
-
-&lt;p&gt;The opening slide has the title of the talk, the author’s name inside an hexagonal shape with rounded corners in the middle of the screen and some information at the footer.&lt;/p&gt;
-
-&lt;p&gt;Everything is laid over a two color background spilt horizontally in the middle. There is also a transparent pattern and a stripe at the top.&lt;/p&gt;
-
-&lt;p&gt;They sent the slide in Keynote and Powerpoint flavours, and I though: “what if anyone want to use &lt;a href=&quot;http://lab.hakim.se/reveal-js/#/&quot;&gt;reveal&lt;/a&gt;, there should be an HTML version of this… How hard can it be to build it?”&lt;/p&gt;
-
-&lt;p&gt;There was only one way to answer that question, by doing it.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-html&quot;&gt;The HTML&lt;/h2&gt;
-
-&lt;p&gt;The HTML is simple, with a title on an &lt;code class=&quot;highlighter-rouge&quot;&gt;h1&lt;/code&gt; tag, the name of the author on a &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt; tag and a &lt;code class=&quot;highlighter-rouge&quot;&gt;footer&lt;/code&gt;, but framing the authors name on a rounded corner hexagonal box that is horizontally and vertically centred end up been a mathematical challenge.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Keynote title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Authors Name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;This is an HTML version of the opening slide for ISA 2015 presentations.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;the-scss&quot;&gt;The SCSS&lt;/h2&gt;
-
-&lt;p&gt;There are two challenges overcome. The background and the rounded corner hexagonal box.&lt;/p&gt;
-
-&lt;h3 id=&quot;background&quot;&gt;Background&lt;/h3&gt;
-
-&lt;p&gt;For the background I am applying CSS multiple background on the &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I start with a linear gradient to generate the stripes at the top;&lt;/li&gt;
-  &lt;li&gt;Then there are 2 svgs to generate the pattern. It has a blend more of multiply;&lt;/li&gt;
-  &lt;li&gt;I also am adding a little shadow at the top;&lt;/li&gt;
-  &lt;li&gt;and finally I paint half of the screen with a gradient stripe.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-    &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-01&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-02&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-02&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;360px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-03&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;360px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-03&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-04&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-04&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;800px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-                    &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-05&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;800px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-stripe-05&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;960px&lt;/span&gt;
-                    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;sx&quot;&gt;url(../img/pattern.svg)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;sx&quot;&gt;url(../img/pattern-bottom.svg)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$color-background-top&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;960px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;700px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;700px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;background-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat-x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;background-blend-mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;background-position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-330px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;the-hard-part-a-rounded-corner-hexagon&quot;&gt;The hard part: a rounded corner hexagon&lt;/h3&gt;
-
-&lt;p&gt;To explain how I created this hexagon I have to take you back to school.&lt;/p&gt;
-
-&lt;p&gt;The hexagon is a rectangle with two 45º rotated squares on each side. This means that if the height of the squares is &lt;strong&gt;x&lt;/strong&gt;, the rectangle should be &lt;strong&gt;x times the square root of 2&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;But it’s not that easy, I also need to consider the rounded corner of the squares. Trigonometry to the rescue, again. First I discover the size of the hypotenuse and I subtract the diference of the border radius.&lt;/p&gt;
-
-&lt;p&gt;I did all this math, so you don’t have to.&lt;/p&gt;
-
-&lt;p&gt;This sass mixing will generate a rounded corner hexagon and absolute position it at the center of the screen. &lt;strong&gt;You are welcome&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@mixin&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rounded-hexagon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.5rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.6em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;#515F67&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-9em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;transform-origin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-bg-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-    &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(((&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.414213562373095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$hexagon-radius&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://cdn.rawgit.com/andresgalante/isa2015cover/master/index.html&quot;&gt;Check the result here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;And here is the code altogether:&lt;/p&gt;
-
-&lt;div data-height=&quot;500&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;wKPPPZ&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Keynote title&amp;lt;/h1&amp;gt;
-&amp;lt;p&amp;gt;Author&amp;#39;s Name&amp;lt;/p&amp;gt;
-&amp;lt;footer&amp;gt;This is an HTML version of the opening slide for ISA 2015 presentations.&amp;lt;/footer&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/wKPPPZ/&quot;&gt;CSS Hexagon Rounded Corner&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;will-i-use-it&quot;&gt;Will I use it?&lt;/h2&gt;
-
-&lt;p&gt;Of corse not. Keynote is awesome to build presentations, plus it has the way underused flame effect that I alway try to sneak in all my talks.&lt;/p&gt;
-
-&lt;p&gt;I am sure there are way better ways to do hexagonal rounded corner shapes, this one doesn’t feel elegant enough. But it was good fun to build it.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 19 Oct 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/19/css-rounded-corner-hexagon.html</guid>
-        
-        <category>sass</category>
-        
-        <category>css</category>
-        
-        <category>html</category>
-        
-        <category>setup</category>
-        
-        <category>hexagon</category>
-        
-        <category>rounded</category>
-        
-        <category>corner</category>
         
         
         <category>howto</category>

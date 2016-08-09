@@ -34,7 +34,7 @@ cd myProject
 
 ## Use Bower (or npm) to install Patternfly
 
-[Bower](http://bower.io/) is a package manager. For this example we are going to use bower to install PatternFly, but you can also use npm and the process would be almost the same.
+[Bower](http://bower.io/) is a package manager. For this example I am going to use `bower` to install PatternFly, but you can also use `npm` and the process would be almost the same.
 
 You'll need npm to install bower, make sure you have [node installed](https://nodejs.org/en/) on your system.
 

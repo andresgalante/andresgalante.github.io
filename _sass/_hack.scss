@@ -1,3 +1,4 @@
+
 .post-list{
   a {
     &:link h2:after {
@@ -7,7 +8,7 @@
       color: #fff;
       background: $grey-color;
 
-      //Adds styles to make it look like a label and positioning 
+      //Adds styles to make it look like a label and positioning
       position: absolute;
       top: 1.2em;
       display: inline-block;
@@ -23,22 +24,22 @@
     &:hover h2:after {
       content: 'unread, read it!';
     }
-  
+
     &:active h2:after {
       content: 'click!';
     }
     &:visited h2:after {
       //Here is where the magic happens, changes the backgound and color to make it dessapear
       color: $background-color;
-      background: $background-color; 
-    }  
+      background: $background-color;
+    }
   }
   li{
     &:hover{
       a:visited h2:after {
         //And now it makes it dessapear on hover
         color: $brand-color;
-        background: $brand-color; 
+        background: $brand-color;
       }
     }
     &:first-child h2 {
@@ -46,5 +47,11 @@
         content: "new!";
       }
     }
-  }  
+  }
+}
+
+@include media-query($on-palm) {
+  .post-list a:link h2:after{
+    display: none;
+  }
 }
