@@ -35,7 +35,7 @@ The queen of web animations talked about the new [Web Animation API](https://dev
 It was an interesting presentation that inspired us to build web games. On stage he came across as a likable and honest person, a feeling that was confirmed after having a quick chat with him during a brake.
 
 ### Ami Reynoso
-Ami  Reynoso was really nervous, she almost couldn't speak. She spoke giving her back to the audience and looking at the projector.
+[Ami  Reynoso](https://twitter.com/bakery) was really nervous. She spoke giving her back to the audience and looking at the projector.
 
 Nevertheless the content of her talk was really good. She showed how performance is key to achieve good business metrics and how Mercado Libre applies critical CSS.
 
