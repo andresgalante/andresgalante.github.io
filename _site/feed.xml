@@ -6,9 +6,95 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Aug 2016 23:15:19 -0300</pubDate>
-    <lastBuildDate>Mon, 08 Aug 2016 23:15:19 -0300</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <pubDate>Sun, 23 Oct 2016 15:54:19 -0300</pubDate>
+    <lastBuildDate>Sun, 23 Oct 2016 15:54:19 -0300</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Dance to the new PatternFly flow</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/spaces/spaces.jpg&quot; alt=&quot;PatternFly new visuals&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you follow this blog you should know that for the past two years I’ve been a contributor to &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;the PatternFly project&lt;/a&gt;. Five month ago, I’ve joined the PatternFly team and I am working full time to make open source design great.&lt;/p&gt;
+
+&lt;p&gt;We are currently working on PatterFly 4, a major release that will include design and code improvements. The two main design changes that we are introducing are around typography and spaces, including a much necessary &lt;a href=&quot;https://medium.com/attack-the-front/your-body-text-is-too-small-5e02d36dc902#.o9y3t6r40&quot;&gt;font size base bump&lt;/a&gt; to 14px and moving our font family from &lt;a href=&quot;https://fonts.google.com/specimen/Open+Sans&quot;&gt;Open
+Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can read all about these typography revisions on &lt;a href=&quot;https://github.com/orgs/patternfly/people/kybaker&quot;&gt;Kyle Bakers&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;article on the PatternFly blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;spacing-rhythm-and-flow&quot;&gt;Spacing, Rhythm and Flow&lt;/h2&gt;
+
+&lt;p&gt;One of the key elements of both print design and web design is the way the typography flows, we call it Rhythm.&lt;/p&gt;
+
+&lt;p&gt;There are several books and articles explaining what Typographic Rhythm is. If you are looking for in depth detail about typography you should read &lt;a href=&quot;https://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326&quot;&gt;The Elements of Typographic Style&lt;/a&gt; else, I recommend &lt;a href=&quot;http://typecast.com/blog/4-simple-steps-to-vertical-rhythm&quot;&gt;this article by Shelly Wilson&lt;/a&gt; on the &lt;a href=&quot;http://typecast.com/&quot;&gt;typecast blog&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Rhythm is just a repeated pattern. The more consistent the pattern, the better the rhythm. In music, it’s the structure that ties all the different instruments together. Even if the notes are correct, a song with an inconsistent rhythm is pretty hard to listen to.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In design, vertical rhythm is the structure that guides a reader’s eye through the content. Good vertical rhythm makes a layout more balanced and beautiful and its content more readable.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The time signature in sheet music visually depicts a song’s rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines to align text and objects to.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The typographic change we are introducing to PatternFly 4 would be incomplete without an overall adjustment of spaces.&lt;/p&gt;
+
+&lt;h2 id=&quot;relative-spaces&quot;&gt;Relative spaces&lt;/h2&gt;
+
+&lt;p&gt;To define spaces on PatternFly 4 we will use &lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/CSS/length&quot;&gt;CSS relative units&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Each one of these units are relative to a different base, some are based on the viewport size, others to the size of the container element, and others to the size of the font.&lt;/p&gt;
+
+&lt;p&gt;In our case we will use &lt;code class=&quot;highlighter-rouge&quot;&gt;rem&lt;/code&gt;. The &lt;a href=&quot;https://www.w3.org/TR/2016/CR-css-values-3-20160929/#rem&quot;&gt;W3C CSS specs&lt;/a&gt; define &lt;code class=&quot;highlighter-rouge&quot;&gt;rem&lt;/code&gt; as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Equal to the computed value of font-size on the root element. When specified on the font-size property of the root element, the rem units refer to the property’s initial value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Since PatterFly 4 root font size is &lt;code class=&quot;highlighter-rouge&quot;&gt;14px&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;1rem = 14px&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2rem = 28px&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;0.5rem = 7px&lt;/code&gt;… well you get the idea.&lt;/p&gt;
+
+&lt;p&gt;This system will define all our spaces, from typography, paddings and margins to grids and gutters.&lt;/p&gt;
+
+&lt;h2 id=&quot;utility-classes&quot;&gt;Utility classes&lt;/h2&gt;
+
+&lt;p&gt;To ensure consistency we are delineating spacing as CSS utility classes.&lt;/p&gt;
+
+&lt;p&gt;Since PatterFly 4 is based on &lt;a href=&quot;http://v4-alpha.getbootstrap.com/&quot;&gt;Bootstrap 4&lt;/a&gt;, we will be able to &lt;a href=&quot;http://v4-alpha.getbootstrap.com/utilities/spacing/&quot;&gt;take advantage&lt;/a&gt; of the &lt;a href=&quot;https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L79-L100&quot;&gt;nifty utility sass variable&lt;/a&gt; to build our spacing.&lt;/p&gt;
+
+&lt;p&gt;Using sass &lt;code class=&quot;highlighter-rouge&quot;&gt;@extend&lt;/code&gt; to reuse these classes we will keep our code DRY, maintain consistency and allow users to easily create spaces on their implementations.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-in-progress&quot;&gt;Work in progress&lt;/h2&gt;
+
+&lt;p&gt;To start with we based our components on a set of default spaces &lt;code class=&quot;highlighter-rouge&quot;&gt;xxxs-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xxs-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xs-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sm-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;md-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lg-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xl-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xxl-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xxxl-spacer&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;But I am sure that as we move forward adding components to the &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;new PatternFly Atomic repo&lt;/a&gt;, we will need to adjust and maybe remove or add variables.&lt;/p&gt;
+
+&lt;h2 id=&quot;want-to-play-with-us&quot;&gt;Want to play with us?&lt;/h2&gt;
+
+&lt;p&gt;This is without a doubt the best CSS project I’ve ever work with. If you want to join the talented &lt;strong&gt;UXD CSS Army&lt;/strong&gt; send an email to the PatternFly mailing list patternfly[at]redhat.com, contact us on the &lt;a href=&quot;http://patternfly.slack.com&quot;&gt;Slack&lt;/a&gt; or &lt;a href=&quot;http://webchat.freenode.net/?channels=#patternfly&quot;&gt;IRC channel&lt;/a&gt;, or just &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;fork the repo&lt;/a&gt; and send us a PR :smile:&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Oct 2016 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2016/10/22/patternfly-spaces.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2016/10/22/patternfly-spaces.html</guid>
+        
+        <category>news</category>
+        
+        <category>patternfly</category>
+        
+        <category>spacing</category>
+        
+        <category>CSS</category>
+        
+        
+        <category>patternfly</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>CSSconf: Welcome to Argentina</title>
@@ -819,101 +905,6 @@ I am aware that not every company can open their projects, but in order to have 
         
         
         <category>patternfly</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Impossible pattern makes me dumb</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/dumb/dumb.png&quot; alt=&quot;pattern&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is the story of how I tried to make a pattern using css background and I failed.&lt;/p&gt;
-
-&lt;p&gt;If you are looking for a nice CSS story with a happy ending stop reading now.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, if you are like Douglas, and you also think that writing about my sad wasted of hours during the weekend is a perfect blog post, then stay and read on.&lt;/p&gt;
-
-&lt;p&gt;First things first: Lets face it, you have a problem. I understand that Douglas wants to read about unsuccessful CSS experiment, after all he is crazy enough to get married in a Castle in São Paulo. But you, my dear reader, should consider stop reading now or a psychology session.&lt;/p&gt;
-
-&lt;p&gt;Now that we’ve got the important out of the way, I’ll start with a story.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-story&quot;&gt;The Story&lt;/h2&gt;
-
-&lt;p&gt;I am part of the Red Hat UXD team. Internally the team has a site where we publish our weekly status reports, blog about work in progress, ask questions, and look for shared UXD assets, and we call it &lt;strong&gt;UXDepot&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The guys that build the UXDepot did an amazing job. It has some nifty features that make me smile every week, you wouldn’t believe the pleasure I feel every time I click the “Insert Last Status Report” button.&lt;/p&gt;
-
-&lt;p&gt;The UXDepot has an image on the header following the &lt;a href=&quot;http://brand.redhat.com/elements/pattern/&quot;&gt;Red Hat brand guidelines&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;So I set myself to rebuild that image as proper HTML/CSS header.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/dumb/UXDepot_Banner_Template.jpg&quot; alt=&quot;UXDepot banner&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-process&quot;&gt;The Process&lt;/h2&gt;
-
-&lt;p&gt;At first it seems simple. I’ve created a &lt;code class=&quot;highlighter-rouge&quot;&gt;header&lt;/code&gt; with multiple background for the image, the red stipe and the shadow on the right. I’ve multiplied the red stripe and the shadow with CSS background blend modes, added the logo as an svg image and more of less set the font sizes.&lt;/p&gt;
-
-&lt;p&gt;That was easy enough, but then I found two roadblocks: the typeface and the pattern.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
-
-&lt;p&gt;The font Interstate is not open source, I could have replaced it with an image but it is better to use a webfont. So I decided to change it with &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The second issue is the pattern. After trying for a few hours I found out that I couldn’t reproduce the pattern with CSS backgrounds.&lt;/p&gt;
-
-&lt;p&gt;It’s either impossible or I don’t know how to do it.&lt;/p&gt;
-
-&lt;p&gt;If it is impossible, then I am dumb for not having realize it before I started. On the other hand if it is possible then I am too dumb to do it. Either I am dumb.&lt;/p&gt;
-
-&lt;p&gt;So I chose to use an svg pattern and clip it with a CSS polygon shape.&lt;/p&gt;
-
-&lt;p&gt;But I couldn’t match the exact location of the pattern because the positioning of the red background is relative to the center of the box and not the top.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-result&quot;&gt;The Result&lt;/h2&gt;
-
-&lt;p&gt;This is it.&lt;/p&gt;
-
-&lt;div data-height=&quot;266&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;pjLvvz&quot; data-default-tab=&quot;html&quot; data-user=&quot;andresgalante&quot; class=&quot;codepen&quot;&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;header&amp;gt;
-  &amp;lt;h1&amp;gt;UXDepot&amp;lt;/h1&amp;gt;
-  &amp;lt;h2&amp;gt;User Experience Design Team&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://twitter.com/RedHatUXD&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-twitter&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; @RedHatUXD&amp;lt;/a&amp;gt;&amp;lt;p&amp;gt;
-  &amp;lt;h6&amp;gt;&amp;lt;a href=&amp;quot;http://www.redhat.com/&amp;quot;&amp;gt;Red Hat&amp;lt;/a&amp;gt;&amp;lt;h6&amp;gt;
-&amp;lt;/header&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/pjLvvz/&quot;&gt;UX depot header&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;the-conclusion&quot;&gt;The Conclusion&lt;/h2&gt;
-
-&lt;p&gt;If anyone can solve this, Robb can. I asked him and he told me that since I am already using an image, he’d be inclined to make both background part of the same image.&lt;/p&gt;
-
-&lt;p&gt;But he is a fun killer, there is no awesomeness on using background images.&lt;/p&gt;
-
-&lt;p&gt;During this weekend I learn that I am dumb.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 26 Oct 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2015/10/26/I-am-dumb.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2015/10/26/I-am-dumb.html</guid>
-        
-        <category>sass</category>
-        
-        <category>css</category>
-        
-        <category>html</category>
-        
-        <category>setup</category>
-        
-        <category>background</category>
-        
-        <category>blend</category>
-        
-        <category>mode</category>
-        
-        
-        <category>howto</category>
         
         <author>
           <name>Andres Galante</name>
