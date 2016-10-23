@@ -49,7 +49,7 @@ To ensure consistency we are delineating spacing as CSS utility classes.
 
 Since PatterFly 4 is based on [Bootstrap 4](http://v4-alpha.getbootstrap.com/), we will be able to [take advantage](http://v4-alpha.getbootstrap.com/utilities/spacing/) of the [nifty utility sass variable](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L79-L100) to build our spacing.
 
-Using sass `@extend` to reuse these classes we will keep our code DRY, maintain consistency and allow users to easily create spaces on their implementations.
+Using sass variables to set the utility classes will keep our code DRY, maintain consistency and allow users to easily create spaces on their implementations.
 
 ## Work in progress
 
