@@ -8,7 +8,7 @@ tags: news patternfly spacing CSS
 
 ![PatternFly new visuals](/img/spaces/spaces.jpg)
 
-If you follow this blog you should know that for the past two years I’ve been a contributor to [the PatternFly project](https://www.patternfly.org/). Five month ago, I've joined the PatternFly team and I am working full time to make open source design great.
+If you follow this blog you should know that for the past two years I’ve been a contributor to [the PatternFly project](https://www.patternfly.org/). Five month ago, I've joined the PatternFly team and I am working full time to push the boundaries of open source design.
 
 We are currently working on PatterFly 4, a major release that will include design and code improvements. The two main design changes that we are introducing are around typography and spaces, including a much necessary [font size base bump](https://medium.com/attack-the-front/your-body-text-is-too-small-5e02d36dc902#.o9y3t6r40) to 14px and moving our font family from [Open
 Sans](https://fonts.google.com/specimen/Open+Sans) to [Overpass](http://overpassfont.org/).
@@ -17,9 +17,9 @@ You can read all about these typography revisions on [Kyle Bakers](https://githu
 
 ## Spacing, Rhythm and Flow
 
-One of the key elements of both print design and web design is the way the typography flows, we call it Rhythm.
+One of the key elements of both print and web design is the way the typography flows, we call it Rhythm.
 
-There are several books and articles explaining what Typographic Rhythm is. If you are looking for in depth detail about typography you should read [The Elements of Typographic Style](https://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326) else, I recommend [this article by Shelly Wilson](http://typecast.com/blog/4-simple-steps-to-vertical-rhythm) on the [typecast blog](http://typecast.com/):
+There are several books and articles explaining what Typographic Rhythm is. If you are looking for an in depth detail about typography you should read [The Elements of Typographic Style](https://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326) else, I recommend [this article by Shelly Wilson](http://typecast.com/blog/4-simple-steps-to-vertical-rhythm) on the [typecast blog](http://typecast.com/):
 
 > Rhythm is just a repeated pattern. The more consistent the pattern, the better the rhythm. In music, it’s the structure that ties all the different instruments together. Even if the notes are correct, a song with an inconsistent rhythm is pretty hard to listen to.
 
@@ -27,7 +27,7 @@ There are several books and articles explaining what Typographic Rhythm is. If y
 
 > The time signature in sheet music visually depicts a song’s rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines to align text and objects to.
 
-The typographic change we are introducing to PatternFly 4 would be incomplete without an overall adjustment of spaces.
+Therefore the typographic change we are introducing to PatternFly 4 would be incomplete without an overall adjustment of spaces.
 
 ## Relative spaces
 
@@ -49,14 +49,28 @@ To ensure consistency we are delineating spacing as CSS utility classes.
 
 Since PatterFly 4 is based on [Bootstrap 4](http://v4-alpha.getbootstrap.com/), we will be able to [take advantage](http://v4-alpha.getbootstrap.com/utilities/spacing/) of the [nifty utility sass variable](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L79-L100) to build our spacing.
 
-Using sass variables to set the utility classes will keep our code DRY, maintain consistency and allow users to easily create spaces on their implementations.
+Using sass variables to set the utility classes will keep our code DRY, maintain consistency and allowing users to easily create spaces on their implementations.
 
 ## Work in progress
 
-To start with we based our components on a set of default spaces `xxxs-spacer`, `xxs-spacer`, `xs-spacer`, `sm-spacer`, `md-spacer`, `lg-spacer`, `xl-spacer`, `xxl-spacer`, `xxxl-spacer`.
+To start with we based our components on a set of default spaces:
 
-But I am sure that as we move forward adding components to the [new PatternFly Atomic repo](https://github.com/patternfly/patternfly-atomic), we will need to adjust and maybe remove or add variables.
+{% highlight sass %}
+$pf-spacer-xxs:    ($spacer * .25);
+$pf-spacer-xs:     ($spacer * .5);
+$pf-spacer-sm:     ($spacer * .75);
+$pf-spacer-md:     $spacer;
+$pf-spacer-lg:     ($spacer * 1.25);
+$pf-spacer-xl:     ($spacer * 1.5);
+$pf-spacer-xxl:    ($spacer * 1.75);
+$pf-spacer-xxxl:   ($spacer * 2);
+{% endhighlight %}
+
+
+But I am sure that as we move forward adding components to the [new PatternFly Atomic repo](https://github.com/patternfly/patternfly-atomic), we will need to adjust removing or adding variables.
 
 ## Want to play with us?
 
-This is without a doubt the best CSS project I've ever work with. If you want to join the talented **UXD CSS Army** send an email to the PatternFly mailing list patternfly[at]redhat.com, contact us on the [Slack](http://patternfly.slack.com) or [IRC channel](http://webchat.freenode.net/?channels=#patternfly), or just [fork the repo](https://github.com/patternfly/patternfly-atomic) and send us a PR :smile:
+This is without a doubt the best CSS project I've ever work with.
+
+If you want to join the talented **UXD CSS Army:heart:** send an email to [the PatternFly mailing list](mailto:patternfly@redhat.com), contact us on the [Slack](http://patternfly.slack.com) or [IRC channel](http://webchat.freenode.net/?channels=#patternfly), or just [fork the repo](https://github.com/patternfly/patternfly-atomic) and send us a PR :smile:

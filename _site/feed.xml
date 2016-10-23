@@ -6,15 +6,15 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Oct 2016 15:54:19 -0300</pubDate>
-    <lastBuildDate>Sun, 23 Oct 2016 15:54:19 -0300</lastBuildDate>
+    <pubDate>Sun, 23 Oct 2016 18:35:03 -0300</pubDate>
+    <lastBuildDate>Sun, 23 Oct 2016 18:35:03 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Dance to the new PatternFly flow</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/spaces/spaces.jpg&quot; alt=&quot;PatternFly new visuals&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If you follow this blog you should know that for the past two years I’ve been a contributor to &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;the PatternFly project&lt;/a&gt;. Five month ago, I’ve joined the PatternFly team and I am working full time to make open source design great.&lt;/p&gt;
+&lt;p&gt;If you follow this blog you should know that for the past two years I’ve been a contributor to &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;the PatternFly project&lt;/a&gt;. Five month ago, I’ve joined the PatternFly team and I am working full time to push the boundaries of open source design.&lt;/p&gt;
 
 &lt;p&gt;We are currently working on PatterFly 4, a major release that will include design and code improvements. The two main design changes that we are introducing are around typography and spaces, including a much necessary &lt;a href=&quot;https://medium.com/attack-the-front/your-body-text-is-too-small-5e02d36dc902#.o9y3t6r40&quot;&gt;font size base bump&lt;/a&gt; to 14px and moving our font family from &lt;a href=&quot;https://fonts.google.com/specimen/Open+Sans&quot;&gt;Open
 Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt;/a&gt;.&lt;/p&gt;
@@ -23,9 +23,9 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
 
 &lt;h2 id=&quot;spacing-rhythm-and-flow&quot;&gt;Spacing, Rhythm and Flow&lt;/h2&gt;
 
-&lt;p&gt;One of the key elements of both print design and web design is the way the typography flows, we call it Rhythm.&lt;/p&gt;
+&lt;p&gt;One of the key elements of both print and web design is the way the typography flows, we call it Rhythm.&lt;/p&gt;
 
-&lt;p&gt;There are several books and articles explaining what Typographic Rhythm is. If you are looking for in depth detail about typography you should read &lt;a href=&quot;https://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326&quot;&gt;The Elements of Typographic Style&lt;/a&gt; else, I recommend &lt;a href=&quot;http://typecast.com/blog/4-simple-steps-to-vertical-rhythm&quot;&gt;this article by Shelly Wilson&lt;/a&gt; on the &lt;a href=&quot;http://typecast.com/&quot;&gt;typecast blog&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;There are several books and articles explaining what Typographic Rhythm is. If you are looking for an in depth detail about typography you should read &lt;a href=&quot;https://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326&quot;&gt;The Elements of Typographic Style&lt;/a&gt; else, I recommend &lt;a href=&quot;http://typecast.com/blog/4-simple-steps-to-vertical-rhythm&quot;&gt;this article by Shelly Wilson&lt;/a&gt; on the &lt;a href=&quot;http://typecast.com/&quot;&gt;typecast blog&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Rhythm is just a repeated pattern. The more consistent the pattern, the better the rhythm. In music, it’s the structure that ties all the different instruments together. Even if the notes are correct, a song with an inconsistent rhythm is pretty hard to listen to.&lt;/p&gt;
@@ -39,7 +39,7 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
   &lt;p&gt;The time signature in sheet music visually depicts a song’s rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines to align text and objects to.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;The typographic change we are introducing to PatternFly 4 would be incomplete without an overall adjustment of spaces.&lt;/p&gt;
+&lt;p&gt;Therefore the typographic change we are introducing to PatternFly 4 would be incomplete without an overall adjustment of spaces.&lt;/p&gt;
 
 &lt;h2 id=&quot;relative-spaces&quot;&gt;Relative spaces&lt;/h2&gt;
 
@@ -63,17 +63,28 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
 
 &lt;p&gt;Since PatterFly 4 is based on &lt;a href=&quot;http://v4-alpha.getbootstrap.com/&quot;&gt;Bootstrap 4&lt;/a&gt;, we will be able to &lt;a href=&quot;http://v4-alpha.getbootstrap.com/utilities/spacing/&quot;&gt;take advantage&lt;/a&gt; of the &lt;a href=&quot;https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L79-L100&quot;&gt;nifty utility sass variable&lt;/a&gt; to build our spacing.&lt;/p&gt;
 
-&lt;p&gt;Using sass &lt;code class=&quot;highlighter-rouge&quot;&gt;@extend&lt;/code&gt; to reuse these classes we will keep our code DRY, maintain consistency and allow users to easily create spaces on their implementations.&lt;/p&gt;
+&lt;p&gt;Using sass variables to set the utility classes will keep our code DRY, maintain consistency and allowing users to easily create spaces on their implementations.&lt;/p&gt;
 
 &lt;h2 id=&quot;work-in-progress&quot;&gt;Work in progress&lt;/h2&gt;
 
-&lt;p&gt;To start with we based our components on a set of default spaces &lt;code class=&quot;highlighter-rouge&quot;&gt;xxxs-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xxs-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xs-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;sm-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;md-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;lg-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xl-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xxl-spacer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;xxxl-spacer&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To start with we based our components on a set of default spaces:&lt;/p&gt;
 
-&lt;p&gt;But I am sure that as we move forward adding components to the &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;new PatternFly Atomic repo&lt;/a&gt;, we will need to adjust and maybe remove or add variables.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sass&quot; data-lang=&quot;sass&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$pf-spacer-xxs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$pf-spacer-xs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$pf-spacer-sm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$pf-spacer-md&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$pf-spacer-lg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$pf-spacer-xl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$pf-spacer-xxl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$pf-spacer-xxxl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;But I am sure that as we move forward adding components to the &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;new PatternFly Atomic repo&lt;/a&gt;, we will need to adjust removing or adding variables.&lt;/p&gt;
 
 &lt;h2 id=&quot;want-to-play-with-us&quot;&gt;Want to play with us?&lt;/h2&gt;
 
-&lt;p&gt;This is without a doubt the best CSS project I’ve ever work with. If you want to join the talented &lt;strong&gt;UXD CSS Army&lt;/strong&gt; send an email to the PatternFly mailing list patternfly[at]redhat.com, contact us on the &lt;a href=&quot;http://patternfly.slack.com&quot;&gt;Slack&lt;/a&gt; or &lt;a href=&quot;http://webchat.freenode.net/?channels=#patternfly&quot;&gt;IRC channel&lt;/a&gt;, or just &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;fork the repo&lt;/a&gt; and send us a PR :smile:&lt;/p&gt;
+&lt;p&gt;This is without a doubt the best CSS project I’ve ever work with.&lt;/p&gt;
+
+&lt;p&gt;If you want to join the talented &lt;strong&gt;UXD CSS Army:heart:&lt;/strong&gt; send an email to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#112;&amp;#097;&amp;#116;&amp;#116;&amp;#101;&amp;#114;&amp;#110;&amp;#102;&amp;#108;&amp;#121;&amp;#064;&amp;#114;&amp;#101;&amp;#100;&amp;#104;&amp;#097;&amp;#116;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;the PatternFly mailing list&lt;/a&gt;, contact us on the &lt;a href=&quot;http://patternfly.slack.com&quot;&gt;Slack&lt;/a&gt; or &lt;a href=&quot;http://webchat.freenode.net/?channels=#patternfly&quot;&gt;IRC channel&lt;/a&gt;, or just &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;fork the repo&lt;/a&gt; and send us a PR :smile:&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Oct 2016 20:05:36 -0300</pubDate>
         <link>http://andresgalante.github.io/patternfly/2016/10/22/patternfly-spaces.html</link>
