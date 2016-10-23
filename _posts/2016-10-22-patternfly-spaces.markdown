@@ -53,7 +53,7 @@ Using sass variables to set the utility classes will keep our code DRY, maintain
 
 ## Work in progress
 
-To start with we based our components on a set of default spaces:
+As a start point we've based our components on a set of default spaces:
 
 {% highlight sass %}
 $pf-spacer-xxs:    ($spacer * .25);
