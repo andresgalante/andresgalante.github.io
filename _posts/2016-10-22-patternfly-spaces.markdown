@@ -43,9 +43,9 @@ Since PatterFly 4 root font size is `14px`, then `1rem = 14px`, `2rem = 28px`, `
 
 This system will define all our spaces, from typography, paddings and margins to grids and gutters.
 
-## Utility classes
+## Variables and utility classes
 
-To ensure consistency we are delineating spacing as CSS utility classes.
+To ensure consistency we are delineating spacing with Sass variables and utility classes.
 
 Since PatterFly 4 is based on [Bootstrap 4](http://v4-alpha.getbootstrap.com/), we will be able to [take advantage](http://v4-alpha.getbootstrap.com/utilities/spacing/) of the [nifty utility sass variable](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L79-L100) to build our spacing.
 

@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Oct 2016 08:38:02 -0300</pubDate>
-    <lastBuildDate>Mon, 24 Oct 2016 08:38:02 -0300</lastBuildDate>
+    <pubDate>Mon, 24 Oct 2016 08:52:54 -0300</pubDate>
+    <lastBuildDate>Mon, 24 Oct 2016 08:52:54 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -57,9 +57,9 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
 
 &lt;p&gt;This system will define all our spaces, from typography, paddings and margins to grids and gutters.&lt;/p&gt;
 
-&lt;h2 id=&quot;utility-classes&quot;&gt;Utility classes&lt;/h2&gt;
+&lt;h2 id=&quot;variables-and-utility-classes&quot;&gt;Variables and utility classes&lt;/h2&gt;
 
-&lt;p&gt;To ensure consistency we are delineating spacing as CSS utility classes.&lt;/p&gt;
+&lt;p&gt;To ensure consistency we are delineating spacing with Sass variables and utility classes.&lt;/p&gt;
 
 &lt;p&gt;Since PatterFly 4 is based on &lt;a href=&quot;http://v4-alpha.getbootstrap.com/&quot;&gt;Bootstrap 4&lt;/a&gt;, we will be able to &lt;a href=&quot;http://v4-alpha.getbootstrap.com/utilities/spacing/&quot;&gt;take advantage&lt;/a&gt; of the &lt;a href=&quot;https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss#L79-L100&quot;&gt;nifty utility sass variable&lt;/a&gt; to build our spacing.&lt;/p&gt;
 
