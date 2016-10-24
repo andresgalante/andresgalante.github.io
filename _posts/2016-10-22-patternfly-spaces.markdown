@@ -70,7 +70,7 @@ $pf-spacer-3xl:    ($spacer * 2);
 
 But I am sure that as we move forward adding components to the [new PatterFly Atomic repo](https://github.com/patternfly/patternfly-atomic), we will need to adjust removing or adding variables.
 
-## Want to play with us?
+## Want to dance with us?
 
 This is without a doubt the best CSS project I've ever work with.
 
