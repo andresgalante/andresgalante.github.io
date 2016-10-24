@@ -13,7 +13,7 @@ If you follow this blog you should know that for the past two years I’ve been 
 We are currently working on PatterFly 4, a major release that will include design and code improvements. The two main design changes that we are introducing are around typography and spaces, including a much necessary [font size base bump](https://medium.com/attack-the-front/your-body-text-is-too-small-5e02d36dc902#.o9y3t6r40) to 14px and moving our font family from [Open
 Sans](https://fonts.google.com/specimen/Open+Sans) to [Overpass](http://overpassfont.org/).
 
-You can read all about these typography revisions on [Kyle Bakers](https://github.com/orgs/patternfly/people/kybaker) [article on the PatterFly blog](#).
+You can read all about these typography revisions on [Kyle Bakers](https://github.com/orgs/patternfly/people/kybaker) [article on the PatterFly blog](https://blog.patternfly.org/choosing-the-best-font-for-application-design/).
 
 ## Spacing, Rhythm and Flow
 

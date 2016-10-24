@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Oct 2016 15:48:37 -0300</pubDate>
-    <lastBuildDate>Mon, 24 Oct 2016 15:48:37 -0300</lastBuildDate>
+    <pubDate>Mon, 24 Oct 2016 16:02:43 -0300</pubDate>
+    <lastBuildDate>Mon, 24 Oct 2016 16:02:43 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -19,7 +19,7 @@
 &lt;p&gt;We are currently working on PatterFly 4, a major release that will include design and code improvements. The two main design changes that we are introducing are around typography and spaces, including a much necessary &lt;a href=&quot;https://medium.com/attack-the-front/your-body-text-is-too-small-5e02d36dc902#.o9y3t6r40&quot;&gt;font size base bump&lt;/a&gt; to 14px and moving our font family from &lt;a href=&quot;https://fonts.google.com/specimen/Open+Sans&quot;&gt;Open
 Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can read all about these typography revisions on &lt;a href=&quot;https://github.com/orgs/patternfly/people/kybaker&quot;&gt;Kyle Bakers&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;article on the PatterFly blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can read all about these typography revisions on &lt;a href=&quot;https://github.com/orgs/patternfly/people/kybaker&quot;&gt;Kyle Bakers&lt;/a&gt; &lt;a href=&quot;https://blog.patternfly.org/choosing-the-best-font-for-application-design/&quot;&gt;article on the PatterFly blog&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;spacing-rhythm-and-flow&quot;&gt;Spacing, Rhythm and Flow&lt;/h2&gt;
 
