@@ -19,7 +19,7 @@
 &lt;p&gt;We are currently working on PatterFly 4, a major release that will include design and code improvements. The two main design changes that we are introducing are around typography and spaces, including a much necessary &lt;a href=&quot;https://medium.com/attack-the-front/your-body-text-is-too-small-5e02d36dc902#.o9y3t6r40&quot;&gt;font size base bump&lt;/a&gt; to 14px and moving our font family from &lt;a href=&quot;https://fonts.google.com/specimen/Open+Sans&quot;&gt;Open
 Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can read all about these typography revisions on &lt;a href=&quot;https://github.com/orgs/patternfly/people/kybaker&quot;&gt;Kyle Bakers&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;article on the PatternFly blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can read all about these typography revisions on &lt;a href=&quot;https://github.com/orgs/patternfly/people/kybaker&quot;&gt;Kyle Bakers&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;article on the PatterFly blog&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;spacing-rhythm-and-flow&quot;&gt;Spacing, Rhythm and Flow&lt;/h2&gt;
 
@@ -79,13 +79,13 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
 &lt;span class=&quot;nv&quot;&gt;$pf-spacer-2xl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$pf-spacer-3xl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$spacer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;But I am sure that as we move forward adding components to the &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;new PatternFly Atomic repo&lt;/a&gt;, we will need to adjust removing or adding variables.&lt;/p&gt;
+&lt;p&gt;But I am sure that as we move forward adding components to the &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;new PatterFly Atomic repo&lt;/a&gt;, we will need to adjust removing or adding variables.&lt;/p&gt;
 
 &lt;h2 id=&quot;want-to-play-with-us&quot;&gt;Want to play with us?&lt;/h2&gt;
 
 &lt;p&gt;This is without a doubt the best CSS project I’ve ever work with.&lt;/p&gt;
 
-&lt;p&gt;If you want to join the talented &lt;strong&gt;UXD CSS Army:heart:&lt;/strong&gt; send an email to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#112;&amp;#097;&amp;#116;&amp;#116;&amp;#101;&amp;#114;&amp;#110;&amp;#102;&amp;#108;&amp;#121;&amp;#064;&amp;#114;&amp;#101;&amp;#100;&amp;#104;&amp;#097;&amp;#116;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;the PatternFly mailing list&lt;/a&gt;, contact us on the &lt;a href=&quot;http://patternfly.slack.com&quot;&gt;Slack&lt;/a&gt; or &lt;a href=&quot;http://webchat.freenode.net/?channels=#patternfly&quot;&gt;IRC channel&lt;/a&gt;, or just &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;fork the repo&lt;/a&gt; and send us a PR :smile:&lt;/p&gt;
+&lt;p&gt;If you want to join the talented &lt;strong&gt;UXD CSS Army:heart:&lt;/strong&gt; send an email to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#112;&amp;#097;&amp;#116;&amp;#116;&amp;#101;&amp;#114;&amp;#110;&amp;#102;&amp;#108;&amp;#121;&amp;#064;&amp;#114;&amp;#101;&amp;#100;&amp;#104;&amp;#097;&amp;#116;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;the PatterFly mailing list&lt;/a&gt;, contact us on the &lt;a href=&quot;http://patternfly.slack.com&quot;&gt;Slack&lt;/a&gt; or &lt;a href=&quot;http://webchat.freenode.net/?channels=#patternfly&quot;&gt;IRC channel&lt;/a&gt;, or just &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;fork the repo&lt;/a&gt; and send us a PR :smile:&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Oct 2016 20:05:36 -0300</pubDate>
         <link>http://andresgalante.github.io/patternfly/2016/10/22/patternfly-spaces.html</link>

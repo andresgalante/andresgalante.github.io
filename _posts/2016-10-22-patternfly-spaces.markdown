@@ -13,7 +13,7 @@ If you follow this blog you should know that for the past two years I’ve been 
 We are currently working on PatterFly 4, a major release that will include design and code improvements. The two main design changes that we are introducing are around typography and spaces, including a much necessary [font size base bump](https://medium.com/attack-the-front/your-body-text-is-too-small-5e02d36dc902#.o9y3t6r40) to 14px and moving our font family from [Open
 Sans](https://fonts.google.com/specimen/Open+Sans) to [Overpass](http://overpassfont.org/).
 
-You can read all about these typography revisions on [Kyle Bakers](https://github.com/orgs/patternfly/people/kybaker) [article on the PatternFly blog](#).
+You can read all about these typography revisions on [Kyle Bakers](https://github.com/orgs/patternfly/people/kybaker) [article on the PatterFly blog](#).
 
 ## Spacing, Rhythm and Flow
 
@@ -68,10 +68,10 @@ $pf-spacer-3xl:    ($spacer * 2);
 {% endhighlight %}
 
 
-But I am sure that as we move forward adding components to the [new PatternFly Atomic repo](https://github.com/patternfly/patternfly-atomic), we will need to adjust removing or adding variables.
+But I am sure that as we move forward adding components to the [new PatterFly Atomic repo](https://github.com/patternfly/patternfly-atomic), we will need to adjust removing or adding variables.
 
 ## Want to play with us?
 
 This is without a doubt the best CSS project I've ever work with.
 
-If you want to join the talented **UXD CSS Army:heart:** send an email to [the PatternFly mailing list](mailto:patternfly@redhat.com), contact us on the [Slack](http://patternfly.slack.com) or [IRC channel](http://webchat.freenode.net/?channels=#patternfly), or just [fork the repo](https://github.com/patternfly/patternfly-atomic) and send us a PR :smile:
+If you want to join the talented **UXD CSS Army:heart:** send an email to [the PatterFly mailing list](mailto:patternfly@redhat.com), contact us on the [Slack](http://patternfly.slack.com) or [IRC channel](http://webchat.freenode.net/?channels=#patternfly), or just [fork the repo](https://github.com/patternfly/patternfly-atomic) and send us a PR :smile:
