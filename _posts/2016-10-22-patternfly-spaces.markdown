@@ -57,12 +57,16 @@ As a start point we are basing our components on a set of default spaces:
 
 {% highlight sass %}
 $spacer:   1rem;
-$pf-spacer-xs:     ($spacer * .5); // 7px
-$pf-spacer-sm:     $spacer; // 14px
-$pf-spacer-md:     ($spacer * 1.5); // 21px
-$pf-spacer-lg:     ($spacer * 2); // 28px
-$pf-spacer-xl:     ($spacer * 2.5); // 35px
-$pf-spacer-2xl:    ($spacer * 3); // 42 px
+$pf-spacer-xxxs:   ($spacer * .25);   // ~3px
+$pf-spacer-xxs:    ($spacer * .5);    // 7px
+$pf-spacer-xs:     ($spacer * .75);   // ~10px
+$pf-spacer-sm:     $spacer;           // 14px
+$pf-spacer-md:     ($spacer * 1.25);  // ~17px
+$pf-spacer-lg:     ($spacer * 1.5);   // 21px
+$pf-spacer-xl:     ($spacer * 1.75);  // ~24px
+$pf-spacer-xxl:    ($spacer * 2);     // 28 px
+$pf-spacer-xxxl:   ($spacer * 2.5);   // 35 px
+$pf-spacer-xxxxl:  ($spacer * 3);     // 42 px
 {% endhighlight %}
 
 
