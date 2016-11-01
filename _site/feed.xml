@@ -6,9 +6,72 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Oct 2016 07:43:42 -0300</pubDate>
-    <lastBuildDate>Tue, 25 Oct 2016 07:43:42 -0300</lastBuildDate>
+    <pubDate>Tue, 01 Nov 2016 08:13:42 -0300</pubDate>
+    <lastBuildDate>Tue, 01 Nov 2016 08:13:42 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>5 traits I’ve learned about leadership</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/leadership/leadership.jpg&quot; alt=&quot;leadership&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have the best job in the world. I work in a &lt;a href=&quot;https://www.redhat.com/&quot;&gt;great company&lt;/a&gt;, doing what I love in a &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;large scale open source project&lt;/a&gt;, surrounded by talented people that I like and respect, and with all the resources I could ask for.&lt;/p&gt;
+
+&lt;p&gt;This environment can only be accomplished because I work besides great leaders, and even though they are different, they all share some qualities:&lt;/p&gt;
+
+&lt;h2 id=&quot;they-are-empathic&quot;&gt;They are empathic&lt;/h2&gt;
+
+&lt;p&gt;Great leaders have the ability to understand and relate to their community in a selfish, kind and open way. They know how to listen and they can make any group feel taken care of, no matter what size it is.&lt;/p&gt;
+
+&lt;p&gt;They don’t fake it, they truly care, that’s why they are loved.&lt;/p&gt;
+
+&lt;h2 id=&quot;they-are-brave&quot;&gt;They are brave&lt;/h2&gt;
+
+&lt;p&gt;Great leaders are quick to decide and quick to change. They know who they are, what they stand for and where they are going. That’s why they can reverse engineer their goals. They are are quick to decide and act, and quick to pivot when things go wrong. They change and adapt.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“It is not the strongest of the species, nor the most intelligent that survives. It is the one that is most adaptable to change.”
+Charles Darwin&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That braveness and sense of security makes them curious. Great leaders aren’t afraid of their ignorance. They are always willing to learn and they are constantly looking for new challenges to tackle.&lt;/p&gt;
+
+&lt;h2 id=&quot;they-put-themselves-in-the-front-line&quot;&gt;They put themselves in the front line&lt;/h2&gt;
+
+&lt;p&gt;A great leader would never ask for something he is not willing to do. Some of the best generals in history went to the front lines, and their armies defended them with their life, a devotion that drove victories against all odds. They lead by example and make sure to walk the talk.&lt;/p&gt;
+
+&lt;h2 id=&quot;they-are-patient&quot;&gt;They are patient&lt;/h2&gt;
+
+&lt;p&gt;Great leaders are aware that things don’t happen overnight. This is not a matter of speed, most of them go fast, but they are wise enough to know when to stop and think, how to react on different circumstances and how to generate the conditions for their projects to flourish. Something that can only be achieved if they enjoy the virtue of patience.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“He that can have patience can have what he will.”
+Benjamin Franklin&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;they-are-grateful&quot;&gt;They are grateful&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ted.com/talks/david_steindl_rast_want_to_be_happy_be_grateful?language=en&quot;&gt;Giving thanks can make anyone happier&lt;/a&gt;, but great leaders are truly grateful. They feel indebted to his surroundings and they are convinced that their achievements are due to their community successes. It’s a motivation that keeps them going.&lt;/p&gt;
+
+&lt;p&gt;Great leaders are not born or appointed, they are chosen. If I ever earn that privilege, I wish I can be as good as the ones I follow and admire.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Oct 2016 20:05:36 -0300</pubDate>
+        <link>http://andresgalante.github.io/random/2016/10/23/patternfly-spaces.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/random/2016/10/23/patternfly-spaces.html</guid>
+        
+        <category>random</category>
+        
+        <category>patternfly</category>
+        
+        <category>leadership</category>
+        
+        
+        <category>random</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Dance to the new PatternFly flow</title>
@@ -90,8 +153,8 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
 &lt;p&gt;If you want to join the talented &lt;strong&gt;UXD CSS Army:heart:&lt;/strong&gt; send an email to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#112;&amp;#097;&amp;#116;&amp;#116;&amp;#101;&amp;#114;&amp;#110;&amp;#102;&amp;#108;&amp;#121;&amp;#064;&amp;#114;&amp;#101;&amp;#100;&amp;#104;&amp;#097;&amp;#116;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;the PatterFly mailing list&lt;/a&gt;, contact us on the &lt;a href=&quot;http://patternfly.slack.com&quot;&gt;Slack&lt;/a&gt; or &lt;a href=&quot;http://webchat.freenode.net/?channels=#patternfly&quot;&gt;IRC channel&lt;/a&gt;, or just &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;fork the repo&lt;/a&gt; and send us a PR :smile:&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Oct 2016 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2016/10/22/patternfly-spaces.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2016/10/22/patternfly-spaces.html</guid>
+        <link>http://andresgalante.github.io/patternfly/2016/10/22/five-traits-about-leadership.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2016/10/22/five-traits-about-leadership.html</guid>
         
         <category>news</category>
         
@@ -844,81 +907,6 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
         
         
         <category>design</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Open collaborative design system</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/open/open.jpg&quot; alt=&quot;Open collaborative design system&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve started this week with a mission: stop procrastination. What would happen if I do the things that I have to do first instead of the more pleasurable ones?&lt;/p&gt;
-
-&lt;p&gt;To be honest I don’t know. Monday is blog day and Monday went by without a post. Short story short: I am good at procrastinating.&lt;/p&gt;
-
-&lt;p&gt;But Monday didn’t went idle, I’ve finish preparing the presentation for &lt;a href=&quot;http://isa.ixda.org/2015/&quot;&gt;ISA2015&lt;/a&gt;. It’s about Red Hats design system: &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;PatternFly is a community of designers and developers collaborating to build a UI framework for enterprise web applications.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;patternfly-shines-at-enterprise-web-applications&quot;&gt;PatternFly shines at enterprise web applications&lt;/h2&gt;
-
-&lt;p&gt;Luke Wroblewski &lt;a href=&quot;http://www.lukew.com/ff/entry.asp?15&quot;&gt;wrote&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;All content-heavy interfaces need to strike an appropriate balance between visual simplicity and information density (content, as usual, is defined as the information and activities that constitute an interactive system). Visual simplicity keeps things clear and focused. Information density provides lots of choices to match lots of different user needs and behavioral patterns.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And PatternFly is crafted to achieve that balance. If you are looking to build an enterprise web applications look no further. If your app doesn’t display lots of information there are other great open source design systems like &lt;a href=&quot;http://primercss.io/&quot;&gt;GitHub Primer&lt;/a&gt;, &lt;a href=&quot;https://www.mozilla.org/en-US/styleguide/websites/sandstone/&quot;&gt;FireFox Sandstone&lt;/a&gt;, &lt;a href=&quot;http://foundation.zurb.com/&quot;&gt;Zurb Foundation&lt;/a&gt; and &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;What makes them successful?&lt;/p&gt;
-
-&lt;h2 id=&quot;three-principles-to-build-an-open-design-system&quot;&gt;Three principles to build an open design system.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://markdotto.com/&quot;&gt;Mdo&lt;/a&gt; mention three pillars to create an open and collaborative design system:&lt;/p&gt;
-
-&lt;h4 id=&quot;open-source&quot;&gt;1. Open source&lt;/h4&gt;
-&lt;p&gt;Open source mentality leads to innovation and yields surprising results. 
-I’ve already ramble about &lt;a href=&quot;http://blog.andresgalante.com/design/2015/08/31/adopt-a-deisgner.html&quot;&gt;design at open source communities&lt;/a&gt;. 
-I am aware that not every company can open their projects, but in order to have a successful design system , it must work as an open source community would. Every member of the team should be envolved in building, maintaining and making it grow.&lt;/p&gt;
-
-&lt;h4 id=&quot;documentation&quot;&gt;2. Documentation&lt;/h4&gt;
-&lt;p&gt;Documentation is key. A good design system should be document driven. The knowledge should be in the project and not in the members heads.&lt;/p&gt;
-
-&lt;h4 id=&quot;think-about-components&quot;&gt;3. Think about Components&lt;/h4&gt;
-&lt;p&gt;Design a system of reusable components, not just pages. Every page should the sum of its parts.&lt;/p&gt;
-
-&lt;h2 id=&quot;taste-it&quot;&gt;Taste it&lt;/h2&gt;
-
-&lt;p&gt;Open collaborative design systems and open :smile:. Working on this environment is as easy as becoming part of the open source community.&lt;/p&gt;
-
-&lt;p&gt;Here is a tip: the smaller the community is, the more open they’ll be to new comers, but it doesn’t matter the size, they are all full of very nice people that will help you walk your first steps.&lt;/p&gt;
-
-&lt;p&gt;Go and have a try.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 10 Nov 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2015/11/10/open-collaborative-design-systems.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2015/11/10/open-collaborative-design-systems.html</guid>
-        
-        <category>open</category>
-        
-        <category>collaborative</category>
-        
-        <category>design</category>
-        
-        <category>system</category>
-        
-        <category>patternfly</category>
-        
-        <category>source</category>
-        
-        
-        <category>patternfly</category>
         
         <author>
           <name>Andres Galante</name>
