@@ -48,7 +48,7 @@ Benjamin Franklin
 
 ## 5. They are grateful
 
-[Giving thanks can make anyone happier](https://www.ted.com/talks/david_steindl_rast_want_to_be_happy_be_grateful?language=en), but great leaders are truly grateful. They feel indebted to his surroundings and they are convinced that their achievements are due to their community successes. It’s a motivation that keeps them going.
+[Giving thanks can make anyone happier](https://www.ted.com/talks/david_steindl_rast_want_to_be_happy_be_grateful?language=en), but great leaders are truly grateful. They feel indebted to their surroundings and they are convinced that their achievements are due to their community successes. It’s a motivation that keeps them going.
 
 
 Great leaders are not born or appointed, they are chosen. If I ever earn that privilege, I wish I can be as good as the ones I follow and admire.
