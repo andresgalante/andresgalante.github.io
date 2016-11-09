@@ -6,9 +6,68 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Nov 2016 09:17:25 -0300</pubDate>
-    <lastBuildDate>Wed, 02 Nov 2016 09:17:25 -0300</lastBuildDate>
+    <pubDate>Wed, 09 Nov 2016 14:55:56 -0300</pubDate>
+    <lastBuildDate>Wed, 09 Nov 2016 14:55:56 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>The Tree of Wisdom</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/tree/tree.jpg&quot; alt=&quot;PatternFly decision tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Think about a design system as a &lt;a href=&quot;https://en.wikipedia.org/wiki/Tamagotchi&quot;&gt;tamagotchi&lt;/a&gt;. To keep it alive once your turn it on, you need to take care of it: keep it clean, feed it and make it sleep, almost like a living creature.&lt;/p&gt;
+
+&lt;p&gt;That’s why supporting and maintaining a design system can be more challenging than initially creating it. A smart strategy, really good rules and a lot of love and patience is the only way to guarantee long-term success.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A critical part of design system maintenance is ensuring that UI patterns stay up to date, embrace evolving design and development best practices, and continue to address the real needs of the organization.” - &lt;a href=&quot;http://atomicdesign.bradfrost.com/chapter-5/#making-changes-to-patterns&quot;&gt;Brad Frost&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To govern the &lt;a href=&quot;https://docs.vanillaframework.io/&quot;&gt;Vanilla Design System&lt;/a&gt;, the Canonical web team developed a fascinating decision tree and PatternFly took a similar approach.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-patternfly-decision-tree&quot;&gt;The PatternFly Decision Tree&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/a/redhat.com/file/d/0By4Lm65O5b3rTGhPZTVnSThyLWc/view?usp=sharing&quot;&gt;&lt;img src=&quot;/img/tree/patternfly-decision-tree.png&quot; alt=&quot;PatternFly decision tree&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal for PatternFly is to deliver a set of common and modular UI components. The goal of the PatternFly decision tree is to identify common components and that we have all the parts to build them.&lt;/p&gt;
+
+&lt;p&gt;To define what makes a component common, we chose to follow a simple general rule: if more than two projects using PatternFly are asking for the same component, then it’s considered common.&lt;/p&gt;
+
+&lt;p&gt;To determine whether or not a component is modular requires deconstructing the component into smaller blocks to understand the underlying structure of that component. That way we can ensure we are building reusable parts instead of reinventing the wheel every time we introduce a new pattern.&lt;/p&gt;
+
+&lt;p&gt;The three outcomes are for a pattern to be modified, added, or removed from the design system.&lt;/p&gt;
+
+&lt;h2 id=&quot;practicing-what-we-preach&quot;&gt;Practicing What We Preach&lt;/h2&gt;
+
+&lt;p&gt;This process doesn’t only apply to new patterns. We are running our existing components through the decision tree.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A design system needs ongoing maintenance, support, and tender loving care for it to truly thrive.” - &lt;a href=&quot;http://atomicdesign.bradfrost.com/chapter-5/#establishing-a-design-system-team&quot;&gt;Brad Frost&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We will have be having regular assessments to make sure components stand the test of time and modify or remove them as needed.&lt;/p&gt;
+
+&lt;p&gt;Just like PatternFly, the decision tree is not set in stone. Both are living resources that will evolve as we care for them and give them love.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Nov 2016 08:00:00 -0300</pubDate>
+        <link>http://andresgalante.github.io/patternfly/2016/11/09/patternfly-decision-tree.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2016/11/09/patternfly-decision-tree.html</guid>
+        
+        <category>design</category>
+        
+        <category>patternfly</category>
+        
+        <category>decision</category>
+        
+        <category>maintenance</category>
+        
+        
+        <category>patternfly</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>5 traits I’ve learned about leadership</title>
@@ -839,61 +898,6 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
         <pubDate>Mon, 30 Nov 2015 20:05:36 -0300</pubDate>
         <link>http://andresgalante.github.io/design/2015/11/30/enteprise-designer.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/design/2015/11/30/enteprise-designer.html</guid>
-        
-        <category>design</category>
-        
-        <category>ux</category>
-        
-        <category>users</category>
-        
-        <category>developer</category>
-        
-        <category>designer</category>
-        
-        
-        <category>design</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>You should be thinking about the user too</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/designthink/designthink.jpg&quot; alt=&quot;Open collaborative design system&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The people you work with is usually what makes a project fun or interesting.&lt;/p&gt;
-
-&lt;p&gt;For the past few weeks I’ve been working on a fun and interesting project mostly because &lt;a href=&quot;https://twitter.com/brianleathem&quot;&gt;Brian&lt;/a&gt; is great to work with.&lt;/p&gt;
-
-&lt;p&gt;We didn’t have much time to spend on UX research we came up with some silly pseudo personas to define our interaction. The star been Trever (yes, Trever with an “e”) the trucker, who in my mind looks like a slightly fatter and middle age Kurt Cobain. Sorry Brian, I know you strongly disagree with this description.&lt;/p&gt;
-
-&lt;p&gt;Since we work at Red Hat, this project will be open source. That’s why we need to think the API in a way that’s easy to consume to engage better with the community. So we came up with developer personas: Oswald the Open source contributor and Steve the enterprise coder that will consume the project.&lt;/p&gt;
-
-&lt;p&gt;Although UX in this project was kinda silly, it made me think about something &lt;a href=&quot;https://twitter.com/ederign&quot;&gt;Eder&lt;/a&gt; asked me during QCon Rio: What would a good “UX for developers” talk be.&lt;/p&gt;
-
-&lt;h2 id=&quot;as-always-it-comes-down-to-user-goals&quot;&gt;As always, it comes down to user goals.&lt;/h2&gt;
-
-&lt;p&gt;If you deal with users, thinking about their experience is critical.&lt;/p&gt;
-
-&lt;p&gt;User experience goes way beyond the interface, neither Oswald or Peter will ever see a UI, but we will design the API with their goals in mind. Even &lt;a href=&quot;https://twitter.com/abstractj&quot;&gt;Bruno&lt;/a&gt;, a hardcore cryptographer, should think about his users every time he write a line of code on &lt;a href=&quot;https://github.com/abstractj/kalium&quot;&gt;Kalium&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We are all here to help our users achieve their goals, it doesn’t matter if you are a designer or a developer (or support, or marketing or PM).&lt;/p&gt;
-
-&lt;p&gt;Don’t get me wrong, a user is not a client. Marketing takes care of clients, UX designers (and everyone else) should take care of users. Specially on enterprise applications, where the one that buys the platform is never the one that uses it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;UX designers are lawyers defending the users&lt;/strong&gt;. Our job is to make sure we all understands our users. And keep them front of mind as we do all of our design decisions, product decisions and productisation decisions all away though the process.&lt;/p&gt;
-
-&lt;h2 id=&quot;ux-for-developers&quot;&gt;UX for developers&lt;/h2&gt;
-
-&lt;p&gt;To answer Eders question, I still don’t know what a good UX for developers talk would be. It might be useful for a developer to understand what design thinking is. How to take a user centric approach and how to involve design in every step of the process.&lt;/p&gt;
-
-&lt;p&gt;But teaching a developer UX in a 40 min talk is like teaching me java in 40mins (or in 40 years), a complete waste time.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Nov 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2015/11/18/you-should-be-thinking-about-the-user-too.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/11/18/you-should-be-thinking-about-the-user-too.html</guid>
         
         <category>design</category>
         
