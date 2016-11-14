@@ -343,7 +343,7 @@ pre {
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
-  line-height: 1; }
+  line-height: 1.2; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
@@ -382,6 +382,17 @@ pre {
 
 #disqus_thread {
   margin-top: 60px; }
+
+table {
+  width: 100%;
+  margin-bottom: 20px; }
+
+table, td, th, th {
+  border: 1px solid rgba(102, 102, 102, 0.54);
+  border-collapse: collapse; }
+
+td, th, th {
+  padding: 10px; }
 
 /**
  * Syntax highlighting styles
@@ -529,7 +540,6 @@ pre {
   content: 'unread';
   color: #fff;
   background: rgba(0, 0, 0, 0.54);
-  position: absolute;
   top: 1.2em;
   display: inline-block;
   padding: 0 .4em;

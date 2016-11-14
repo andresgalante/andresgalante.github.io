@@ -123,7 +123,7 @@
     border-radius: 40px;
     margin: 0;
     display: inline;
-    
+
   }
 }
 
@@ -219,9 +219,9 @@
     height:30px;
     border-radius: 15px;
     margin: 0 5px 0 0;
-    display: inline; 
+    display: inline;
     border: none;
-    box-shadow: none;   
+    box-shadow: none;
   }
 }
 
@@ -258,7 +258,7 @@
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.2;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -323,4 +323,18 @@
 
 #disqus_thread{
   margin-top: 60px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table, td, th, th {
+  border: 1px solid $grey-color-light;
+  border-collapse: collapse;
+}
+
+td, th, th {
+ padding: 10px; 
 }

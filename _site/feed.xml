@@ -6,9 +6,147 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Nov 2016 14:55:56 -0300</pubDate>
-    <lastBuildDate>Wed, 09 Nov 2016 14:55:56 -0300</lastBuildDate>
+    <pubDate>Sun, 13 Nov 2016 16:15:10 -0300</pubDate>
+    <lastBuildDate>Sun, 13 Nov 2016 16:15:10 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Just because a device is large, it doesn't mean he doesn't want to be touched</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/touch/touch.jpg&quot; alt=&quot;Touch screens media query&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s face it, front end development is a bitch.&lt;/p&gt;
+
+&lt;p&gt;As we started discussing how to design enterprise application UI element on mobile environments, the talented ladies working with me (yes, I am talking about you Jenn and Sarah) pointed out that touch devices should not be judge by their size.&lt;/p&gt;
+
+&lt;p&gt;Assuming that a small viewport device has a touch screen and a large doesn’t is a mistake since the twisted minds in the hardware industry have created massive touchscreen TVs, really large tablets like the iPad Pro and even a huge touch desktop PCs like the new (and jaw dropping) Surface Studio.&lt;/p&gt;
+
+&lt;p&gt;This adds a new layer of complexity to the already complicated world of interaction design and front end development.&lt;/p&gt;
+
+&lt;p&gt;Responsive viewport media queries are great to accommodate our UIs elements, but designing small clickable areas on large screens guessing that our users will have a mouse pointer is a mistake.&lt;/p&gt;
+
+&lt;p&gt;We know we can detect touch screens with tools like &lt;a href=&quot;https://modernizr.com/&quot;&gt;modernizr&lt;/a&gt;, but I want to keep our &lt;a href=&quot;http://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; CSS efforts away from javascript. Is there a way to query a touch screen with CSS? Spoiler alert: the answer is yes!&lt;/p&gt;
+
+&lt;h2 id=&quot;interaction-media-features&quot;&gt;Interaction Media Features&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.w3.org/Style/CSS/members.en.php3&quot;&gt;The nice people at the W3C CSS Working Group&lt;/a&gt; have been guiding the CSS community to a solution.&lt;/p&gt;
+
+&lt;p&gt;On the &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/&quot;&gt;Media Queries Level 4 Working Draft&lt;/a&gt; there is a spec for &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#mf-interaction&quot;&gt;Interaction Media Features&lt;/a&gt; that includes three definitions: &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#pointer&quot;&gt;Pointing Device Quality&lt;/a&gt;, &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#hover&quot;&gt;Hover Capability&lt;/a&gt; and &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#any-input&quot;&gt;Rare Interaction Capabilities&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Together they allows a media query to be set based on the presence and accuracy of the user’s pointing device, and whether they have the ability to hover over elements on the page.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a close look at each one of them.&lt;/p&gt;
+
+&lt;h3 id=&quot;pointing-device-quality-the-pointer-feature&quot;&gt;Pointing Device Quality: the pointer feature&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The pointer media feature is used to query about the presence and accuracy of a pointing device such as a mouse. If a device has multiple input mechanisms, the pointer media feature must reflect the characteristics of the “primary” input mechanism, as determined by the user agent.” - W3C&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The key word here is “accuracy” of the pointing device.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A mouse or a drawing styluses is very accurate and it takes the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;fine&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;A finger or a Kinect peripheral isn’t, and it takes the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;coarse&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Therefore we can detect if a screen is touch with a simple media query. This is useful for example to make hit areas larger if the user has a touch screen.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coarse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;hover-capability-the-hover-feature&quot;&gt;Hover Capability: the hover feature&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The hover media feature is used to query the user’s ability to hover over elements on the page. If a device has multiple input mechanisms, the hover media feature must reflect the characteristics of the “primary” input mechanism, as determined by the user agent.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s important to notice that it only evaluates the primary input device. A device with multiple input mechanisms that’s able to hover will query as “none”.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“For example, a touchscreen where a long press is treated as hovering would match hover: none.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A touch screen device where the primary point system is the finger and can’t hover will take the value of “none”&lt;/li&gt;
+  &lt;li&gt;A device where the primary input is mouse and can easily hover parts of the page takes the value of “hover”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A classic example to use this query is a dropdown menu.&lt;/p&gt;
+
+&lt;h3 id=&quot;rare-interaction-capabilities-the-any-pointer-and-any-hover-features&quot;&gt;Rare Interaction Capabilities: the any-pointer and any-hover features&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The any-pointer and any-hover media features are identical to the pointer and hover media features, but they correspond to the union of capabilities of all the pointing devices available to the user. More than one of their values can match, if different pointing devices have different characteristics. They must only match none if all of the pointing devices would match none for the corresponding query, or there are no pointing devices at all.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is rarely used. An example can be a touch TV that also has a pointer device.&lt;/p&gt;
+
+&lt;h3 id=&quot;device-examples&quot;&gt;Device examples&lt;/h3&gt;
+
+&lt;p&gt;Typical examples of devices matching combinations of pointer and hover:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pointer: coarse&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pointer: fine&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hover: none&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;smartphones, touch screens&lt;/td&gt;
+      &lt;td&gt;stylus-based screens (Cintiq, Wacom, etc)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hover: hover&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Nintendo Wii controller, Kinect&lt;/td&gt;
+      &lt;td&gt;mouse, touch pad&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This is really cool, right? I hear you shouting: what about browser support?&lt;/p&gt;
+
+&lt;h2 id=&quot;browser-support-isnt-poop-at-all&quot;&gt;Browser support isn’t :poop: at all!&lt;/h2&gt;
+
+&lt;p&gt;Even though this is a working draft it has &lt;a href=&quot;http://caniuse.com/#feat=css-media-interaction&quot;&gt;pretty good support&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://codepen.io/andresgalante/pen/bBEJKg?editors=0100&quot;&gt;My simple test&lt;/a&gt; proved successful on Chrome, Chrome for Android, Safari, Edge, Opera, Samsung browser and Android Browser but it didn’t work on FireFox, Opera Mini or IE.&lt;/p&gt;
+
+&lt;p data-height=&quot;297&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;bBEJKg&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;andresgalante&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Pointer&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/bBEJKg/&quot;&gt;Pointer&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;FireFox and IE &lt;a href=&quot;https://www.netmarketshare.com/browser-market-share.aspx?qprid=0&amp;amp;qpcustomd=1&quot;&gt;represent only a bit more than 2% mobile/tablet browser market share&lt;/a&gt;. I couldn’t find information about touch TVs or other touch screens devices that are not mobile or tablets.&lt;/p&gt;
+
+&lt;p&gt;I think we are ready to take the progressive engagement approach with this feature, and as FireFox adds support for it and IE dies once and for all we will have full support.&lt;/p&gt;
+
+&lt;h2 id=&quot;have-i-mention-that-front-end-development-is-a-bitch&quot;&gt;Have I mention that front end development is a bitch?&lt;/h2&gt;
+
+&lt;p&gt;This exponentially opens the door to exciting new challenges (and by “challenges” I mean “problems”).&lt;/p&gt;
+
+&lt;p&gt;The obvious immediate enhancement on our UIs are around click zones with &lt;code class=&quot;highlighter-rouge&quot;&gt;pointer&lt;/code&gt; and dropdowns with &lt;code class=&quot;highlighter-rouge&quot;&gt;hover&lt;/code&gt;. But I am sure there are nifty mysterious ways to use these features that people smarter than me (and I am pointing at you Jenn and Sarah again) will discover.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 Nov 2016 08:00:00 -0300</pubDate>
+        <link>http://andresgalante.github.io/css/2016/11/13/interaction-media.html</link>
+        <guid isPermaLink="true">http://andresgalante.github.io/css/2016/11/13/interaction-media.html</guid>
+        
+        <category>css</category>
+        
+        <category>design</category>
+        
+        <category>patternfly</category>
+        
+        
+        <category>css</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>The Tree of Wisdom</title>
@@ -840,64 +978,6 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
         <pubDate>Mon, 04 Jan 2016 20:05:36 -0300</pubDate>
         <link>http://andresgalante.github.io/design/2016/01/04/happy-new-year.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/design/2016/01/04/happy-new-year.html</guid>
-        
-        <category>design</category>
-        
-        <category>ux</category>
-        
-        <category>users</category>
-        
-        <category>developer</category>
-        
-        <category>designer</category>
-        
-        
-        <category>design</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Enterprise UX: Talk the talk</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/enteprise/enteprise.jpg&quot; alt=&quot;Enterprise UX: Talk the talk&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve been working at Red Hat for one year now, and it has been an superb year. I’ve met and work alongside smart capable people and learn something new every week.&lt;/p&gt;
-
-&lt;p&gt;This week wasn’t different.&lt;/p&gt;
-
-&lt;p&gt;I started it frustrated because a product manager couldn’t understand the importance of a design change I wanted to implement. Annoyed with it I though to myself that they don’t know better and decided to forget about it, even though I was sure the change was necessary.&lt;/p&gt;
-
-&lt;p&gt;Probably anyone working on an enterprise environment confronts situations like this one every day, that’s why I asked Catherine for advice. And she sent this lines:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“I think this is the type of thing that brings you from a good designer to a great designer in an enterprise environment. You have to learn how to communicate your design wants with each of the the different stakeholders in the company in their terms.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In a way it took me back to my freelancer days, when I was a one man show. Catherine is right, the enterprise environment is unique, and communication is key to achieve anything.&lt;/p&gt;
-
-&lt;h2 id=&quot;communicate-clearly&quot;&gt;Communicate clearly&lt;/h2&gt;
-
-&lt;p&gt;Last week &lt;a href=&quot;https://twitter.com/qhjj1990/status/669342859905122304&quot;&gt;Josephine twitted&lt;/a&gt; an excellent presentation about enterprise UX project by Erik von Stackelberg where he describe what enterprise applications are, why they are bad and how we can improve them. And of course he mentions the importance of having empathy and excellent communication skills.&lt;/p&gt;
-
-&lt;p&gt;You could argue that those are qualities any person working on an enterprise environment should have, but design is different is one very important way: It is almost impossible to mesure design.&lt;/p&gt;
-
-&lt;p&gt;A sales person can show sales numbers, a coder can show better performance, but a better user experience is something very hard to prove and the results are only shown in the long run.&lt;/p&gt;
-
-&lt;h2 id=&quot;communicate-in-their-terms&quot;&gt;Communicate in their terms&lt;/h2&gt;
-
-&lt;p&gt;We all want the product we work on to succeed and it is my fault that the product manager didn’t understand the importance of the design change I wanted to implement.&lt;/p&gt;
-
-&lt;p&gt;I was unable to communicate the idea in his terms.&lt;/p&gt;
-
-&lt;p&gt;A great enterprise designer knows how to talk conversion rates to a marketing person, sells to a sale person, business goals to a product manager and performance to a developer, all in the name of giving the users a good experience.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 30 Nov 2015 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2015/11/30/enteprise-designer.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2015/11/30/enteprise-designer.html</guid>
         
         <category>design</category>
         
