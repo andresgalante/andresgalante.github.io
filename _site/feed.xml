@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Nov 2016 09:34:28 -0300</pubDate>
-    <lastBuildDate>Mon, 14 Nov 2016 09:34:28 -0300</lastBuildDate>
+    <pubDate>Mon, 14 Nov 2016 09:38:15 -0300</pubDate>
+    <lastBuildDate>Mon, 14 Nov 2016 09:38:15 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -129,7 +129,7 @@
 
 &lt;p&gt;The obvious immediate enhancement on our UIs are around click zones with &lt;code class=&quot;highlighter-rouge&quot;&gt;pointer&lt;/code&gt; and dropdowns with &lt;code class=&quot;highlighter-rouge&quot;&gt;hover&lt;/code&gt;. But I am sure there are nifty mysterious ways to use these features that people smarter than me (and I am pointing at you Jenn and Sarah again) will discover.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 13 Nov 2016 08:00:00 -0300</pubDate>
+        <pubDate>Sun, 13 Nov 2016 07:00:00 -0300</pubDate>
         <link>http://andresgalante.github.io/css/2016/11/13/interaction-media.html</link>
         <guid isPermaLink="true">http://andresgalante.github.io/css/2016/11/13/interaction-media.html</guid>
         
