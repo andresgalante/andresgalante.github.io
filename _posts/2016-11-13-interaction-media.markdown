@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Just because a device is large, it doesn't mean he doesn't want to be touched"
+title:  "Just because a device is large, he doesn't mean he doesn't want to be touched"
 date:   2016-11-13 10:00:00
 categories: css
 tags: css design patternfly

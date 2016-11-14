@@ -6,12 +6,12 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Nov 2016 09:43:31 -0300</pubDate>
-    <lastBuildDate>Mon, 14 Nov 2016 09:43:31 -0300</lastBuildDate>
+    <pubDate>Mon, 14 Nov 2016 09:43:44 -0300</pubDate>
+    <lastBuildDate>Mon, 14 Nov 2016 09:43:44 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>Just because a device is large, it doesn't mean he doesn't want to be touched</title>
+        <title>Just because a device is large, he doesn't mean he doesn't want to be touched</title>
         <description>&lt;p&gt;&lt;img src=&quot;/img/touch/touch.jpg&quot; alt=&quot;Touch screens media query&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Let’s face it, front end development is a bitch.&lt;/p&gt;
