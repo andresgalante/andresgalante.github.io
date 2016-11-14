@@ -88,9 +88,8 @@ Even though this is a working draft it has [pretty good support](http://caniuse.
 
 [My simple test](http://codepen.io/andresgalante/pen/bBEJKg?editors=0100) proved successful on Chrome, Chrome for Android, Safari, Edge, Opera, Samsung browser and Android Browser but it didn’t work on FireFox, Opera Mini or IE.
 
-
-<p data-height="300" data-theme-id="20015" data-slug-hash="bBEJKg" data-default-tab="css,result" data-user="andresgalante" data-embed-version="2" data-pen-title="Touch screen test" class="codepen">See the Pen <a href="https://codepen.io/andresgalante/pen/bBEJKg/">Touch screen test</a> by Andres Galante (<a href="http://codepen.io/andresgalante">@andresgalante</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='Touch screen test' src='//codepen.io/andresgalante/embed/bBEJKg/?height=300&theme-id=20015&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
 
 FireFox and IE [represent only a bit more than 2% mobile/tablet browser market share](https://www.netmarketshare.com/browser-market-share.aspx?qprid=0&qpcustomd=1). I couldn’t find information about touch TVs or other touch screens devices that are not mobile or tablets.
 
