@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Nov 2016 16:15:10 -0300</pubDate>
-    <lastBuildDate>Sun, 13 Nov 2016 16:15:10 -0300</lastBuildDate>
+    <pubDate>Mon, 14 Nov 2016 09:34:28 -0300</pubDate>
+    <lastBuildDate>Mon, 14 Nov 2016 09:34:28 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -116,8 +116,8 @@
 
 &lt;p&gt;&lt;a href=&quot;http://codepen.io/andresgalante/pen/bBEJKg?editors=0100&quot;&gt;My simple test&lt;/a&gt; proved successful on Chrome, Chrome for Android, Safari, Edge, Opera, Samsung browser and Android Browser but it didn’t work on FireFox, Opera Mini or IE.&lt;/p&gt;
 
-&lt;p data-height=&quot;297&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;bBEJKg&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;andresgalante&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Pointer&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/andresgalante/pen/bBEJKg/&quot;&gt;Pointer&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p data-height=&quot;300&quot; data-theme-id=&quot;20015&quot; data-slug-hash=&quot;bBEJKg&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;andresgalante&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Touch screen test&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/andresgalante/pen/bBEJKg/&quot;&gt;Touch screen test&lt;/a&gt; by Andres Galante (&lt;a href=&quot;http://codepen.io/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;async&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;FireFox and IE &lt;a href=&quot;https://www.netmarketshare.com/browser-market-share.aspx?qprid=0&amp;amp;qpcustomd=1&quot;&gt;represent only a bit more than 2% mobile/tablet browser market share&lt;/a&gt;. I couldn’t find information about touch TVs or other touch screens devices that are not mobile or tablets.&lt;/p&gt;
 
