@@ -28,7 +28,7 @@ We know we can detect touch screens with tools like [modernizr](https://moderniz
 
 On the [Media Queries Level 4 Working Draft](https://drafts.csswg.org/mediaqueries/) there is a spec for [Interaction Media Features](https://drafts.csswg.org/mediaqueries/#mf-interaction) that includes three definitions: [Pointing Device Quality](https://drafts.csswg.org/mediaqueries/#pointer), [Hover Capability](https://drafts.csswg.org/mediaqueries/#hover) and [Rare Interaction Capabilities](https://drafts.csswg.org/mediaqueries/#any-input).
 
-Together they allows a media query to be set based on the presence and accuracy of the user's pointing device, and whether they have the ability to hover over elements on the page.
+Together they allow a media query to be set based on the presence and accuracy of the user's pointing device, and whether they have the ability to hover over elements on the page.
 
 Let’s take a close look at each one of them.
 

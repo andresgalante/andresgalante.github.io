@@ -6,8 +6,8 @@
 </description>
     <link>http://andresgalante.github.io/</link>
     <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Nov 2016 11:11:49 -0300</pubDate>
-    <lastBuildDate>Mon, 14 Nov 2016 11:11:49 -0300</lastBuildDate>
+    <pubDate>Mon, 14 Nov 2016 11:11:59 -0300</pubDate>
+    <lastBuildDate>Mon, 14 Nov 2016 11:11:59 -0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -32,7 +32,7 @@
 
 &lt;p&gt;On the &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/&quot;&gt;Media Queries Level 4 Working Draft&lt;/a&gt; there is a spec for &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#mf-interaction&quot;&gt;Interaction Media Features&lt;/a&gt; that includes three definitions: &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#pointer&quot;&gt;Pointing Device Quality&lt;/a&gt;, &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#hover&quot;&gt;Hover Capability&lt;/a&gt; and &lt;a href=&quot;https://drafts.csswg.org/mediaqueries/#any-input&quot;&gt;Rare Interaction Capabilities&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Together they allows a media query to be set based on the presence and accuracy of the user’s pointing device, and whether they have the ability to hover over elements on the page.&lt;/p&gt;
+&lt;p&gt;Together they allow a media query to be set based on the presence and accuracy of the user’s pointing device, and whether they have the ability to hover over elements on the page.&lt;/p&gt;
 
 &lt;p&gt;Let’s take a close look at each one of them.&lt;/p&gt;
 
