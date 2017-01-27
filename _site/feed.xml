@@ -4,11 +4,101 @@
     <title>Andres Galante</title>
     <description>This is Andrés Galantes personal blog. Cyclist, dad, designer, diver, entrepreneur, frontend coder,  guitarist, redhatter, husband and tenis player (in alphabetical order).
 </description>
-    <link>http://andresgalante.github.io/</link>
-    <atom:link href="http://andresgalante.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Nov 2016 11:11:59 -0300</pubDate>
-    <lastBuildDate>Mon, 14 Nov 2016 11:11:59 -0300</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 27 Jan 2017 13:23:01 -0300</pubDate>
+    <lastBuildDate>Fri, 27 Jan 2017 13:23:01 -0300</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Lost in font-size translation</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/font-size/font-size.jpg&quot; alt=&quot;Font size pixels to rems&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Beginnings are never easy and setting good foundations for a project is key to avoid
+headaches down the road.&lt;/p&gt;
+
+&lt;p&gt;That’s why the CSS Army decided to use relative units to measure typography (and
+everything else except from borders) to develop the CSS of the latest version of
+PatternFly.&lt;/p&gt;
+
+&lt;h2 id=&quot;rems&quot;&gt;Rems&lt;/h2&gt;
+
+&lt;p&gt;We measure fonts-sizes in rems.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“rem values are relative to the root html element.”&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/CSS/font-size#Rems&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example if the root html is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;20px&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;1rem = 20 px&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The trick is to avoid hard coding a font-size for the html element. That way
+1rem will be equal to the font size base of the browser. In most cases it’s
+&lt;code class=&quot;highlighter-rouge&quot;&gt;16px&lt;/code&gt;, but users can set it larger or smaller, or browsers can have a larger or
+smaller root font size according to its environment.&lt;/p&gt;
+
+&lt;p&gt;By using rems the typography hierarchy changes proportionally following the
+browser’s setting.&lt;/p&gt;
+
+&lt;p&gt;It sounds awesome, right? Well… there is one challenge.&lt;/p&gt;
+
+&lt;p&gt;Photoshop can’t do font-sizes in rems. And when the visual designers delivers a
+mock up with a font-size in &lt;code class=&quot;highlighter-rouge&quot;&gt;px&lt;/code&gt; we need to find a way to express it in &lt;code class=&quot;highlighter-rouge&quot;&gt;rems&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;math-and-sass-to-the-rescue&quot;&gt;Math and Sass to the rescue&lt;/h2&gt;
+
+&lt;p&gt;With a little bit of math, the translation from px to rem is easy. First we
+create a variable to set a value for the root. We don’t apply this value to any
+element, it works just as a reference point.&lt;/p&gt;
+
+&lt;p&gt;Since most browsers font size base is &lt;code class=&quot;highlighter-rouge&quot;&gt;16px&lt;/code&gt;, then the font-size-root variable is
+&lt;code class=&quot;highlighter-rouge&quot;&gt;16&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pf-font-size-root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Let’s say the &lt;code class=&quot;highlighter-rouge&quot;&gt;h1&lt;/code&gt; is defined to &lt;code class=&quot;highlighter-rouge&quot;&gt;24px&lt;/code&gt; on photoshop. So &lt;code class=&quot;highlighter-rouge&quot;&gt;24&lt;/code&gt; divided by the root font
+size, in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;16&lt;/code&gt;, is &lt;code class=&quot;highlighter-rouge&quot;&gt;1.5&lt;/code&gt;. Therefore &lt;code class=&quot;highlighter-rouge&quot;&gt;24px = 1.5rem&lt;/code&gt;. Then we
+multiply it by &lt;code class=&quot;highlighter-rouge&quot;&gt;1rem&lt;/code&gt; to add the unit.&lt;/p&gt;
+
+&lt;p&gt;The sass formula end up been:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pf-font-size-root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;1rem&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Putting it all together it looks like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;font-size-root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h1-font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;font-size-root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;1rem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1-font-size&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;its-like-cheating&quot;&gt;It’s like cheating&lt;/h2&gt;
+
+&lt;p&gt;We are using this technique to set font-sizes, margins and paddings and it has
+yield excellent results.&lt;/p&gt;
+
+&lt;p&gt;It’s not like cheating, it is cheating. It is also the best way to reproduce
+Photoshop image in code maintaining the benefits of relative units.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 27 Jan 2017 07:00:00 -0300</pubDate>
+        <link>http://localhost:4000/css/2017/01/27/font-size.html</link>
+        <guid isPermaLink="true">http://localhost:4000/css/2017/01/27/font-size.html</guid>
+        
+        <category>css</category>
+        
+        <category>design</category>
+        
+        <category>patternfly</category>
+        
+        
+        <category>css</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Just because a device is large, it doesn't mean it doesn't want to be touched</title>
@@ -130,8 +220,8 @@
 &lt;p&gt;The obvious immediate enhancement on our UIs are around click zones with &lt;code class=&quot;highlighter-rouge&quot;&gt;pointer&lt;/code&gt; and dropdowns with &lt;code class=&quot;highlighter-rouge&quot;&gt;hover&lt;/code&gt;. But I am sure there are nifty mysterious ways to use these features that people smarter than me (and I am pointing at you Jenn and Sarah again) will discover.&lt;/p&gt;
 </description>
         <pubDate>Sun, 13 Nov 2016 07:00:00 -0300</pubDate>
-        <link>http://andresgalante.github.io/css/2016/11/13/interaction-media.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/css/2016/11/13/interaction-media.html</guid>
+        <link>http://localhost:4000/css/2016/11/13/interaction-media.html</link>
+        <guid isPermaLink="true">http://localhost:4000/css/2016/11/13/interaction-media.html</guid>
         
         <category>css</category>
         
@@ -187,8 +277,8 @@
 &lt;p&gt;Just like PatternFly, the decision tree is not set in stone. Both are living resources that will evolve as we care for them and give them love.&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Nov 2016 08:00:00 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2016/11/09/patternfly-decision-tree.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2016/11/09/patternfly-decision-tree.html</guid>
+        <link>http://localhost:4000/patternfly/2016/11/09/patternfly-decision-tree.html</link>
+        <guid isPermaLink="true">http://localhost:4000/patternfly/2016/11/09/patternfly-decision-tree.html</guid>
         
         <category>design</category>
         
@@ -252,8 +342,8 @@ Benjamin Franklin&lt;/p&gt;
 &lt;p&gt;Great leaders are not born or appointed, they are chosen. If I ever earn that privilege, I wish I can be as good as the ones I follow and admire.&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Oct 2016 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/random/2016/10/23/patternfly-spaces.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/random/2016/10/23/patternfly-spaces.html</guid>
+        <link>http://localhost:4000/random/2016/10/23/patternfly-spaces.html</link>
+        <guid isPermaLink="true">http://localhost:4000/random/2016/10/23/patternfly-spaces.html</guid>
         
         <category>random</category>
         
@@ -350,8 +440,8 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
 &lt;p&gt;If you want to join the talented &lt;strong&gt;UXD CSS Army:heart:&lt;/strong&gt; send an email to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#112;&amp;#097;&amp;#116;&amp;#116;&amp;#101;&amp;#114;&amp;#110;&amp;#102;&amp;#108;&amp;#121;&amp;#064;&amp;#114;&amp;#101;&amp;#100;&amp;#104;&amp;#097;&amp;#116;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;the PatterFly mailing list&lt;/a&gt;, contact us on the &lt;a href=&quot;http://patternfly.slack.com&quot;&gt;Slack&lt;/a&gt; or &lt;a href=&quot;http://webchat.freenode.net/?channels=#patternfly&quot;&gt;IRC channel&lt;/a&gt;, or just &lt;a href=&quot;https://github.com/patternfly/patternfly-atomic&quot;&gt;fork the repo&lt;/a&gt; and send us a PR :smile:&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Oct 2016 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/patternfly/2016/10/22/five-traits-about-leadership.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/patternfly/2016/10/22/five-traits-about-leadership.html</guid>
+        <link>http://localhost:4000/patternfly/2016/10/22/five-traits-about-leadership.html</link>
+        <guid isPermaLink="true">http://localhost:4000/patternfly/2016/10/22/five-traits-about-leadership.html</guid>
         
         <category>news</category>
         
@@ -429,8 +519,8 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
 &lt;!-- There is room to improvements on the choice of local speakers. Ami Reynosos presentation had very good content, but to me the rest of them were not up to the standards. Maybe the bar was just too high. --&gt;
 </description>
         <pubDate>Mon, 08 Aug 2016 16:34:20 -0300</pubDate>
-        <link>http://andresgalante.github.io/random/2016/08/08/CSS-Conf-Argentina.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/random/2016/08/08/CSS-Conf-Argentina.html</guid>
+        <link>http://localhost:4000/random/2016/08/08/CSS-Conf-Argentina.html</link>
+        <guid isPermaLink="true">http://localhost:4000/random/2016/08/08/CSS-Conf-Argentina.html</guid>
         
         <category>css</category>
         
@@ -539,8 +629,8 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
 &lt;p&gt;And you can &lt;a href=&quot;http://blog.andresgalante.com/RGBAtoFeColorMatrix/&quot;&gt;use it here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 09 Jul 2016 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/random/2016/07/09/rgba-to-fecolormatrix.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/random/2016/07/09/rgba-to-fecolormatrix.html</guid>
+        <link>http://localhost:4000/random/2016/07/09/rgba-to-fecolormatrix.html</link>
+        <guid isPermaLink="true">http://localhost:4000/random/2016/07/09/rgba-to-fecolormatrix.html</guid>
         
         <category>howto</category>
         
@@ -779,8 +869,8 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
 &lt;p&gt;If you have questions please contact &lt;a href=&quot;https://www.redhat.com/mailman/listinfo/patternfly&quot;&gt;Patternfly Mailing List&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 May 2016 16:34:20 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2016/05/06/how-to-use-patternfly.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2016/05/06/how-to-use-patternfly.html</guid>
+        <link>http://localhost:4000/howto/2016/05/06/how-to-use-patternfly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/howto/2016/05/06/how-to-use-patternfly.html</guid>
         
         <category>howto</category>
         
@@ -851,8 +941,8 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
 &lt;p&gt;In a way, deep down you are all Argentineans.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Apr 2016 16:34:20 -0300</pubDate>
-        <link>http://andresgalante.github.io/random/2016/04/20/argentina.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/random/2016/04/20/argentina.html</guid>
+        <link>http://localhost:4000/random/2016/04/20/argentina.html</link>
+        <guid isPermaLink="true">http://localhost:4000/random/2016/04/20/argentina.html</guid>
         
         <category>argentina</category>
         
@@ -934,8 +1024,8 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
 &lt;p&gt;Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant without braking.&lt;/p&gt;
 </description>
         <pubDate>Thu, 04 Feb 2016 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/howto/2016/02/04/flexbox.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/howto/2016/02/04/flexbox.html</guid>
+        <link>http://localhost:4000/howto/2016/02/04/flexbox.html</link>
+        <guid isPermaLink="true">http://localhost:4000/howto/2016/02/04/flexbox.html</guid>
         
         <category>design</category>
         
@@ -949,48 +1039,6 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
         
         
         <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Bye bye 2015, welcome 2016</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/new-year/new-year.jpg&quot; alt=&quot;Bye bye 2015, welcome 2016&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;2015 has been a superb year. Looking back, I can’t believe how much has happened.&lt;/p&gt;
-
-&lt;p&gt;It was my first year at Red Hat, which allowed me to work alongside and learn from a bunch of talented people that made me grown a lot as a person. And I couldn’t be happier that I can count some of them as my friends by now.&lt;/p&gt;
-
-&lt;p&gt;I felt in love with open source and had the chance to participate in fun projects.&lt;/p&gt;
-
-&lt;p&gt;I also spoke for the first time in english at DevNation in Boston and in portuguese at Qcon Rio, which opened the doors for my next presentations in english and portuguese at DevNexus and QConSP.&lt;/p&gt;
-
-&lt;p&gt;But thats not all, I started running, started writing this blog, continued working on my personal projects and watched my baby grow into a little boy.&lt;/p&gt;
-
-&lt;p&gt;There is no doubt that I end this year as a better designer. What waits for me in 2016? I don’t know but I can’t wait for it.&lt;/p&gt;
-
-&lt;p&gt;This is a short post and I just wanted to write it to wish all the readers of this blog (yes, both of you) a happy new year!&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 04 Jan 2016 20:05:36 -0300</pubDate>
-        <link>http://andresgalante.github.io/design/2016/01/04/happy-new-year.html</link>
-        <guid isPermaLink="true">http://andresgalante.github.io/design/2016/01/04/happy-new-year.html</guid>
-        
-        <category>design</category>
-        
-        <category>ux</category>
-        
-        <category>users</category>
-        
-        <category>developer</category>
-        
-        <category>designer</category>
-        
-        
-        <category>design</category>
         
         <author>
           <name>Andres Galante</name>

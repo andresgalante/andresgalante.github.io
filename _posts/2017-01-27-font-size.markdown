@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "Lost in font-size translation"
+date:   2017-01-27 10:00:00
+categories: css
+tags: css design patternfly
+---
+
+
+
+![Font size pixels to rems](/img/font-size/font-size.jpg)
+
+Beginnings are never easy and setting good foundations for a project is key to avoid
+headaches down the road.
+
+That’s why the CSS Army decided to use relative units to measure typography (and
+everything else except from borders) to develop the CSS of the latest version of
+PatternFly.
+
+## Rems
+
+We measure fonts-sizes in rems.
+
+> “rem values are relative to the root html element.”
+>
+> [Mozilla Developer Network](https://developer.mozilla.org/en/docs/Web/CSS/font-size#Rems)
+
+
+For example if the root html is set to `20px`, then `1rem = 20 px`.
+
+The trick is to avoid hard coding a font-size for the html element. That way
+1rem will be equal to the font size base of the browser. In most cases it’s
+`16px`, but users can set it larger or smaller, or browsers can have a larger or
+smaller root font size according to its environment.
+
+By using rems the typography hierarchy changes proportionally following the
+browser's setting.
+
+It sounds awesome, right? Well... there is one challenge.
+
+Photoshop can’t do font-sizes in rems. And when the visual designers delivers a
+mock up with a font-size in `px` we need to find a way to express it in `rems`.
+
+## Math and Sass to the rescue
+
+With a little bit of math, the translation from px to rem is easy. First we
+create a variable to set a value for the root. We don’t apply this value to any
+element, it works just as a reference point.
+
+Since most browsers font size base is `16px`, then the font-size-root variable is
+`16`:
+
+
+{% highlight css %}
+$pf-font-size-root = 16;
+{% endhighlight %}
+
+Let’s say the `h1` is defined to `24px` on photoshop. So `24` divided by the root font
+size, in this case `16`, is `1.5`. Therefore `24px = 1.5rem`. Then we
+multiply it by `1rem` to add the unit.
+
+The sass formula end up been:
+
+{% highlight css %}
+(24 / $pf-font-size-root) * 1rem
+{% endhighlight %}
+
+
+Putting it all together it looks like this:
+
+
+{% highlight css %}
+$font-size-root: 16;
+$h1-font-size: (24 / $font-size-root) * 1rem;
+
+h1 { font-size: $h1-font-size }
+{% endhighlight %}
+
+
+## It’s like cheating
+
+We are using this technique to set font-sizes, margins and paddings and it has
+yield excellent results.
+
+It’s not like cheating, it is cheating. It is also the best way to reproduce
+Photoshop image in code maintaining the benefits of relative units.
+
+
