@@ -52,17 +52,16 @@ Since most browsers font size base is `16px`, then the font-size-root variable i
 
 
 {% highlight css %}
-$pf-font-size-root = 16;
+$font-size-root = 16;
 {% endhighlight %}
 
-Let’s say the `h1` is defined to `24px` on photoshop. So `24` divided by the root font
-size, in this case `16`, is `1.5`. Therefore `24px = 1.5rem`. Then we
-multiply it by `1rem` to add the unit.
+
+Let’s say that the visual designer sets the h1 to 24px. If this equation is true [24 = 24/16 * 16], then this is also true [24 = (24 / $font-size-root) * 1rem] since $font-size-root and 1rem represent the same value. Additionally, since (24 / $font-size-root) yields a numeric value of 1.5 without a unit, multiplying this value by 1rem provides the rem unit, making the final result of this equation 1.5rem.
 
 The sass formula end up been:
 
 {% highlight css %}
-(24 / $pf-font-size-root) * 1rem
+(24 / $font-size-root) * 1rem
 {% endhighlight %}
 
 
@@ -80,7 +79,7 @@ h1 { font-size: $h1-font-size }
 ## It’s like cheating
 
 We are using this technique to set font-sizes, margins and paddings and it has
-yield excellent results.
+yielded excellent results.
 
 It’s not like cheating, it is cheating. It is also the best way to reproduce
 Photoshop image in code maintaining the benefits of relative units.
