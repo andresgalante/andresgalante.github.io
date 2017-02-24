@@ -14,3 +14,5 @@ My name is **Andrés Galante**. I am a Designer who works and lives in Buenos Ai
 I am currently part of the **User Experience Designer Team at [Red Hat](http://www.redhat.com/)**, plus I am **Co-Founder and Designer at [Outclass](http://outclassapp.com/)**. I am always looking for new adventures, if you have one lets talk:
 
 Send me a line [a@andresgalante.com](mailto:a@andresgalante.com) or call me [+54 911 3593 9333](tel:+54 911 3593 9333).
+
+**Twitter:** [@andresgalante](https://twitter.com/andresgalante)
