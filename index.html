@@ -3,21 +3,36 @@ layout: default
 ---
 
 <div class="home">
-  
+
 
   <!-- <h1 class="page-heading">Posts</h1> -->
-  
+
 
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
+
+        {% if post.external_url %}
+        <a class="post-link post-external" href="{{ post.external_url }}">
+          <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+          <h2>
+            {{ post.title }}
+          </h2>
+        </a>
+
+        {% else %}
+
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
           <h2>
             {{ post.title }}
           </h2>
         </a>
+
+        {% endif %}
+
+
       </li>
     {% endfor %}
   </ul>
@@ -25,8 +40,3 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
-
-
-
-
-

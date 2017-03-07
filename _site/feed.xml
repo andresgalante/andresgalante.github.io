@@ -6,9 +6,32 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Feb 2017 17:48:06 -0300</pubDate>
-    <lastBuildDate>Fri, 24 Feb 2017 17:48:06 -0300</lastBuildDate>
+    <pubDate>Tue, 07 Mar 2017 11:19:59 -0300</pubDate>
+    <lastBuildDate>Tue, 07 Mar 2017 11:19:59 -0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Touch devices should not be judged by their size</title>
+        <description>
+</description>
+        <pubDate>Mon, 27 Feb 2017 07:00:00 -0300</pubDate>
+        <link>http://localhost:4000/css/2017/02/27/touch-devices-not-judged-size.html</link>
+        <guid isPermaLink="true">http://localhost:4000/css/2017/02/27/touch-devices-not-judged-size.html</guid>
+        
+        <category>css</category>
+        
+        <category>design</category>
+        
+        <category>patternfly</category>
+        
+        
+        <category>css</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Lost in font-size translation</title>
@@ -950,93 +973,6 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
         
         
         <category>random</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Building robust components with flexbox</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/flexbox/flexbox.png&quot; alt=&quot;List View Pattern&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve recently have the chance to help coding &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFlys&lt;/a&gt; &lt;a href=&quot;https://rawgit.com/patternfly/patternfly/master/tests/list-view.html&quot;&gt;List View component&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;On a first glance it seems straight forward: just a list of inline elements. But at PatternFly we are designers and we take spaces and alignment very seriously.&lt;/p&gt;
-
-&lt;p&gt;That’s the tricky part: How to build an (almost) pixel perfect component that’s robust enough to accommodate any amount of content, have different variations, keep vertical alignment and that can fit any scenario?&lt;/p&gt;
-
-&lt;p&gt;First you need a very robust HTML structure. You could say that &lt;a href=&quot;https://github.com/patternfly/patternfly/blob/master/less/list-view.less&quot;&gt;List View&lt;/a&gt; has two more divs than it should, but I just couldn’t think of a lighter solution considering that PatternFly uses a fluid grid and we can’t predict the amount of information this structure will contain.&lt;/p&gt;
-
-&lt;p&gt;And to style it the answer is, of course, &lt;code class=&quot;highlighter-rouge&quot;&gt;flexbox&lt;/code&gt;!&lt;/p&gt;
-
-&lt;h2 id=&quot;the-future-is-today&quot;&gt;The future is today!&lt;/h2&gt;
-
-&lt;p&gt;Do I hear someone shouting “What about IE9 and 10 users?” well, I am glad you’ve asked.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;flexbox&lt;/code&gt; can be combined with &lt;code class=&quot;highlighter-rouge&quot;&gt;floats&lt;/code&gt;. A browser that supports &lt;code class=&quot;highlighter-rouge&quot;&gt;flexbox&lt;/code&gt; will ignore the &lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; statement. And IE9 will just be unable to read &lt;code class=&quot;highlighter-rouge&quot;&gt;flex&lt;/code&gt; and use the &lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt; fallback.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flexbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;IE10 uses the old syntax of &lt;code class=&quot;highlighter-rouge&quot;&gt;flexbox&lt;/code&gt; and it doesn’t understand any align propriety: &lt;code class=&quot;highlighter-rouge&quot;&gt;align-content&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;align-items&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;align-self&lt;/code&gt; limiting vertical alignment.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-ms-flexbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE10 */&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flexbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;-ms-flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE10 */&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;      &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* fallback for &amp;gt; IE9 */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;autoprefixer&quot;&gt;Autoprefixer&lt;/h2&gt;
-
-&lt;p&gt;An easier option to add “old school” flexbox without worrying about it, is using &lt;a href=&quot;https://github.com/postcss/autoprefixer&quot;&gt;Autoprefixer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/postcss/autoprefixer&quot;&gt;Autoprefixer&lt;/a&gt; parses CSS files and adds vendor prefixes to CSS rules using the Can I Use database to determine which prefixes are needed.&lt;/p&gt;
-
-&lt;p&gt;All you have to do is add it to your asset building tool (Grunt, for instance) and you can totally forget about CSS vendor prefixes hell.&lt;/p&gt;
-
-&lt;p&gt;Thanks Autoprefixer.&lt;/p&gt;
-
-&lt;h2 id=&quot;gracefully-degrades&quot;&gt;Gracefully degrades&lt;/h2&gt;
-
-&lt;p&gt;If IE9 and 10 users are critical for your app, you should probably avoid this technique. They’ll have a different but acceptable experience.&lt;/p&gt;
-
-&lt;p&gt;In the case of the list view component, they’ll see all the elements vertically align on the top instead of on the center.&lt;/p&gt;
-
-&lt;p&gt;Vertical alignment on IE9 and 10 is a price I am willing to pay for a structure that can fit an elephant without braking.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 04 Feb 2016 20:05:36 -0300</pubDate>
-        <link>http://localhost:4000/howto/2016/02/04/flexbox.html</link>
-        <guid isPermaLink="true">http://localhost:4000/howto/2016/02/04/flexbox.html</guid>
-        
-        <category>design</category>
-        
-        <category>html</category>
-        
-        <category>css</category>
-        
-        <category>patternfly</category>
-        
-        <category>flexbox</category>
-        
-        
-        <category>howto</category>
         
         <author>
           <name>Andres Galante</name>

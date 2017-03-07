@@ -154,13 +154,15 @@ pre {
 /**
  * Icons
  */
-.icon > svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: rgba(0, 0, 0, 0.54); }
+.icon {
+  margin-left: 2em; }
+  .icon > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle; }
+    .icon > svg path {
+      fill: rgba(0, 0, 0, 0.54); }
 
 /**
  * Site header
@@ -234,6 +236,16 @@ pre {
   text-align: center; }
   .site-footer p {
     margin: 0; }
+  .site-footer a {
+    text-decoration: none;
+    margin-bottom: .6em;
+    display: inline-block; }
+    .site-footer a:first-child {
+      margin-right: 1.5em; }
+    .site-footer a:hover {
+      color: #fff; }
+    .site-footer a .icon {
+      margin: 0; }
 
 .avatar {
   margin: -70px 0 15px 0; }

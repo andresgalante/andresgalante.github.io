@@ -108,13 +108,26 @@
     margin-left: $spacing-unit;
     margin-right: $spacing-unit;
     text-align: center;
-    p{
+    p {
       margin: 0;
+    }
+    a {
+      text-decoration: none;
+      margin-bottom: .6em;
+      display: inline-block;
+      &:first-child {
+        margin-right: 1.5em;
+      }
+      &:hover {
+        color: #fff;
+      }
+      .icon {
+        margin: 0;
+      }
     }
 }
 
 .avatar{
-//  background: red;
   margin: (-$spacing-unit - 40px) 0 ($spacing-unit / 2) 0;
 
   img{
@@ -336,5 +349,5 @@ table, td, th, th {
 }
 
 td, th, th {
- padding: 10px; 
+ padding: 10px;
 }

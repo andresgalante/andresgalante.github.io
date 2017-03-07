@@ -42,7 +42,7 @@ img {
     max-width:  $content-width;
     vertical-align: middle;
     margin: $spacing-unit (-$spacing-unit);
-    box-shadow: 0 0 4px $grey-color-border; 
+    box-shadow: 0 0 4px $grey-color-border;
  //   border: 1px solid $grey-color-border;
     border-radius: 4px;
     display: block;
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6, strong {
 em{
   font-weight: 800;
   font-style: normal;
-  
+
 }
 
 
@@ -214,6 +214,8 @@ pre {
  * Icons
  */
 .icon {
+
+    margin-left: 2em;
 
     > svg {
         display: inline-block;
