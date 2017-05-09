@@ -6,9 +6,32 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Mar 2017 11:19:59 -0300</pubDate>
-    <lastBuildDate>Tue, 07 Mar 2017 11:19:59 -0300</lastBuildDate>
+    <pubDate>Tue, 09 May 2017 09:23:03 -0300</pubDate>
+    <lastBuildDate>Tue, 09 May 2017 09:23:03 -0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Mobile, Small, Portrait, Slow, Interlace, Monochrome, Coarse, Non-Hover, First</title>
+        <description>
+</description>
+        <pubDate>Fri, 05 May 2017 07:00:00 -0300</pubDate>
+        <link>http://localhost:4000/css/2017/05/05/mobile-small-portrait-slow-interlace-monochrome-coarse-non-hover-first.html</link>
+        <guid isPermaLink="true">http://localhost:4000/css/2017/05/05/mobile-small-portrait-slow-interlace-monochrome-coarse-non-hover-first.html</guid>
+        
+        <category>css</category>
+        
+        <category>design</category>
+        
+        <category>patternfly</category>
+        
+        
+        <category>css</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Touch devices should not be judged by their size</title>
@@ -905,74 +928,6 @@ This year I’ve been lucky enough to be part of the team building the Red Hat k
         
         
         <category>howto</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>Everything you should know about Argentina</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/argentina/argentina.jpg&quot; alt=&quot;Patternfly Charts&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is the script for a 5 minute &lt;a href=&quot;http://www.ignitetalks.io/&quot;&gt;ignite talk&lt;/a&gt; I gave about Argentina during the UXD team meeting in Raleigh:&lt;/p&gt;
-
-&lt;p&gt;I am going to speak about the things you should know about Argentina.&lt;/p&gt;
-
-&lt;p&gt;My country is famous for the Tango, it’s meat, soccer, Evita, the pope, Maradona and Messi. Those things are Argentina but there is much more to it.&lt;/p&gt;
-
-&lt;p&gt;Argentina is about 6000 miles south from the US. Think about it this way, if the America is heading the world, then we are the “butt” of the world.&lt;/p&gt;
-
-&lt;p&gt;It’s a beautiful country that has the most amazing landscapes, from lakes and glaciers at Patagonia in the south to colorful mountains in the north. Over the west we have the winery area and if you travel east you’ll find the biggest waterfall in the world.&lt;/p&gt;
-
-&lt;p&gt;In the middle there is a huge flat fertile land where we grow mostly soy and wheat.&lt;/p&gt;
-
-&lt;p&gt;God blessed this land with Argentineans, and Argentineans are a complete mystery.&lt;/p&gt;
-
-&lt;p&gt;Almost all of us are descendants from Spanish or Italian, and sometimes both. This makes us very passionate.&lt;/p&gt;
-
-&lt;p&gt;Our food is a fusion of Italian and Spanish cuisine. In Buenos Aires there is a pizza place and an ice cream shop in every block.&lt;/p&gt;
-
-&lt;p&gt;Big families are normal and we stick together. We are loud and affective, and we usually spend Sundays at grandma’s house, because there is nothing like the taste of grandma’s food.&lt;/p&gt;
-
-&lt;p&gt;Friendship is sacred. Becoming friends with an Argentinean is not easy, we have a thick skin, but it’s worth the effort. They’ll be the most loyal and honest friend you’ll ever find.&lt;/p&gt;
-
-&lt;p&gt;On July 20th, the date that man landed on the moon, we celebrate friendship. It is not a public holiday but its is one of the most important if not the most important day of the year. In fact in 2005 the amount well wishing messages led to a temporary breakdown of the mobile phone network.&lt;/p&gt;
-
-&lt;p&gt;We are have a strange sense of humor. We take jokes very seriously and we make fun of everything. We are politically incorrect and we are usually ironic and sarcastic.&lt;/p&gt;
-
-&lt;p&gt;Here is an advice: Never ever start an argument with an Argentinean, we are born with wisdom. We know and have an opinion about absolutely everything. Passion drives our reasoning, we can go from one extreme to the other with our actions and opinions.&lt;/p&gt;
-
-&lt;p&gt;That’s why there are 2 things you’ll never hear an Argentinean say:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I don’t know&lt;/li&gt;
-  &lt;li&gt;You are right&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you don’t agree with an Argentinean, you are probably wrong.&lt;/p&gt;
-
-&lt;p&gt;Soccer is holy. Watching any soccer match is almost like a religious experience. But seriously, we are really passionate about soccer.&lt;/p&gt;
-
-&lt;p&gt;Everything for us is driven by passion.&lt;/p&gt;
-
-&lt;p&gt;And I guess that’s why I feel so comfortable working at Redhat. It’s a company of very talented people that are driven by passion. We are vocal about our opinions, honest and devoted, and we have a lot of fun.&lt;/p&gt;
-
-&lt;p&gt;In a way, deep down you are all Argentineans.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 Apr 2016 16:34:20 -0300</pubDate>
-        <link>http://localhost:4000/random/2016/04/20/argentina.html</link>
-        <guid isPermaLink="true">http://localhost:4000/random/2016/04/20/argentina.html</guid>
-        
-        <category>argentina</category>
-        
-        <category>ignitetalks</category>
-        
-        <category>redhat</category>
-        
-        
-        <category>random</category>
         
         <author>
           <name>Andres Galante</name>
