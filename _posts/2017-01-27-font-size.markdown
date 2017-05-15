@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lost in font-size translation"
-date:   2017-01-27 10:00:00
+date:   2017-01-27 08:00:00
 categories: css
 tags: css design patternfly
 ---
@@ -85,3 +85,17 @@ It’s not like cheating, it is cheating. It is also the best way to reproduce
 Photoshop image in code maintaining the benefits of relative units.
 
 
+*UPDATE 5/15/2017*
+
+To make things easier, I wrote a Sass function to translate `px` to `rem`:
+
+{% highlight sass %}
+
+$font-size-root: 16; // Most browsers font size base is 16
+
+@function px-to-rem($px) {
+  @return ($px / $font-size-root) * 1rem;
+}
+
+.one-px-border { border-width: px-to-rem(1) }
+{% endhighlight %}
