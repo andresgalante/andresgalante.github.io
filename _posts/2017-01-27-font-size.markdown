@@ -97,5 +97,6 @@ $font-size-root: 16; // Most browsers font size base is 16
   @return ($px / $font-size-root) * 1rem;
 }
 
-.one-px-border { border-width: px-to-rem(1) }
+h1 { font-size: px-to-rem(24) }
+
 {% endhighlight %}
