@@ -4,15 +4,51 @@ title: About me
 permalink: /about/
 ---
 
-My name is **Andrés Galante**. I am a Designer who works and lives in Buenos Aires, Argentina.
+![Andres Galante](/img/me.jpg)
 
-**I design websites and apps** and I am an expert HTML/CSS coder
+My name is Andrés Galante, I am a designer and expert CSS and HTML developer that has been crafting interfaces for more than 15 years.
 
-<!-- and have experience working with **[Less](http://lesscss.org/)**, **[Sass](http://sass-lang.com/)**, **[Bootstrap](http://getbootstrap.com/)** and **[Zurb Fundation](http://foundation.zurb.com/)**.
--->
+I am currently part of the [Red Hat User Experience Design Team](http://redhat.com/uxd) working on [PatternFly](https://www.patternfly.org), an open source design system, as designer and HTML/CSS lead.
 
-I am currently part of the **User Experience Designer Team at [Red Hat](http://www.redhat.com/)**, plus I am **Co-Founder and Designer at [Outclass](http://outclassapp.com/)**. I am always looking for new adventures, if you have one lets talk:
+I love open source, I am a member of the [Aerogear](https://aerogear.org/) community, a core committer at [PatternFly](https://www.patternfly.org) and he is a huge nerd.
 
-Send me a line [a@andresgalante.com](mailto:a@andresgalante.com) or call me [+54 911 3593 9333](tel:+54 911 3593 9333).
+I am also co-founder and designer at [Outclass](http://outclassapp.com/), an Education Startup.
 
-**Twitter:** [@andresgalante](https://twitter.com/andresgalante)
+I live and work in Buenos Aires, Argentina.
+
+## Speaking and writing
+
+Over the last few years I've spoken at a number of conferences about CSS and design systems to help CSS developers create maintainable CSS so they can have fun crafting amazing code that’s a pleasure to work with.
+
+### 2017
+
+- **DevoxxUS** San Jose, USA
+- **Qcon SP** São Paulo, Brazil
+- **DevCamp** Campinas, Brazil
+
+### 2016
+
+- **DevNation** San Fransisco, USA
+- **DevNexus** Atlanta, USA
+- **DC Meetup** Washington DC, USA
+- **Triangle JS** Raleigh, USA
+- **Qcon SP** São Paulo, Brazil
+
+### 2015
+
+- **DevNation** Boston, USA
+- **Qcon Rio** Rio de Janeiro, Brazil
+- **Interaction South America** Córdoba, Argentina
+
+I write a [blog](/) and been feature in [CSS Tricks](css-tricks.com/author/agalante/).
+
+
+## Let's talk
+
+I am always looking for new adventures, if you have one let's talk.
+
+- **E-mail:** agalante@gmail.com
+- **Phone:** [+54 911 3593 9333](tel:+54 911 3593 9333)
+- **Twitter:** [@andresgalante](https://twitter.com/andresgalante)
+- **Github:** [github.com/andresgalante](https://github.com/andresgalante)
+- **Linkedin:** [linkedin.com/in/andresgalante/](https://www.linkedin.com/in/andresgalante/)
