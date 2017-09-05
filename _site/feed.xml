@@ -6,9 +6,105 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Aug 2017 08:58:06 -0300</pubDate>
-    <lastBuildDate>Thu, 17 Aug 2017 08:58:06 -0300</lastBuildDate>
-    <generator>Jekyll v3.5.1</generator>
+    <pubDate>Tue, 05 Sep 2017 18:42:33 -0300</pubDate>
+    <lastBuildDate>Tue, 05 Sep 2017 18:42:33 -0300</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>5 things CSS developers wish they knew when they started</title>
+        <description>&lt;p&gt;Beginnings are exciting and scary at the same time. A lot has changed since I started 15 years ago and the market today is much harder than it was at that time. That’s why it’s so important to always keep learning.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;You can learn anything, but you can&amp;#39;t learn everything 🙃&lt;br /&gt;&lt;br /&gt;So accept that, and focus on what matters to you&lt;/p&gt;&amp;mdash; Una Kravets in 🇩🇰 (@Una) &lt;a href=&quot;https://twitter.com/Una/status/903658446263865345&quot;&gt;September 1, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Una&quot;&gt;Una Kravets&lt;/a&gt; is absolutely right, you just can’t learn everything.&lt;/p&gt;
+
+&lt;p&gt;This is the list of things I would have liked to know if I had to start today:&lt;/p&gt;
+
+&lt;h2 id=&quot;1-dont-underestimate-how-hard-css-is&quot;&gt;1. Don’t underestimate how hard CSS is&lt;/h2&gt;
+
+&lt;p&gt;CSS looks easy. After all it’s just a set of rules that selects an element and modifies it based on a set of properties and values.&lt;/p&gt;
+
+&lt;p&gt;It’s so much more than that.&lt;/p&gt;
+
+&lt;p&gt;A successful CSS project requires the most impeccable architecture. Poorly written CSS is brittle and quickly becomes difficult to maintain. It’s critical you learn how to organize your code in order to create maintainable structures with a long lifespan.&lt;/p&gt;
+
+&lt;p&gt;But even an excellent code base has to deal with the insane amount of devices, screen sizes, capabilities and user preferences. Not to mention accessibility, internationalization and browser support!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CSS is like a bear cub: cute and inoffensive, but when he grows he’ll eat you alive&lt;/strong&gt;. Experience, hard work and study will teach you how to tame the beast.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-share-and-participate&quot;&gt;2. Share and participate&lt;/h2&gt;
+
+&lt;p&gt;Sharing is so important! How I wish someone had told me that when I started. I’ve spent the first 10 years of my career ignoring the importance of sharing, and when I finally learned, it completely changed  how I viewed my work and working with others.&lt;/p&gt;
+
+&lt;p&gt;Learn git. &lt;a href=&quot;http://andresgalante.com/design/2015/08/31/adopt-a-deisgner.html&quot;&gt;Git is the language of open source&lt;/a&gt; and you definitely want to be part of the it.&lt;/p&gt;
+
+&lt;p&gt;Great developers are kind and generous. A healthy community is full of great developers and you want to be around them. The sooner the better.&lt;/p&gt;
+
+&lt;p&gt;Remember that you are as good as the people that surrounds you, so be kind and generous.&lt;/p&gt;
+
+&lt;p&gt;Share everything you learn. The path is as important as the end result, even the tiniest things can make a difference to others.&lt;/p&gt;
+
+&lt;p&gt;Write and read documentation. Remember that good development is documentation driven development.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-pick-the-right-tools&quot;&gt;3. Pick the right tools&lt;/h2&gt;
+
+&lt;p&gt;Tools are very important, they allow you do your craft.&lt;/p&gt;
+
+&lt;p&gt;Learn your way around your code editor. It should be an extension of your mind.&lt;/p&gt;
+
+&lt;p&gt;It doesn’t matter if you use &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; or old school &lt;a href=&quot;https://vim.sourceforge.io/&quot;&gt;Vim&lt;/a&gt;, the better you shape your tools to your thought process, the better developer you’ll become. You’ll not only gain speed but also have an uninterrupted thought line that result in a fluid ideas.&lt;/p&gt;
+
+&lt;p&gt;The terminal is your friend.&lt;/p&gt;
+
+&lt;p&gt;There is a lot more about been a CSS developer than writing CSS. Things like building your code, compiling, linting, formatting and browser live refresh are just a tiny part of what you’ll have to deal in a daily bases.&lt;/p&gt;
+
+&lt;p&gt;Pick up your way around the terminal and learn CLI as soon as possible.&lt;/p&gt;
+
+&lt;p&gt;Don’t forget that as a developer you are responsible to stay up to date with best practice. Follow resources like W3C and MDN to stay up to date.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-get-to-know-the-browser&quot;&gt;4. Get to know the browser&lt;/h2&gt;
+
+&lt;p&gt;The browser is not only your canvas, but also a powerful inspector to debug your code, test performance and learn from others. Become comfortable using the inspector.&lt;/p&gt;
+
+&lt;p&gt;Learn how the browser renders your code, what is its inner working and how to improve your work.&lt;/p&gt;
+
+&lt;p&gt;Every browser is different, embrace it. Love them for what they are. (Yes, even IE).&lt;/p&gt;
+
+&lt;h2 id=&quot;5-learn-to-write-maintainable-css&quot;&gt;5. Learn to write maintainable CSS&lt;/h2&gt;
+
+&lt;p&gt;It’ll probably take you years, but if there is just one single skill a CSS developer should have is to write maintainable structures.&lt;/p&gt;
+
+&lt;p&gt;This means knowing exactly how the cascade, the box model and specificity works. Master CSS architecture models, learn their pros and cons and how to implement them.&lt;/p&gt;
+
+&lt;p&gt;This is a hole you can dig for ever, the more you learn the less you’ll know. Keep up with the trends, &lt;strong&gt;have an opinion and only follow the things that makes sense to you&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Remember that a modular architecture leads to independent modules, good performance, accessible structures and responsive components (aka CSS happiness).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-future-looks-bright&quot;&gt;The future looks bright&lt;/h2&gt;
+
+&lt;p&gt;Modern CSS is amazing and the future is even better. I love CSS and I enjoy every second I spend coding.&lt;/p&gt;
+
+&lt;p&gt;During the following weeks I’ll write more about how to create maintainable CSS at scale going in depth on the topics that were mentioned on this post.&lt;/p&gt;
+
+&lt;p&gt;What do you think about those advices? Don’t be a stranger, &lt;a href=&quot;https://twitter.com/andresgalante&quot;&gt;tell me on Twitter&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Sep 2017 05:00:00 -0300</pubDate>
+        <link>http://localhost:4000/css/2017/09/05/things-CSS-developers-wish-they-knew-when-they-started.html</link>
+        <guid isPermaLink="true">http://localhost:4000/css/2017/09/05/things-CSS-developers-wish-they-knew-when-they-started.html</guid>
+        
+        <category>css</category>
+        
+        <category>design</category>
+        
+        
+        <category>css</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>Do I look thick?</title>
@@ -666,118 +762,6 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
         <category>cssconfar</category>
         
         <category>patternfly</category>
-        
-        
-        <category>random</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>The RGBA to feColorMatrix converter</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/rgbtocolor/rgba-to-color-matrix.jpg&quot; alt=&quot;Red Hat Summit Keynote Demo&quot; /&gt;
-This year I’ve been lucky enough to be part of the team building the Red Hat keynote demo at &lt;a href=&quot;https://youtu.be/tPqbM3buK8M&quot;&gt;Red Hat Summit&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The presentation ended up dynamically building a picture mosaic of the Red Hat logo out of selfies taken by the audience. It was an impressive visualisation that I helped &lt;a href=&quot;https://twitter.com/brianleathem&quot;&gt;Brian Leatheam&lt;/a&gt; create.&lt;/p&gt;
-
-&lt;!-- You can check the complete story in this DevNation talk: --&gt;
-
-&lt;h2 id=&quot;process&quot;&gt;Process&lt;/h2&gt;
-&lt;p&gt;Mapping an image and building a mosaic following some CSS filters and blend modes took about 3 days to a skilful DOM manipulator like Brian.&lt;/p&gt;
-
-&lt;p&gt;But we’ve spent at least a moth iterating on designs details, trying new animations and optimising the performance.&lt;/p&gt;
-
-&lt;p&gt;During one of those iterations, and aiming to achieve good performance and smooth animation we’ve tried SVGs instead of HTML images. That also implied changing our CSS blend modes to an SVG filter, in this case the &lt;code class=&quot;highlighter-rouge&quot;&gt;feColorMatrix&lt;/code&gt; filter.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-fecolormatrix-svg-filters&quot;&gt;The feColorMatrix SVG filters&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix&quot;&gt;feColorMatrix&lt;/a&gt; is an SVG filter that changes colors based on a transformation matrix. Every pixel’s color value (represented by an [R,G,B,A] vector) is &lt;a href=&quot;https://en.wikipedia.org/wiki/Matrix_multiplication&quot;&gt;matrix multiplied&lt;/a&gt; to create a new color.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This filter is really powerful and allows granular per channel color manipulation, kinda like editing the channels on Photoshop.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://una.im/&quot;&gt;Una Kravets&lt;/a&gt; wrote an &lt;a href=&quot;http://alistapart.com/article/finessing-fecolormatrix&quot;&gt;excellent list apart article&lt;/a&gt; explaining how to use it.&lt;/p&gt;
-
-&lt;h2 id=&quot;rgba-to-fecolormatrix&quot;&gt;RGBA to feColorMatrix&lt;/h2&gt;
-
-&lt;p&gt;Color manipulation with &lt;code class=&quot;highlighter-rouge&quot;&gt;feColorMatrix&lt;/code&gt; seems limitless, I could colorise an element any way I wanted. But what I needed for the mosaic was to reproduce an exact RGB value into the color matrix, and that was tricky.&lt;/p&gt;
-
-&lt;p&gt;It’s not a common problem to have, no one was asking about it on &lt;a href=&quot;https://stackoverflow.com/&quot;&gt;StackOverflow&lt;/a&gt;.  But the answer was simple.&lt;/p&gt;
-
-&lt;p&gt;Since RGB are based on a 255 scale, I just needed to divide the RGB value by 255 and I get the matrix value for each channel.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/rgbtocolor/preview01.jpg&quot; alt=&quot;RGBAtoFeColorMatrix preview&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For example RGB &lt;code class=&quot;highlighter-rouge&quot;&gt;255, 255, 255&lt;/code&gt; becomes:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 0 0 0
-0 1 0 0
-0 0 1 0
-0 0 0 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/rgbtocolor/preview02.jpg&quot; alt=&quot;RGBAtoFeColorMatrix preview red&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pure red &lt;code class=&quot;highlighter-rouge&quot;&gt;255, 0, 0&lt;/code&gt; becomes:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/rgbtocolor/preview03.jpg&quot; alt=&quot;RGBAtoFeColorMatrix preview pink&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And a pink &lt;code class=&quot;highlighter-rouge&quot;&gt;255, 30, 150&lt;/code&gt; becomes:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1     0     0     0
-0     1.22  0     0
-0     0     0.59  0
-0     0     0     1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Now that I had the math sort out it was easy to colorise our mosaic.&lt;/p&gt;
-
-&lt;h2 id=&quot;sharing-is-caring&quot;&gt;Sharing is caring&lt;/h2&gt;
-
-&lt;p&gt;In the very odd chance that there is someone else out there trying to transform an an RGA value into a color matrix, I set myself to build an &lt;a href=&quot;http://blog.andresgalante.com/RGBAtoFeColorMatrix/&quot;&gt;RGBA to feColorMatrix converter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Of course I couldn’t do it by myself, my javascript knowledge is still very basic (it sucks!). So I designed the layout, &lt;a href=&quot;https://twitter.com/brianleathem&quot;&gt;Brian Leatheam&lt;/a&gt; made the magic happen and &lt;a href=&quot;https://twitter.com/priley86&quot;&gt;Patrick Riley&lt;/a&gt; took it to the next level and built a webcomonent.&lt;/p&gt;
-
-&lt;h2 id=&quot;webcomponent&quot;&gt;Webcomponent&lt;/h2&gt;
-
-&lt;p&gt;Once the tool was working, &lt;a href=&quot;https://twitter.com/priley86&quot;&gt;Patrick&lt;/a&gt; forked it and built a &lt;a href=&quot;https://www.polymer-project.org/1.0/&quot;&gt;polymer&lt;/a&gt; webcomonent out of it.&lt;/p&gt;
-
-&lt;p&gt;Thanks to Patrick this converter is now an even cooler project.&lt;/p&gt;
-
-&lt;h2 id=&quot;open-source&quot;&gt;Open Source&lt;/h2&gt;
-
-&lt;p&gt;This project is open and you can do whatever you want with it.&lt;/p&gt;
-
-&lt;p&gt;The source code for the &lt;a href=&quot;https://github.com/andresgalante/RGBAtoFeColorMatrix&quot;&gt;webcomponent is here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And you can &lt;a href=&quot;http://blog.andresgalante.com/RGBAtoFeColorMatrix/&quot;&gt;use it here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 09 Jul 2016 20:05:36 -0300</pubDate>
-        <link>http://localhost:4000/random/2016/07/09/rgba-to-fecolormatrix.html</link>
-        <guid isPermaLink="true">http://localhost:4000/random/2016/07/09/rgba-to-fecolormatrix.html</guid>
-        
-        <category>howto</category>
-        
-        <category>patternfly</category>
-        
-        <category>setup</category>
-        
-        <category>npm</category>
-        
-        <category>bower</category>
         
         
         <category>random</category>
