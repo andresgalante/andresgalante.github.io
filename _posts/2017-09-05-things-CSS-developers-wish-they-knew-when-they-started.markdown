@@ -1,10 +1,12 @@
 ---
 layout: post
+external_url: https://css-tricks.com/5-things-css-developers-wish-knew-started/
 title:  "5 things CSS developers wish they knew when they started"
 date:   2017-09-05 08:00:00
 categories: css
 tags: css design
 ---
+
 
 
 Beginnings are exciting and scary at the same time. A lot has changed since I started 15 years ago and the market today is much harder than it was at that time. That’s why it’s so important to always keep learning.

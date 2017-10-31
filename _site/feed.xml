@@ -6,9 +6,241 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Sep 2017 18:42:33 -0300</pubDate>
-    <lastBuildDate>Tue, 05 Sep 2017 18:42:33 -0300</lastBuildDate>
-    <generator>Jekyll v3.5.2</generator>
+    <pubDate>Tue, 31 Oct 2017 08:03:21 -0300</pubDate>
+    <lastBuildDate>Tue, 31 Oct 2017 08:03:21 -0300</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>5 killer tricks to make your Java webapp look awesome</title>
+        <description>&lt;p&gt;This article is based on my notes for the presentation I gave at JavaOne 2017. Here is a video of the same presentation:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/MGlYoBrZkFQ?start=128&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;During my years working with java developers, I’ve noticed they face two challenges:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They have a hard time making UIs look good.&lt;/li&gt;
+  &lt;li&gt;And for the ones working with designers, they have bad experiences relating to them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don’t take my word for it, Java Champion Bruno Souza once told me that:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“We always do ugly things… always…””&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And he is not alone: Gustavo and Bazlur, like many others java developers have problems either creating good UIs or relating with designers:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I find hard time with alignment.”
+Bazlur rahman, JUG leader&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“What frustrates me is the time I spend to get the layout the way I’d like it to be.”
+Gustavo Muniz do Carmo, Java Dev&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But creating great UIs is not just about making them look great, but also about making them:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Load fast.&lt;/li&gt;
+  &lt;li&gt;Work in every single device independent of their size and capabilities.&lt;/li&gt;
+  &lt;li&gt;Accessible for anyone disregarding of their abilities.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s why this article will cover 5 essential design principles to create amazing applications for java developer to follow:&lt;/p&gt;
+
+&lt;h2 id=&quot;1-understand-your-users-needs&quot;&gt;1. Understand your user’s needs&lt;/h2&gt;
+
+&lt;p&gt;Having empathy with your users is an essential part of design. We all talk about putting yourself in our user’s shoes, but do we actually know what their needs are? How much time do we actually spend watching a user use their products?&lt;/p&gt;
+
+&lt;p&gt;Probably not much, and you’d be surprised to know that most developers I know have never seen a user using your product, and they end up taking decisions based on assumptions.&lt;/p&gt;
+
+&lt;p&gt;Assumptions are really dangerous! If you assume you will never be able to walk in their shoes.&lt;/p&gt;
+
+&lt;p&gt;Never assume you know what they need. I am 100% sure your user needs are not your needs.&lt;/p&gt;
+
+&lt;p&gt;How to know what are user needs? Here is a secret, the most meaningful type of user research is really easy!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sit down beside a user, give them a task to do watch them use your product! Don’t say anything, don’t ask anything, don’t help them.&lt;/li&gt;
+  &lt;li&gt;When they are done: Have a chat with them!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This exercise will be an eye opening experience for you and your team and I guarantee that you will never think about your product the same way.&lt;/p&gt;
+
+&lt;p&gt;This is extremely important to succeed, if you don’t understand what your users needs, everything else you do doesn’t matter.&lt;/p&gt;
+
+&lt;p&gt;My advice is to do this at least one hour a month.&lt;/p&gt;
+
+&lt;p&gt;Now that you know how to discover your users needs and you are ready to create content.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-create-great-content&quot;&gt;2. Create great content&lt;/h2&gt;
+
+&lt;p&gt;Content, like text, images and data is the most important asset you own.&lt;/p&gt;
+
+&lt;p&gt;You structure it with HTML, style it with CSS and create interactions with JS. It’s the front end stack.&lt;/p&gt;
+
+&lt;p&gt;If you don’t know HTML don’t feel bad, Linus Torvalds once told that he doesn’t have a website because he don’t know html.&lt;/p&gt;
+
+&lt;p&gt;It doesn’t matter how beautiful your code and your style are, if your content stinks, your app will stink too.&lt;/p&gt;
+
+&lt;p&gt;Now, as Java developers you will probably use a UI framework to wrap your content, and there are many great well known options like Bootstrap, Foundation, and Material, or some less known ones such as Bulma or Tachyons.&lt;/p&gt;
+
+&lt;p&gt;Since I am a core team member of Bootstrap, I will write about Bootstrap.&lt;/p&gt;
+
+&lt;p&gt;Bootstrap is world’s most popular front-end component library to build responsive, mobile-first projects on the web, and it will help you structure your content into semantic markup that’s accessible, style it with responsive CSS and give behaviours with JS.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-build-accessible-responsive-and-performant-uis&quot;&gt;3. Build accessible, responsive and performant UIs&lt;/h2&gt;
+
+&lt;p&gt;Apart from a great set of UI components, Bootstrap ships a powerful responsive grid system to deal with layouts at the insane reality we live in.&lt;/p&gt;
+
+&lt;h3 id=&quot;responsive&quot;&gt;Responsive&lt;/h3&gt;
+
+&lt;p&gt;This is the web today is insiane, we have devices with different screen sizes, different capabilities, different browsers and the web is even in places without screens like cars or refrigerators!&lt;/p&gt;
+
+&lt;p&gt;We don’t know where our content will land, will it be a tiny device with a stylus or a huge touch screen?&lt;/p&gt;
+
+&lt;h3 id=&quot;accessible&quot;&gt;Accessible&lt;/h3&gt;
+
+&lt;p&gt;And then we need to think about the user, humans, like devices, comes in all sizes, shapes and capabilities too, and we need to take accessibility in consideration. Let me tell you a story: My second son’s name is Federico and he is one year and a half old. When he was born we’ve been told that his hearing test gave a negative result. That meant that he might have hearing problems. And as I was in the hospital with little Federico in my arms, I promise myself that I will do my absolute best to ensure that everything I produce is accessible.&lt;/p&gt;
+
+&lt;p&gt;When Federico was a year old, we tested him again and the results were positive, thank God he is ok now. But since then everything that my team or I do has baked in accessibility.&lt;/p&gt;
+
+&lt;p&gt;At the end of the day, there are way more disabled users than IE users, and we care a lot about making things look good on IE.&lt;/p&gt;
+
+&lt;h2 id=&quot;performant&quot;&gt;Performant&lt;/h2&gt;
+
+&lt;p&gt;On top of that, you need to think about performance, you only have users attentions for few seconds. In fact, according to the national center of biotechnology, the average attention span of a human dropped from 12 seconds in the year 2000 to 8 seconds in 2015. That’s one second less than the attention span of a goldfish!&lt;/p&gt;
+
+&lt;p&gt;So treat the web as if it was a &lt;a href=&quot;https://www.google.com/search?tbm=isch&amp;amp;source=hp&amp;amp;biw=1364&amp;amp;bih=1252&amp;amp;q=liquid+cat&amp;amp;oq=liquid+cat&amp;amp;gs_l=img.3..0l10.960.2084.0.3268.11.9.0.0.0.0.262.1296.0j2j4.6.0....0...1.1.64.img..5.6.1295.0...0.pRXo5V9Maz0&quot;&gt;liquid Cat&lt;/a&gt;: Fast and fluid! It must be Responsive, Accessible and Performant.&lt;/p&gt;
+
+&lt;p&gt;In order to support this reality we structure our HTML in either be a component or a layout. Components will stretch out to the size of it’s container, and the grid (or layout) will regulate the placement and size ignoring completely what happens inside them.&lt;/p&gt;
+
+&lt;p&gt;Don’t ever mix grids with components in the same tag. Define your grid and then add components inside.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-establish-a-maintainable-architectures&quot;&gt;4. Establish a maintainable architectures&lt;/h2&gt;
+
+&lt;p&gt;The way you architecture your CSS is critical for a successful application. If you fail, you’ll end up with brittle structure that will be impossible to maintain in the future.&lt;/p&gt;
+
+&lt;p&gt;The way to use a framework like Bootstrap wisely is to create isolated components instead of extending their components. You’ll end up with bootstrap on one side and your things in another.&lt;/p&gt;
+
+&lt;p&gt;Every component should be an island, nothing should depend on each other. Each thing should be it’s own thing, not an extension of another thing.&lt;/p&gt;
+
+&lt;p&gt;That way, when a new version of your framework comes up, you’ll be able to easily update and a component you build today to live side by side with one you build 5 years from now.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-keep-consistency-across-your-ui&quot;&gt;5. Keep Consistency across your UI&lt;/h2&gt;
+
+&lt;p&gt;This is a hot topic nowadays with the era of design systems.
+“Consistency is one of the most powerful usability principles: when things always behave the same, users don’t have to worry about what will happen. Instead, they know what will happen based on earlier experience. “&lt;/p&gt;
+
+&lt;p&gt;Make sure to reuse the same variables for spacer, shadows, border, and animations. Define it once, use them everywhere&lt;/p&gt;
+
+&lt;h2 id=&quot;try-it-yourself&quot;&gt;Try it yourself&lt;/h2&gt;
+
+&lt;p&gt;These are just 5 starting point that will be immensely helpful for your app.&lt;/p&gt;
+
+&lt;p&gt;Remember to understand your users to create great content, build responsive, accessible, and performant structures on a maintainable structure and keep consistency!&lt;/p&gt;
+
+&lt;p&gt;And if I can help in anyway please &lt;a href=&quot;https://twitter.com/andresgalante&quot;&gt;contact me on twitter @andregsalante&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Una&quot;&gt;Una Kravets&lt;/a&gt; is absolutely right, you just can’t learn everything.&lt;/p&gt;
+
+&lt;p&gt;This is the list of things I would have liked to know if I had to start today:&lt;/p&gt;
+
+&lt;h2 id=&quot;1-dont-underestimate-how-hard-css-is&quot;&gt;1. Don’t underestimate how hard CSS is&lt;/h2&gt;
+
+&lt;p&gt;CSS looks easy. After all it’s just a set of rules that selects an element and modifies it based on a set of properties and values.&lt;/p&gt;
+
+&lt;p&gt;It’s so much more than that.&lt;/p&gt;
+
+&lt;p&gt;A successful CSS project requires the most impeccable architecture. Poorly written CSS is brittle and quickly becomes difficult to maintain. It’s critical you learn how to organize your code in order to create maintainable structures with a long lifespan.&lt;/p&gt;
+
+&lt;p&gt;But even an excellent code base has to deal with the insane amount of devices, screen sizes, capabilities and user preferences. Not to mention accessibility, internationalization and browser support!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CSS is like a bear cub: cute and inoffensive, but when he grows he’ll eat you alive&lt;/strong&gt;. Experience, hard work and study will teach you how to tame the beast.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-share-and-participate&quot;&gt;2. Share and participate&lt;/h2&gt;
+
+&lt;p&gt;Sharing is so important! How I wish someone had told me that when I started. I’ve spent the first 10 years of my career ignoring the importance of sharing, and when I finally learned, it completely changed  how I viewed my work and working with others.&lt;/p&gt;
+
+&lt;p&gt;Learn git. &lt;a href=&quot;http://andresgalante.com/design/2015/08/31/adopt-a-deisgner.html&quot;&gt;Git is the language of open source&lt;/a&gt; and you definitely want to be part of the it.&lt;/p&gt;
+
+&lt;p&gt;Great developers are kind and generous. A healthy community is full of great developers and you want to be around them. The sooner the better.&lt;/p&gt;
+
+&lt;p&gt;Remember that you are as good as the people that surrounds you, so be kind and generous.&lt;/p&gt;
+
+&lt;p&gt;Share everything you learn. The path is as important as the end result, even the tiniest things can make a difference to others.&lt;/p&gt;
+
+&lt;p&gt;Write and read documentation. Remember that good development is documentation driven development.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-pick-the-right-tools&quot;&gt;3. Pick the right tools&lt;/h2&gt;
+
+&lt;p&gt;Tools are very important, they allow you do your craft.&lt;/p&gt;
+
+&lt;p&gt;Learn your way around your code editor. It should be an extension of your mind.&lt;/p&gt;
+
+&lt;p&gt;It doesn’t matter if you use &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; or old school &lt;a href=&quot;https://vim.sourceforge.io/&quot;&gt;Vim&lt;/a&gt;, the better you shape your tools to your thought process, the better developer you’ll become. You’ll not only gain speed but also have an uninterrupted thought line that result in a fluid ideas.&lt;/p&gt;
+
+&lt;p&gt;The terminal is your friend.&lt;/p&gt;
+
+&lt;p&gt;There is a lot more about been a CSS developer than writing CSS. Things like building your code, compiling, linting, formatting and browser live refresh are just a tiny part of what you’ll have to deal in a daily bases.&lt;/p&gt;
+
+&lt;p&gt;Pick up your way around the terminal and learn CLI as soon as possible.&lt;/p&gt;
+
+&lt;p&gt;Don’t forget that as a developer you are responsible to stay up to date with best practice. Follow resources like W3C and MDN to stay up to date.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-get-to-know-the-browser&quot;&gt;4. Get to know the browser&lt;/h2&gt;
+
+&lt;p&gt;The browser is not only your canvas, but also a powerful inspector to debug your code, test performance and learn from others. Become comfortable using the inspector.&lt;/p&gt;
+
+&lt;p&gt;Learn how the browser renders your code, what is its inner working and how to improve your work.&lt;/p&gt;
+
+&lt;p&gt;Every browser is different, embrace it. Love them for what they are. (Yes, even IE).&lt;/p&gt;
+
+&lt;h2 id=&quot;5-learn-to-write-maintainable-css&quot;&gt;5. Learn to write maintainable CSS&lt;/h2&gt;
+
+&lt;p&gt;It’ll probably take you years, but if there is just one single skill a CSS developer should have is to write maintainable structures.&lt;/p&gt;
+
+&lt;p&gt;This means knowing exactly how the cascade, the box model and specificity works. Master CSS architecture models, learn their pros and cons and how to implement them.&lt;/p&gt;
+
+&lt;p&gt;This is a hole you can dig for ever, the more you learn the less you’ll know. Keep up with the trends, &lt;strong&gt;have an opinion and only follow the things that makes sense to you&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Remember that a modular architecture leads to independent modules, good performance, accessible structures and responsive components (aka CSS happiness).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-future-looks-bright&quot;&gt;The future looks bright&lt;/h2&gt;
+
+&lt;p&gt;Modern CSS is amazing and the future is even better. I love CSS and I enjoy every second I spend coding.&lt;/p&gt;
+
+&lt;p&gt;During the following weeks I’ll write more about how to create maintainable CSS at scale going in depth on the topics that were mentioned on this post.&lt;/p&gt;
+
+&lt;p&gt;What do you think about those advices? Don’t be a stranger, &lt;a href=&quot;https://twitter.com/andresgalante&quot;&gt;tell me on Twitter&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Oct 2017 09:05:00 -0300</pubDate>
+        <link>http://localhost:4000/css/2017/10/30/five-killer-tricks-to-make-your-java-webapp-look-awesome.html</link>
+        <guid isPermaLink="true">http://localhost:4000/css/2017/10/30/five-killer-tricks-to-make-your-java-webapp-look-awesome.html</guid>
+        
+        <category>css</category>
+        
+        <category>design</category>
+        
+        <category>java</category>
+        
+        <category>app</category>
+        
+        <category>bootstrap</category>
+        
+        <category>patternfly</category>
+        
+        
+        <category>css</category>
+        
+        <author>
+          <name>Andres Galante</name>
+          <email>a@andresgalante.com</email>
+        </author>
+      </item>
     
       <item>
         <title>5 things CSS developers wish they knew when they started</title>
@@ -686,85 +918,6 @@ Sans&lt;/a&gt; to &lt;a href=&quot;http://overpassfont.org/&quot;&gt;Overpass&lt
         
         
         <category>patternfly</category>
-        
-        <author>
-          <name>Andres Galante</name>
-          <email>a@andresgalante.com</email>
-        </author>
-      </item>
-    
-      <item>
-        <title>CSSconf: Welcome to Argentina</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/cssconf/cssconf.jpg&quot; alt=&quot;Patternfly Charts&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;On Sunday (August 7th), I was lucky enough to attend to the first &lt;a href=&quot;http://cssconfar.com/&quot;&gt;CSSconf in Argentina&lt;/a&gt; and it was spectacular.&lt;/p&gt;
-
-&lt;p&gt;The organization was spotless. &lt;a href=&quot;https://twitter.com/evaferreira92&quot;&gt;Eva Ferreira&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/louMontano&quot;&gt;Lourdes Montano&lt;/a&gt; and the rest of the team that put together this event should give themselves a big (but painful) pat on their backs.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Escuela_Superior_de_Comercio_Carlos_Pellegrini&quot;&gt;The venue&lt;/a&gt; was really well chosen. The conference gifts didn’t suck, instead of low quality t-shirt that always end up as a pajama, they gave to each one of us a super nice handcrafted mug among other things. And last but not least the food was superb.&lt;/p&gt;
-
-&lt;p&gt;It really shows the effort, time and love they put into it.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-speakers&quot;&gt;The speakers&lt;/h2&gt;
-
-&lt;p&gt;The line up was a mixture between international super stars and local developers. To me the highlights where:&lt;/p&gt;
-
-&lt;h3 id=&quot;una-kravets&quot;&gt;Una Kravets&lt;/h3&gt;
-
-&lt;p&gt;The day started with &lt;a href=&quot;https://twitter.com/una&quot;&gt;Una Kravets&lt;/a&gt;, the unacorn herself, explaining how to use blend modes, filters and gradients in real life projects.&lt;/p&gt;
-
-&lt;p&gt;I’ve heard her talk about this subject on other opportunities, and as always she shines on stage. Plus I’ve learn about &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;backdrop-filter&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;rachel-nabors&quot;&gt;Rachel Nabors&lt;/h3&gt;
-&lt;p&gt;The queen of web animations talked about the new &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API&quot;&gt;Web Animation API&lt;/a&gt; with some charming examples based on Alice in wonderland.&lt;/p&gt;
-
-&lt;h3 id=&quot;werther-azevedo&quot;&gt;Werther Azevedo&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/w_midipixel&quot;&gt;Werther Azevedo&lt;/a&gt;, from Brazil, showed us how to build a game using the DOM.&lt;/p&gt;
-
-&lt;p&gt;It was an interesting presentation that inspired us to build web games. On stage he came across as a likable and honest person, a feeling that was confirmed after having a quick chat with him during a brake.&lt;/p&gt;
-
-&lt;h3 id=&quot;ami-reynoso&quot;&gt;Ami Reynoso&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/bakery&quot;&gt;Ami  Reynoso&lt;/a&gt; was really nervous. She spoke giving her back to the audience and looking at the projector.&lt;/p&gt;
-
-&lt;p&gt;Nevertheless the content of her talk was really good. She showed how performance is key to achieve good business metrics and how Mercado Libre applies critical CSS.&lt;/p&gt;
-
-&lt;p&gt;I think Ami will be a great presenter once she gains confidence.&lt;/p&gt;
-
-&lt;h3 id=&quot;horia-dragomir&quot;&gt;Horia Dragomir&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/hdragomir&quot;&gt;Horia Dragomir&lt;/a&gt; showcase how messenger.com was built.&lt;/p&gt;
-
-&lt;p&gt;It was a very interesting and fun short talk about how CSS is written in facebook with useful tips to follow in our projects.&lt;/p&gt;
-
-&lt;h3 id=&quot;aurelia-moser&quot;&gt;Aurelia Moser&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/auremoser&quot;&gt;Aurelia Moser&lt;/a&gt; talked about &lt;a href=&quot;https://carto.com/docs/carto-engine/cartocss/&quot;&gt;CartoCSS&lt;/a&gt;. Styling maps is something completely off my randar, and although I don’t see myself doing it in the near future I am glad I’ve got introduce to it.&lt;/p&gt;
-
-&lt;h3 id=&quot;harry-roberts&quot;&gt;Harry Roberts&lt;/h3&gt;
-&lt;p&gt;To end the day &lt;a href=&quot;https://twitter.com/csswizardry&quot;&gt;Harry Roberts&lt;/a&gt;, Mr. CSSguidelines.&lt;/p&gt;
-
-&lt;p&gt;He talked about refactoring CSS and it was one of the best presentations I’ve ever seen. Maybe it just resonates with me because I am thinking about how to refactor &lt;a href=&quot;https://www.patternfly.org/&quot;&gt;PatternFly&lt;/a&gt; CSS.&lt;/p&gt;
-
-&lt;p&gt;He is a stellar presenter with insightful and accurate content based on his experience with huge clients.&lt;/p&gt;
-
-&lt;h2 id=&quot;happy-ending&quot;&gt;Happy ending&lt;/h2&gt;
-
-&lt;p&gt;Overall it was a great event. I am glad Buenos Aires has a CSSconf and I can’t wait for next year.&lt;/p&gt;
-
-&lt;!-- There is room to improvements on the choice of local speakers. Ami Reynosos presentation had very good content, but to me the rest of them were not up to the standards. Maybe the bar was just too high. --&gt;
-</description>
-        <pubDate>Mon, 08 Aug 2016 16:34:20 -0300</pubDate>
-        <link>http://localhost:4000/random/2016/08/08/CSS-Conf-Argentina.html</link>
-        <guid isPermaLink="true">http://localhost:4000/random/2016/08/08/CSS-Conf-Argentina.html</guid>
-        
-        <category>css</category>
-        
-        <category>cssconf</category>
-        
-        <category>cssconfar</category>
-        
-        <category>patternfly</category>
-        
-        
-        <category>random</category>
         
         <author>
           <name>Andres Galante</name>
