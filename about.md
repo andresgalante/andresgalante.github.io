@@ -10,9 +10,7 @@ My name is Andrés Galante, I am a designer and expert CSS and HTML developer th
 
 I am currently part of the [Red Hat User Experience Design Team](http://redhat.com/uxd) working on [PatternFly](https://www.patternfly.org), an open source design system, as designer and HTML/CSS lead.
 
-I love open source, I am a core committer to the [PatternFly](https://www.patternfly.org) project, a member of the [Aerogear](https://aerogear.org/) community and a huge nerd.
-
-I am also co-founder and designer at [Outclass](http://outclassapp.com/), an Education Startup.
+I love open source, I am a core committer to  [Bootstrap](https://github.com/orgs/twbs/people), [PatternFly](https://www.patternfly.org), and [Aerogear](https://aerogear.org/).
 
 I live and work in Buenos Aires, Argentina.
 
@@ -22,6 +20,8 @@ Over the last few years I've spoken at a number of conferences about CSS and des
 
 ### 2017
 
+- **JavaOne** San Francisco, USA
+- **DublinCSS** Dublin, Ireland
 - **DevoxxUS** San Jose, USA
 - **Qcon SP** São Paulo, Brazil
 - **DevCamp** Campinas, Brazil
